@@ -4,18 +4,75 @@
 
 ---
 
-## 1. DCA (Dollar Cost Averaging) 분석 및 한계
+## 1. DCA (Dollar Cost Averaging) 분석
 
 ### DCA의 핵심 원리
-**DCA(정액 적립식 투자법)**는 자산의 가격 변동성과 관계없이 일정한 주기(예: 매일, 매주, 매월)마다 고정된 금액을 기계적으로 매수하는 전략입니다. 
+**DCA(정액 적립식 투자법)**는 자산의 가격 변동성과 관계없이 일정한 주기(예: 매일, 매주, 매월)마다 고정된 금액을 기계적으로 매수하는 전략입니다.
 
 * **하모닉 평균(조화 평균) 효과**: 가격이 높을 때는 적은 수량을 매수하고, 가격이 낮을 때는 많은 수량을 매수하게 되어 결과적으로 **평균 매입 단가가 시장 평균 가격보다 낮아지는** 수학적 효과를 누립니다.
 * **감정 통제**: 시장의 공포와 탐욕에 휩쓸려 매수 타이밍을 저울질하다가 기회를 놓치는 우를 범하지 않도록 돕습니다.
 * **리스크 분산**: 거치식 투자(Lump-sum) 대비 초기 진입 시점의 위험을 시간 축으로 분산합니다.
 
-### 달러 기준 DCA의 한계 (한국 투자자 시점)
-일반적으로 널리 알려진 DCA는 미국 달러(USD) 기준의 적립식 매수를 가정합니다. 하지만 원화(KRW)를 기반으로 생활하고 소득을 올리는 한국인 투자자가 미국 주식/ETF를 살 때는 **'환율(USD/KRW)'이라는 거대한 변수**가 추가됩니다.
-매월 일정 달러(USD)만큼 적립 매수를 집행하게 되면, 원화 기준으로는 환율이 치솟았을 때(달러가 비쌀 때) 더 많은 원화를 환전하여 투입해야 하므로 **원화 자산 관점에서 비효율적인 고가 매수**가 발생할 수 있습니다.
+### 📈 [그래프 1] DCA 적립식 vs 거치식(Lump-sum) 평단가 비교
+
+<div class="kca-chart-container" style="margin: 2rem 0; padding: 1.5rem; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+  <svg viewBox="0 0 800 360" width="100%" height="auto" style="display: block; font-family: var(--vp-font-family-base);">
+    <!-- Grids -->
+    <g stroke="var(--vp-c-gutter)" stroke-width="1" stroke-dasharray="4,4">
+      <line x1="50" y1="60" x2="750" y2="60" />
+      <line x1="50" y1="130" x2="750" y2="130" />
+      <line x1="50" y1="200" x2="750" y2="200" />
+      <line x1="50" y1="270" x2="750" y2="270" />
+    </g>
+
+    <!-- Axes -->
+    <g stroke="var(--vp-c-text-3)" stroke-width="1.5">
+      <line x1="50" y1="310" x2="760" y2="310" stroke="var(--vp-c-text-3)" />
+      <line x1="50" y1="40" x2="50" y2="310" stroke="var(--vp-c-text-3)" />
+    </g>
+
+    <!-- Labels -->
+    <g fill="var(--vp-c-text-2)" font-size="12" text-anchor="middle">
+      <text x="50" y="330">투자 시작</text>
+      <text x="283" y="330">시장 하락기</text>
+      <text x="516" y="330">바닥 및 횡보</text>
+      <text x="750" y="330">시장 회복</text>
+    </g>
+
+    <!-- Curves -->
+    <!-- 1. Market Price (Volatile Orange) -->
+    <path d="M 50 130 C 180 30, 280 310, 400 300 C 520 290, 630 150, 750 90" fill="none" stroke="#f59e0b" stroke-width="2.5" />
+    
+    <!-- 2. Lump-sum Cost (Red Flat Line) -->
+    <line x1="50" y1="130" x2="750" y2="130" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" />
+    
+    <!-- 3. DCA Average Cost (Green Smooth Line) -->
+    <path d="M 50 130 C 180 130, 280 210, 400 205 C 520 200, 630 170, 750 155" fill="none" stroke="#10b981" stroke-width="3.5" />
+
+    <!-- Labels on Curves -->
+    <g font-size="11" font-weight="600">
+      <text x="700" y="80" fill="#f59e0b" text-anchor="middle">시장 주가 📈</text>
+      <text x="700" y="120" fill="#ef4444" text-anchor="middle">거치식(Lump-sum) 평단가 🔴</text>
+      <text x="650" y="145" fill="#10b981" text-anchor="middle">DCA 적립식 평단가 🟢</text>
+    </g>
+
+    <!-- Legend Box -->
+    <g transform="translate(60, 50)">
+      <rect width="210" height="90" fill="var(--vp-c-bg)" stroke="var(--vp-c-gutter)" rx="6" />
+      <circle cx="20" cy="25" r="5" fill="#f59e0b" />
+      <text x="35" y="29" fill="var(--vp-c-text-1)" font-size="12">변동하는 시장 주가</text>
+      
+      <line x1="15" y1="48" x2="25" y2="48" stroke="#ef4444" stroke-width="2" stroke-dasharray="3,2" />
+      <text x="35" y="52" fill="var(--vp-c-text-1)" font-size="12">거치식 평단가 (시작시점 고정)</text>
+      
+      <circle cx="20" cy="71" r="5" fill="#10b981" />
+      <text x="35" y="75" fill="var(--vp-c-text-1)" font-size="12">DCA 적립식 평단가 (하향안정)</text>
+    </g>
+  </svg>
+  <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2); text-align: center;">
+    💡 <strong>DCA의 강점:</strong> 주가가 떨어질 때 더 많은 수량을 저가 매수하므로, 주가가 원래 수준을 완전히 회복하지 못하더라도 **적립식 평단가(초록색)가 낮아져 빠르게 수익 구간에 진입**합니다.
+  </p>
+</div>
 
 ---
 
@@ -23,29 +80,33 @@
 
 **KCA(원화 기준 정액 적립식 투자)**는 매수 금액을 달러가 아닌 **'원화(KRW) 고정 금액'**으로 설정하여 환율 변동성까지 포트폴리오 조절 공식에 자동으로 녹여내는 스마트한 변동성 제어 전략입니다.
 
+### 달러 기준 DCA의 한계 (한국 투자자 시점)
+일반적으로 널리 알려진 DCA는 미국 달러(USD) 기준의 적립식 매수를 가정합니다. 하지만 원화(KRW)를 기반으로 생활하고 소득을 올리는 한국인 투자자가 미국 주식/ETF를 살 때는 **'환율(USD/KRW)'이라는 거대한 변수**가 추가됩니다.
+매월 일정 달러(USD)만큼 적립 매수를 집행하게 되면, 원화 기준으로는 환율이 치솟았을 때(달러가 비쌀 때) 더 많은 원화를 환전하여 투입해야 하므로 **원화 자산 관점에서 비효율적인 고가 매수**가 발생할 수 있습니다.
+
 <div style="background: var(--vp-c-bg-soft); border-left: 4px solid var(--vp-c-brand-1); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.02);">
   <h3 style="margin-top: 0; color: var(--vp-c-brand-1); font-weight: 600;">💡 KCA의 수학적 메커니즘</h3>
   <p style="line-height: 1.7; margin-bottom: 1rem;">
-    매 회차별 투자 금액을 원화 기준 고정 금액 <strong style="color: var(--vp-c-brand-1);">\(M_{KRW}\)</strong>로 고정하면, 최종 매수되는 주식 수량 <strong style="color: var(--vp-c-brand-1);">\(N\)</strong>은 다음과 같이 결정됩니다.
+    매 회차별 투자 금액을 원화 기준 고정 금액 <strong>M<sub>KRW</sub></strong>로 고정하면, 최종 매수되는 주식 수량 <strong>N</strong>은 다음과 같이 결정됩니다.
   </p>
-  <div style="text-align: center; font-size: 1.3rem; margin: 1rem 0; font-weight: 600; color: var(--vp-c-brand-1);">
-    \[N = \frac{M_{KRW}}{P_{USD} \times E}\]
+  <div style="text-align: center; font-size: 1.3rem; margin: 1.2rem 0; font-weight: 600; color: var(--vp-c-brand-1); background: var(--vp-c-bg-alt); padding: 0.8rem; border-radius: 6px; display: inline-block; width: 100%;">
+    N = M<sub>KRW</sub> / (P<sub>USD</sub> × E)
   </div>
   <p style="line-height: 1.7; margin-top: 1rem; font-size: 0.95rem; color: var(--vp-c-text-2);">
-    (단, \(P_{USD}\) = 자산의 달러 가격, \(E\) = USD/KRW 원-달러 환율)
+    (단, P<sub>USD</sub> = 자산의 달러 가격, E = USD/KRW 원-달러 환율)
   </p>
 </div>
 
 ### KCA의 자동 환율 조절 메커니즘
 
-| 시장 시나리오 | 환율 변동 (E) | 원화 가격 (\(P_{USD} \times E\)) | 자동으로 일어나는 현상 | 투자자 관점 효과 |
+| 시장 시나리오 | 환율 변동 (E) | 원화 가격 (P<sub>USD</sub> × E) | 자동으로 일어나는 현상 | 투자자 관점 효과 |
 | :--- | :---: | :---: | :--- | :--- |
-| **달러 강세기 (고환율)** | 급등 ⬆️ | 고평가 ⬆️ | 동일한 원화(\(M_{KRW}\))로 환전 시 달러 확보량 감소 ➡️ **주식 매수량 (\(N\)) 감소** | **비싼 달러와 비싼 자산의 과매수 방지** |
-| **달러 약세기 (저환율)** | 하락 ⬇️ | 저평가 ⬇️ | 동일한 원화(\(M_{KRW}\))로 환전 시 달러 확보량 증가 ➡️ **주식 매수량 (\(N\)) 증가** | **저렴해진 달러로 자산의 매집 극대화** |
+| **달러 강세기 (고환율)** | 급등 ⬆️ | 고평가 ⬆️ | 동일한 원화(M<sub>KRW</sub>)로 환전 시 달러 확보량 감소 ➡️ **주식 매수량 (N) 감소** | **비싼 달러와 비싼 자산의 과매수 방지** |
+| **달러 약세기 (저환율)** | 하락 ⬇️ | 저평가 ⬇️ | 동일한 원화(M<sub>KRW</sub>)로 환전 시 달러 확보량 증가 ➡️ **주식 매수량 (N) 증가** | **저렴해진 달러로 자산의 매집 극대화** |
 
-<div class="kca-chart-container" style="margin: 2.5rem 0; padding: 1.5rem; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-  <h4 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 600; color: var(--vp-c-brand-1); text-align: center;">📈 KCA의 주가-환율 상호 보완 및 변동성 완화 시뮬레이션</h4>
-  
+### 📊 [그래프 2] 주가-환율 역상관성에 따른 KCA 변동성 완화 효과
+
+<div class="kca-chart-container" style="margin: 2rem 0; padding: 1.5rem; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
   <svg viewBox="0 0 800 380" width="100%" height="auto" style="display: block; font-family: var(--vp-font-family-base);">
     <!-- Grids -->
     <g stroke="var(--vp-c-gutter)" stroke-width="1" stroke-dasharray="4,4">
@@ -61,21 +122,21 @@
 
     <!-- Axes -->
     <g stroke="var(--vp-c-text-3)" stroke-width="1.5">
-      <line x1="50" y1="310" x2="760" y2="310" /> <!-- X axis -->
-      <line x1="50" y1="40" x2="50" y2="310" />   <!-- Y axis -->
+      <line x1="50" y1="310" x2="760" y2="310" stroke="var(--vp-c-text-3)" />
+      <line x1="50" y1="40" x2="50" y2="310" stroke="var(--vp-c-text-3)" />
     </g>
 
     <!-- X Axis Labels -->
     <g fill="var(--vp-c-text-2)" font-size="12" text-anchor="middle">
       <text x="50" y="330">시작</text>
-      <text x="225" y="330">초기 하락 (환율 급등)</text>
-      <text x="400" y="330">시장 폭락기 (달러 최고점)</text>
-      <text x="575" y="330">회복기 (환율 안정화)</text>
+      <text x="225" y="330">주가 하락 (환율 상승)</text>
+      <text x="400" y="330">시장 폭락기 (환율 최고점)</text>
+      <text x="575" y="330">회복기 (환율 하락)</text>
       <text x="750" y="330">완전 회복</text>
     </g>
 
     <!-- Curves -->
-    <!-- 1. Stock Price USD (Red/Orange-ish Volatile) -->
+    <!-- 1. Stock Price USD (Red Volatile) -->
     <path d="M 50 110 C 150 90, 225 240, 310 280 C 400 290, 490 200, 575 140 C 660 80, 700 80, 750 70" fill="none" stroke="#ef4444" stroke-width="2.5" />
     
     <!-- 2. Exchange Rate USD/KRW (Blue Counter-Cyclical) -->
@@ -87,13 +148,13 @@
     <!-- Labels on Curves -->
     <g font-size="11" font-weight="600">
       <text x="700" y="60" fill="#ef4444" text-anchor="middle">미국 주가 (USD) ⬇️</text>
-      <text x="700" y="220" fill="#3b82f6" text-anchor="middle">USD/KRW 환율 ⬆️</text>
+      <text x="700" y="215" fill="#3b82f6" text-anchor="middle">USD/KRW 환율 ⬆️</text>
       <text x="640" y="158" fill="#10b981" text-anchor="middle">KCA 평단가 (KRW) 🟢</text>
     </g>
 
     <!-- Legend Box -->
     <g transform="translate(60, 50)">
-      <rect width="180" height="90" fill="var(--vp-c-bg)" stroke="var(--vp-c-gutter)" rx="6" />
+      <rect width="190" height="90" fill="var(--vp-c-bg)" stroke="var(--vp-c-gutter)" rx="6" />
       <circle cx="20" cy="25" r="5" fill="#ef4444" />
       <text x="35" y="29" fill="var(--vp-c-text-1)" font-size="12">미국 주가 (USD 변동)</text>
       
@@ -105,17 +166,19 @@
     </g>
   </svg>
   <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2); text-align: center;">
-    💡 <strong>역상관관계 효과:</strong> 시장 폭락기(가운데)에 주가는 폭락하지만 환율이 올라, 원화 기준 매수 단가는 **극단적인 골짜기를 만들지 않고 매우 평탄하고 안정적인 곡선**을 그립니다.
+    💡 <strong>역상관관계 효과:</strong> 시장 폭락기(가운데)에 미국 주가(빨간색)는 떨어지지만 환율(파란색)이 급등하여 상호 보완을 이룹니다. 이에 따라 원화 기준 매수 평단가(초록색)는 **골짜기를 만들지 않고 매우 평탄하고 안정적인 곡선**을 그리며 단기 급등락의 위험을 피해 갑니다.
   </p>
 </div>
 
-### ⚠️ KCA의 장기적 한계와 극복 방안
+---
+
+## 3. KCA의 장기적 한계와 극복 방안
 
 10년 넘는 초장기 투자 단계에 이르면, 적립식 투자(DCA/KCA)는 구조적으로 독특한 한계에 직면하게 되며, 이를 다음과 같은 방법으로 자연스럽게 극복해 나갑니다.
 
 * **자산 규모 대비 신규 투자금의 한계 (Buy the Dip화)**:
   10년 이상 적립을 계속하여 전체 포트폴리오의 몸집(예: 5억 원)이 거대해지면, 매달 적립하는 고정 원화 매수금(예: 100만 원)이 전체 평가액에서 차지하는 비중이 매우 작아집니다. 이 단계에 이르면 추가 매수 조정을 통한 전체 평단가 인하 효과(Averaging)는 미미해지며, 사실상 이미 보유한 거치식 자산이 시장 하락장에 노출되는 'Buy the Dip'의 형태로 수렴하게 됩니다.
-* **극복 1: 장기 복리의 눈덩이 효과 (Snowball Effect)**:
+* **극복 1: 장기 보유 복리의 눈덩이 효과 (Snowball Effect)**:
   하지만 포트폴리오가 거대해진 시점에서는 더 이상 신규 매수액의 평단가 제어가 주된 동력이 될 필요가 없습니다. 이미 자산의 규모 자체가 커졌기 때문에, 이제부터는 추가 투자금보다 **오랜 시간 다져진 장기 보유의 복리 효과**가 자산을 스스로 눈덩이처럼 굴려가는 핵심 주체(복리의 힘)로 작동하게 됩니다.
 * **극복 2: 매수 금액 상향을 통한 Buy Rebalancing**:
   소득 증가나 포트폴리오 성장 추세에 맞추어 **기본 적립 매수 금액 자체를 단계적으로 상향 조정**합니다. 동시에 비중이 크게 낮아진 자산에 더 큰 비중의 원화 매수금을 집중적으로 투입하는 **Buy Rebalancing**을 실행하여, 포트폴리오 규모가 늘어나도 적립식 고유의 비중 조절 효과를 최대한 유지할 수 있습니다.
@@ -124,10 +187,10 @@
 
 ---
 
-## 3. KCA 전략의 핵심 강점
+## 4. KCA 전략의 핵심 강점
 
 ### 1) 환율과 주가의 역상관관계를 활용한 포트폴리오 원화 가치 방어
-역사적으로 위기(금융위기, 팬데믹, 지정학적 위기 등)가 발생하면 **미국 주가(\(P_{USD}\))는 폭락**하지만, 안전자산 선호로 인해 **원-달러 환율(\(E\))은 급등**합니다.
+역사적으로 위기(금융위기, 팬데믹, 지정학적 위기 등)가 발생하면 미국 주가(P<sub>USD</sub>)는 폭락하지만, 안전자산 선호로 인해 원-달러 환율(E)은 급등합니다.
 * 주가 폭락에 따른 달러 기준 손실이 발생하더라도, 환율 상승이 원화 환산 자산 가치를 방어해 줍니다.
 * KCA를 통해 이때 주가와 환율이 맞물려 원화 환산 단가가 비교적 완만히 조정되므로, 투자자는 폭락장에서도 원화 계좌 잔고의 심한 변동성에 충격을 덜 받고 기계적 매수를 이어갈 수 있습니다.
 
@@ -139,7 +202,7 @@
 
 ---
 
-## 4. 실천 로드맵
+## 5. 실천 로드맵
 
 저의 KCA 투자 전략은 구체적으로 다음과 같은 원칙하에 시스템적으로 굴러갑니다.
 
