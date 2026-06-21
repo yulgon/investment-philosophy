@@ -2,6 +2,17 @@
 
 성공적인 장기 투자의 핵심은 시장의 타이밍(Time to Market)을 예측하는 오만을 버리고, 변동성을 이겨내어 영원히 시장에 살아남는 것입니다. 이를 위해 저는 전통적인 **DCA(Dollar Cost Averaging)** 전략을 한국 원화 투자자의 실정에 맞춰 혁신적으로 변형한 **KCA(KRW Cost Averaging)** 전략을 실천합니다.
 
+<script setup>
+import { defineAsyncComponent } from 'vue'
+
+const DcaChart = defineAsyncComponent(() =>
+  import('../components/DcaChart.vue')
+)
+const KcaChart = defineAsyncComponent(() =>
+  import('../components/KcaChart.vue')
+)
+</script>
+
 ---
 
 ## 1. DCA (Dollar Cost Averaging) 분석
@@ -15,64 +26,9 @@
 
 ### 📈 [그래프 1] DCA 적립식 vs 거치식(Lump-sum) 평단가 비교
 
-<div class="kca-chart-container" style="margin: 2rem 0; padding: 1.5rem; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-  <svg viewBox="0 0 800 360" width="100%" height="auto" style="display: block; font-family: var(--vp-font-family-base);">
-    <!-- Grids -->
-    <g stroke="var(--vp-c-gutter)" stroke-width="1" stroke-dasharray="4,4">
-      <line x1="50" y1="60" x2="750" y2="60" />
-      <line x1="50" y1="130" x2="750" y2="130" />
-      <line x1="50" y1="200" x2="750" y2="200" />
-      <line x1="50" y1="270" x2="750" y2="270" />
-    </g>
-
-    <!-- Axes -->
-    <g stroke="var(--vp-c-text-3)" stroke-width="1.5">
-      <line x1="50" y1="310" x2="760" y2="310" stroke="var(--vp-c-text-3)" />
-      <line x1="50" y1="40" x2="50" y2="310" stroke="var(--vp-c-text-3)" />
-    </g>
-
-    <!-- Labels -->
-    <g fill="var(--vp-c-text-2)" font-size="12" text-anchor="middle">
-      <text x="50" y="330">투자 시작</text>
-      <text x="283" y="330">시장 하락기</text>
-      <text x="516" y="330">바닥 및 횡보</text>
-      <text x="750" y="330">시장 회복</text>
-    </g>
-
-    <!-- Curves -->
-    <!-- 1. Market Price (Volatile Orange) -->
-    <path d="M 50 130 C 180 30, 280 310, 400 300 C 520 290, 630 150, 750 90" fill="none" stroke="#f59e0b" stroke-width="2.5" />
-    
-    <!-- 2. Lump-sum Cost (Red Flat Line) -->
-    <line x1="50" y1="130" x2="750" y2="130" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" />
-    
-    <!-- 3. DCA Average Cost (Green Smooth Line) -->
-    <path d="M 50 130 C 180 130, 280 210, 400 205 C 520 200, 630 170, 750 155" fill="none" stroke="#10b981" stroke-width="3.5" />
-
-    <!-- Labels on Curves -->
-    <g font-size="11" font-weight="600">
-      <text x="700" y="80" fill="#f59e0b" text-anchor="middle">시장 주가 📈</text>
-      <text x="700" y="120" fill="#ef4444" text-anchor="middle">거치식(Lump-sum) 평단가 🔴</text>
-      <text x="650" y="145" fill="#10b981" text-anchor="middle">DCA 적립식 평단가 🟢</text>
-    </g>
-
-    <!-- Legend Box -->
-    <g transform="translate(60, 50)">
-      <rect width="210" height="90" fill="var(--vp-c-bg)" stroke="var(--vp-c-gutter)" rx="6" />
-      <circle cx="20" cy="25" r="5" fill="#f59e0b" />
-      <text x="35" y="29" fill="var(--vp-c-text-1)" font-size="12">변동하는 시장 주가</text>
-      
-      <line x1="15" y1="48" x2="25" y2="48" stroke="#ef4444" stroke-width="2" stroke-dasharray="3,2" />
-      <text x="35" y="52" fill="var(--vp-c-text-1)" font-size="12">거치식 평단가 (시작시점 고정)</text>
-      
-      <circle cx="20" cy="71" r="5" fill="#10b981" />
-      <text x="35" y="75" fill="var(--vp-c-text-1)" font-size="12">DCA 적립식 평단가 (하향안정)</text>
-    </g>
-  </svg>
-  <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2); text-align: center;">
-    💡 <strong>DCA의 강점:</strong> 주가가 떨어질 때 더 많은 수량을 저가 매수하므로, 주가가 원래 수준을 완전히 회복하지 못하더라도 **적립식 평단가(초록색)가 낮아져 빠르게 수익 구간에 진입**합니다.
-  </p>
-</div>
+<ClientOnly>
+  <DcaChart />
+</ClientOnly>
 
 ---
 
@@ -106,69 +62,9 @@
 
 ### 📊 [그래프 2] 주가-환율 역상관성에 따른 KCA 변동성 완화 효과
 
-<div class="kca-chart-container" style="margin: 2rem 0; padding: 1.5rem; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-  <svg viewBox="0 0 800 380" width="100%" height="auto" style="display: block; font-family: var(--vp-font-family-base);">
-    <!-- Grids -->
-    <g stroke="var(--vp-c-gutter)" stroke-width="1" stroke-dasharray="4,4">
-      <line x1="50" y1="60" x2="750" y2="60" />
-      <line x1="50" y1="130" x2="750" y2="130" />
-      <line x1="50" y1="200" x2="750" y2="200" />
-      <line x1="50" y1="270" x2="750" y2="270" />
-      <!-- Vertical time markers -->
-      <line x1="225" y1="50" x2="225" y2="310" />
-      <line x1="400" y1="50" x2="400" y2="310" />
-      <line x1="575" y1="50" x2="575" y2="310" />
-    </g>
-
-    <!-- Axes -->
-    <g stroke="var(--vp-c-text-3)" stroke-width="1.5">
-      <line x1="50" y1="310" x2="760" y2="310" stroke="var(--vp-c-text-3)" />
-      <line x1="50" y1="40" x2="50" y2="310" stroke="var(--vp-c-text-3)" />
-    </g>
-
-    <!-- X Axis Labels -->
-    <g fill="var(--vp-c-text-2)" font-size="12" text-anchor="middle">
-      <text x="50" y="330">시작</text>
-      <text x="225" y="330">주가 하락 (환율 상승)</text>
-      <text x="400" y="330">시장 폭락기 (환율 최고점)</text>
-      <text x="575" y="330">회복기 (환율 하락)</text>
-      <text x="750" y="330">완전 회복</text>
-    </g>
-
-    <!-- Curves -->
-    <!-- 1. Stock Price USD (Red Volatile) -->
-    <path d="M 50 110 C 150 90, 225 240, 310 280 C 400 290, 490 200, 575 140 C 660 80, 700 80, 750 70" fill="none" stroke="#ef4444" stroke-width="2.5" />
-    
-    <!-- 2. Exchange Rate USD/KRW (Blue Counter-Cyclical) -->
-    <path d="M 50 240 C 150 250, 225 150, 310 80 C 400 70, 490 140, 575 200 C 660 250, 700 240, 750 230" fill="none" stroke="#3b82f6" stroke-width="2.5" />
-    
-    <!-- 3. KCA KRW Cost Basis (Green Smoothed Line) -->
-    <path d="M 50 180 C 150 178, 225 185, 310 189 C 400 190, 490 186, 575 180 C 660 175, 700 172, 750 170" fill="none" stroke="#10b981" stroke-width="3.5" />
-
-    <!-- Labels on Curves -->
-    <g font-size="11" font-weight="600">
-      <text x="700" y="60" fill="#ef4444" text-anchor="middle">미국 주가 (USD) ⬇️</text>
-      <text x="700" y="215" fill="#3b82f6" text-anchor="middle">USD/KRW 환율 ⬆️</text>
-      <text x="640" y="158" fill="#10b981" text-anchor="middle">KCA 평단가 (KRW) 🟢</text>
-    </g>
-
-    <!-- Legend Box -->
-    <g transform="translate(60, 50)">
-      <rect width="190" height="90" fill="var(--vp-c-bg)" stroke="var(--vp-c-gutter)" rx="6" />
-      <circle cx="20" cy="25" r="5" fill="#ef4444" />
-      <text x="35" y="29" fill="var(--vp-c-text-1)" font-size="12">미국 주가 (USD 변동)</text>
-      
-      <circle cx="20" cy="48" r="5" fill="#3b82f6" />
-      <text x="35" y="52" fill="var(--vp-c-text-1)" font-size="12">USD/KRW 환율 (역상관)</text>
-      
-      <circle cx="20" cy="71" r="5" fill="#10b981" />
-      <text x="35" y="75" fill="var(--vp-c-text-1)" font-size="12">KCA 매수 평단 (원화)</text>
-    </g>
-  </svg>
-  <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2); text-align: center;">
-    💡 <strong>역상관관계 효과:</strong> 시장 폭락기(가운데)에 미국 주가(빨간색)는 떨어지지만 환율(파란색)이 급등하여 상호 보완을 이룹니다. 이에 따라 원화 기준 매수 평단가(초록색)는 **골짜기를 만들지 않고 매우 평탄하고 안정적인 곡선**을 그리며 단기 급등락의 위험을 피해 갑니다.
-  </p>
-</div>
+<ClientOnly>
+  <KcaChart />
+</ClientOnly>
 
 ---
 
@@ -194,7 +90,7 @@
 * 주가 폭락에 따른 달러 기준 손실이 발생하더라도, 환율 상승이 원화 환산 자산 가치를 방어해 줍니다.
 * KCA를 통해 이때 주가와 환율이 맞물려 원화 환산 단가가 비교적 완만히 조정되므로, 투자자는 폭락장에서도 원화 계좌 잔고의 심한 변동성에 충격을 덜 받고 기계적 매수를 이어갈 수 있습니다.
 
-### 2) 예측을 거부하는 '마음 편한 투자' (Time to Market의 역행)
+### 2) 예측을 거부하는 '마음 편한 투자' (Time to Market of 역행)
 시장 타이밍과 환율 전망을 예측하여 거래를 집행하려는 시도는 대부분 실패로 돌아갑니다. KCA는 이러한 인간의 편향을 원천 차단합니다.
 * 환율이 1,200원일 때나 1,400원일 때나 고민하지 않고 고정된 원화 금액을 매일/매월 적립 매수합니다.
 * 자동으로 환율 변동의 평균 단가 수렴 효과(Currency Averaging)가 발생하여 장기적으로 환헤지 비용 없이 자연스러운 환율 방어가 이루어집니다.
