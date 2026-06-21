@@ -319,10 +319,10 @@
   <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">돈의 방정식</h3>
-      <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">머니 투데이 등 / 저자 확인 필요</p>
-      <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">부를 축적해 나가는 과정에서 필요한 소득 극대화, 자산 복리화, 안정적 현금 흐름 배분의 수학적 로드맵을 체계적으로 구조화합니다.</p>
+      <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">모건 하우절 (Morgan Housel)</p>
+      <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">부의 본질을 꿰뚫는 모건 하우절의 통찰. 부자가 되는 기술보다 부자로 남는 마인드가 중요하며, '소비 통제와 높은 저축률, 그리고 시간의 곱하기'라는 단순한 방정식이 최고의 재무 공식임을 역설합니다.</p>
     </div>
-    <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(239, 68, 68, 0.15); color: #ef4444; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">자산 설계</span></div>
+    <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(239, 68, 68, 0.15); color: #ef4444; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">부의 철학</span></div>
   </div>
 
   <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
