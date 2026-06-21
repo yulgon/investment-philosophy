@@ -128,7 +128,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onErrorCaptured, nextTick } from 'vue'
+import { ref, computed, onMounted, onErrorCaptured, watch, nextTick } from 'vue'
 import { withBase } from 'vitepress'
 
 const TIMELINE_START = 2010
@@ -187,6 +187,22 @@ const groupedByYear = computed(() => {
 })
 
 // ---------- Data fetch ----------
+// 스크롤 애니메이션 Observer — 초기 로드 시에만 사용
+function setupScrollObserver() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible')
+    })
+  }, { threshold: 0.05 })
+  document.querySelectorAll('.timeline-node').forEach(el => observer.observe(el))
+}
+
+// 필터/정렬 변경 시: 애니메이션 없이 즉시 모두 표시
+watch([activeFilter, sortAsc], async () => {
+  await nextTick()
+  document.querySelectorAll('.timeline-node').forEach(el => el.classList.add('visible'))
+})
+
 onMounted(async () => {
   try {
     const url = withBase('/data/investments.csv')
@@ -212,14 +228,7 @@ onMounted(async () => {
     loading.value = false
 
     await nextTick()
-    setTimeout(() => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) entry.target.classList.add('visible')
-        })
-      }, { threshold: 0.05 })
-      document.querySelectorAll('.timeline-node').forEach(el => observer.observe(el))
-    }, 300)
+    setTimeout(setupScrollObserver, 300)
   } catch (e) {
     errorMsg.value = 'Fetch/Parse Error: ' + String(e)
     loading.value = false
