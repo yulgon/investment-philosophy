@@ -22,6 +22,7 @@ export default defineConfig({
             { text: '기본 핵심 원칙', link: '/philosophy/principles' },
             { text: '보글헤드 10대 철학', link: '/philosophy/bogleheads' },
             { text: '자산 배분 전략', link: '/philosophy/allocation' },
+            { text: '나의 투자 연혁 (History)', link: '/philosophy/history' },
             { text: '투자 심리와 마인드셋', link: '/philosophy/psychology' }
           ]
         }
