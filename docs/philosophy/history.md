@@ -10,6 +10,7 @@
 
 <script setup>
 import { ref, onMounted, computed } from 'vue'
+import { withBase } from 'vitepress'
 
 const rawData = ref([])
 const activeFilter = ref('all')
@@ -25,7 +26,7 @@ const satelliteCount = computed(() => rawData.value.filter(item => item.role ===
 
 onMounted(async () => {
   try {
-    const response = await fetch('/investment-philosophy/data/investments.csv')
+    const response = await fetch(withBase('/data/investments.csv'))
     const text = await response.text()
     const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0)
     
@@ -94,6 +95,7 @@ const groupedByYear = computed(() => {
 })
 </script>
 
+<ClientOnly>
 <div v-if="loading" class="loading-box">
   데이터를 불러오는 중입니다...
 </div>
@@ -178,6 +180,7 @@ const groupedByYear = computed(() => {
   </div>
 
 </div>
+</ClientOnly>
 
 <style scoped>
 .loading-box {
