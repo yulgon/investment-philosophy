@@ -89,7 +89,28 @@ yearStart,yearEnd,name,type,role,status
 2014,2014,삼성SDS,stock,satellite,sold
 2015,2015,한국쉘석유,stock,satellite,sold
 2015,2015,코데즈컴바인,stock,satellite,sold
-
-
-
-
+2022,,TSM,stock,satellite,holding
+2025,,SPMO,etf,core,holding
+2024,,EDV,etf,core,holding
+2023,,TLT,etf,core,holding
+2025,,RBLX,stock,satellite,holding
+2024,,VXUS,etf,core,holding
+2023,,ABBV,stock,satellite,holding
+2025,,KIWOOM,etf,core,holding
+2026,,MRVL,stock,satellite,holding
+2024,,VTI,etf,core,holding
+2026,,ALAB,stock,satellite,holding
+2026,,CRDO,stock,satellite,holding
+2025,,KODEX 코리아밸류업,etf,core,holding
+2025,,1Q 미국나스닥100미국채혼합50액티브,etf,satellite,holding
+2023,,KODEX TRF3070,etf,core,holding
+2023,,ACE 미국S&P500,etf,core,holding
+2025,,FIG,stock,satellite,holding
+2023,,VOO,etf,core,holding
+2023,,PLTR,stock,satellite,holding
+2025,,NFLX,stock,satellite,holding
+2023,,ARCC,stock,satellite,holding
+2025,,BMNR,stock,satellite,holding
+2023,,SCHD,etf,core,holding
+2025,,CRCL,stock,satellite,holding
+2021,,삼성전자,stock,core,holding
