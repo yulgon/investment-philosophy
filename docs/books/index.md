@@ -22,8 +22,9 @@
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; margin-bottom: 3rem;">
 
-  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+  <div id="bogle-common-sense" style="background: var(--vp-c-bg-soft); border: 1.5px solid #d97706; box-shadow: 0 0 10px rgba(217, 119, 6, 0.1); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
+      <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem; display: inline-block;">👑 인생 도서 (My Favorite)</span>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">모든 주식을 소유하라</h3>
       <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">존 보글 (John C. Bogle)</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">보글헤드의 바이블. 개별 종목 분석 대신 전체 시장 지수를 저비용 인덱스 펀드로 사서 장기 보유하라는 단순하고 확실한 진리.</p>
@@ -31,8 +32,9 @@
     <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(59, 130, 246, 0.15); color: #3b82f6; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">인덱스 투자</span></div>
   </div>
 
-  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+  <div id="bogle-stay-the-course" style="background: var(--vp-c-bg-soft); border: 1.5px solid #d97706; box-shadow: 0 0 10px rgba(217, 119, 6, 0.1); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
+      <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem; display: inline-block;">👑 인생 도서 (My Favorite)</span>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">Stay the Course</h3>
       <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">존 보글 (John C. Bogle)</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">인덱스 펀드의 개척 과정과 투자자를 위해 평생을 바친 보글의 집념 및 뮤추얼 펀드 업계의 혁신 역사를 담은 대작.</p>
