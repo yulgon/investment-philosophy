@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/investment-philosophy/',
+  base: '/',
   title: "원빌리언달러 도네이션",
   description: "투자는 과정일 뿐, 목적지는 세상에 대한 기여입니다. 원빌리언달러 기부를 향한 자산 설계 아카이브.",
   lang: 'ko-KR',
