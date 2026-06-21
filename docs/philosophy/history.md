@@ -14,8 +14,15 @@ import { defineAsyncComponent } from 'vue'
 const InvestmentHistory = defineAsyncComponent(() =>
   import('../components/InvestmentHistory.vue')
 )
+
+const AnnualPerformance = defineAsyncComponent(() =>
+  import('../components/AnnualPerformance.vue')
+)
 </script>
 
 <ClientOnly>
   <InvestmentHistory />
+  <div style="margin-top: 3rem;"></div>
+  <AnnualPerformance />
 </ClientOnly>
+

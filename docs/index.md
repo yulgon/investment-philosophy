@@ -44,3 +44,16 @@ features:
     👉 위의 버튼을 눌러, 이 장대한 목표를 향해 흔들림 없이 나아가는 구체적인 투자 철학, 투자 전략 및 독서 노트를 만나보세요.
   </p>
 </div>
+
+<script setup>
+import { defineAsyncComponent } from 'vue'
+
+const AnnualPerformance = defineAsyncComponent(() =>
+  import('./components/AnnualPerformance.vue')
+)
+</script>
+
+<ClientOnly>
+  <AnnualPerformance />
+</ClientOnly>
+
