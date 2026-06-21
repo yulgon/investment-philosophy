@@ -78,9 +78,8 @@
     <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(59, 130, 246, 0.15); color: #3b82f6; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">자금 관리</span></div>
   </div>
 
-  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid #d97706; box-shadow: 0 0 10px rgba(217, 119, 6, 0.1); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
-      <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem; display: inline-block;">⭐ 한국 투자 명저</span>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">거인의 포트폴리오</h3>
       <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">강환국</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">세계 최고 퀀트 투자자들의 자산 배분 전략(올웨더, 모멘텀, 듀얼모멘텀 등)을 한국 실정에 맞게 재해석하여 누구나 따라 할 수 있도록 체계화한 한국 퀀트 투자의 교과서.</p>
@@ -111,7 +110,7 @@
 ---
 
 ## 2. 투자 심리 & 라이프 설계
-흔들리는 감정을 다스리고 인생 전반에 걸친 합리적인 가치투자 마인드셋을 가꾸는 데 도움을 준 책들입니다.
+흔들리는 감정을 다스리고 인생 전반에 걸친 합리적인 가치투자 마인드셋을 가꾸는데 도움을 준 책들입니다.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; margin-bottom: 3rem;">
 
@@ -170,8 +169,9 @@
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; margin-bottom: 3rem;">
 
-  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid #d97706; box-shadow: 0 0 10px rgba(217, 119, 6, 0.1); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
+      <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem; display: inline-block;">⭐ 추천 도서 (My Recommendation)</span>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">브라질에 비가 내리면...</h3>
       <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">피터 나바로 (Peter Navarro)</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">날씨, 거시 지표, 금리 같은 매크로 현상이 특정 산업군과 주가에 파동처럼 전파되는 흐름을 인과관계 체계로 파악하는 안목을 줍니다.</p>
@@ -215,9 +215,8 @@
     <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">외환/환율</span></div>
   </div>
 
-  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid #d97706; box-shadow: 0 0 10px rgba(217, 119, 6, 0.1); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
-      <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem; display: inline-block;">⭐ 한국 투자 명저</span>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">앞으로 3년 경제전쟁의 미래</h3>
       <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">오건영</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">달러·금리·유동성의 삼각관계와 연준(Fed) 정책이 글로벌 자산 시장에 미치는 파급 효과를 알기 쉽게 설명. 매크로를 읽는 투자자의 필독서.</p>
@@ -270,9 +269,8 @@
     <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(245, 158, 11, 0.15); color: #f59e0b; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">채권 / 절세</span></div>
   </div>
 
-  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid #d97706; box-shadow: 0 0 10px rgba(217, 119, 6, 0.1); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
-      <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem; display: inline-block;">⭐ 한국 투자 명저</span>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">잠든 사이 월급 버는 미국 배당주 투자</h3>
       <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">소수몽키</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">미국 우량 배당주에 꾸준히 투자하여 잠자는 동안에도 달러 배당금을 수령하는 시스템을 만드는 방법을 초보자도 따라 할 수 있도록 친절하게 안내합니다.</p>
@@ -280,8 +278,9 @@
     <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(245, 158, 11, 0.15); color: #f59e0b; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">미국 배당주</span></div>
   </div>
 
-  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid #d97706; box-shadow: 0 0 10px rgba(217, 119, 6, 0.1); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
+      <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem; display: inline-block;">⭐ 추천 도서 (My Recommendation)</span>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">아마도 가장 쉬운 배당투자 설명서</h3>
       <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">권대경</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">배당투자의 원리부터 종목 선별 기준, 포트폴리오 구성까지 복잡한 이론을 최대한 쉽고 실용적으로 설명한 국내 배당투자 입문서의 정석.</p>

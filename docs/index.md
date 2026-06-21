@@ -32,7 +32,7 @@ features:
 ---
 
 <div class="custom-home-section" style="margin-top: 4rem; padding: 2.5rem; border-radius: 12px; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
-  <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1.2rem; color: var(--vp-c-brand-1);">나의 사명과 비전</h2>
+  <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1.2rem; color: var(--vp-c-brand-1);">나의 꿈</h2>
   <p style="line-height: 1.8; color: var(--vp-c-text-2); font-size: 1.05rem;">
     투자에 발을 들이고 몇백만 원, 몇천만 원의 작은 이득과 손실에 온 정신을 빼앗겨 일희일비하던 때가 있었습니다. 
     시장의 미세한 변동에 일상의 감정이 휩쓸리는 우물 안 개구리 같던 저 자신을 돌아보게 만든 것은, 바로 <strong>워렌 버핏이 원빌리언 달러(약 1.3조 원)를 세상에 기부했다는 소식</strong>이었습니다.
