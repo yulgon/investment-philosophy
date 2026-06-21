@@ -58,7 +58,6 @@
           v-for="group in groupedByYear"
           :key="group.year"
           class="timeline-node"
-          ref="nodeRefs"
         >
           <div class="node-year-badge">{{ group.year }}</div>
           <div class="node-cards-container">
@@ -68,27 +67,57 @@
               class="invest-card"
               :class="item.status"
             >
+              <!-- Card Header -->
               <div class="card-header">
-                <span class="symbol-name">{{ item.name }}</span>
-                <span class="badge role-badge" :class="item.role">
-                  {{ item.role === 'core' ? '🪐 행성 (Core)' : '🛰️ 위성 (Sat)' }}
-                </span>
-              </div>
-              <div class="card-details">
-                <div class="detail-row">
-                  <span class="detail-label">투자 기간:</span>
-                  <span class="detail-value">{{ item.yearStart }} ~ {{ item.yearEnd || '현재 진행형' }}</span>
+                <div class="card-title-row">
+                  <span class="symbol-name">{{ item.name }}</span>
+                  <span class="badge role-badge" :class="item.role">
+                    {{ item.role === 'core' ? '🪐 Core' : '🛰️ Sat' }}
+                  </span>
                 </div>
-                <div class="detail-row">
-                  <span class="detail-label">유형:</span>
-                  <span class="detail-value text-uppercase">{{ item.type }}</span>
+                <div class="type-row">
+                  <span class="type-tag" :class="item.type">{{ item.type.toUpperCase() }}</span>
+                  <span class="status-badge" :class="item.status">
+                    {{ item.status === 'holding' ? '🟢 보유' : '⚪ 매도' }}
+                  </span>
                 </div>
               </div>
-              <div class="card-footer">
-                <span class="status-indicator" :class="item.status">
-                  {{ item.status === 'holding' ? '🟢 매일 적립 매수 중' : '⚪ 매도 완료' }}
-                </span>
+
+              <!-- Duration Bar -->
+              <div class="duration-section">
+                <div class="duration-meta">
+                  <span class="duration-years">
+                    {{ durationYears(item) }}
+                    <small>년</small>
+                  </span>
+                  <span class="duration-range">
+                    {{ item.yearStart }} → {{ item.yearEnd || '현재' }}
+                  </span>
+                </div>
+                <div class="duration-track">
+                  <div class="duration-track-bg">
+                    <!-- Year labels -->
+                    <div class="track-labels">
+                      <span>{{ TIMELINE_START }}</span>
+                      <span>{{ TIMELINE_END }}</span>
+                    </div>
+                    <!-- Bar -->
+                    <div
+                      class="duration-bar"
+                      :class="item.status"
+                      :style="{
+                        left: barLeft(item) + '%',
+                        width: barWidth(item) + '%'
+                      }"
+                    >
+                      <span v-if="barWidth(item) > 12" class="bar-inner-label">
+                        {{ durationYears(item) }}y
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -102,29 +131,50 @@
 import { ref, computed, onMounted, onErrorCaptured, nextTick } from 'vue'
 import { withBase } from 'vitepress'
 
-const rawData = ref([])
+const TIMELINE_START = 2010
+const TIMELINE_END   = new Date().getFullYear()
+const TIMELINE_SPAN  = TIMELINE_END - TIMELINE_START
+
+const rawData      = ref([])
 const activeFilter = ref('all')
-const sortAsc = ref(true)
-const loading = ref(true)
-const errorMsg = ref(null)
+const sortAsc      = ref(true)
+const loading      = ref(true)
+const errorMsg     = ref(null)
 
 onErrorCaptured((err) => {
   errorMsg.value = 'Rendering Error: ' + String(err)
   return false
 })
 
-const totalCount = computed(() => rawData.value.length)
-const holdingCount = computed(() => rawData.value.filter(i => i.status === 'holding').length)
-const soldCount = computed(() => rawData.value.filter(i => i.status === 'sold').length)
-const coreCount = computed(() => rawData.value.filter(i => i.role === 'core').length)
+// ---------- Stats ----------
+const totalCount     = computed(() => rawData.value.length)
+const holdingCount   = computed(() => rawData.value.filter(i => i.status === 'holding').length)
+const soldCount      = computed(() => rawData.value.filter(i => i.status === 'sold').length)
+const coreCount      = computed(() => rawData.value.filter(i => i.role === 'core').length)
 const satelliteCount = computed(() => rawData.value.filter(i => i.role === 'satellite').length)
 
+// ---------- Duration helpers ----------
+function effectiveEnd(item) {
+  return item.yearEnd ?? TIMELINE_END
+}
+function durationYears(item) {
+  return Math.max(1, effectiveEnd(item) - item.yearStart)
+}
+function barLeft(item) {
+  return Math.max(0, ((item.yearStart - TIMELINE_START) / TIMELINE_SPAN) * 100)
+}
+function barWidth(item) {
+  const w = (durationYears(item) / TIMELINE_SPAN) * 100
+  return Math.min(100 - barLeft(item), Math.max(2, w))
+}
+
+// ---------- Grouped / filtered data ----------
 const groupedByYear = computed(() => {
   let filtered = rawData.value
-  if (activeFilter.value === 'core') filtered = filtered.filter(i => i.role === 'core')
+  if      (activeFilter.value === 'core')      filtered = filtered.filter(i => i.role === 'core')
   else if (activeFilter.value === 'satellite') filtered = filtered.filter(i => i.role === 'satellite')
-  else if (activeFilter.value === 'holding') filtered = filtered.filter(i => i.status === 'holding')
-  else if (activeFilter.value === 'sold') filtered = filtered.filter(i => i.status === 'sold')
+  else if (activeFilter.value === 'holding')   filtered = filtered.filter(i => i.status === 'holding')
+  else if (activeFilter.value === 'sold')      filtered = filtered.filter(i => i.status === 'sold')
 
   const groups = {}
   filtered.forEach(item => {
@@ -136,12 +186,13 @@ const groupedByYear = computed(() => {
   return years.map(yr => ({ year: yr, items: groups[yr] }))
 })
 
+// ---------- Data fetch ----------
 onMounted(async () => {
   try {
     const url = withBase('/data/investments.csv')
     const response = await fetch(url)
     if (!response.ok) throw new Error('HTTP ' + response.status + ' fetching ' + url)
-    const text = await response.text()
+    const text  = await response.text()
     const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0)
     const parsed = []
     for (let i = 1; i < lines.length; i++) {
@@ -149,11 +200,11 @@ onMounted(async () => {
       if (parts.length >= 6) {
         parsed.push({
           yearStart: parseInt(parts[0]),
-          yearEnd: parts[1] ? parseInt(parts[1]) : null,
-          name: parts[2],
-          type: parts[3],
-          role: parts[4],
-          status: parts[5].trim()
+          yearEnd:   parts[1] ? parseInt(parts[1]) : null,
+          name:      parts[2],
+          type:      parts[3],
+          role:      parts[4],
+          status:    parts[5].trim()
         })
       }
     }
@@ -177,6 +228,7 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+/* ===== Layout ===== */
 .loading-box {
   text-align: center;
   padding: 4rem;
@@ -197,42 +249,40 @@ onMounted(async () => {
   font-family: monospace;
   font-size: 0.85rem;
 }
-.history-container {
-  margin-top: 2rem;
-}
+.history-container { margin-top: 2rem; }
 
-/* Stats Cards */
+/* ===== Stats Grid ===== */
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
   margin-bottom: 2rem;
 }
 .stat-card {
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-gutter);
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.25rem;
 }
 .stat-label {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--vp-c-text-3);
-  margin-bottom: 0.25rem;
   text-align: center;
 }
 .stat-value {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.6rem;
+  font-weight: 800;
 }
-.text-green { color: #10b981; }
-.text-gray  { color: #6b7280; }
-.text-blue  { color: #3b82f6; }
+.text-green  { color: #10b981; }
+.text-gray   { color: #6b7280; }
+.text-blue   { color: #3b82f6; }
 .text-purple { color: #a855f7; }
 
-/* Controls Bar */
+/* ===== Controls ===== */
 .controls-bar {
   display: flex;
   justify-content: space-between;
@@ -242,20 +292,16 @@ onMounted(async () => {
   margin-bottom: 3rem;
   background: var(--vp-c-bg-soft);
   padding: 0.8rem 1.2rem;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid var(--vp-c-gutter);
 }
-.filter-buttons {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
+.filter-buttons { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .filter-buttons button {
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-gutter);
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
   cursor: pointer;
   transition: all 0.2s;
   color: var(--vp-c-text-1);
@@ -269,14 +315,15 @@ onMounted(async () => {
 .sort-toggle {
   background: var(--vp-c-bg);
   border: 1px solid var(--vp-c-gutter);
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
   cursor: pointer;
   color: var(--vp-c-text-1);
+  white-space: nowrap;
 }
 
-/* Timeline */
+/* ===== Timeline ===== */
 .timeline-wrapper {
   position: relative;
   padding-left: 2.5rem;
@@ -292,10 +339,10 @@ onMounted(async () => {
 }
 .timeline-node {
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(24px);
+  transition: all 0.55s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .timeline-node.visible {
   opacity: 1;
@@ -308,76 +355,163 @@ onMounted(async () => {
   background: var(--vp-c-brand-1);
   color: #fff;
   font-weight: 700;
-  font-size: 0.9rem;
-  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 20px;
   box-shadow: 0 0 0 4px var(--vp-c-bg);
   z-index: 10;
 }
 .node-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.2rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
 }
 
-/* Investment Cards */
+/* ===== Investment Card ===== */
 .invest-card {
   background: var(--vp-c-bg-soft);
   border: 1px solid var(--vp-c-gutter);
-  border-radius: 8px;
-  padding: 1.2rem;
+  border-radius: 12px;
+  padding: 1rem 1.1rem 0.9rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  gap: 0.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 .invest-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
-.invest-card.holding { border-left: 3px solid #10b981; }
-.invest-card.sold    { border-left: 3px solid #6b7280; opacity: 0.85; }
+.invest-card.holding { border-left: 4px solid #10b981; }
+.invest-card.sold    { border-left: 4px solid #9ca3af; opacity: 0.88; }
 
-.card-header {
+/* Card Header */
+.card-header { display: flex; flex-direction: column; gap: 0.4rem; }
+
+.card-title-row {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.8rem;
 }
 .symbol-name {
-  font-weight: 600;
-  font-size: 1.05rem;
+  font-weight: 700;
+  font-size: 1rem;
   color: var(--vp-c-text-1);
+  line-height: 1.3;
 }
 .badge {
-  font-size: 0.75rem;
-  padding: 0.15rem 0.4rem;
-  border-radius: 4px;
-  font-weight: 500;
+  font-size: 0.7rem;
+  padding: 0.12rem 0.45rem;
+  border-radius: 20px;
+  font-weight: 600;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .role-badge.core      { background: rgba(59,130,246,0.15); color: #3b82f6; }
 .role-badge.satellite { background: rgba(168,85,247,0.15); color: #a855f7; }
 
-.card-details {
-  font-size: 0.85rem;
-  color: var(--vp-c-text-2);
-  margin-bottom: 1rem;
-  border-top: 1px dashed var(--vp-c-gutter);
-  padding-top: 0.6rem;
+.type-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
-.detail-row {
+.type-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-gutter);
+  color: var(--vp-c-text-2);
+}
+.type-tag.etf   { background: rgba(251,191,36,0.15); color: #b45309; border-color: rgba(251,191,36,0.4); }
+.type-tag.stock { background: rgba(99,102,241,0.12); color: #4338ca; border-color: rgba(99,102,241,0.3); }
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+}
+.status-badge.holding { color: #10b981; }
+.status-badge.sold    { color: #9ca3af; }
+
+/* ===== Duration Bar ===== */
+.duration-section { display: flex; flex-direction: column; gap: 0.35rem; }
+
+.duration-meta {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.3rem;
+  align-items: baseline;
 }
-.detail-label { color: var(--vp-c-text-3); }
-.text-uppercase { text-transform: uppercase; }
+.duration-years {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
+  line-height: 1;
+}
+.duration-years small {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--vp-c-text-3);
+  margin-left: 2px;
+}
+.duration-range {
+  font-size: 0.75rem;
+  color: var(--vp-c-text-3);
+  font-variant-numeric: tabular-nums;
+}
 
-.status-indicator { font-size: 0.8rem; font-weight: 500; }
-.status-indicator.holding { color: #10b981; }
-.status-indicator.sold    { color: #6b7280; }
+.duration-track { padding-top: 0.1rem; }
+.duration-track-bg {
+  position: relative;
+  height: 28px;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-gutter);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.track-labels {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6px;
+  font-size: 0.62rem;
+  color: var(--vp-c-text-3);
+  pointer-events: none;
+  z-index: 1;
+  font-variant-numeric: tabular-nums;
+}
+.duration-bar {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: width 0.5s ease, left 0.5s ease;
+  min-width: 6px;
+}
+.duration-bar.holding {
+  background: linear-gradient(90deg, #059669, #10b981);
+  box-shadow: 0 0 8px rgba(16,185,129,0.4);
+}
+.duration-bar.sold {
+  background: linear-gradient(90deg, #4b5563, #9ca3af);
+}
+.bar-inner-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
 </style>
