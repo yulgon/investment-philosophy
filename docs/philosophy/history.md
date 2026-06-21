@@ -96,89 +96,91 @@ const groupedByYear = computed(() => {
 </script>
 
 <ClientOnly>
-<div v-if="loading" class="loading-box">
-  데이터를 불러오는 중입니다...
-</div>
-
-<div v-else class="history-container">
-  
-  <!-- Stats Cards Grid -->
-  <div class="stats-grid">
-    <div class="stat-card">
-      <span class="stat-label">총 투자 종목</span>
-      <span class="stat-value">{{ totalCount }}</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-label">현재 보유 중</span>
-      <span class="stat-value text-green">{{ holdingCount }}</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-label">매도 완료</span>
-      <span class="stat-value text-gray">{{ soldCount }}</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-label">핵심 행성(Core)</span>
-      <span class="stat-value text-blue">{{ coreCount }}</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-label">주변 위성(Satellite)</span>
-      <span class="stat-value text-purple">{{ satelliteCount }}</span>
-    </div>
+<div>
+  <div v-if="loading" class="loading-box">
+    데이터를 불러오는 중입니다...
   </div>
 
-  <!-- Filters & Controls Bar -->
-  <div class="controls-bar">
-    <div class="filter-buttons">
-      <button :class="{ active: activeFilter === 'all' }" @click="activeFilter = 'all'">전체</button>
-      <button :class="{ active: activeFilter === 'core' }" @click="activeFilter = 'core'">🪐 핵심 행성</button>
-      <button :class="{ active: activeFilter === 'satellite' }" @click="activeFilter = 'satellite'">🛰️ 주변 위성</button>
-      <button :class="{ active: activeFilter === 'holding' }" @click="activeFilter = 'holding'">🟢 보유 중</button>
-      <button :class="{ active: activeFilter === 'sold' }" @click="activeFilter = 'sold'">⚪ 매도 완료</button>
-    </div>
-    <button class="sort-toggle" @click="sortAsc = !sortAsc">
-      {{ sortAsc ? '⏰ 과거순 ⬆️' : '⏰ 최신순 ⬇️' }}
-    </button>
-  </div>
-
-  <!-- Vertical Timeline -->
-  <div class="timeline-wrapper">
-    <div class="timeline-line"></div>
+  <div v-else class="history-container">
     
-    <div v-for="group in groupedByYear" :key="group.year" class="timeline-node">
-      <!-- Year Header -->
-      <div class="node-year-badge">{{ group.year }}</div>
+    <!-- Stats Cards Grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">총 투자 종목</span>
+        <span class="stat-value">{{ totalCount }}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">현재 보유 중</span>
+        <span class="stat-value text-green">{{ holdingCount }}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">매도 완료</span>
+        <span class="stat-value text-gray">{{ soldCount }}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">핵심 행성(Core)</span>
+        <span class="stat-value text-blue">{{ coreCount }}</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">주변 위성(Satellite)</span>
+        <span class="stat-value text-purple">{{ satelliteCount }}</span>
+      </div>
+    </div>
+
+    <!-- Filters & Controls Bar -->
+    <div class="controls-bar">
+      <div class="filter-buttons">
+        <button :class="{ active: activeFilter === 'all' }" @click="activeFilter = 'all'">전체</button>
+        <button :class="{ active: activeFilter === 'core' }" @click="activeFilter = 'core'">🪐 핵심 행성</button>
+        <button :class="{ active: activeFilter === 'satellite' }" @click="activeFilter = 'satellite'">🛰️ 주변 위성</button>
+        <button :class="{ active: activeFilter === 'holding' }" @click="activeFilter = 'holding'">🟢 보유 중</button>
+        <button :class="{ active: activeFilter === 'sold' }" @click="activeFilter = 'sold'">⚪ 매도 완료</button>
+      </div>
+      <button class="sort-toggle" @click="sortAsc = !sortAsc">
+        {{ sortAsc ? '⏰ 과거순 ⬆️' : '⏰ 최신순 ⬇️' }}
+      </button>
+    </div>
+
+    <!-- Vertical Timeline -->
+    <div class="timeline-wrapper">
+      <div class="timeline-line"></div>
       
-      <!-- Cards List -->
-      <div class="node-cards-container">
-        <div v-for="(item, idx) in group.items" :key="idx" class="invest-card" :class="item.status">
-          <div class="card-header">
-            <span class="symbol-name">{{ item.name }}</span>
-            <span class="badge role-badge" :class="item.role">
-              {{ item.role === 'core' ? '🪐 행성 (Core)' : '🛰️ 위성 (Sat)' }}
-            </span>
-          </div>
-          
-          <div class="card-details">
-            <div class="detail-row">
-              <span class="detail-label">투자 기간:</span>
-              <span class="detail-value">{{ item.yearStart }} ~ {{ item.yearEnd || '현재 진행형' }}</span>
+      <div v-for="group in groupedByYear" :key="group.year" class="timeline-node">
+        <!-- Year Header -->
+        <div class="node-year-badge">{{ group.year }}</div>
+        
+        <!-- Cards List -->
+        <div class="node-cards-container">
+          <div v-for="(item, idx) in group.items" :key="idx" class="invest-card" :class="item.status">
+            <div class="card-header">
+              <span class="symbol-name">{{ item.name }}</span>
+              <span class="badge role-badge" :class="item.role">
+                {{ item.role === 'core' ? '🪐 행성 (Core)' : '🛰️ 위성 (Sat)' }}
+              </span>
             </div>
-            <div class="detail-row">
-              <span class="detail-label">유형:</span>
-              <span class="detail-value text-uppercase">{{ item.type }}</span>
+            
+            <div class="card-details">
+              <div class="detail-row">
+                <span class="detail-label">투자 기간:</span>
+                <span class="detail-value">{{ item.yearStart }} ~ {{ item.yearEnd || '현재 진행형' }}</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">유형:</span>
+                <span class="detail-value text-uppercase">{{ item.type }}</span>
+              </div>
             </div>
-          </div>
-          
-          <div class="card-footer">
-            <span class="status-indicator" :class="item.status">
-              {{ item.status === 'holding' ? '🟢 매일 적립 매수 중' : '⚪ 매도 완료' }}
-            </span>
+            
+            <div class="card-footer">
+              <span class="status-indicator" :class="item.status">
+                {{ item.status === 'holding' ? '🟢 매일 적립 매수 중' : '⚪ 매도 완료' }}
+              </span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
+  </div>
 </div>
 </ClientOnly>
 
