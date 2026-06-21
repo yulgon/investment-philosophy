@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/investment-philosophy/',
-  title: "나의 투자 철학 아카이브",
-  description: "시간이 흘러도 변하지 않는 나만의 투자 원칙과 전략을 기록하는 공간입니다.",
+  title: "원빌리언달러 도네이션",
+  description: "투자는 과정일 뿐, 목적지는 세상에 대한 기여입니다. 원빌리언달러 기부를 향한 자산 설계 아카이브.",
   lang: 'ko-KR',
   themeConfig: {
     logo: '/logo.png', // Optional, can be added later
