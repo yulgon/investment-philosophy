@@ -9,13 +9,19 @@
 ---
 
 <script setup>
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, onErrorCaptured } from 'vue'
 import { withBase } from 'vitepress'
 
 const rawData = ref([])
 const activeFilter = ref('all')
 const sortAsc = ref(false)
 const loading = ref(true)
+const errorMsg = ref(null)
+
+onErrorCaptured((err) => {
+  errorMsg.value = 'Rendering Error: ' + err.toString()
+  return false
+})
 
 // Stats
 const totalCount = computed(() => rawData.value.length)
@@ -27,6 +33,9 @@ const satelliteCount = computed(() => rawData.value.filter(item => item.role ===
 onMounted(async () => {
   try {
     const response = await fetch(withBase('/data/investments.csv'))
+    if (!response.ok) {
+      throw new Error('HTTP error! status: ' + response.status)
+    }
     const text = await response.text()
     const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0)
     
@@ -61,6 +70,7 @@ onMounted(async () => {
     }, 300)
   } catch (e) {
     console.error('Failed to parse investments.csv', e)
+    errorMsg.value = 'Fetch/Parse Error: ' + e.toString()
     loading.value = false
   }
 })
@@ -97,11 +107,17 @@ const groupedByYear = computed(() => {
 
 <ClientOnly>
 <div>
-  <div v-if="loading" class="loading-box">
+  <!-- Error Box -->
+  <div v-if="errorMsg" class="error-box" style="padding: 1rem; background: #fee2e2; border: 1px solid #f87171; color: #991b1b; border-radius: 8px; margin-bottom: 2rem;">
+    <strong>오류 발생 (Error):</strong>
+    <pre style="white-space: pre-wrap; margin-top: 0.5rem; font-family: monospace; font-size: 0.85rem;">{{ errorMsg }}</pre>
+  </div>
+
+  <div v-if="loading && !errorMsg" class="loading-box">
     데이터를 불러오는 중입니다...
   </div>
 
-  <div v-else class="history-container">
+  <div v-else-if="!loading" class="history-container">
     
     <!-- Stats Cards Grid -->
     <div class="stats-grid">
