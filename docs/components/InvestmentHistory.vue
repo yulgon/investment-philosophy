@@ -104,7 +104,7 @@ import { withBase } from 'vitepress'
 
 const rawData = ref([])
 const activeFilter = ref('all')
-const sortAsc = ref(false)
+const sortAsc = ref(true)
 const loading = ref(true)
 const errorMsg = ref(null)
 
