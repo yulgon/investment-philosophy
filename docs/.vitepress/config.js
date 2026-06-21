@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/investment-philosophy/',
   title: "나의 투자 철학 아카이브",
   description: "시간이 흘러도 변하지 않는 나만의 투자 원칙과 전략을 기록하는 공간입니다.",
   lang: 'ko-KR',
