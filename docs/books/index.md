@@ -204,8 +204,8 @@
 
   <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
-      <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">채권투자 바이블</h3>
-      <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">김형호</p>
+      <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">부와 절세를 한번에 잡는 채권투자 바이블</h3>
+      <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">마경환</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">개인 투자자가 어려워하는 채권의 매커니즘, 이자율 리스크 관리법 및 절세를 통해 실질 세후 수익을 극대화하는 세부 비법을 전수합니다.</p>
     </div>
     <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(245, 158, 11, 0.15); color: #f59e0b; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">채권 / 절세</span></div>
