@@ -10,7 +10,8 @@ export default defineConfig({
     nav: [
       { text: '홈', link: '/' },
       { text: '투자 철학', link: '/philosophy/principles' },
-      { text: '자산 배분', link: '/philosophy/allocation' }
+      { text: '자산 배분', link: '/philosophy/allocation' },
+      { text: '독서 노트', link: '/books/' }
     ],
     sidebar: {
       '/philosophy/': [
@@ -22,6 +23,14 @@ export default defineConfig({
             { text: '보글헤드 10대 철학', link: '/philosophy/bogleheads' },
             { text: '자산 배분 전략', link: '/philosophy/allocation' },
             { text: '투자 심리와 마인드셋', link: '/philosophy/psychology' }
+          ]
+        }
+      ],
+      '/books/': [
+        {
+          text: '독서 노트',
+          items: [
+            { text: '도서 목록 전체', link: '/books/' }
           ]
         }
       ]
