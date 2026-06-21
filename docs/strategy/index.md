@@ -43,6 +43,85 @@
 | **달러 강세기 (고환율)** | 급등 ⬆️ | 고평가 ⬆️ | 동일한 원화(\(M_{KRW}\))로 환전 시 달러 확보량 감소 ➡️ **주식 매수량 (\(N\)) 감소** | **비싼 달러와 비싼 자산의 과매수 방지** |
 | **달러 약세기 (저환율)** | 하락 ⬇️ | 저평가 ⬇️ | 동일한 원화(\(M_{KRW}\))로 환전 시 달러 확보량 증가 ➡️ **주식 매수량 (\(N\)) 증가** | **저렴해진 달러로 자산의 매집 극대화** |
 
+<div class="kca-chart-container" style="margin: 2.5rem 0; padding: 1.5rem; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+  <h4 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.1rem; font-weight: 600; color: var(--vp-c-brand-1); text-align: center;">📈 KCA의 주가-환율 상호 보완 및 변동성 완화 시뮬레이션</h4>
+  
+  <svg viewBox="0 0 800 380" width="100%" height="auto" style="display: block; font-family: var(--vp-font-family-base);">
+    <!-- Grids -->
+    <g stroke="var(--vp-c-gutter)" stroke-width="1" stroke-dasharray="4,4">
+      <line x1="50" y1="60" x2="750" y2="60" />
+      <line x1="50" y1="130" x2="750" y2="130" />
+      <line x1="50" y1="200" x2="750" y2="200" />
+      <line x1="50" y1="270" x2="750" y2="270" />
+      <!-- Vertical time markers -->
+      <line x1="225" y1="50" x2="225" y2="310" />
+      <line x1="400" y1="50" x2="400" y2="310" />
+      <line x1="575" y1="50" x2="575" y2="310" />
+    </g>
+
+    <!-- Axes -->
+    <g stroke="var(--vp-c-text-3)" stroke-width="1.5">
+      <line x1="50" y1="310" x2="760" y2="310" /> <!-- X axis -->
+      <line x1="50" y1="40" x2="50" y2="310" />   <!-- Y axis -->
+    </g>
+
+    <!-- X Axis Labels -->
+    <g fill="var(--vp-c-text-2)" font-size="12" text-anchor="middle">
+      <text x="50" y="330">시작</text>
+      <text x="225" y="330">초기 하락 (환율 급등)</text>
+      <text x="400" y="330">시장 폭락기 (달러 최고점)</text>
+      <text x="575" y="330">회복기 (환율 안정화)</text>
+      <text x="750" y="330">완전 회복</text>
+    </g>
+
+    <!-- Curves -->
+    <!-- 1. Stock Price USD (Red/Orange-ish Volatile) -->
+    <path d="M 50 110 C 150 90, 225 240, 310 280 C 400 290, 490 200, 575 140 C 660 80, 700 80, 750 70" fill="none" stroke="#ef4444" stroke-width="2.5" />
+    
+    <!-- 2. Exchange Rate USD/KRW (Blue Counter-Cyclical) -->
+    <path d="M 50 240 C 150 250, 225 150, 310 80 C 400 70, 490 140, 575 200 C 660 250, 700 240, 750 230" fill="none" stroke="#3b82f6" stroke-width="2.5" />
+    
+    <!-- 3. KCA KRW Cost Basis (Green Smoothed Line) -->
+    <path d="M 50 180 C 150 178, 225 185, 310 189 C 400 190, 490 186, 575 180 C 660 175, 700 172, 750 170" fill="none" stroke="#10b981" stroke-width="3.5" />
+
+    <!-- Labels on Curves -->
+    <g font-size="11" font-weight="600">
+      <text x="700" y="60" fill="#ef4444" text-anchor="middle">미국 주가 (USD) ⬇️</text>
+      <text x="700" y="220" fill="#3b82f6" text-anchor="middle">USD/KRW 환율 ⬆️</text>
+      <text x="640" y="158" fill="#10b981" text-anchor="middle">KCA 평단가 (KRW) 🟢</text>
+    </g>
+
+    <!-- Legend Box -->
+    <g transform="translate(60, 50)">
+      <rect width="180" height="90" fill="var(--vp-c-bg)" stroke="var(--vp-c-gutter)" rx="6" />
+      <circle cx="20" cy="25" r="5" fill="#ef4444" />
+      <text x="35" y="29" fill="var(--vp-c-text-1)" font-size="12">미국 주가 (USD 변동)</text>
+      
+      <circle cx="20" cy="48" r="5" fill="#3b82f6" />
+      <text x="35" y="52" fill="var(--vp-c-text-1)" font-size="12">USD/KRW 환율 (역상관)</text>
+      
+      <circle cx="20" cy="71" r="5" fill="#10b981" />
+      <text x="35" y="75" fill="var(--vp-c-text-1)" font-size="12">KCA 매수 평단 (원화)</text>
+    </g>
+  </svg>
+  <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2); text-align: center;">
+    💡 <strong>역상관관계 효과:</strong> 시장 폭락기(가운데)에 주가는 폭락하지만 환율이 올라, 원화 기준 매수 단가는 **극단적인 골짜기를 만들지 않고 매우 평탄하고 안정적인 곡선**을 그립니다.
+  </p>
+</div>
+
+### ⚠️ KCA의 장기적 한계와 극복 방안
+
+10년 넘는 초장기 투자 단계에 이르면, 적립식 투자(DCA/KCA)는 구조적으로 독특한 한계에 직면하게 되며, 이를 다음과 같은 방법으로 자연스럽게 극복해 나갑니다.
+
+* **자산 규모 대비 신규 투자금의 한계 (Buy the Dip화)**:
+  10년 이상 적립을 계속하여 전체 포트폴리오의 몸집(예: 5억 원)이 거대해지면, 매달 적립하는 고정 원화 매수금(예: 100만 원)이 전체 평가액에서 차지하는 비중이 매우 작아집니다. 이 단계에 이르면 추가 매수 조정을 통한 전체 평단가 인하 효과(Averaging)는 미미해지며, 사실상 이미 보유한 거치식 자산이 시장 하락장에 노출되는 'Buy the Dip'의 형태로 수렴하게 됩니다.
+* **극복 1: 장기 복리의 눈덩이 효과 (Snowball Effect)**:
+  하지만 포트폴리오가 거대해진 시점에서는 더 이상 신규 매수액의 평단가 제어가 주된 동력이 될 필요가 없습니다. 이미 자산의 규모 자체가 커졌기 때문에, 이제부터는 추가 투자금보다 **오랜 시간 다져진 장기 보유의 복리 효과**가 자산을 스스로 눈덩이처럼 굴려가는 핵심 주체(복리의 힘)로 작동하게 됩니다.
+* **극복 2: 매수 금액 상향을 통한 Buy Rebalancing**:
+  소득 증가나 포트폴리오 성장 추세에 맞추어 **기본 적립 매수 금액 자체를 단계적으로 상향 조정**합니다. 동시에 비중이 크게 낮아진 자산에 더 큰 비중의 원화 매수금을 집중적으로 투입하는 **Buy Rebalancing**을 실행하여, 포트폴리오 규모가 늘어나도 적립식 고유의 비중 조절 효과를 최대한 유지할 수 있습니다.
+* **결론**:
+  KCA 전략은 궁극적으로 **자산 축적 초·중기에 겪는 단기 급등락과 환율 변동의 심한 노이즈를 완벽하게 제어**하여, 투자자가 지치거나 흔들려 시장에서 강제 이탈하지 않고 안전하게 10년 이상의 장기 복리 구간(Snowballing)으로 도달할 수 있도록 지탱해 주는 최고의 도구입니다.
+
 ---
 
 ## 3. KCA 전략의 핵심 강점
