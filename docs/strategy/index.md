@@ -1,110 +1,98 @@
-# 🪐 KCA 적립식 투자 전략 (KRW Cost Averaging)
+# 🪐 나의 투자 전략 (Investment Strategy)
 
-성공적인 장기 투자의 핵심은 시장의 타이밍(Time to Market)을 예측하는 오만을 버리고, 변동성을 이겨내어 영원히 시장에 살아남는 것입니다. 이를 위해 저는 전통적인 **DCA(Dollar Cost Averaging)** 전략을 한국 원화 투자자의 실정에 맞춰 혁신적으로 변형한 **KCA(KRW Cost Averaging)** 전략을 실천합니다.
+성공적인 장기 투자의 핵심은 일관된 규칙과 감정의 배제입니다. 저의 투자 전략은 시장의 일시적인 출렁임(마켓 타이밍)을 예측하려 노력하기보다, 기계적인 시스템을 구축하여 복리의 힘을 누리고 장기 생존하는 데 목적이 있습니다. 
 
-<script setup>
-import { defineAsyncComponent } from 'vue'
-
-const DcaChart = defineAsyncComponent(() =>
-  import('../components/DcaChart.vue')
-)
-const KcaChart = defineAsyncComponent(() =>
-  import('../components/KcaChart.vue')
-)
-</script>
+저의 투자 프로세스는 아래와 같은 **4개의 핵심 기둥(Pillars)**을 바탕으로 설계되어 실행됩니다.
 
 ---
 
-## 1. DCA (Dollar Cost Averaging) 분석
+## 🏛️ 투자 전략의 4대 핵심 기둥
 
-### DCA의 핵심 원리
-**DCA(정액 적립식 투자법)**는 자산의 가격 변동성과 관계없이 일정한 주기(예: 매일, 매주, 매월)마다 고정된 금액을 기계적으로 매수하는 전략입니다.
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
 
-* **하모닉 평균(조화 평균) 효과**: 가격이 높을 때는 적은 수량을 매수하고, 가격이 낮을 때는 많은 수량을 매수하게 되어 결과적으로 **평균 매입 단가가 시장 평균 가격보다 낮아지는** 수학적 효과를 누립니다.
-* **감정 통제**: 시장의 공포와 탐욕에 휩쓸려 매수 타이밍을 저울질하다가 기회를 놓치는 우를 범하지 않도록 돕습니다.
-* **리스크 분산**: 거치식 투자(Lump-sum) 대비 초기 진입 시점의 위험을 시간 축으로 분산합니다.
-
-### 📈 [그래프 1] DCA 적립식 vs 거치식(Lump-sum) 평단가 비교
-
-<ClientOnly>
-  <DcaChart />
-</ClientOnly>
-
----
-
-## 2. KCA (KRW Cost Averaging) 전략
-
-**KCA(원화 기준 정액 적립식 투자)**는 매수 금액을 달러가 아닌 **'원화(KRW) 고정 금액'**으로 설정하여 환율 변동성까지 포트폴리오 조절 공식에 자동으로 녹여내는 스마트한 변동성 제어 전략입니다.
-
-### 달러 기준 DCA의 한계 (한국 투자자 시점)
-일반적으로 널리 알려진 DCA는 미국 달러(USD) 기준의 적립식 매수를 가정합니다. 하지만 원화(KRW)를 기반으로 생활하고 소득을 올리는 한국인 투자자가 미국 주식/ETF를 살 때는 **'환율(USD/KRW)'이라는 거대한 변수**가 추가됩니다.
-매월 일정 달러(USD)만큼 적립 매수를 집행하게 되면, 원화 기준으로는 환율이 치솟았을 때(달러가 비쌀 때) 더 많은 원화를 환전하여 투입해야 하므로 **원화 자산 관점에서 비효율적인 고가 매수**가 발생할 수 있습니다.
-
-<div style="background: var(--vp-c-bg-soft); border-left: 4px solid var(--vp-c-brand-1); padding: 1.5rem; border-radius: 8px; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.02);">
-  <h3 style="margin-top: 0; color: var(--vp-c-brand-1); font-weight: 600;">💡 KCA의 수학적 메커니즘</h3>
-  <p style="line-height: 1.7; margin-bottom: 1rem;">
-    매 회차별 투자 금액을 원화 기준 고정 금액 <strong>M<sub>KRW</sub></strong>로 고정하면, 최종 매수되는 주식 수량 <strong>N</strong>은 다음과 같이 결정됩니다.
-  </p>
-  <div style="text-align: center; font-size: 1.3rem; margin: 1.2rem 0; font-weight: 600; color: var(--vp-c-brand-1); background: var(--vp-c-bg-alt); padding: 0.8rem; border-radius: 6px; display: inline-block; width: 100%;">
-    N = M<sub>KRW</sub> / (P<sub>USD</sub> × E)
+  <!-- Pillar 1 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.02); transition: transform 0.2s ease;">
+    <div>
+      <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🪐</div>
+      <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">1. KCA 적립식 전략</h3>
+      <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
+        원화 고정 금액 매입(KRW Cost Averaging)을 공식화하여 주가와 환율의 역상관성을 포트폴리오에 반영합니다. 고환율 시 고가 매수를 방지하고 저환율 시 매집을 극대화합니다.
+      </p>
+    </div>
+    <div style="margin-top: 1.5rem;">
+      <a href="/strategy/kca" style="font-size: 0.9rem; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none; display: inline-flex; align-items: center;">
+        자세히 보기 <span style="margin-left: 4px;">→</span>
+      </a>
+    </div>
   </div>
-  <p style="line-height: 1.7; margin-top: 1rem; font-size: 0.95rem; color: var(--vp-c-text-2);">
-    (단, P<sub>USD</sub> = 자산의 달러 가격, E = USD/KRW 원-달러 환율)
-  </p>
+
+  <!-- Pillar 2 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.02); transition: transform 0.2s ease;">
+    <div>
+      <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">⚖️</div>
+      <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">2. 자산 배분 & 운영 전략</h3>
+      <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
+        자산의 비중을 조절하는 핵심 행성(인덱스 ETF)과 주변 위성(개별 주식) 모델을 구축하고, 자산을 매매하여 조절하는 대신 매월 현금 투입 비율을 다르게 설정하는 '매수 리밸런싱'을 실천합니다.
+      </p>
+    </div>
+    <div style="margin-top: 1.5rem;">
+      <a href="/strategy/allocation" style="font-size: 0.9rem; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none; display: inline-flex; align-items: center;">
+        자세히 보기 <span style="margin-left: 4px;">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Pillar 3 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.02); transition: transform 0.2s ease;">
+    <div>
+      <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🤖</div>
+      <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">3. 자동 투자 전략</h3>
+      <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
+        시장의 실시간 등락에 흔들리는 나약한 인간의 의지를 배제하고, 예약 이체, 소수점 자동 투자, 자동 환전 시스템을 조합해 '알아서 굴러가는' 완전 자동화 시스템을 셋팅합니다.
+      </p>
+    </div>
+    <div style="margin-top: 1.5rem;">
+      <a href="/strategy/auto-investment" style="font-size: 0.9rem; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none; display: inline-flex; align-items: center;">
+        자세히 보기 <span style="margin-left: 4px;">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Pillar 4 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.02); transition: transform 0.2s ease;">
+    <div>
+      <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🔍</div>
+      <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">4. ETF 선정 및 도구 가이드</h3>
+      <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
+        시가총액, 수수료, 운용사 규모 등 장기 생존할 우량 주식과 ETF를 직접 비교 선별하는 핵심 조건들과 리서치에 활용하는 전문 모바일 앱 및 분석 웹사이트 가이드를 공유합니다.
+      </p>
+    </div>
+    <div style="margin-top: 1.5rem;">
+      <a href="/strategy/how-to-choose" style="font-size: 0.9rem; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none; display: inline-flex; align-items: center;">
+        자세히 보기 <span style="margin-left: 4px;">→</span>
+      </a>
+    </div>
+  </div>
+
 </div>
 
-### KCA의 자동 환율 조절 메커니즘
-
-| 시장 시나리오 | 환율 변동 (E) | 원화 가격 (P<sub>USD</sub> × E) | 자동으로 일어나는 현상 | 투자자 관점 효과 |
-| :--- | :---: | :---: | :--- | :--- |
-| **달러 강세기 (고환율)** | 급등 ⬆️ | 고평가 ⬆️ | 동일한 원화(M<sub>KRW</sub>)로 환전 시 달러 확보량 감소 ➡️ **주식 매수량 (N) 감소** | **비싼 달러와 비싼 자산의 과매수 방지** |
-| **달러 약세기 (저환율)** | 하락 ⬇️ | 저평가 ⬇️ | 동일한 원화(M<sub>KRW</sub>)로 환전 시 달러 확보량 증가 ➡️ **주식 매수량 (N) 증가** | **저렴해진 달러로 자산의 매집 극대화** |
-
-### 📊 [그래프 2] 주가-환율 역상관성에 따른 KCA 변동성 완화 효과
-
-<ClientOnly>
-  <KcaChart />
-</ClientOnly>
-
 ---
 
-## 3. KCA의 장기적 한계와 극복 방안
+## 🧭 실천 로드맵: 10년 뒤 눈덩이(Snowball)를 굴리는 법
 
-10년 넘는 초장기 투자 단계에 이르면, 적립식 투자(DCA/KCA)는 구조적으로 독특한 한계에 직면하게 되며, 이를 다음과 같은 방법으로 자연스럽게 극복해 나갑니다.
+나의 투자 전략은 상호 유기적으로 작동하여 최종 목표를 달성하도록 돕습니다.
 
-* **자산 규모 대비 신규 투자금의 한계 (Buy the Dip화)**:
-  10년 이상 적립을 계속하여 전체 포트폴리오의 몸집(예: 5억 원)이 거대해지면, 매달 적립하는 고정 원화 매수금(예: 100만 원)이 전체 평가액에서 차지하는 비중이 매우 작아집니다. 이 단계에 이르면 추가 매수 조정을 통한 전체 평단가 인하 효과(Averaging)는 미미해지며, 사실상 이미 보유한 거치식 자산이 시장 하락장에 노출되는 'Buy the Dip'의 형태로 수렴하게 됩니다.
-* **극복 1: 장기 보유 복리의 눈덩이 효과 (Snowball Effect)**:
-  하지만 포트폴리오가 거대해진 시점에서는 더 이상 신규 매수액의 평단가 제어가 주된 동력이 될 필요가 없습니다. 이미 자산의 규모 자체가 커졌기 때문에, 이제부터는 추가 투자금보다 **오랜 시간 다져진 장기 보유의 복리 효과**가 자산을 스스로 눈덩이처럼 굴려가는 핵심 주체(복리의 힘)로 작동하게 됩니다.
-* **극복 2: 매수 금액 상향을 통한 Buy Rebalancing**:
-  소득 증가나 포트폴리오 성장 추세에 맞추어 **기본 적립 매수 금액 자체를 단계적으로 상향 조정**합니다. 동시에 비중이 크게 낮아진 자산에 더 큰 비중의 원화 매수금을 집중적으로 투입하는 **Buy Rebalancing**을 실행하여, 포트폴리오 규모가 늘어나도 적립식 고유의 비중 조절 효과를 최대한 유지할 수 있습니다.
-* **결론**:
-  KCA 전략은 궁극적으로 **자산 축적 초·중기에 겪는 단기 급등락과 환율 변동의 심한 노이즈를 완벽하게 제어**하여, 투자자가 지치거나 흔들려 시장에서 강제 이탈하지 않고 안전하게 10년 이상의 장기 복리 구간(Snowballing)으로 도달할 수 있도록 지탱해 주는 최고의 도구입니다.
+```mermaid
+graph TD
+    A["원화 월급 입금 (M_KRW)"] --> B["3. 자동 투자 전략 (이체 & 소수점 매수)"]
+    B --> C["1. KCA 적립식 전략 (주가/환율 매수량 자동 제어)"]
+    C --> D["2. 자산 배분 & 운영 전략 (행성/위성 매수 리밸런싱)"]
+    D --> E["4. 엄선된 초우량 ETF & 주식 포트폴리오"]
+    E --> F["10년 장기보유 & 복리 (Snowball Effect)"]
+    F --> G["기부 재단 설립 및 사회적 기여 (최종지)"]
+    style G fill:#10b981,stroke:#047857,stroke-width:2px,color:#fff
+```
 
----
+이 프로세스를 통해 일상의 평화와 본업의 생산성을 극대화하며, 단기 시장 소음에 휩쓸리지 않고 안전하게 **장기 복리 구간(Snowballing)**으로 진입하는 구조를 완성합니다.
 
-## 4. KCA 전략의 핵심 강점
-
-### 1) 환율과 주가의 역상관관계를 활용한 포트폴리오 원화 가치 방어
-역사적으로 위기(금융위기, 팬데믹, 지정학적 위기 등)가 발생하면 미국 주가(P<sub>USD</sub>)는 폭락하지만, 안전자산 선호로 인해 원-달러 환율(E)은 급등합니다.
-* 주가 폭락에 따른 달러 기준 손실이 발생하더라도, 환율 상승이 원화 환산 자산 가치를 방어해 줍니다.
-* KCA를 통해 이때 주가와 환율이 맞물려 원화 환산 단가가 비교적 완만히 조정되므로, 투자자는 폭락장에서도 원화 계좌 잔고의 심한 변동성에 충격을 덜 받고 기계적 매수를 이어갈 수 있습니다.
-
-### 2) 예측을 거부하는 '마음 편한 투자' (Time to Market of 역행)
-시장 타이밍과 환율 전망을 예측하여 거래를 집행하려는 시도는 대부분 실패로 돌아갑니다. KCA는 이러한 인간의 편향을 원천 차단합니다.
-* 환율이 1,200원일 때나 1,400원일 때나 고민하지 않고 고정된 원화 금액을 매일/매월 적립 매수합니다.
-* 자동으로 환율 변동의 평균 단가 수렴 효과(Currency Averaging)가 발생하여 장기적으로 환헤지 비용 없이 자연스러운 환율 방어가 이루어집니다.
-* 결과적으로 **시장 스트레스에서 완전히 해방된 고도의 심리적 안정감**을 누릴 수 있습니다.
-
----
-
-## 5. 실천 로드맵
-
-저의 KCA 투자 전략은 구체적으로 다음과 같은 원칙하에 시스템적으로 굴러갑니다.
-
-1. **원화 정액 설정**: 매월 투입 가능한 여유 자금을 원화 기준으로 명확히 설정합니다.
-2. **매일 시장가 예약 적립**: 주가가 출렁이는 장중에는 일절 호가창을 보지 않고, 매일 밤 고정된 원화 금액만큼 시장가 예약 매수를 걸어둡니다.
-3. **핵심-위성 연계**: 이 원화 정액 투자금의 비중을 조절(Buy Rebalancing)하여, 비중이 줄어든 **핵심 행성(Core ETF)**과 가치 대비 저평가된 **주변 위성(Satellite Stock)**을 기계적으로 매수합니다.
-
-> 🪐 **연계 전략 바로가기**  
-> 저의 구체적인 자산 구성 비율과 리밸런싱 운영 원칙은 [자산 배분 & 운영 전략](/strategy/allocation) 페이지에서 확인하실 수 있습니다.
+각 탭을 이동하여 구체적이고 체계적인 실행 방법을 확인해 보세요.
