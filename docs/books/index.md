@@ -51,8 +51,9 @@
     <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(59, 130, 246, 0.15); color: #3b82f6; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">한국형 자산배분</span></div>
   </div>
 
-  <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid #d97706; box-shadow: 0 0 10px rgba(217, 119, 6, 0.1); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
+      <span style="font-size: 0.75rem; background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(217, 119, 6, 0.3); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600; margin-bottom: 0.5rem; display: inline-block;">⭐ 추천 도서 (My Recommendation)</span>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">저스트 킵 바잉</h3>
       <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">닉 매기울리 (Nick Maggiulli)</p>
       <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">저축과 투자율의 관계를 방대한 데이터로 분석하여 '시장 하락기든 상승기든 상관없이 자산을 계속 사 모으는 것'의 힘을 증명합니다.</p>
