@@ -13,8 +13,8 @@ hero:
       text: 투자 철학
       link: /philosophy/intro
     - theme: alt
-      text: 자산 배분
-      link: /allocation/
+      text: 투자 전략
+      link: /strategy/
     - theme: alt
       text: 독서 노트
       link: /books/
@@ -41,6 +41,6 @@ features:
     그 거대한 나눔을 마주하며 깊은 반성과 함께 새로운 의지가 깨어났습니다. <strong>저에게 있어 투자를 통해 돈을 버는 것은 인생의 최종 목적지가 아닌, 세상에 더 큰 기여를 하기 위한 과정이자 도구일 뿐입니다.</strong> 궁극적으로 세상(World)과 이웃에게 선한 도움을 주는 삶을 살겠다는 뜻을 세우며, 이 공간을 그 여정의 든든한 초석으로 삼고자 합니다.
   </p>
   <p style="margin-top: 1.5rem; line-height: 1.7; color: var(--vp-c-text-2); font-weight: 500;">
-    👉 위의 버튼을 눌러, 이 장대한 목표를 향해 흔들림 없이 나아가는 구체적인 투자 철학, 자산 배분 전략 및 독서 노트를 만나보세요.
+    👉 위의 버튼을 눌러, 이 장대한 목표를 향해 흔들림 없이 나아가는 구체적인 투자 철학, 투자 전략 및 독서 노트를 만나보세요.
   </p>
 </div>

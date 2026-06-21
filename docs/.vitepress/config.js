@@ -10,7 +10,7 @@ export default defineConfig({
     nav: [
       { text: '홈', link: '/' },
       { text: '투자 철학', link: '/philosophy/intro' },
-      { text: '자산 배분', link: '/allocation/' },
+      { text: '투자 전략', link: '/strategy/' },
       { text: '독서 노트', link: '/books/' }
     ],
     sidebar: {
@@ -26,11 +26,12 @@ export default defineConfig({
           ]
         }
       ],
-      '/allocation/': [
+      '/strategy/': [
         {
-          text: '자산 배분',
+          text: '투자 전략',
           items: [
-            { text: '자산 배분 전략', link: '/allocation/' }
+            { text: 'KCA 적립식 전략 (DCA)', link: '/strategy/' },
+            { text: '자산 배분 & 운영 전략', link: '/strategy/allocation' }
           ]
         }
       ],
