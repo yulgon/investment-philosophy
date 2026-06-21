@@ -82,16 +82,58 @@
 
 나의 투자 전략은 상호 유기적으로 작동하여 최종 목표를 달성하도록 돕습니다.
 
-```mermaid
-graph TD
-    A["원화 월급 입금 (M_KRW)"] --> B["3. 자동 투자 전략 (이체 & 소수점 매수)"]
-    B --> C["1. KCA 적립식 전략 (주가/환율 매수량 자동 제어)"]
-    C --> D["2. 자산 배분 & 운영 전략 (행성/위성 매수 리밸런싱)"]
-    D --> E["4. 엄선된 초우량 ETF & 주식 포트폴리오"]
-    E --> F["10년 장기보유 & 복리 (Snowball Effect)"]
-    F --> G["기부 재단 설립 및 사회적 기여 (최종지)"]
-    style G fill:#10b981,stroke:#047857,stroke-width:2px,color:#fff
-```
+<div class="flowchart-container" style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; margin: 2rem auto; max-width: 500px; font-family: var(--vp-font-family-base);">
+  <!-- Step 1 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-gutter); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.01); transition: all 0.2s ease;">
+    <strong style="color: var(--vp-c-text-1); font-size: 0.95rem;">💵 1. 원화 월급 입금 (M<sub>KRW</sub>)</strong>
+  </div>
+  
+  <div style="font-size: 1.2rem; color: var(--vp-c-brand-1); line-height: 1; font-weight: bold;">↓</div>
+
+  <!-- Step 2 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-brand-1); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+    <strong style="color: var(--vp-c-brand-1); font-size: 0.95rem;">🤖 3. 자동 투자 전략</strong>
+    <div style="font-size: 0.8rem; color: var(--vp-c-text-2); margin-top: 0.2rem;">파킹통장 / MMF에 예치하여 대기 이자를 받으며 매일 자동 매수 수행</div>
+  </div>
+
+  <div style="font-size: 1.2rem; color: var(--vp-c-brand-1); line-height: 1; font-weight: bold;">↓</div>
+
+  <!-- Step 3 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-brand-1); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+    <strong style="color: var(--vp-c-brand-1); font-size: 0.95rem;">📈 1. KCA 적립식 전략</strong>
+    <div style="font-size: 0.8rem; color: var(--vp-c-text-2); margin-top: 0.2rem;">원화 정액 일일 매수로 주가 폭락시 매수 극대화, 과열 급등기 자동 억제</div>
+  </div>
+
+  <div style="font-size: 1.2rem; color: var(--vp-c-brand-1); line-height: 1; font-weight: bold;">↓</div>
+
+  <!-- Step 4 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-brand-1); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+    <strong style="color: var(--vp-c-brand-1); font-size: 0.95rem;">⚖️ 2. 자산 배분 & 운영 전략</strong>
+    <div style="font-size: 0.8rem; color: var(--vp-c-text-2); margin-top: 0.2rem;">핵심 행성(Core ETF) 및 주변 위성(개별 우량주) 매수 리밸런싱 비율 조정</div>
+  </div>
+
+  <div style="font-size: 1.2rem; color: var(--vp-c-brand-1); line-height: 1; font-weight: bold;">↓</div>
+
+  <!-- Step 5 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-brand-1); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+    <strong style="color: var(--vp-c-brand-1); font-size: 0.95rem;">🔍 4. ETF 선정 및 도구 가이드</strong>
+    <div style="font-size: 0.8rem; color: var(--vp-c-text-2); margin-top: 0.2rem;">SPMO(모멘텀), VOO, QQQM, SCHD 등 백테스트를 통한 엄선된 자산 편입</div>
+  </div>
+
+  <div style="font-size: 1.2rem; color: var(--vp-c-brand-1); line-height: 1; font-weight: bold;">↓</div>
+
+  <!-- Step 6 -->
+  <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-gutter); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.01);">
+    <strong style="color: var(--vp-c-text-1); font-size: 0.95rem;">❄️ 10년 장기 보유 및 복리의 눈덩이 효과 (Snowball)</strong>
+  </div>
+
+  <div style="font-size: 1.2rem; color: #10b981; line-height: 1; font-weight: bold;">↓</div>
+
+  <!-- Step 7 -->
+  <div style="background: linear-gradient(135deg, #10b981, #059669); border: none; border-radius: 8px; padding: 0.9rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 4px 15px rgba(16,185,129,0.25);">
+    <strong style="color: #ffffff; font-size: 1rem;">🕊️ 기부 재단 설립 및 사회적 기여 (최종 목적지)</strong>
+  </div>
+</div>
 
 이 프로세스를 통해 일상의 평화와 본업의 생산성을 극대화하며, 단기 시장 소음에 휩쓸리지 않고 안전하게 **장기 복리 구간(Snowballing)**으로 진입하는 구조를 완성합니다.
 
