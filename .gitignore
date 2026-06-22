@@ -2,5 +2,7 @@ node_modules
 .temp
 .cache
 dist
+docs/.vitepress/cache/
+docs/.vitepress/dist/
 .DS_Store
 .obsidian/
