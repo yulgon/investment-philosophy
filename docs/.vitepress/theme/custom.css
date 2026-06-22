@@ -1,0 +1,205 @@
+/* =============================================
+   Stay the Course — 네비게이션 노란색 강조
+   ============================================= */
+.VPNavBarMenuLink[href="/stay-the-course/"],
+.VPNavBarMenuLink[href="/stay-the-course"] {
+  color: #F5C518 !important;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.VPNavBarMenuLink[href="/stay-the-course/"]:hover,
+.VPNavBarMenuLink[href="/stay-the-course"]:hover {
+  color: #FFD700 !important;
+  text-shadow: 0 0 12px rgba(245, 197, 24, 0.5);
+}
+
+.VPNavBarMenuLink.active[href="/stay-the-course/"],
+.VPNavBarMenuLink.active[href="/stay-the-course"] {
+  color: #FFD700 !important;
+  text-shadow: 0 0 16px rgba(245, 197, 24, 0.6);
+}
+
+/* =============================================
+   Stay the Course — 카드 그리드
+   ============================================= */
+.stc-header {
+  text-align: center;
+  padding: 3rem 0 1rem;
+}
+
+.stc-header h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #F5C518;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.stc-header p {
+  color: var(--vp-c-text-2);
+  font-size: 1.05rem;
+}
+
+/* 태그 필터 */
+.stc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 2rem 0 1.2rem;
+  justify-content: center;
+}
+
+.stc-tag-btn {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--vp-c-divider);
+  background: transparent;
+  color: var(--vp-c-text-2);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.stc-tag-btn:hover {
+  border-color: #F5C518;
+  color: #F5C518;
+}
+
+.stc-tag-btn.active {
+  background: #F5C518;
+  border-color: #F5C518;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* 글 수 */
+.stc-count {
+  text-align: center;
+  color: var(--vp-c-text-3);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+/* 카드 그리드 */
+.stc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+.stc-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  text-decoration: none !important;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.stc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  border-color: #F5C518;
+  text-decoration: none !important;
+}
+
+.stc-card-date {
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.stc-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  line-height: 1.45;
+  margin: 0;
+}
+
+.stc-card:hover .stc-card-title {
+  color: #F5C518;
+}
+
+.stc-card-excerpt {
+  font-size: 0.88rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.stc-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+.stc-card-tag {
+  font-size: 0.75rem;
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-weight: 500;
+}
+
+/* 빈 상태 */
+.stc-empty {
+  text-align: center;
+  color: var(--vp-c-text-3);
+  padding: 4rem 0;
+  grid-column: 1 / -1;
+}
+
+/* 개별 아티클 — 상단 메타 정보 */
+.stc-article-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.stc-article-date {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-3);
+}
+
+.stc-back-link {
+  font-size: 0.85rem;
+  color: #F5C518;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.stc-back-link:hover {
+  text-decoration: underline;
+}
+
+/* 모바일 대응 */
+@media (max-width: 640px) {
+  .stc-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stc-header h1 {
+    font-size: 1.8rem;
+  }
+}
