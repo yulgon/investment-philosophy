@@ -53,7 +53,7 @@ export default defineConfig({
     ],
     footer: {
       message: '#18년차직장인 #KCA #자동매매투자자 #여유시간은두딸과함께 — stay the course 🌿 &nbsp;·&nbsp; <a href="/privacy">개인정보처리방침</a>',
-      copyright: 'Copyright © 2026-present'
+      copyright: 'Copyright © 2026-present · 본 사이트의 모든 내용은 개인 기록이며 투자 권유가 아닙니다.'
     },
     search: {
       provider: 'local'
