@@ -12,7 +12,6 @@ export default defineConfig({
       { text: '투자 철학', link: '/philosophy/intro' },
       { text: '투자 전략', link: '/strategy/' },
       { text: '독서 노트', link: '/books/' },
-      { text: '최신 트렌드 소개', link: '/trends/' },
       { text: '연락처', link: '/contact' }
     ],
     sidebar: {
