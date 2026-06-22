@@ -11,7 +11,9 @@ export default defineConfig({
       { text: '홈', link: '/' },
       { text: '투자 철학', link: '/philosophy/intro' },
       { text: '투자 전략', link: '/strategy/' },
-      { text: '독서 노트', link: '/books/' }
+      { text: '독서 노트', link: '/books/' },
+      { text: '최신 트렌드 소개', link: '/trends/' },
+      { text: '연락처', link: '/contact' }
     ],
     sidebar: {
       '/philosophy/': [
@@ -51,7 +53,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com' } // Placeholder or user can update
     ],
     footer: {
-      message: 'Released under the MIT License.',
+      message: '<a href="/privacy">개인정보처리방침</a>',
       copyright: 'Copyright © 2026-present'
     },
     search: {
