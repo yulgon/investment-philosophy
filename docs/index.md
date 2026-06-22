@@ -45,15 +45,4 @@ features:
   </p>
 </div>
 
-<script setup>
-import { defineAsyncComponent } from 'vue'
-
-const AnnualPerformance = defineAsyncComponent(() =>
-  import('./components/AnnualPerformance.vue')
-)
-</script>
-
-<ClientOnly>
-  <AnnualPerformance />
-</ClientOnly>
 
