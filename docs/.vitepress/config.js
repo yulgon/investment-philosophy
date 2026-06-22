@@ -52,7 +52,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com' } // Placeholder or user can update
     ],
     footer: {
-      message: '<a href="/privacy">개인정보처리방침</a>',
+      message: '#18년차직장인 #KCA #자동매매투자자 #여유시간은두딸과함께 — stay the course 🌿 &nbsp;·&nbsp; <a href="/privacy">개인정보처리방침</a>',
       copyright: 'Copyright © 2026-present'
     },
     search: {
