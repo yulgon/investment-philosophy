@@ -210,8 +210,8 @@
   <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">환율의 대전환</h3>
-      <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">안근아</p>
-      <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">글로벌 통화 패권의 흐름 속에서 원/달러 환율과 기저 통화들의 움직임을 파악해 투자 자산 배분의 리스크를 헤지할 안목을 제시합니다.</p>
+      <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">오건영</p>
+      <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">환율과 금리를 중심으로 글로벌 매크로 경제의 거대한 흐름을 읽어냅니다. 달러의 움직임과 다양한 매크로 시나리오를 통해 불확실성 속에서도 유연하게 자산을 배분할 수 있는 거시적 통찰력을 제공합니다.</p>
     </div>
     <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">외환/환율</span></div>
   </div>
