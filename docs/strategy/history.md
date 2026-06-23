@@ -26,8 +26,8 @@ const AnnualPerformance = defineAsyncComponent(() =>
 </script>
 
 <ClientOnly>
-  <InvestmentHistory />
-  <div style="margin-top: 3rem;"></div>
   <AnnualPerformance />
+  <div style="margin-top: 3rem;"></div>
+  <InvestmentHistory />
 </ClientOnly>
 

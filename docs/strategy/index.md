@@ -78,7 +78,7 @@
 
 ---
 
-## 🧭 실천 로드맵: 10년 뒤 눈덩이(Snowball)를 굴리는 법
+## 🧭 실천 워크플로우: 눈덩이(Snowball)를 굴리는 법
 
 나의 투자 전략은 상호 유기적으로 작동하여 최종 목표를 달성하도록 돕습니다.
 
@@ -124,14 +124,14 @@
 
   <!-- Step 6 -->
   <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-gutter); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.01);">
-    <strong style="color: var(--vp-c-text-1); font-size: 0.95rem;">❄️ 10년 장기 보유 및 복리의 눈덩이 효과 (Snowball)</strong>
+    <strong style="color: var(--vp-c-text-1); font-size: 0.95rem;">❄️ 장기 보유 및 복리의 눈덩이 효과 (Snowball)</strong>
   </div>
 
   <div style="font-size: 1.2rem; color: #10b981; line-height: 1; font-weight: bold;">↓</div>
 
   <!-- Step 7 -->
   <div style="background: linear-gradient(135deg, #10b981, #059669); border: none; border-radius: 8px; padding: 0.9rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 4px 15px rgba(16,185,129,0.25);">
-    <strong style="color: #ffffff; font-size: 1rem;">🕊️ 기부 재단 설립 및 사회적 기여 (최종 목적지)</strong>
+    <strong style="color: #ffffff; font-size: 1rem;">🕊️ 사회 환원을 통한 이웃에 대한 기여 (최종 목적지)</strong>
   </div>
 </div>
 

@@ -33,7 +33,6 @@
 | 자산 범주                 | 대표 ETF 티커 |      운용사       |   운용수수료   | 핵심 특징                                                            |
 | :-------------------- | :-------: | :------------: | :-------: | :--------------------------------------------------------------- |
 | **S&P 500 지수 추종**     |  **VOO**  |    Vanguard    | **0.03%** | 미국 대표 500대 기업에 분산 투자하는 포트폴리오의 척추.                                |
-| **나스닥 100 지수 추종**     | **QQQM**  |    Invesco     | **0.15%** | QQQ(수수료 0.20%)의 장기 적립식 개인용 저수수료 대체재. 기술주 중심 성장.                  |
 | **배당 성장 (Dividend)**  | **SCHD**  | Charles Schwab | **0.06%** | 10년 연속 배당을 증액한 초우량 기업에 투자하여 안정적 현금흐름 제공.                         |
 | **모멘텀 퀀트 (Momentum)** | **SPMO**  |    Invesco     | **0.13%** | S&P 500 지수 구성 기업 중 가격 상승 탄력성이 가장 강한 상위 100개 주식을 추종하는 모멘텀 퀀트 ETF. |
 
@@ -64,46 +63,39 @@
 * **GuruFocus ([gurufocus.com](https://www.gurufocus.com))**:
   * **주요 용도**: 기업의 재무 건전성 및 밸류에이션 측정.
   * **활용 기능**: 피오트로스키 F-스코어, 알트만 Z-스코어 등 재무 안전성 수치 확인. 기업 고유의 역사적 밸류에이션 밴드인 'GF Value' 및 워렌 버핏 등 글로벌 구루들의 최신 매매 정보 트래킹.
+* **Finviz ([finviz.com](https://finviz.com))**:
+  * **주요 용도**: 직관적 스크리닝과 시장 전체의 히트맵(Heatmap) 시각화.
+  * **활용 기능**: 수천 개의 주식을 PER, 배당률, 52주 신고가 등 다양한 조건으로 순식간에 필터링하여 '위성(Satellite)' 자산 후보군을 빠르게 발굴.
+* **TradingView ([tradingview.com](https://www.tradingview.com))**:
+  * **주요 용도**: 전 세계에서 가장 널리 쓰이는 강력한 차트 및 기술적 분석 플랫폼.
+  * **활용 기능**: 다양한 자산의 가격 흐름 겹쳐 보기, 전 세계 투자자들이 만든 커스텀 보조지표 적용 및 모멘텀 추적.
+* **ETF.com ([etf.com](https://www.etf.com)) / ETFdb ([etfdb.com](https://etfdb.com))**:
+  * **주요 용도**: 글로벌 ETF의 해부 및 심층 비교 분석.
+  * **활용 기능**: VOO, SPMO 등 편입할 ETF 간의 보유 종목 중복도(Overlap) 확인, 운용 수수료 상세 비교, 최근 자금 유입/유출(Fund Flows) 트렌드 파악.
+* **Macrotrends ([macrotrends.net](https://www.macrotrends.net))**:
+  * **주요 용도**: 특정 자산의 장기 역사적 재무 데이터 시각화.
+  * **활용 기능**: 특정 행성(Core) 기업의 10~20년 치 실적 변동, 역사적 밸류에이션(P/E 밴드) 등 굵직한 경제 사이클을 견뎌온 데이터를 클릭 한 번으로 직관적 확인.
+* **TipRanks ([tipranks.com](https://www.tipranks.com))**:
+  * **주요 용도**: 내부자 및 월가 기관 투자자들의 자금 움직임 추적.
+  * **활용 기능**: 애널리스트 목표가, 헤지펀드 매매 동향, 기업 경영진(CEO 등)의 자사주 매수/매도 현황을 통해 위성 자산 진입 전 마지막 펀더멘털 검증 필터로 활용.
 
-### 3. 거시 경제 (Macro) 지표 분석
-* **FRED (Federal Reserve Economic Data)**:
+### 3. 거시 경제 (Macro) 지표 분석 및 시장 심리
+* **FRED ([fred.stlouisfed.org](https://fred.stlouisfed.org))**:
   * **주요 용도**: 미국 세인트루이스 연방준비은행이 제공하는 방대한 공식 경제 통계 데이터베이스.
   * **활용 기능**: 원-달러 환율 역사, 미국 기준금리(Fed Funds Rate), 통화량(M2) 증감율, 장단기 금리차(10Y-2Y Spread), 기대인플레이션 추적.
-* **Investing.com**:
+* **Investing.com ([kr.investing.com](https://kr.investing.com))**:
   * **주요 용도**: 실시간 경제 캘린더 모니터링.
   * **활용 기능**: 매월 초 미국 고용지표, CPI(소비자물가지수), 연준 FOMC 금리 결정 일정 등 글로벌 거시경제 발표 일정과 예측치 상시 확인.
+* **CME FedWatch Tool ([cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html](https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html))**:
+  * **주요 용도**: 연방준비제도(Fed)의 향후 기준금리 변동 확률 예측.
+  * **활용 기능**: 연방기금(FF) 금리 선물 가격 데이터를 바탕으로 다음 FOMC 회의에서 금리가 인상/동결/인하될 확률을 실시간 백분율로 제공.
+* **Fear & Greed Index ([edition.cnn.com/markets/fear-and-greed](https://edition.cnn.com/markets/fear-and-greed))**:
+  * **주요 용도**: 주식 시장의 현재 투자 심리 상태 직관적 확인.
+  * **활용 기능**: 시장 모멘텀, 주가 변동성, 풋/콜 옵션 비율 등 7가지 지표를 종합하여 현재 시장이 극단적 공포(Extreme Fear)인지 극단적 탐욕(Extreme Greed)인지 점수(0~100)로 시각화.
 
 ---
 
-## 🐍 주가 로데이터(Raw Data) 수집용 파이썬 API
 
-"Yahoo Finance에서 로데이터(Raw Data)를 직접 자동으로 가져올 수 있나요?"
-
-네, 야후 파이낸스 웹사이트에서 수동으로 CSV 파일을 다운로드할 수도 있지만, 파이썬 라이브러리인 **`yfinance`**를 사용하면 간단한 스크립트로 미국/한국 주식 및 ETF의 수십 년 치 일일 주가 로데이터를 깔끔하게 추출해 낼 수 있습니다.
-
-### 파이썬 yfinance 활용 코드 예시
-
-```python
-# yfinance 라이브러리 설치: pip install yfinance
-import yfinance as yf
-
-# 1. SPMO ETF 및 VOO ETF의 티커 설정
-tickers = "SPMO VOO"
-
-# 2. 지정한 기간 동안의 수정 종가(Adjusted Close) 로데이터 일괄 수집
-# (수정 종가는 주식분할, 배당금 재투자가 자동 반영된 가격으로 백테스트에 필수적입니다.)
-data = yf.download(tickers, start="2020-01-01", end="2026-06-01")['Adj Close']
-
-# 3. 로데이터를 CSV 파일로 저장
-data.to_csv("portfolio_raw_data.csv")
-
-# 4. 상위 5행 출력하여 확인
-print(data.head())
-```
-
-이 방법은 야후 파이낸스 서버의 API 정책 변화에 상시 유연하게 매핑되어 작동하므로, 장기 투자 자산의 과거 백테스트를 직접 분석할 때 가장 신뢰받고 대중적인 파이썬 데이터 추출 도구입니다.
-
----
 
 ## 🧭 투자 전략 로드맵 이동
 

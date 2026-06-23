@@ -22,7 +22,6 @@ export default defineConfig({
             { text: '서문 (Introduction)', link: '/philosophy/intro' },
             { text: '기본 핵심 원칙', link: '/philosophy/principles' },
             { text: '보글헤드 10대 철학', link: '/philosophy/bogleheads' },
-            { text: '나의 투자 연혁 (History)', link: '/philosophy/history' },
             { text: '투자 심리와 마인드셋', link: '/philosophy/psychology' }
           ]
         }
@@ -36,6 +35,12 @@ export default defineConfig({
             { text: '2. 자산 배분 & 운영 전략', link: '/strategy/allocation' },
             { text: '3. 자동 투자 전략', link: '/strategy/auto-investment' },
             { text: '4. ETF 선정 및 도구 가이드', link: '/strategy/how-to-choose' }
+          ]
+        },
+        {
+          text: '전략 실천과 기록',
+          items: [
+            { text: '📜 나의 투자 여정과 기록 (History)', link: '/strategy/history' }
           ]
         }
       ],
