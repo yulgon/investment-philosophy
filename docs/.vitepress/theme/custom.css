@@ -203,3 +203,61 @@
     font-size: 1.8rem;
   }
 }
+
+/* =============================================
+   Market Pulse Dynamic Themes
+   ============================================= */
+
+/* EXTREME FEAR: Cold, cautious blue */
+html.market-state-extreme-fear {
+  --vp-c-brand-1: #3b82f6;
+  --vp-c-brand-2: #2563eb;
+  --vp-c-brand-3: #1d4ed8;
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
+}
+
+/* FEAR: Cool blue */
+html.market-state-fear {
+  --vp-c-brand-1: #60a5fa;
+  --vp-c-brand-2: #3b82f6;
+  --vp-c-brand-3: #2563eb;
+  --vp-c-brand-soft: rgba(96, 165, 250, 0.14);
+}
+
+/* EXTREME GREED: Warning red/amber */
+html.market-state-extreme-greed {
+  --vp-c-brand-1: #ef4444;
+  --vp-c-brand-2: #dc2626;
+  --vp-c-brand-3: #b91c1c;
+  --vp-c-brand-soft: rgba(239, 68, 68, 0.14);
+}
+
+/* GREED: Warm orange */
+html.market-state-greed {
+  --vp-c-brand-1: #f97316;
+  --vp-c-brand-2: #ea580c;
+  --vp-c-brand-3: #c2410c;
+  --vp-c-brand-soft: rgba(249, 115, 22, 0.14);
+}
+
+/* Transition for brand colors */
+html {
+  transition: --vp-c-brand-1 0.5s ease, --vp-c-brand-2 0.5s ease, --vp-c-brand-3 0.5s ease;
+}
+
+/* =============================================
+   Stay the Course — Hero Button Golden Styling
+   ============================================= */
+.VPHero .VPButton.alt[href="/stay-the-course/"] {
+  background-color: #F5C518;
+  border-color: #F5C518;
+  color: #1a1a1a;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+.VPHero .VPButton.alt[href="/stay-the-course/"]:hover {
+  background-color: #FFD700;
+  border-color: #FFD700;
+  color: #1a1a1a;
+  box-shadow: 0 0 12px rgba(245, 197, 24, 0.4);
+}
