@@ -6,3 +6,7 @@ docs/.vitepress/cache/
 docs/.vitepress/dist/
 .DS_Store
 .obsidian/
+credentials.json
+*.json.bak
+*.pickle
+token.json

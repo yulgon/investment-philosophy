@@ -19,10 +19,10 @@
       <div class="labels" v-if="ready">
         <span class="lbl lbl-baseline">연 7% 예상 궤도 (기준선)</span>
         <span class="lbl lbl-2023">2023 출발</span>
-        <span class="lbl lbl-2024">2024<br><b>+5.8%</b></span>
+        <span class="lbl lbl-2024">2024<br><b>{{ rate2024 }}</b></span>
         <span class="lbl lbl-planet">중력 가속 구간<br>(2025) 🪐</span>
-        <span class="lbl lbl-2025">스윙바이 · <b>+28.9%</b></span>
-        <span class="lbl lbl-2026">현재 위치 (2026)<br><small>예상 궤도 대비 가속 중 →</small></span>
+        <span class="lbl lbl-2025">스윙바이 · <b>{{ rate2025 }}</b></span>
+        <span class="lbl lbl-2026">{{ labelLatest }}<br><small>예상 궤도 대비 가속 중 →</small></span>
         <span class="lbl lbl-journey">— 여정은 계속됩니다 —</span>
         <span class="lbl lbl-dest">One Billion $<br><small>사회 환원 · 이웃 기여</small></span>
       </div>
@@ -31,8 +31,8 @@
     <!-- Status Cards -->
     <div class="cards">
       <div class="card">
-        <span class="c-lbl">현재 가속도 (2026)</span>
-        <span class="c-val gold">+84.9%</span>
+        <span class="c-lbl">현재 가속도 ({{ latestYear }})</span>
+        <span class="c-val gold">{{ curAcceleration }}</span>
         <span class="c-dsc">예상 궤도 이탈 · 초고속 비행 중</span>
       </div>
       <div class="card">
@@ -51,11 +51,19 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, nextTick } from 'vue'
+import { withBase } from 'vitepress'
 
 const canvasRef    = ref(null)
 const containerRef = ref(null)
 const ready        = ref(false)
 let   animFrameId  = null
+
+const rate2024 = ref('+5.8%')
+const rate2025 = ref('+28.9%')
+const rate2026 = ref('+84.9%')
+const curAcceleration = ref('+84.9%')
+const latestYear = ref('2026')
+const labelLatest = ref('현재 위치 (2026)')
 
 // ─── Canvas coordinate helpers ────────────────────────────────────────────
 // Logical coordinate space: 1000 × 360
@@ -79,7 +87,7 @@ const BASELINE = { x1: 50, y1: 300, x2: 950, y2: 82 }
 
 // Flight path Bézier control points (verified above baseline at all t)
 // M 50 300  C 172 254  288 200  380 166  C 456 144  508 118  560 98
-const PATH_PTS = {
+const pathPts = {
   start : [50,  300],
   cp1a  : [172, 254],
   cp1b  : [288, 200],
@@ -98,7 +106,7 @@ const PLANET     = [345, 238]
 const PLANET_R   = 28
 
 // Node positions
-const NODES = [
+const nodes = [
   { x: 50,  y: 300 },   // 2023
   { x: 200, y: 248 },   // 2024
   { x: 380, y: 166 },   // 2025 contact
@@ -193,13 +201,13 @@ function draw(canvas, progress, tick) {
   ctx.restore()
 
   // ── 4. Glow shadow of flight path (static, full) ─────────────────────────
-  const [s0x, s0y] = p(...PATH_PTS.start)
-  const [c1ax, c1ay] = p(...PATH_PTS.cp1a)
-  const [c1bx, c1by] = p(...PATH_PTS.cp1b)
-  const [midx, midy] = p(...PATH_PTS.mid)
-  const [c2ax, c2ay] = p(...PATH_PTS.cp2a)
-  const [c2bx, c2by] = p(...PATH_PTS.cp2b)
-  const [endx, endy] = p(...PATH_PTS.end)
+  const [s0x, s0y] = p(...pathPts.start)
+  const [c1ax, c1ay] = p(...pathPts.cp1a)
+  const [c1bx, c1by] = p(...pathPts.cp1b)
+  const [midx, midy] = p(...pathPts.mid)
+  const [c2ax, c2ay] = p(...pathPts.cp2a)
+  const [c2bx, c2by] = p(...pathPts.cp2b)
+  const [endx, endy] = p(...pathPts.end)
 
   ctx.save()
   ctx.shadowColor = '#60a5fa'
@@ -220,7 +228,6 @@ function draw(canvas, progress, tick) {
   ctx.restore()
 
   // ── 5. Animated flight path (progress 0→1) ───────────────────────────────
-  // Sample points along the path, draw up to current progress
   if (progress > 0) {
     ctx.save()
     ctx.shadowColor = '#34d399'
@@ -235,18 +242,17 @@ function draw(canvas, progress, tick) {
     let started = false
 
     for (let i = 0; i <= STEPS; i++) {
-      const t = (i / STEPS) * progress  // 0 → progress (0→1)
+      const t = (i / STEPS) * progress
 
-      // The path has two cubic segments; split at t=0.5 logical
       let lx, ly
       if (t <= 0.5) {
-        const tt = t * 2 // 0→1 for first segment
-        lx = cubicBezier(tt, PATH_PTS.start[0], PATH_PTS.cp1a[0], PATH_PTS.cp1b[0], PATH_PTS.mid[0])
-        ly = cubicBezier(tt, PATH_PTS.start[1], PATH_PTS.cp1a[1], PATH_PTS.cp1b[1], PATH_PTS.mid[1])
+        const tt = t * 2
+        lx = cubicBezier(tt, pathPts.start[0], pathPts.cp1a[0], pathPts.cp1b[0], pathPts.mid[0])
+        ly = cubicBezier(tt, pathPts.start[1], pathPts.cp1a[1], pathPts.cp1b[1], pathPts.mid[1])
       } else {
-        const tt = (t - 0.5) * 2 // 0→1 for second segment
-        lx = cubicBezier(tt, PATH_PTS.mid[0], PATH_PTS.cp2a[0], PATH_PTS.cp2b[0], PATH_PTS.end[0])
-        ly = cubicBezier(tt, PATH_PTS.mid[1], PATH_PTS.cp2a[1], PATH_PTS.cp2b[1], PATH_PTS.end[1])
+        const tt = (t - 0.5) * 2
+        lx = cubicBezier(tt, pathPts.mid[0], pathPts.cp2a[0], pathPts.cp2b[0], pathPts.end[0])
+        ly = cubicBezier(tt, pathPts.mid[1], pathPts.cp2a[1], pathPts.cp2b[1], pathPts.end[1])
       }
 
       const [cx, cy] = p(lx, ly)
@@ -258,10 +264,9 @@ function draw(canvas, progress, tick) {
   }
 
   // ── 6. Future path (always visible after first draw cycle) ──────────────
-  const [futEndX, futEndY] = p(...PATH_PTS.end)
+  const [futEndX, futEndY] = p(...pathPts.end)
   const [futCpX, futCpY]   = p(...FUTURE_CP)
   const [futDestX, futDestY] = p(...DEST)
-  // Fade in on first cycle then stay visible
   const futureAlpha = Math.min(0.38, tick / 250 * 0.38)
 
   ctx.save()
@@ -277,16 +282,15 @@ function draw(canvas, progress, tick) {
   // ── 7. Data nodes (appear sequentially) ──────────────────────────────────
   const nodeThresholds = [0.02, 0.25, 0.55, 0.95]
   const nodeColors     = ['rgba(148,163,184,0.9)', '#34d399', '#f59e0b', '#facc15']
-  const nodeRadii      = [7, 9, 10, 0]  // 2026 is a spacecraft, drawn separately
+  const nodeRadii      = [7, 9, 10, 0]
 
-  NODES.forEach(({ x, y }, i) => {
+  nodes.forEach(({ x, y }, i) => {
     if (progress < nodeThresholds[i]) return
-    if (i === 3) return  // spacecraft drawn below
+    if (i === 3) return
 
     const [nx, ny] = p(x, y)
     const r = nodeRadii[i] * sx
 
-    // Glow
     ctx.save()
     ctx.shadowColor = nodeColors[i]
     ctx.shadowBlur  = 12 * sx
@@ -294,7 +298,6 @@ function draw(canvas, progress, tick) {
     ctx.beginPath()
     ctx.arc(nx, ny, r, 0, Math.PI * 2)
     ctx.fill()
-    // White stroke
     ctx.strokeStyle = 'rgba(255,255,255,0.85)'
     ctx.lineWidth   = 2 * sx
     ctx.stroke()
@@ -303,16 +306,12 @@ function draw(canvas, progress, tick) {
 
   // ── 8. Spacecraft (2026 current position) with ripple ────────────────────
   if (progress >= 0.95) {
-    const [spx, spy] = p(NODES[3].x, NODES[3].y)
-    // cyclePos is tick % 480 (where DRAW_FRAMES is 160). 
-    // We want the ripple to fade in smoothly at the end of the drawing phase.
-    const cyclePos = tick % 480 // hardcoding 480 since CYCLE is in startAnimation
+    const [spx, spy] = p(nodes[3].x, nodes[3].y)
+    const cyclePos = tick % 480
     const rippleAlpha = Math.max(0, Math.min(1, (cyclePos - 152) / 28))
 
-    // Ripple rings
     for (let r = 0; r < 2; r++) {
       const rippleT = ((tick * 0.025) + r * Math.PI) % (Math.PI * 2)
-      // Math.sin goes from -1 to 1. Ensure rScale never goes negative to prevent ctx.arc crash.
       const rScale  = Math.max(0.1, 1 + Math.sin(rippleT) * 1.8)
       ctx.save()
       ctx.globalAlpha = Math.max(0, 0.8 - Math.sin(rippleT) * 0.8) * rippleAlpha
@@ -326,7 +325,6 @@ function draw(canvas, progress, tick) {
       ctx.restore()
     }
 
-    // Spacecraft triangle (pointing right)
     ctx.save()
     ctx.fillStyle = '#ffffff'
     ctx.shadowColor = '#ffffff'
@@ -345,7 +343,6 @@ function draw(canvas, progress, tick) {
   const [planetDX, planetDY] = p(...DEST)
   const destR = 24 * sx
 
-  // Rotating rings (always visible)
   const ringAngle = tick * 0.012
   for (let ri = 0; ri < 2; ri++) {
     const rr = (ri === 0 ? 40 : 55) * sx
@@ -363,7 +360,6 @@ function draw(canvas, progress, tick) {
     ctx.restore()
   }
 
-  // Planet glow
   const destGlow = ctx.createRadialGradient(planetDX, planetDY, 0, planetDX, planetDY, destR * 2.5)
   destGlow.addColorStop(0, 'rgba(16,185,129,0.35)')
   destGlow.addColorStop(1, 'transparent')
@@ -372,7 +368,6 @@ function draw(canvas, progress, tick) {
   ctx.arc(planetDX, planetDY, destR * 2.5, 0, Math.PI * 2)
   ctx.fill()
 
-  // Body
   const destBody = ctx.createRadialGradient(
     planetDX - destR * 0.3, planetDY - destR * 0.3, destR * 0.1,
     planetDX, planetDY, destR
@@ -384,32 +379,28 @@ function draw(canvas, progress, tick) {
   ctx.arc(planetDX, planetDY, destR, 0, Math.PI * 2)
   ctx.fill()
 
-  // Core shine
   ctx.fillStyle = 'rgba(209,250,229,0.9)'
   ctx.beginPath()
   ctx.arc(planetDX, planetDY, 8 * sx, 0, Math.PI * 2)
   ctx.fill()
 }
 
-// ─── Animation loop (identical pattern to MarketPulseDashboard) ─────────────
+// ─── Animation loop ─────────────────────────────────────────────────────────
 function startAnimation(canvas) {
   if (!canvas) return
-  // Exact same pattern as MarketPulseDashboard.vue
   canvas.width  = canvas.offsetWidth
   canvas.height = canvas.offsetHeight
-  // Defensive fallback if layout hasn't happened
   if (canvas.width  < 10) canvas.width  = 900
   if (canvas.height < 10) canvas.height = Math.round(canvas.width * 360 / 1000)
 
-  const DRAW_FRAMES  = 160  // frames to draw flight path (≈2.7s at 60fps)
-  const HOLD_FRAMES  = 320  // frames to hold the completed state (≈5.3s)
-  const CYCLE        = DRAW_FRAMES + HOLD_FRAMES  // total cycle ≈ 8s
+  const DRAW_FRAMES  = 160
+  const HOLD_FRAMES  = 320
+  const CYCLE        = DRAW_FRAMES + HOLD_FRAMES
   let tick = 0
 
   function frame() {
     tick++
-    const cyclePos = tick % CYCLE           // position within current cycle
-    // progress: 0→1 during draw phase, stays 1 during hold phase
+    const cyclePos = tick % CYCLE
     const progress = Math.min(1, cyclePos / DRAW_FRAMES)
     draw(canvas, progress, tick)
     animFrameId = requestAnimationFrame(frame)
@@ -417,9 +408,59 @@ function startAnimation(canvas) {
   frame()
 }
 
-onMounted(() => {
-  // Use setTimeout to guarantee DOM layout is complete before reading dimensions.
-  // This is the same reliable pattern used in MarketPulseDashboard.vue.
+onMounted(async () => {
+  try {
+    const url = withBase('/data/stock_comparison.json')
+    const response = await fetch(url)
+    if (response.ok) {
+      const data = await response.json()
+      if (data && data.length > 0) {
+        const row2024 = data.find(r => r['날짜'] === '2023-12')
+        const row2025 = data.find(r => r['날짜'] === '2025-12')
+        const rowLatest = data[data.length - 1]
+
+        const getReturnRate = (row) => {
+          if (!row) return 0
+          const real = row['Real Sum']
+          const exp = row['expected Sum']
+          if (!real || !exp) return 0
+          return (real / exp - 1) * 100
+        }
+
+        const r2024Val = getReturnRate(row2024)
+        const r2025Val = getReturnRate(row2025)
+        const rLatestVal = getReturnRate(rowLatest)
+
+        rate2024.value = (r2024Val >= 0 ? '+' : '') + r2024Val.toFixed(1) + '%'
+        rate2025.value = (r2025Val >= 0 ? '+' : '') + r2025Val.toFixed(1) + '%'
+        rate2026.value = (rLatestVal >= 0 ? '+' : '') + rLatestVal.toFixed(1) + '%'
+        curAcceleration.value = rate2026.value
+
+        if (rowLatest && rowLatest['날짜']) {
+          const yr = rowLatest['날짜'].split('-')[0]
+          latestYear.value = yr
+          labelLatest.value = `현재 위치 (${yr})`
+        }
+
+        // Update nodes y-coordinates based on return rates
+        nodes[1].y = 263.67 - r2024Val * 2.64
+        nodes[2].y = 220.07 - r2025Val * 1.87
+        nodes[3].y = 176.47 - rLatestVal * 0.92
+
+        // Update pathPts
+        pathPts.mid[1] = nodes[2].y
+        pathPts.end[1] = nodes[3].y
+
+        pathPts.cp1a[1] = 300 - (300 - pathPts.mid[1]) * 0.3433
+        pathPts.cp1b[1] = 300 - (300 - pathPts.mid[1]) * 0.7463
+        pathPts.cp2a[1] = pathPts.mid[1] - (pathPts.mid[1] - pathPts.end[1]) * 0.3235
+        pathPts.cp2b[1] = pathPts.mid[1] - (pathPts.mid[1] - pathPts.end[1]) * 0.7059
+      }
+    }
+  } catch (err) {
+    console.error("Failed to load or parse stock comparison data:", err)
+  }
+
   setTimeout(() => {
     ready.value = true
     nextTick(() => {
