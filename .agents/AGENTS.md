@@ -17,24 +17,18 @@ This file documents the rules, preferences, and context for the `investment-phil
 * **Crisis Management:** The user does not mechanically buy during a crisis, nor do they perceive a crisis as a special event. They simply maintain the system.
 
 ## 3. Recommended Tools & Sites (As documented in how-to-choose.md)
-* Portfolio Visualizer
-* Bogleheads.org
-* FnGuide
-* ETF Check
-* Seeking Alpha
-* GuruFocus
-* Finviz
-* TradingView
-* ETF.com / ETFdb
-* Macrotrends
-* TipRanks
-* FRED
-* Investing.com
-* CME FedWatch Tool
-* Fear & Greed Index
+* Portfolio Visualizer, Bogleheads.org, FnGuide, ETF Check, Seeking Alpha, GuruFocus
+* Finviz, TradingView, ETF.com / ETFdb, Macrotrends, TipRanks, FRED, Investing.com, CME FedWatch Tool, Fear & Greed Index
 
 ## 4. Technical Stack & Workflow
 * **Framework:** VitePress (`npm run docs:build`, `npm run docs:dev`).
 * **CI/CD:** GitHub Actions (`deploy.yml` for GitHub Pages, `market-data.yml` for automated market data fetching via Python).
 * **Data Fetching:** Python scripts (`scripts/fetch_market_data.py`) used to fetch market states.
-* **Bot Permissions:** Ensure GitHub Actions bot has `contents: write` permissions if it needs to commit data (e.g., `market-state.json`).
+* **Bot Permissions:** Ensure GitHub Actions bot has `contents: write` permissions if it needs to commit data.
+
+## 5. History & Key Decisions (Memory Bank)
+To maintain continuity across different devices, here is a summary of the work and decisions made during the initial week of development:
+* **Custom Domain Setup:** Configured DNS records to link GitHub Pages to `one-billion-donation.com`, resolving initial InvalidDNSError issues.
+* **Website Structure & Evolvability:** Built the VitePress foundation and defined a strict "Evolvability Strategy" (`Evolvability.md`) to ensure the site can adapt structurally over time without breaking.
+* **Philosophy Refinement:** Unified scattered principles into a cohesive narrative. Stripped out traditional methods (DCA, mechanical 60:40 rebalancing) and established the dry, logical **Core & Satellite (Solar System)** metaphor.
+* **Automation Fixes:** Addressed Node 20 deprecation warnings in GitHub Actions and fixed a `403 Permission denied` error in the `market-data.yml` cron job by explicitly granting `contents: write` to the `github-actions[bot]`.
