@@ -5,6 +5,10 @@ on:
     - cron: '0 0,6,12,18 * * 1-5' # Run every 6 hours on weekdays
   workflow_dispatch: # Allow manual trigger
 
+# 봇(bot)이 변경된 파일을 커밋하고 푸시할 수 있도록 쓰기 권한 부여
+permissions:
+  contents: write
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
