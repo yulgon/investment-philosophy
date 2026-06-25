@@ -93,6 +93,20 @@
   * **주요 용도**: 주식 시장의 현재 투자 심리 상태 직관적 확인.
   * **활용 기능**: 시장 모멘텀, 주가 변동성, 풋/콜 옵션 비율 등 7가지 지표를 종합하여 현재 시장이 극단적 공포(Extreme Fear)인지 극단적 탐욕(Extreme Greed)인지 점수(0~100)로 시각화.
 
+### 4. Reddit 커뮤니티 (Reddit Communities)
+* **r/Bogleheads ([reddit.com/r/Bogleheads](https://www.reddit.com/r/Bogleheads))**:
+  * **주요 용도**: 존 보글의 뱅가드 투자 철학을 공유하는 장기 패시브 인덱스 투자자들의 주력 커뮤니티.
+  * **활용 기능**: 자산 배분 비중 설계, 저비용 인덱스 펀드 기반 장기 적립식 투자 원칙을 견지하기 위한 심리적 지지와 이론적 질답.
+* **r/dividends ([reddit.com/r/dividends](https://www.reddit.com/r/dividends))**:
+  * **주요 용도**: 배당 성장(Dividend Growth) 및 배당 소득 중심의 투자 정보를 교류하는 포럼.
+  * **활용 기능**: SCHD 등 배당 성장 ETF나 개별 고배당 자산의 배당 안정성 분석, 은퇴 대비 현금 흐름 창출 포트폴리오 벤치마킹.
+* **r/investing ([reddit.com/r/investing](https://www.reddit.com/r/investing))**:
+  * **주요 용도**: 글로벌 거시 경제 뉴스, 기업 실적 분석, 자산군 전반에 대한 종합 토론 채널.
+  * **활용 기능**: 주류 경제 이슈에 대한 개인 투자자들의 다양한 관점 모니터링 및 실시간 시장 동향 리서치.
+* **r/wallstreetbets ([reddit.com/r/wallstreetbets](https://www.reddit.com/r/wallstreetbets))**:
+  * **주요 용도**: 고위험·고수익 중심의 공격적인 개별 주식 및 옵션 거래 성향을 가진 투자자 집합소.
+  * **활용 기능**: 단기 투기성 자금의 흐름과 소매 투자자(Retail Investors)의 과열된 시장 심리 및 밈 주식(Meme Stocks) 트렌드 트래킹.
+
 ---
 
 

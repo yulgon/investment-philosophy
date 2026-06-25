@@ -192,10 +192,10 @@
   <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
     <div>
       <h3 style="margin-top: 0; font-size: 1.15rem; font-weight: 600; color: var(--vp-c-brand-1);">기술공화국 선언</h3>
-      <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">사공일 외</p>
-      <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">글로벌 지정학적 패권 대전환기 속에서 대한민국이 자립하고 미래 성장을 주도하기 위해 추구해야 할 국가 및 기술 전략을 논합니다.</p>
+      <p style="font-size: 0.85rem; color: var(--vp-c-text-3); margin-bottom: 0.8rem;">알렉스 카프, 니콜라스 자미스카 (Alex Karp, Nicholas Zamiska)</p>
+      <p style="font-size: 0.9rem; line-height: 1.6; color: var(--vp-c-text-2);">AI와 첨단 기술을 민주주의 수호와 국가 안보를 위한 핵심 자산으로 규정하고, 실리콘밸리가 사적 이익 추구에서 벗어나 국가적 책무에 기여해야 함을 철학적으로 역설합니다.</p>
     </div>
-    <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">국가/기술 트렌드</span></div>
+    <div style="margin-top: 1rem;"><span style="font-size: 0.8rem; background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 0.25rem 0.5rem; border-radius: 4px; font-weight: 500;">기술 지정학/안보</span></div>
   </div>
 
   <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between;">
