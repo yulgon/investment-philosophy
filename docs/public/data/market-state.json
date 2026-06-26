@@ -1,13 +1,9 @@
 {
-  "updated_at": "2026-06-26T02:53:32.761876+00:00",
+  "updated_at": "2026-06-26T08:57:36.892604+00:00",
   "organism_state": "fear",
   "vix": {
-    "latest": 18.89,
+    "latest": 19.79,
     "history": [
-      {
-        "date": "2026-05-25",
-        "value": 16.59
-      },
       {
         "date": "2026-05-26",
         "value": 17.01
@@ -95,17 +91,17 @@
       {
         "date": "2026-06-25",
         "value": 18.89
+      },
+      {
+        "date": "2026-06-26",
+        "value": 19.79
       }
     ]
   },
   "fear_and_greed": {
-    "score": 25.0,
+    "score": 26.0,
     "rating": "fear",
     "history": [
-      {
-        "date": "2026-05-15",
-        "value": 62.97
-      },
       {
         "date": "2026-05-18",
         "value": 61.54
@@ -216,19 +212,23 @@
       },
       {
         "date": "2026-06-25",
-        "value": 25.46
+        "value": 25.6
       },
       {
-        "date": "2026-06-25",
-        "value": 25.46
+        "date": "2026-06-26",
+        "value": 25.6
+      },
+      {
+        "date": "2026-06-26",
+        "value": 25.6
       }
     ]
   },
   "macro": {
-    "ten_year": 4.39,
-    "two_year": 3.68,
+    "ten_year": 4.45,
+    "two_year": 3.66,
     "fed_rate": 3.63,
-    "spread": 0.71,
+    "spread": 0.79,
     "status": "normal",
     "history": [
       {
@@ -338,18 +338,12 @@
         "ten_year": 4.45,
         "two_year": 3.66,
         "fed_rate": 3.63
-      },
-      {
-        "date": "2026-06-25",
-        "ten_year": 4.39,
-        "two_year": 3.68,
-        "fed_rate": 3.63
       }
     ]
   },
   "exchange": {
-    "usd_krw": 1548.98,
-    "dxy": 101.53,
+    "usd_krw": 1538.07,
+    "dxy": 101.22,
     "history": [
       {
         "date": "2026-05-26",
@@ -443,8 +437,8 @@
       },
       {
         "date": "2026-06-26",
-        "usd_krw": 1548.98,
-        "dxy": 101.53
+        "usd_krw": 1538.07,
+        "dxy": 101.22
       }
     ]
   }
