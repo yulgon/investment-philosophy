@@ -6,7 +6,7 @@
 
 ## 📧 이메일
 
-**[younggon5548@gmail.com](mailto:younggon5548@gmail.com)**
+**[one.billion.dollar.donation@gmail.com](mailto:one.billion.dollar.donation@gmail.com)**
 
 ---
 
