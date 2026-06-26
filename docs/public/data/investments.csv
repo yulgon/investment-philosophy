@@ -1,11 +1,11 @@
 yearStart,yearEnd,name,type,role,status
 2015,2020,아이에이,stock,satellite,sold
-2022,2026,삼성전자우,stock,satellite,sold
+2022,,삼성전자우,stock,core,holding
 2022,,PLUS 고배당주,etf,core,holding
 2022,,RISE KIS국고채30년Enhanced,etf,core,holding
 2024,,OXY,stock,satellite,holding
 2024,2025,NAVER,stock,satellite,sold
-2024,2026,현대차2우B,stock,satellite,sold
+2024,,현대차2우B,stock,satellite,holding
 2022,2025,NVDA,stock,satellite,sold
 2011,2022,한국항공우주,stock,satellite,sold
 2022,2025,KODEX 미국S&P500,etf,satellite,sold
@@ -26,11 +26,11 @@ yearStart,yearEnd,name,type,role,status
 2024,2025,BRK.B,stock,satellite,sold
 2020,2021,SK아이이테크놀로지,stock,satellite,sold
 2022,,BND,etf,core,holding
-2024,,RISE미국30년국채엔화노출(합성),etf,core,holding
+2024,,RISE미국30년국채엔화노출(합성),etf,satellite,holding
 2024,2024,KODEX 골드선물(H),etf,satellite,sold
 2025,2025,QLD,etf,satellite,sold
 2022,,AAPL,stock,satellite,holding
-2023,2024,MSFT,stock,satellite,sold
+2023,MSFT,stock,satellite,holding
 2020,2021,아주IB투자,stock,satellite,sold
 2023,2023,AMSC,stock,satellite,sold
 2023,,ACE 미국30년국채액티브(H),etf,core,holding
@@ -42,7 +42,7 @@ yearStart,yearEnd,name,type,role,status
 2021,2022,펄어비스,stock,satellite,sold
 2020,2021,SK바이오사이언스,stock,satellite,sold
 2020,2021,폴라리스오피스,stock,satellite,sold
-2021,2022,카카오,stock,satellite,sold
+2020,2022,카카오,stock,satellite,sold
 2010,2010,금호타이어,stock,satellite,sold
 2010,2010,테라리소스,stock,satellite,sold
 2010,2010,AP시스템,stock,satellite,sold
@@ -114,3 +114,9 @@ yearStart,yearEnd,name,type,role,status
 2023,,SCHD,etf,core,holding
 2025,,CRCL,stock,satellite,holding
 2021,,삼성전자,stock,core,holding
+2023,,soxx,etf,satelite,holding
+2023,,QQQM,etf,satelite,holding
+2023,,LPG,stock,satellite,holding
+2024,,O,stock,satellite,holding
+2023,,LTPZ,etf,core,holding
+2024,,META,stock,satellite,holding
