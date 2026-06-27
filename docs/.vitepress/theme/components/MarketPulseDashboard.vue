@@ -159,8 +159,8 @@
 
       </div>
 
-      <!-- Bottom Row: 30-Day Historical Line Charts (1 per row) -->
-      <h3 class="history-title">최근 30일 추이</h3>
+      <!-- Bottom Row: 30-Day Tactical Charts -->
+      <h3 class="history-title">단기 펄스 (최근 30일 추이)</h3>
       <div class="dashboard-grid history-row">
         
         <!-- F&G History -->
@@ -202,6 +202,12 @@
             <LineChart v-if="dxyChartData" :data="dxyChartData" :options="lineOptions" />
           </div>
         </div>
+
+      </div>
+
+      <!-- Long-Term KCA History Charts -->
+      <h3 class="history-title" style="margin-top: 3rem;">장기 자산 궤적 (2021년~현재)</h3>
+      <div class="dashboard-grid history-row">
 
         <!-- S&P 500 KCA History -->
         <div class="card chart-card">
