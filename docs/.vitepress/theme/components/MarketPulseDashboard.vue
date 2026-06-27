@@ -85,6 +85,17 @@
           </div>
         </div>
 
+        <!-- FedWatch Tool -->
+        <div class="card fedwatch-card" style="display: flex; flex-direction: column;">
+          <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h4 style="margin: 0; font-size: 1.05rem; font-weight: 600;">FedWatch 금리 전망</h4>
+            <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" style="font-size: 0.75rem; color: var(--vp-c-brand-1); text-decoration: none; font-weight: 600; padding: 2px 8px; border-radius: 12px; background: var(--vp-c-brand-soft);">자세히 보기 ↗</a>
+          </div>
+          <div class="iframe-wrap" style="flex: 1; min-height: 250px; border-radius: 8px; overflow: hidden; border: 1px solid var(--vp-c-gutter); background: #fff; position: relative;">
+            <iframe src="https://www.cmegroup.com/trading/interest-rates/countdown-to-fomc.html" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" frameborder="0" loading="lazy"></iframe>
+          </div>
+        </div>
+
         <!-- Macro / Yields Stats -->
         <div class="card macro-card">
           <h4>미 국채 금리 및 기준금리</h4>
