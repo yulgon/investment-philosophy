@@ -86,14 +86,16 @@
         </div>
 
         <!-- FedWatch Tool -->
-        <div class="card fedwatch-card" style="display: flex; flex-direction: column;">
-          <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-            <h4 style="margin: 0; font-size: 1.05rem; font-weight: 600;">FedWatch 금리 전망</h4>
-            <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" style="font-size: 0.75rem; color: var(--vp-c-brand-1); text-decoration: none; font-weight: 600; padding: 2px 8px; border-radius: 12px; background: var(--vp-c-brand-soft);">자세히 보기 ↗</a>
-          </div>
-          <div class="iframe-wrap" style="flex: 1; min-height: 250px; border-radius: 8px; overflow: hidden; border: 1px solid var(--vp-c-gutter); background: #fff; position: relative;">
-            <iframe src="https://www.cmegroup.com/trading/interest-rates/countdown-to-fomc.html" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" frameborder="0" loading="lazy"></iframe>
-          </div>
+        <div class="card fedwatch-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem 1.5rem; background: linear-gradient(145deg, var(--vp-c-bg-soft), var(--vp-c-bg));">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📊</div>
+          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; font-weight: 700; color: var(--vp-c-text-1);">FedWatch 금리 전망</h4>
+          <p style="font-size: 0.85rem; color: var(--vp-c-text-2); line-height: 1.5; margin-bottom: 1.5rem;">
+            시장의 향후 기준금리 인하/인상 확률을 예측하는 가장 강력한 지표입니다.<br>
+            <span style="font-size: 0.75rem; opacity: 0.8;">(CME 그룹의 보안 정책으로 내부 표출이 제한됩니다)</span>
+          </p>
+          <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--vp-c-brand-1); color: white; border-radius: 20px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: background 0.2s;">
+            실시간 확률 막대그래프 보기 ↗
+          </a>
         </div>
 
         <!-- Macro / Yields Stats -->
