@@ -638,10 +638,10 @@ const yieldsChartData = computed(() => {
         tension: 0.3
       },
       {
-        label: '3개월물(13주)',
+        label: '2년물',
         borderColor: '#ef4444',
         pointRadius: 1,
-        data: history.map(item => item.three_month),
+        data: history.map(item => item.two_year),
         tension: 0.3
       },
       {
@@ -790,10 +790,10 @@ const longTermYieldsChartData = computed(() => {
         tension: 0.3
       },
       {
-        label: '3개월물(13주)',
+        label: '2년물',
         borderColor: '#ef4444',
         pointRadius: 0,
-        data: history.map(item => item.three_month),
+        data: history.map(item => item.two_year),
         tension: 0.3
       }
     ]
