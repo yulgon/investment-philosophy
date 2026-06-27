@@ -60,6 +60,7 @@
           class="timeline-node"
           :class="idx % 2 === 0 ? 'theme-dark' : 'theme-light'"
         >
+          <div class="timeline-dot"></div>
           <div class="node-year-watermark">{{ group.year }}</div>
           <div class="node-year-title">
             <span class="year-text">{{ group.year }}년</span>
@@ -342,9 +343,29 @@ onMounted(async () => {
   position: relative;
   margin-top: 3rem;
   padding-bottom: 2rem;
+  z-index: 1;
 }
 .timeline-line {
-  display: none;
+  position: absolute;
+  left: 1.5rem;
+  top: 4rem;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--vp-c-brand-1), var(--vp-c-brand-2), transparent);
+  z-index: 10;
+  border-radius: 4px;
+}
+.timeline-dot {
+  position: absolute;
+  left: 1.125rem;
+  top: 5rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--vp-c-bg);
+  border: 4px solid var(--vp-c-brand-1);
+  z-index: 11;
+  box-shadow: 0 0 0 4px var(--vp-c-bg);
 }
 .timeline-node {
   position: relative;
@@ -405,6 +426,7 @@ onMounted(async () => {
   align-items: center;
   gap: 1rem;
   margin-bottom: 2.5rem;
+  padding-left: 4rem;
 }
 
 .year-text {
@@ -427,6 +449,7 @@ onMounted(async () => {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
+  padding-left: 4rem;
 }
 
 /* ===== Investment Card ===== */
