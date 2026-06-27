@@ -38,74 +38,66 @@
 
 ---
 
-## 🛠️ 내가 매일 사용하는 투자 분석 도구 및 웹사이트
+## 🛠️ 내가 활용하는 투자 분석 도구 및 웹사이트
 
-나의 포트폴리오 백테스트, 매크로 지표 분석, 개별 주식 리서치 및 로데이터 추출에 활용하는 전문적인 도구 라인업입니다.
+> ⚠️ **"앱을 지우라더니 이 많은 도구를 매일 봐야 하나요?"**
+>
+> 시세의 등락과 자극적인 뉴스에 둔감해지라는 것이지, 결코 경제 공부를 게을리하라는 뜻이 아닙니다. 보글헤드 철학의 핵심 중 하나는 **'Educate Yourself(스스로 공부하라)'**입니다. 
+> 언론의 공포 마케팅이나 찌라시에 휘둘리지 않으려면, 누군가 가공한 뉴스가 아니라 **'원형 데이터(Raw Data)'**를 직접 볼 줄 알아야 합니다. 아래의 도구들은 시세를 추적하기 위함이 아닙니다. 시장의 본질을 꿰뚫어 보고 팩트 체크를 하기 위해 제가 직접 엄선하고 매일같이 활용해 온 '지적 무기고'입니다.
 
-### 1. 포트폴리오 분석 및 백테스트
-* **Portfolio Visualizer ([portfoliovisualizer.com](https://www.portfoliovisualizer.com))**:
-  * **주요 용도**: 역사적 시뮬레이션의 최강자.
-  * **활용 기능**: 자산 배분 비율에 따른 포트폴리오 백테스트, 자산 간 상관관계(Correlation) 매트릭스 분석, 미래 자산 예측(Monte Carlo Simulation), 팩터 분석을 수행합니다.
-* **Bogleheads.org ([bogleheads.org](https://www.bogleheads.org))**:
-  * **주요 용도**: 존 보글의 철학을 따르는 전 세계 장기 인덱스 투자자들의 성지.
-  * **활용 기능**: '3-자산 포트폴리오(Three-Fund Portfolio)'를 비롯한 자산 배분의 기본 뼈대 이론 리서치 및 검증된 포트폴리오 구성 템플릿 탐색.
+### 📊 A. [원형 데이터] 뉴스 대신 팩트를 보는 곳
+언론의 호들갑에 흔들리지 않기 위해 객관적 수치와 군중 심리를 직접 확인합니다.
 
-### 2. 국내외 기업 및 ETF 리서치
-* **comp.fnguide.com ([FnGuide Company Guide](http://comp.fnguide.com))**:
-  * **주요 용도**: 한국 주식 및 국내 기업 분석의 표준.
-  * **활용 기능**: 개별 기업의 10개년 재무제표 추이, 연간/분기별 컨센서스, PBR/PER/ROE 변동 밴드, 지분 구조 및 배당 내역 확인.
-* **ETF Check (모바일 앱 / 웹)**:
-  * **주요 용도**: 국내 및 글로벌 ETF 상세 정보 스크리닝 플랫폼.
-  * **활용 기능**: 국내 상장 ETF와 해외 ETF의 자산 규모(AUM), 실시간 배당률, 분배금 지급 일정(배당 배정일), 보유 종목(Holdings) 비교 분석.
-* **Seeking Alpha ([seekingalpha.com](https://seekingalpha.com))**:
-  * **주요 용도**: 글로벌 개별 주식과 ETF에 대한 전문 투자자 칼럼 및 실적 분석 리포트.
-  * **활용 기능**: 기업 실적 발표회(Earnings Call)의 오디오 녹취록 전문(Transcript) 확인, 배당금 인상 역사와 배당 안전성 스코어 분석.
-* **GuruFocus ([gurufocus.com](https://www.gurufocus.com))**:
-  * **주요 용도**: 기업의 재무 건전성 및 밸류에이션 측정.
-  * **활용 기능**: 피오트로스키 F-스코어, 알트만 Z-스코어 등 재무 안전성 수치 확인. 기업 고유의 역사적 밸류에이션 밴드인 'GF Value' 및 워렌 버핏 등 글로벌 구루들의 최신 매매 정보 트래킹.
-* **Finviz ([finviz.com](https://finviz.com))**:
-  * **주요 용도**: 직관적 스크리닝과 시장 전체의 히트맵(Heatmap) 시각화.
-  * **활용 기능**: 수천 개의 주식을 PER, 배당률, 52주 신고가 등 다양한 조건으로 순식간에 필터링하여 '위성(Satellite)' 자산 후보군을 빠르게 발굴.
-* **TradingView ([tradingview.com](https://www.tradingview.com))**:
-  * **주요 용도**: 전 세계에서 가장 널리 쓰이는 강력한 차트 및 기술적 분석 플랫폼.
-  * **활용 기능**: 다양한 자산의 가격 흐름 겹쳐 보기, 전 세계 투자자들이 만든 커스텀 보조지표 적용 및 모멘텀 추적.
-* **ETF.com ([etf.com](https://www.etf.com)) / ETFdb ([etfdb.com](https://etfdb.com))**:
-  * **주요 용도**: 글로벌 ETF의 해부 및 심층 비교 분석.
-  * **활용 기능**: VOO, SPMO 등 편입할 ETF 간의 보유 종목 중복도(Overlap) 확인, 운용 수수료 상세 비교, 최근 자금 유입/유출(Fund Flows) 트렌드 파악.
-* **Macrotrends ([macrotrends.net](https://www.macrotrends.net))**:
-  * **주요 용도**: 특정 자산의 장기 역사적 재무 데이터 시각화.
-  * **활용 기능**: 특정 행성(Core) 기업의 10~20년 치 실적 변동, 역사적 밸류에이션(P/E 밴드) 등 굵직한 경제 사이클을 견뎌온 데이터를 클릭 한 번으로 직관적 확인.
-* **TipRanks ([tipranks.com](https://www.tipranks.com))**:
-  * **주요 용도**: 내부자 및 월가 기관 투자자들의 자금 움직임 추적.
-  * **활용 기능**: 애널리스트 목표가, 헤지펀드 매매 동향, 기업 경영진(CEO 등)의 자사주 매수/매도 현황을 통해 위성 자산 진입 전 마지막 펀더멘털 검증 필터로 활용.
-
-### 3. 거시 경제 (Macro) 지표 분석 및 시장 심리
 * **FRED ([fred.stlouisfed.org](https://fred.stlouisfed.org))**:
-  * **주요 용도**: 미국 세인트루이스 연방준비은행이 제공하는 방대한 공식 경제 통계 데이터베이스.
-  * **활용 기능**: 원-달러 환율 역사, 미국 기준금리(Fed Funds Rate), 통화량(M2) 증감율, 장단기 금리차(10Y-2Y Spread), 기대인플레이션 추적.
-* **Investing.com ([kr.investing.com](https://kr.investing.com))**:
-  * **주요 용도**: 실시간 경제 캘린더 모니터링.
-  * **활용 기능**: 매월 초 미국 고용지표, CPI(소비자물가지수), 연준 FOMC 금리 결정 일정 등 글로벌 거시경제 발표 일정과 예측치 상시 확인.
+  * **핵심 용도**: 미국 세인트루이스 연준이 제공하는 방대한 공식 경제 통계 데이터베이스. 기사가 아닌 '진짜' 지표 확인용.
+  * **활용**: 원-달러 환율 역사, 미국 기준금리, 통화량(M2), 장단기 금리차 등 거시경제 원형 데이터 열람.
 * **CME FedWatch Tool ([cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html](https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html))**:
-  * **주요 용도**: 연방준비제도(Fed)의 향후 기준금리 변동 확률 예측.
-  * **활용 기능**: 연방기금(FF) 금리 선물 가격 데이터를 바탕으로 다음 FOMC 회의에서 금리가 인상/동결/인하될 확률을 실시간 백분율로 제공.
+  * **핵심 용도**: 연준(Fed)의 금리 인상/인하 찌라시에 휘둘리지 않기 위한 최적의 툴.
+  * **활용**: 연방기금 선물 가격 데이터를 바탕으로 다음 FOMC 회의에서 금리가 어떻게 변할지 시장의 '진짜 배팅 확률'을 확인.
 * **Fear & Greed Index ([edition.cnn.com/markets/fear-and-greed](https://edition.cnn.com/markets/fear-and-greed))**:
-  * **주요 용도**: 주식 시장의 현재 투자 심리 상태 직관적 확인.
-  * **활용 기능**: 시장 모멘텀, 주가 변동성, 풋/콜 옵션 비율 등 7가지 지표를 종합하여 현재 시장이 극단적 공포(Extreme Fear)인지 극단적 탐욕(Extreme Greed)인지 점수(0~100)로 시각화.
+  * **핵심 용도**: 한 발짝 물러서서 주식 시장의 군중 심리 관찰.
+  * **활용**: 시장이 극단적 공포(Extreme Fear)에 빠졌는지 극단적 탐욕(Extreme Greed)에 빠졌는지 점수로 직관적 확인.
+* **Investing.com ([kr.investing.com](https://kr.investing.com))**:
+  * **핵심 용도**: 실시간 글로벌 경제 캘린더 모니터링.
 
-### 4. Reddit 커뮤니티 (Reddit Communities)
-* **r/Bogleheads ([reddit.com/r/Bogleheads](https://www.reddit.com/r/Bogleheads))**:
-  * **주요 용도**: 존 보글의 뱅가드 투자 철학을 공유하는 장기 패시브 인덱스 투자자들의 주력 커뮤니티.
-  * **활용 기능**: 자산 배분 비중 설계, 저비용 인덱스 펀드 기반 장기 적립식 투자 원칙을 견지하기 위한 심리적 지지와 이론적 질답.
-* **r/dividends ([reddit.com/r/dividends](https://www.reddit.com/r/dividends))**:
-  * **주요 용도**: 배당 성장(Dividend Growth) 및 배당 소득 중심의 투자 정보를 교류하는 포럼.
-  * **활용 기능**: SCHD 등 배당 성장 ETF나 개별 고배당 자산의 배당 안정성 분석, 은퇴 대비 현금 흐름 창출 포트폴리오 벤치마킹.
-* **r/investing ([reddit.com/r/investing](https://www.reddit.com/r/investing))**:
-  * **주요 용도**: 글로벌 거시 경제 뉴스, 기업 실적 분석, 자산군 전반에 대한 종합 토론 채널.
-  * **활용 기능**: 주류 경제 이슈에 대한 개인 투자자들의 다양한 관점 모니터링 및 실시간 시장 동향 리서치.
-* **r/wallstreetbets ([reddit.com/r/wallstreetbets](https://www.reddit.com/r/wallstreetbets))**:
-  * **주요 용도**: 고위험·고수익 중심의 공격적인 개별 주식 및 옵션 거래 성향을 가진 투자자 집합소.
-  * **활용 기능**: 단기 투기성 자금의 흐름과 소매 투자자(Retail Investors)의 과열된 시장 심리 및 밈 주식(Meme Stocks) 트렌드 트래킹.
+### 🛡️ B. [백테스트] 흔들리지 않는 확신을 만드는 곳
+내가 고른 행성(Core)이 과거 위기를 어떻게 버텨왔는지 검증하여 장기 보유의 멘탈을 다집니다.
+
+* **Portfolio Visualizer ([portfoliovisualizer.com](https://www.portfoliovisualizer.com))**:
+  * **핵심 용도**: 역사적 시뮬레이션의 최강자.
+  * **활용**: 내 자산 배분 비율이 과거 경제 위기(MDD) 때 어떻게 방어했는지 백테스트하여 확신 얻기.
+* **Macrotrends ([macrotrends.net](https://www.macrotrends.net))**:
+  * **핵심 용도**: 특정 자산의 10~20년 장기 재무 데이터 시각화.
+  * **활용**: 단기 1~2년이 아닌 굵직한 경제 사이클을 견뎌온 기업과 ETF의 긴 역사를 조망.
+* **ETF.com / ETFdb**:
+  * **핵심 용도**: 글로벌 ETF 심층 해부.
+  * **활용**: ETF 간 보유 종목 중복도(Overlap), 수수료 비교, 자금 유입/유출 동향 파악.
+
+### 🔬 C. [심층 리서치] 남의 말이 아닌 내 눈으로 확인하는 곳
+누군가의 종목 추천이 아닌, 나만의 위성(Satellite) 자산을 발굴하고 팩트 체크합니다.
+
+* **FnGuide Company Guide ([comp.fnguide.com](http://comp.fnguide.com))**:
+  * **핵심 용도**: 한국 주식 및 국내 기업 분석의 표준. 10개년 재무제표 및 컨센서스 확인.
+* **Seeking Alpha ([seekingalpha.com](https://seekingalpha.com))**:
+  * **핵심 용도**: 글로벌 개별 주식/ETF 실적 분석 리포트 및 기업 실적 발표회(Earnings Call) 원문(Transcript) 확인.
+* **GuruFocus ([gurufocus.com](https://www.gurufocus.com))**:
+  * **핵심 용도**: 피오트로스키 F-스코어 등 기업 재무 건전성 점검 및 글로벌 구루(워렌 버핏 등) 포트폴리오 트래킹.
+* **Finviz ([finviz.com](https://finviz.com))**:
+  * **핵심 용도**: 시장 전체 흐름을 한눈에 보는 히트맵(Heatmap) 및 수많은 조건 필터링을 통한 종목 스크리닝.
+* **TipRanks ([tipranks.com](https://www.tipranks.com))**:
+  * **핵심 용도**: 경영진(내부자) 매매 동향 및 기관/헤지펀드의 자금 움직임을 역추적하여 펀더멘털 최종 검증.
+* **TradingView / ETF Check**:
+  * **핵심 용도**: 기술적 차트 분석, 커스텀 보조지표 활용 및 국내 상장 ETF 상세 스크리닝.
+
+### 🤝 D. [마인드셋 방어] 철학의 연대 (Reddit 커뮤니티)
+외로운 장기 투자 과정에서 흔들림 없이 원칙을 견지하기 위한 심리적 안식처입니다.
+
+* **r/Bogleheads ([reddit.com/r/Bogleheads](https://www.reddit.com/r/Bogleheads))**: 
+  * 존 보글의 철학을 공유하는 장기 패시브 인덱스 투자자들의 성지. "시세 보지 말고 일상을 살아라"를 서로 다독임.
+* **r/dividends ([reddit.com/r/dividends](https://www.reddit.com/r/dividends))**: 
+  * SCHD 등 배당 성장 및 현금흐름 투자를 논의하는 포럼.
+* **r/investing / r/wallstreetbets**: 
+  * 글로벌 거시 경제 토론 및 과열된 단기 투기 심리(밈 주식 등)를 한 발짝 떨어져서 역발상 지표로 모니터링하는 채널.
 
 ---
 
