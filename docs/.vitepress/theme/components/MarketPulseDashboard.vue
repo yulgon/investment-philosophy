@@ -38,7 +38,7 @@
           <div class="fg-card-header">
             <h4>공포와 탐욕 지수</h4>
             <div class="fg-status-label" :style="{ color: fgColor, textShadow: `0 0 10px ${fgColor}80` }">
-              {{ marketData ? marketData.fear_and_greed.rating.toUpperCase().replace('_', ' ') : 'LOADING' }}
+              {{ fgRatingString }}
             </div>
           </div>
           
@@ -489,6 +489,12 @@ const activeSegmentIndex = computed(() => {
   if (score <= 55) return 2
   if (score <= 75) return 3
   return 4
+})
+
+const fgRatingString = computed(() => {
+  if (!marketData.value) return 'LOADING'
+  const labels = ['EXTREME FEAR', 'FEAR', 'NEUTRAL', 'GREED', 'EXTREME GREED']
+  return labels[activeSegmentIndex.value]
 })
 
 const needleAngle = computed(() => {
