@@ -7,11 +7,9 @@ on:
   push:
     branches: [main]
 
-  # Runs when the "Update Market Data" workflow completes
-  workflow_run:
-    workflows: ["Update Market Data"]
-    types:
-      - completed
+  # Runs every 6 hours on weekdays
+  schedule:
+    - cron: '0 0,6,12,18 * * 1-5'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,12 +30,25 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Not required but recommended by VitePress
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Fetch Market & Asset Data
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install gspread google-auth
+          echo "$GOOGLE_CREDENTIALS" > credentials.json
+          python scripts/sync_google_sheets.py
+          python scripts/fetch_market_data.py
+          rm -f credentials.json
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
