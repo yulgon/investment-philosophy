@@ -88,10 +88,10 @@ def fetch_treasury_yields():
             if d in h10 and d in h2:
                 if d in hfed:
                     last_fed = hfed[d]
-                history.append({"date": d, "ten_year": h10[d], "two_year": h2[d], "fed_rate": last_fed})
+                history.append({"date": d, "ten_year": h10[d], "three_month": h2[d], "fed_rate": last_fed})
                 
         y10_latest = history[-1]["ten_year"] if history else 0.0
-        y2_latest = history[-1]["two_year"] if history else 0.0
+        y2_latest = history[-1]["three_month"] if history else 0.0
         fed_latest = history[-1]["fed_rate"] if history else 0.0
         
         spread = y10_latest - y2_latest
@@ -103,7 +103,7 @@ def fetch_treasury_yields():
             
         return {
             "ten_year": round(y10_latest, 2),
-            "two_year": round(y2_latest, 2),
+            "three_month": round(y2_latest, 2),
             "fed_rate": round(fed_latest, 2),
             "spread": round(spread, 2),
             "status": status,
@@ -111,7 +111,7 @@ def fetch_treasury_yields():
         }
     except Exception as e:
         print(f"Error fetching Yields: {e}")
-        return {"ten_year": 4.0, "two_year": 4.0, "fed_rate": 5.0, "spread": 0.0, "status": "unknown", "history": []}
+        return {"ten_year": 4.0, "three_month": 4.0, "fed_rate": 5.0, "spread": 0.0, "status": "unknown", "history": []}
 
 def fetch_exchange_rates():
     url_krw = "https://query1.finance.yahoo.com/v8/finance/chart/KRW=X?interval=1d&range=1mo"
@@ -222,7 +222,7 @@ def fetch_kca_indices(exchange_rates_history):
                 "ks11_usd": round(lk / lx, 4) if lx > 0 else 0,
                 "usd_krw": round(lx, 2),
                 "ten_year": round(ltnx, 2),
-                "two_year": round(lirx, 2)
+                "three_month": round(lirx, 2)
             })
             
         return {

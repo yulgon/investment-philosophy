@@ -511,12 +511,18 @@ const lineOptions = {
     y: { grid: { color: 'rgba(128, 128, 128, 0.1)' } },
     x: { grid: { display: false } }
   },
-  plugins: { legend: { display: false } }
+  plugins: { 
+    legend: { display: false },
+    tooltip: { mode: 'index', intersect: false }
+  }
 }
 
 const lineOptionsWithLegend = {
   ...lineOptions,
-  plugins: { legend: { display: true, position: 'bottom' } }
+  plugins: { 
+    legend: { display: true, position: 'bottom' },
+    tooltip: { mode: 'index', intersect: false }
+  }
 }
 
 const kcaChartOptionsFallback = {
@@ -632,10 +638,10 @@ const yieldsChartData = computed(() => {
         tension: 0.3
       },
       {
-        label: '2년물',
+        label: '3개월물(13주)',
         borderColor: '#ef4444',
         pointRadius: 1,
-        data: history.map(item => item.two_year),
+        data: history.map(item => item.three_month),
         tension: 0.3
       },
       {
@@ -784,10 +790,10 @@ const longTermYieldsChartData = computed(() => {
         tension: 0.3
       },
       {
-        label: '2년물',
+        label: '3개월물(13주)',
         borderColor: '#ef4444',
         pointRadius: 0,
-        data: history.map(item => item.two_year),
+        data: history.map(item => item.three_month),
         tension: 0.3
       }
     ]
