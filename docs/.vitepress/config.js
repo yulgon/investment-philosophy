@@ -20,8 +20,8 @@ export default withMermaid(
       // ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX', crossorigin: 'anonymous' }],
       
       // [TODO] 구글 애널리틱스(GA4) 추적 코드를 발급받으면 아래 주석을 풀고 G-XXXXXXXXXX 를 변경해서 사용하세요.
-      // ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX' }],
-      // ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-XXXXXXXXXX');"]
+      ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-Z7Y0N822TN' }],
+      ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-Z7Y0N822TN');"]
     ],
     themeConfig: {
       logo: '/logo.png', // Optional, can be added later
