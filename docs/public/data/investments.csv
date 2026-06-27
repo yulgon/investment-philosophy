@@ -114,9 +114,12 @@ yearStart,yearEnd,name,type,role,status
 2023,,SCHD,etf,core,holding
 2025,,CRCL,stock,satellite,holding
 2021,,삼성전자,stock,core,holding
-2023,,soxx,etf,satelite,holding
+2023,,SOXX,etf,satelite,holding
 2023,,QQQM,etf,satelite,holding
 2023,,LPG,stock,satellite,holding
 2024,,O,stock,satellite,holding
 2023,,LTPZ,etf,core,holding
 2024,,META,stock,satellite,holding
+2023,2024,SOXL,etf,satellite,sold
+2023,2024,TQQQ,etf,satellite,sold
+2023,,TMF,etf,satellite,holding
