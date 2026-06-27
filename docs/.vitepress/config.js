@@ -57,8 +57,8 @@ export default withMermaid(
             items: [
               { text: '투자 전략 개요 (Overview)', link: '/strategy/' },
               { text: '1. KCA 적립식 전략', link: '/strategy/kca' },
-              { text: '2. 자산 배분 & 운영 전략', link: '/strategy/allocation' },
-              { text: '3. 자동 투자 전략', link: '/strategy/auto-investment' },
+              { text: '2. 자동 투자 전략', link: '/strategy/auto-investment' },
+              { text: '3. 자산 배분 & 운영 전략', link: '/strategy/allocation' },
               { text: '4. ETF 선정 및 도구 가이드', link: '/strategy/how-to-choose' }
             ]
           },

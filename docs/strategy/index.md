@@ -33,14 +33,14 @@
   <!-- Pillar 2 -->
   <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.02); transition: transform 0.2s ease;">
     <div>
-      <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">⚖️</div>
-      <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">2. 자산 배분 & 운영 전략</h3>
+      <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🤖</div>
+      <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">2. 자동 투자 전략</h3>
       <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
-        자산의 비중을 조절하는 핵심 행성(인덱스 ETF)과 주변 위성(개별 주식) 모델을 구축하고, 자산을 매매하여 조절하는 대신 매월 현금 투입 비율을 다르게 설정하는 '매수 리밸런싱'을 실천합니다.
+        시장의 실시간 등락에 흔들리는 나약한 인간의 의지를 배제하고, 예약 이체, 소수점 자동 투자, 자동 환전 시스템을 조합해 '알아서 굴러가는' 완전 자동화 시스템을 셋팅합니다.
       </p>
     </div>
     <div style="margin-top: 1.5rem;">
-      <a href="/strategy/allocation" style="font-size: 0.9rem; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none; display: inline-flex; align-items: center;">
+      <a href="/strategy/auto-investment" style="font-size: 0.9rem; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none; display: inline-flex; align-items: center;">
         자세히 보기 <span style="margin-left: 4px;">→</span>
       </a>
     </div>
@@ -49,14 +49,14 @@
   <!-- Pillar 3 -->
   <div style="background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.02); transition: transform 0.2s ease;">
     <div>
-      <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🤖</div>
-      <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">3. 자동 투자 전략</h3>
+      <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">⚖️</div>
+      <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">3. 자산 배분 & 운영 전략</h3>
       <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
-        시장의 실시간 등락에 흔들리는 나약한 인간의 의지를 배제하고, 예약 이체, 소수점 자동 투자, 자동 환전 시스템을 조합해 '알아서 굴러가는' 완전 자동화 시스템을 셋팅합니다.
+        자산의 비중을 조절하는 핵심 행성(인덱스 ETF)과 주변 위성(개별 주식) 모델을 구축하고, 자산을 매매하여 조절하는 대신 매월 현금 투입 비율을 다르게 설정하는 '매수 리밸런싱'을 실천합니다.
       </p>
     </div>
     <div style="margin-top: 1.5rem;">
-      <a href="/strategy/auto-investment" style="font-size: 0.9rem; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none; display: inline-flex; align-items: center;">
+      <a href="/strategy/allocation" style="font-size: 0.9rem; font-weight: 600; color: var(--vp-c-brand-1); text-decoration: none; display: inline-flex; align-items: center;">
         자세히 보기 <span style="margin-left: 4px;">→</span>
       </a>
     </div>
@@ -96,7 +96,7 @@
 
   <!-- Step 2 -->
   <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-brand-1); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
-    <strong style="color: var(--vp-c-brand-1); font-size: 0.95rem;">🤖 3. 자동 투자 전략</strong>
+    <strong style="color: var(--vp-c-brand-1); font-size: 0.95rem;">🤖 2. 자동 투자 전략</strong>
     <div style="font-size: 0.8rem; color: var(--vp-c-text-2); margin-top: 0.2rem;">파킹통장 / MMF에 예치하여 대기 이자를 받으며 매일 자동 매수 수행</div>
   </div>
 
@@ -112,7 +112,7 @@
 
   <!-- Step 4 -->
   <div style="background: var(--vp-c-bg-soft); border: 1.5px solid var(--vp-c-brand-1); border-radius: 8px; padding: 0.8rem 1.5rem; text-align: center; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
-    <strong style="color: var(--vp-c-brand-1); font-size: 0.95rem;">⚖️ 2. 자산 배분 & 운영 전략</strong>
+    <strong style="color: var(--vp-c-brand-1); font-size: 0.95rem;">⚖️ 3. 자산 배분 & 운영 전략</strong>
     <div style="font-size: 0.8rem; color: var(--vp-c-text-2); margin-top: 0.2rem;">핵심 행성(Core ETF) 및 주변 위성(개별 우량주) 매수 리밸런싱 비율 조정</div>
   </div>
 
