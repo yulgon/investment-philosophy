@@ -115,5 +115,5 @@
 
 * [🪐 투자 전략 개요 (Overview)](/strategy/)
 * [📈 1. KCA 적립식 전략](/strategy/kca)
-* [⚖️ 2. 자산 배분 & 운영 전략](/strategy/allocation)
-* [🤖 3. 자동 투자 전략](/strategy/auto-investment)
+* [🤖 2. 자동 투자 전략](/strategy/auto-investment)
+* [⚖️ 3. 자산 배분 & 운영 전략](/strategy/allocation)
