@@ -85,19 +85,7 @@
           </div>
         </div>
 
-        <!-- FedWatch Tool -->
-        <div class="card fedwatch-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem 1.5rem; background: linear-gradient(145deg, var(--vp-c-bg-soft), var(--vp-c-bg));">
-          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📊</div>
-          <h4 style="margin: 0 0 0.5rem 0; font-size: 1.1rem; font-weight: 700; color: var(--vp-c-text-1);">FedWatch 금리 전망</h4>
-          <p style="font-size: 0.85rem; color: var(--vp-c-text-2); line-height: 1.5; margin-bottom: 1.5rem;">
-            시장의 향후 기준금리 인하/인상 확률을 예측하는 가장 강력한 지표입니다.<br>
-            <span style="font-size: 0.75rem; opacity: 0.8;">(CME 그룹의 보안 정책으로 내부 표출이 제한됩니다)</span>
-          </p>
-          <a href="https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html" target="_blank" style="display: inline-block; padding: 0.6rem 1.2rem; background: var(--vp-c-brand-1); color: white; border-radius: 20px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: background 0.2s;">
-            실시간 확률 막대그래프 보기 ↗
-          </a>
-        </div>
-
+        <!-- FedWatch Tool (Removed) -->
         <!-- Macro / Yields Stats -->
         <div class="card macro-card">
           <h4>미 국채 금리 및 기준금리</h4>
@@ -152,6 +140,23 @@
           </div>
         </div>
 
+        <!-- KCA Indices Stats -->
+        <div class="card kca-card">
+          <h4>핵심 인덱스 (S&P500 & KOSPI200)</h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem;">
+            <div class="kca-col">
+              <div style="font-weight: 700; color: var(--vp-c-text-1); margin-bottom: 0.5rem; font-size: 0.95rem;">🇺🇸 S&P 500</div>
+              <div class="stat"><span class="label">USD 본질</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.gspc_usd.toLocaleString() }}</span></div>
+              <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">KRW 체감</span><span class="value" v-if="marketData">{{ Math.round(marketData.kca_indices.latest.gspc_krw).toLocaleString() }}</span></div>
+            </div>
+            <div class="kca-col">
+              <div style="font-weight: 700; color: var(--vp-c-text-1); margin-bottom: 0.5rem; font-size: 0.95rem;">🇰🇷 KOSPI 200</div>
+              <div class="stat"><span class="label">KRW 본질</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks200_krw.toLocaleString() }}</span></div>
+              <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">USD 글로벌</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks200_usd.toLocaleString(undefined, {minimumFractionDigits: 3}) }}</span></div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Bottom Row: 30-Day Historical Line Charts (1 per row) -->
@@ -195,6 +200,22 @@
           <h4>달러 인덱스(DXY) 추이</h4>
           <div class="chart-wrapper">
             <LineChart v-if="dxyChartData" :data="dxyChartData" :options="lineOptions" />
+          </div>
+        </div>
+
+        <!-- S&P 500 KCA History -->
+        <div class="card chart-card">
+          <h4>S&P 500 누적 등락률 (USD vs KRW)</h4>
+          <div class="chart-wrapper">
+            <LineChart v-if="gspcChartData" :data="gspcChartData" :options="lineOptionsWithLegend" />
+          </div>
+        </div>
+
+        <!-- KOSPI 200 KCA History -->
+        <div class="card chart-card">
+          <h4>KOSPI 200 누적 등락률 (KRW vs USD)</h4>
+          <div class="chart-wrapper">
+            <LineChart v-if="ks200ChartData" :data="ks200ChartData" :options="lineOptionsWithLegend" />
           </div>
         </div>
 
@@ -571,6 +592,61 @@ const dxyChartData = computed(() => {
       fill: false,
       tension: 0.3
     }]
+  }
+})
+
+function normalize(arr) {
+  if (!arr || !arr.length) return []
+  const base = arr[0]
+  if (base === 0) return arr.map(() => 0)
+  return arr.map(v => ((v - base) / base * 100).toFixed(2))
+}
+
+const gspcChartData = computed(() => {
+  if (!marketData.value || !marketData.value.kca_indices.history) return null
+  const history = marketData.value.kca_indices.history
+  return {
+    labels: history.map(item => item.date.substring(5)),
+    datasets: [
+      {
+        label: 'S&P 500 (USD) %',
+        borderColor: '#3b82f6',
+        pointRadius: 1,
+        data: normalize(history.map(item => item.gspc_usd)),
+        tension: 0.3
+      },
+      {
+        label: 'S&P 500 (KRW 체감) %',
+        borderColor: '#10b981',
+        pointRadius: 1,
+        data: normalize(history.map(item => item.gspc_krw)),
+        tension: 0.3
+      }
+    ]
+  }
+})
+
+const ks200ChartData = computed(() => {
+  if (!marketData.value || !marketData.value.kca_indices.history) return null
+  const history = marketData.value.kca_indices.history
+  return {
+    labels: history.map(item => item.date.substring(5)),
+    datasets: [
+      {
+        label: 'KOSPI 200 (KRW) %',
+        borderColor: '#ef4444',
+        pointRadius: 1,
+        data: normalize(history.map(item => item.ks200_krw)),
+        tension: 0.3
+      },
+      {
+        label: 'KOSPI 200 (USD 환산) %',
+        borderColor: '#ec4899',
+        pointRadius: 1,
+        data: normalize(history.map(item => item.ks200_usd)),
+        tension: 0.3
+      }
+    ]
   }
 })
 </script>

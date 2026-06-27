@@ -150,6 +150,65 @@ def fetch_exchange_rates():
         print(f"Error fetching Exchange Rates: {e}")
         return {"usd_krw": 1350.0, "dxy": 105.0, "history": []}
 
+def fetch_kca_indices(exchange_rates_history):
+    url_gspc = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1d&range=1mo"
+    url_ks200 = "https://query1.finance.yahoo.com/v8/finance/chart/^KS200?interval=1d&range=1mo"
+    
+    krw_map = {item["date"]: item["usd_krw"] for item in exchange_rates_history}
+    
+    def get_history(url):
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as response:
+            data = json.loads(response.read())
+            result = data['chart']['result'][0]
+            closes = result['indicators']['quote'][0]['close']
+            timestamps = result['timestamp']
+            
+            valid_data = [(ts, cp) for ts, cp in zip(timestamps, closes) if cp is not None]
+            return {datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'): round(cp, 2) for ts, cp in valid_data[-30:]}
+
+    try:
+        h_gspc = get_history(url_gspc)
+        h_ks200 = get_history(url_ks200)
+        
+        dates = sorted(list(set(h_gspc.keys()) | set(h_ks200.keys()) | set(krw_map.keys())))
+        history = []
+        
+        # Fallback values for filling gaps
+        last_gspc = h_gspc.get(dates[0], 5000.0) if h_gspc else 5000.0
+        last_ks200 = h_ks200.get(dates[0], 350.0) if h_ks200 else 350.0
+        last_krw = krw_map.get(dates[0], 1350.0) if krw_map else 1350.0
+        
+        for d in dates:
+            if d in h_gspc: last_gspc = h_gspc[d]
+            if d in h_ks200: last_ks200 = h_ks200[d]
+            if d in krw_map: last_krw = krw_map[d]
+            
+            gspc_usd = last_gspc
+            gspc_krw = last_gspc * last_krw
+            ks200_krw = last_ks200
+            ks200_usd = last_ks200 / last_krw if last_krw > 0 else 0
+            
+            history.append({
+                "date": d,
+                "gspc_usd": round(gspc_usd, 2),
+                "gspc_krw": round(gspc_krw, 2),
+                "ks200_krw": round(ks200_krw, 2),
+                "ks200_usd": round(ks200_usd, 4)
+            })
+            
+        latest = history[-1] if history else {
+            "gspc_usd": 0, "gspc_krw": 0, "ks200_krw": 0, "ks200_usd": 0
+        }
+        
+        return {
+            "latest": latest,
+            "history": history
+        }
+    except Exception as e:
+        print(f"Error fetching KCA Indices: {e}")
+        return {"latest": {}, "history": []}
+
 def determine_organism_state(vix, fg_score):
     if fg_score < 25 or vix > 30:
         return "extreme_fear"
@@ -171,6 +230,8 @@ def main():
     yields = fetch_treasury_yields()
     print("Fetching Exchange Rates...")
     exchange = fetch_exchange_rates()
+    print("Fetching KCA Indices...")
+    kca_indices = fetch_kca_indices(exchange["history"])
     
     state = determine_organism_state(vix_latest, fg_score)
     
@@ -187,7 +248,8 @@ def main():
             "history": fg_history
         },
         "macro": yields,
-        "exchange": exchange
+        "exchange": exchange,
+        "kca_indices": kca_indices
     }
     
     os.makedirs('docs/public/data', exist_ok=True)
