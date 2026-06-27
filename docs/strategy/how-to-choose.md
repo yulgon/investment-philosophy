@@ -69,7 +69,7 @@
 * **Macrotrends ([macrotrends.net](https://www.macrotrends.net))**:
   * **핵심 용도**: 특정 자산의 10~20년 장기 재무 데이터 시각화.
   * **활용**: 단기 1~2년이 아닌 굵직한 경제 사이클을 견뎌온 기업과 ETF의 긴 역사를 조망.
-* **ETF.com / ETFdb**:
+* **ETF.com ([etf.com](https://www.etf.com)) / ETFdb ([etfdb.com](https://etfdb.com))**:
   * **핵심 용도**: 글로벌 ETF 심층 해부.
   * **활용**: ETF 간 보유 종목 중복도(Overlap), 수수료 비교, 자금 유입/유출 동향 파악.
 
@@ -86,7 +86,7 @@
   * **핵심 용도**: 시장 전체 흐름을 한눈에 보는 히트맵(Heatmap) 및 수많은 조건 필터링을 통한 종목 스크리닝.
 * **TipRanks ([tipranks.com](https://www.tipranks.com))**:
   * **핵심 용도**: 경영진(내부자) 매매 동향 및 기관/헤지펀드의 자금 움직임을 역추적하여 펀더멘털 최종 검증.
-* **TradingView / ETF Check**:
+* **TradingView ([tradingview.com](https://www.tradingview.com)) / ETF Check ([etfcheck.co.kr](https://www.etfcheck.co.kr))**:
   * **핵심 용도**: 기술적 차트 분석, 커스텀 보조지표 활용 및 국내 상장 ETF 상세 스크리닝.
 
 ### 🤝 D. [마인드셋 방어] 철학의 연대 (Reddit 커뮤니티)
