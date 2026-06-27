@@ -60,7 +60,11 @@
           class="timeline-node"
           :class="idx % 2 === 0 ? 'theme-dark' : 'theme-light'"
         >
-          <div class="node-year-badge">{{ group.year }}</div>
+          <div class="node-year-watermark">{{ group.year }}</div>
+          <div class="node-year-title">
+            <span class="year-text">{{ group.year }}년</span>
+            <span class="year-line"></span>
+          </div>
           <div class="node-cards-container">
             <div
               v-for="(item, idx) in group.items"
@@ -336,27 +340,25 @@ onMounted(async () => {
 /* ===== Timeline ===== */
 .timeline-wrapper {
   position: relative;
-  padding-left: 2.5rem;
-  margin-left: 1rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
 }
 .timeline-line {
-  position: absolute;
-  left: 0;
-  top: 10px;
-  bottom: 0;
-  width: 2px;
-  background: var(--vp-c-gutter);
+  display: none;
 }
 .timeline-node {
   position: relative;
-  margin-bottom: 3.5rem;
   opacity: 0;
   transform: translateY(24px);
   transition: all 0.55s cubic-bezier(0.16, 1, 0.3, 1);
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 4rem 0;
+  border-radius: 0;
   background: var(--vp-c-bg);
-  border: 1px solid var(--vp-c-gutter);
+  box-shadow: 0 0 0 100vmax var(--vp-c-bg);
+  clip-path: inset(0 -100vmax);
+  border: none;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--vp-c-gutter);
 }
 
 .timeline-node.theme-dark {
@@ -380,24 +382,51 @@ onMounted(async () => {
   opacity: 1;
   transform: translateY(0);
 }
-.node-year-badge {
+
+.node-year-watermark {
   position: absolute;
-  left: calc(-2.5rem - 11px);
-  top: 0;
-  background: var(--vp-c-brand-1);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.85rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 20px;
-  box-shadow: 0 0 0 4px var(--vp-c-bg);
-  z-index: 10;
+  top: 1rem;
+  right: 0;
+  font-size: clamp(6rem, 15vw, 12rem);
+  font-weight: 900;
+  color: var(--vp-c-text-1);
+  opacity: 0.04;
+  line-height: 0.8;
+  pointer-events: none;
+  z-index: 0;
+  letter-spacing: -0.05em;
+  user-select: none;
 }
+
+.node-year-title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.year-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--vp-c-text-1);
+  letter-spacing: -0.03em;
+}
+
+.year-line {
+  flex: 1;
+  height: 2px;
+  background: var(--vp-c-gutter);
+  opacity: 0.5;
+}
+
 .node-cards-container {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  margin-top: 0.75rem;
+  gap: 1.5rem;
 }
 
 /* ===== Investment Card ===== */
