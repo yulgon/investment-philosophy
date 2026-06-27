@@ -40,8 +40,13 @@ export default withMermaid(
             items: [
               { text: '서문 (Introduction)', link: '/philosophy/intro' },
               { text: '기본 핵심 원칙', link: '/philosophy/principles' },
-              { text: '보글헤드 10대 철학', link: '/philosophy/bogleheads' },
-              { text: '투자 계획 수립', link: '/philosophy/investment-planning' },
+              { 
+                text: '보글헤드 10대 철학', 
+                link: '/philosophy/bogleheads',
+                items: [
+                  { text: '투자 계획 수립', link: '/philosophy/investment-planning' }
+                ]
+              },
               { text: '투자 심리와 마인드셋', link: '/philosophy/psychology' }
             ]
           }
