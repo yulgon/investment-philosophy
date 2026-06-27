@@ -844,6 +844,31 @@ const longTermYieldsChartData = computed(() => {
 .last-updated {
   font-size: 0.85rem;
   color: var(--vp-c-text-2);
+  margin-bottom: 0.25rem;
+}
+
+.data-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.source-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: var(--vp-c-text-2);
+}
+
+.source-item strong {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
 }
 
 .state-banner {
