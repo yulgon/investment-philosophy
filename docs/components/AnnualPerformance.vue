@@ -417,7 +417,18 @@ onMounted(async () => {
       if (data && data.length > 0) {
         const row2024 = data.find(r => r['날짜'] === '2023-12')
         const row2025 = data.find(r => r['날짜'] === '2025-12')
-        const rowLatest = data[data.length - 1]
+
+        const today = new Date()
+        const currentYearMonth = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}`
+        let rowLatest = data[0]
+        for (let i = data.length - 1; i >= 0; i--) {
+          if (data[i]['날짜'] <= currentYearMonth) {
+            rowLatest = data[i]
+            break
+          }
+        }
+        // Fallback if future data is not yet generated
+        if (!rowLatest) rowLatest = data[data.length - 1]
 
         const getReturnRate = (row) => {
           if (!row) return 0
