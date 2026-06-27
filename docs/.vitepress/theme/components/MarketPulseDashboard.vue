@@ -1,13 +1,13 @@
 <template>
   <div class="market-dashboard-wrapper">
     <!-- Pilgrimage Banner -->
-    <div v-if="!loading && !error" class="market-banner-btn" :class="themeData.cssClass" @click="isExpanded = !isExpanded">
-      <canvas ref="canvasRef" class="banner-canvas"></canvas>
+    <div class="market-banner-btn" :class="error ? 'theme-error' : themeData.cssClass" @click="isExpanded = !isExpanded">
+      <canvas v-show="!loading && !error" ref="canvasRef" class="banner-canvas"></canvas>
       <div class="banner-left">
-        <span class="theme-icon">{{ themeData.icon }}</span>
+        <span class="theme-icon">{{ error ? '⚠️' : (loading ? '🔄' : themeData.icon) }}</span>
         <div class="banner-text-group">
           <span class="banner-title">원빌리언 순례길</span>
-          <span class="banner-status">{{ themeData.msg }}</span>
+          <span class="banner-status">{{ error ? '데이터를 불러오지 못했습니다.' : (loading ? '시장 데이터를 동기화 중입니다...' : themeData.msg) }}</span>
         </div>
       </div>
       <div class="banner-right">
