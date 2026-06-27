@@ -17,7 +17,8 @@ def fetch_vix():
             valid_data = [(ts, cp) for ts, cp in zip(timestamps, close_prices) if cp is not None]
             
             latest_vix = valid_data[-1][1]
-            history = [{"date": datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'), "value": round(cp, 2)} for ts, cp in valid_data[-30:]]
+            gmtoffset = result['meta'].get('gmtoffset', 0)
+            history = [{"date": datetime.datetime.utcfromtimestamp(ts + gmtoffset).strftime('%Y-%m-%d'), "value": round(cp, 2)} for ts, cp in valid_data[-30:]]
             return round(latest_vix, 2), history
     except Exception as e:
         print(f"Error fetching VIX: {e}")
@@ -40,7 +41,8 @@ def fetch_fear_and_greed():
             historical = data.get('fear_and_greed_historical', {}).get('data', [])
             history = []
             for item in historical[-30:]:
-                dt = datetime.datetime.fromtimestamp(item['x']/1000.0).strftime('%Y-%m-%d')
+                # CNN timestamps are UTC midnight. Use utcfromtimestamp to avoid timezone shift.
+                dt = datetime.datetime.utcfromtimestamp(item['x']/1000.0).strftime('%Y-%m-%d')
                 history.append({"date": dt, "value": round(item['y'], 2)})
                 
             return round(score, 0), rating, history
@@ -144,8 +146,9 @@ def fetch_exchange_rates():
             closes = result['indicators']['quote'][0]['close']
             timestamps = result['timestamp']
             
-            valid_data = [(ts, cp) for ts, cp in zip(timestamps, closes) if cp is not None]
-            return {datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'): round(cp, 2) for ts, cp in valid_data[-30:]}
+            gmtoffset = result['meta'].get('gmtoffset', 0)
+            valid_data = [(ts + gmtoffset, cp) for ts, cp in zip(timestamps, closes) if cp is not None]
+            return {datetime.datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d'): round(cp, 2) for ts, cp in valid_data[-30:]}
 
     try:
         h_krw = get_history(url_krw)
@@ -187,8 +190,9 @@ def fetch_kca_indices(exchange_rates_history, all_treasury_history):
             closes = result['indicators']['quote'][0]['close']
             timestamps = result['timestamp']
             
-            valid_data = [(ts, cp) for ts, cp in zip(timestamps, closes) if cp is not None]
-            return {datetime.datetime.fromtimestamp(ts).strftime(fmt): round(cp, 2) for ts, cp in valid_data[-count:]}
+            gmtoffset = result['meta'].get('gmtoffset', 0)
+            valid_data = [(ts + gmtoffset, cp) for ts, cp in zip(timestamps, closes) if cp is not None]
+            return {datetime.datetime.utcfromtimestamp(ts).strftime(fmt): round(cp, 2) for ts, cp in valid_data[-count:]}
 
     try:
         # Latest daily values
