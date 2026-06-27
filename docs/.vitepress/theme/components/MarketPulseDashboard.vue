@@ -22,6 +22,12 @@
       <div v-else class="market-dashboard" :class="stateClass">
         <div class="dashboard-header">
           <p class="last-updated">최근 업데이트: {{ formattedDate }}</p>
+          <div class="data-sources">
+            <span class="source-item"><strong>주가지수, 환율, VIX:</strong> Yahoo Finance</span>
+            <span class="source-item"><strong>공포와 탐욕:</strong> CNN Business</span>
+            <span class="source-item"><strong>국채 금리:</strong> U.S. Department of the Treasury</span>
+            <span class="source-item"><strong>기준금리:</strong> Federal Reserve (EFFR)</span>
+          </div>
         </div>
 
         <!-- Top Row: Current Stats & Gauges -->
@@ -822,10 +828,10 @@ const longTermYieldsChartData = computed(() => {
 
 .dashboard-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.5rem;
   border-bottom: 2px solid var(--vp-c-divider);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
 }
 
 .dashboard-header h2 {
@@ -836,7 +842,6 @@ const longTermYieldsChartData = computed(() => {
 }
 
 .last-updated {
-  margin: 0;
   font-size: 0.85rem;
   color: var(--vp-c-text-2);
 }
