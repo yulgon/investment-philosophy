@@ -513,11 +513,13 @@ const gspcChartOptions = computed(() => {
   const history = marketData.value.kca_indices.history
   if (!history.length) return kcaChartOptionsFallback
   
-  const usdValues = history.map(item => item.gspc_usd)
-  const yMin = Math.min(...usdValues) * 0.95
-  const yMax = Math.max(...usdValues) * 1.05
-  
   const firstExchangeRate = history[0].gspc_krw / history[0].gspc_usd
+  
+  const effectiveMins = history.map(item => Math.min(item.gspc_usd, item.gspc_krw / firstExchangeRate))
+  const effectiveMaxs = history.map(item => Math.max(item.gspc_usd, item.gspc_krw / firstExchangeRate))
+  
+  const yMin = Math.min(...effectiveMins) * 0.95
+  const yMax = Math.max(...effectiveMaxs) * 1.05
   
   return {
     responsive: true,
@@ -535,7 +537,10 @@ const gspcChartOptions = computed(() => {
       },
       x: { grid: { display: false } }
     },
-    plugins: { legend: { display: true, position: 'bottom' } }
+    plugins: { 
+      legend: { display: true, position: 'bottom' },
+      tooltip: { mode: 'index', intersect: false }
+    }
   }
 })
 
@@ -544,11 +549,13 @@ const ks11ChartOptions = computed(() => {
   const history = marketData.value.kca_indices.history
   if (!history.length) return kcaChartOptionsFallback
   
-  const usdValues = history.map(item => item.ks11_usd)
-  const yMin = Math.min(...usdValues) * 0.95
-  const yMax = Math.max(...usdValues) * 1.05
-  
   const firstExchangeRate = history[0].ks11_krw / history[0].ks11_usd
+  
+  const effectiveMins = history.map(item => Math.min(item.ks11_usd, item.ks11_krw / firstExchangeRate))
+  const effectiveMaxs = history.map(item => Math.max(item.ks11_usd, item.ks11_krw / firstExchangeRate))
+  
+  const yMin = Math.min(...effectiveMins) * 0.95
+  const yMax = Math.max(...effectiveMaxs) * 1.05
   
   return {
     responsive: true,
@@ -566,7 +573,10 @@ const ks11ChartOptions = computed(() => {
       },
       x: { grid: { display: false } }
     },
-    plugins: { legend: { display: true, position: 'bottom' } }
+    plugins: { 
+      legend: { display: true, position: 'bottom' },
+      tooltip: { mode: 'index', intersect: false }
+    }
   }
 })
 
