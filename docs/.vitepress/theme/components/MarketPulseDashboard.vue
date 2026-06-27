@@ -62,18 +62,18 @@
               </defs>
 
               <!-- 5 Gauge Segments -->
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 0 ? '#db2828' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 0 ? 14 : 8" stroke-dasharray="56 500" stroke-linecap="round" :filter="activeIndex === 0 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(180 100 100)" />
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 1 ? '#f2711c' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 1 ? 14 : 8" stroke-dasharray="46 500" stroke-linecap="round" :filter="activeIndex === 1 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(223.2 100 100)" />
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 2 ? '#fbbd08' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 2 ? 14 : 8" stroke-dasharray="23 500" stroke-linecap="round" :filter="activeIndex === 2 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(259.2 100 100)" />
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 3 ? '#b5cc18' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 3 ? 14 : 8" stroke-dasharray="46 500" stroke-linecap="round" :filter="activeIndex === 3 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(279 100 100)" />
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 4 ? '#21ba45' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 4 ? 14 : 8" stroke-dasharray="63 500" stroke-linecap="round" :filter="activeIndex === 4 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(315 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 0 ? '#db2828' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 0 ? 14 : 8" stroke-dasharray="60 500" stroke-linecap="round" :filter="activeIndex === 0 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(180 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 1 ? '#f2711c' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 1 ? 14 : 8" stroke-dasharray="45 500" stroke-linecap="round" :filter="activeIndex === 1 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(225 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 2 ? '#fbbd08' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 2 ? 14 : 8" stroke-dasharray="24 500" stroke-linecap="round" :filter="activeIndex === 2 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(259.2 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 3 ? '#b5cc18' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 3 ? 14 : 8" stroke-dasharray="45 500" stroke-linecap="round" :filter="activeIndex === 3 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(279 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 4 ? '#21ba45' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 4 ? 14 : 8" stroke-dasharray="65 500" stroke-linecap="round" :filter="activeIndex === 4 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(313.2 100 100)" />
 
               <!-- Tick marks and text placed perfectly inside the arc -->
               <text x="25" y="103" class="gauge-tick" text-anchor="middle">0</text>
-              <text x="53" y="56" class="gauge-tick" text-anchor="middle">24</text>
+              <text x="54" y="54" class="gauge-tick" text-anchor="middle">25</text>
               <text x="88" y="36" class="gauge-tick" text-anchor="middle">44</text>
-              <text x="110" y="35" class="gauge-tick" text-anchor="middle">55</text>
-              <text x="146" y="54" class="gauge-tick" text-anchor="middle">75</text>
+              <text x="110" y="36" class="gauge-tick" text-anchor="middle">55</text>
+              <text x="144" y="53" class="gauge-tick" text-anchor="middle">74</text>
               <text x="175" y="103" class="gauge-tick" text-anchor="middle">100</text>
 
               <!-- Sleek Needle (Drawn BEFORE text so it stays behind) -->
@@ -484,10 +484,10 @@ const stateMessage = computed(() => {
 const activeSegmentIndex = computed(() => {
   if (!marketData.value) return 2
   const score = marketData.value.fear_and_greed.score
-  if (score <= 24) return 0
+  if (score <= 25) return 0
   if (score <= 44) return 1
   if (score <= 55) return 2
-  if (score <= 75) return 3
+  if (score <= 74) return 3
   return 4
 })
 

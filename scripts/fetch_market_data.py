@@ -257,13 +257,13 @@ def fetch_kca_indices(exchange_rates_history, all_treasury_history):
         return {"latest": {}, "history": []}
 
 def determine_organism_state(vix, fg_score):
-    if fg_score < 25 or vix > 30:
+    if fg_score <= 25 or vix >= 30:
         return "extreme_fear"
-    elif fg_score < 45 or vix > 20:
+    elif fg_score <= 44 or vix >= 20:
         return "fear"
-    elif fg_score > 75 or vix < 12:
+    elif fg_score >= 75 or vix <= 12:
         return "extreme_greed"
-    elif fg_score > 55 or vix < 15:
+    elif fg_score >= 56 or vix <= 15:
         return "greed"
     else:
         return "neutral"
