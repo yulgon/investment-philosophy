@@ -134,7 +134,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onErrorCaptured, watch, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, onErrorCaptured, watch, nextTick } from 'vue'
 import { withBase } from 'vitepress'
 
 const TIMELINE_START = 2010
@@ -210,6 +210,11 @@ watch([activeFilter, sortAsc], async () => {
 })
 
 onMounted(async () => {
+  // Force solid navbar to prevent full-bleed bands from showing through
+  if (typeof document !== 'undefined') {
+    document.body.classList.add('solid-nav-page')
+  }
+
   try {
     const url = withBase('/data/investments.csv')
     const response = await fetch(url)
@@ -240,9 +245,21 @@ onMounted(async () => {
     loading.value = false
   }
 })
+
+onUnmounted(() => {
+  if (typeof document !== 'undefined') {
+    document.body.classList.remove('solid-nav-page')
+  }
+})
 </script>
 
 <style scoped>
+/* Force solid nav bar on this specific page */
+:global(body.solid-nav-page .VPNavBar) {
+  background-color: var(--vp-c-bg) !important;
+  backdrop-filter: none !important;
+}
+
 /* ===== Layout ===== */
 .loading-box {
   text-align: center;
