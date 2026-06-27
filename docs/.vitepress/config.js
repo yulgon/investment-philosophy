@@ -7,6 +7,18 @@ export default withMermaid(
     title: "원빌리언달러 도네이션",
     description: "투자는 과정일 뿐, 목적지는 세상에 대한 기여입니다. 원빌리언달러 기부를 향한 자산 설계 아카이브.",
     lang: 'ko-KR',
+    sitemap: {
+      hostname: 'https://one-billion-donation.com'
+    },
+    head: [
+      ['meta', { name: 'robots', content: 'index, follow' }],
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:url', content: 'https://one-billion-donation.com/' }],
+      ['meta', { property: 'og:title', content: '원빌리언달러 도네이션' }],
+      ['meta', { property: 'og:description', content: '투자는 과정일 뿐, 목적지는 세상에 대한 기여입니다. 원빌리언달러 기부를 향한 자산 설계 아카이브.' }],
+      // [TODO] 애드센스 코드를 발급받으면 아래 주석을 풀고 client ID를 변경해서 사용하세요.
+      // ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX', crossorigin: 'anonymous' }]
+    ],
     themeConfig: {
       logo: '/logo.png', // Optional, can be added later
       nav: [
