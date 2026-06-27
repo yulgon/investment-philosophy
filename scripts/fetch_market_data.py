@@ -154,9 +154,9 @@ def fetch_kca_indices(exchange_rates_history):
     url_gspc = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1d&range=1mo"
     url_ks11 = "https://query1.finance.yahoo.com/v8/finance/chart/^KS11?interval=1d&range=1mo"
     
-    url_gspc_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1mo&range=1y"
-    url_ks11_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^KS11?interval=1mo&range=1y"
-    url_krw_mo = "https://query1.finance.yahoo.com/v8/finance/chart/KRW=X?interval=1mo&range=1y"
+    url_gspc_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1mo&range=5y"
+    url_ks11_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^KS11?interval=1mo&range=5y"
+    url_krw_mo = "https://query1.finance.yahoo.com/v8/finance/chart/KRW=X?interval=1mo&range=5y"
     
     krw_map_latest = {item["date"]: item["usd_krw"] for item in exchange_rates_history}
     
@@ -187,12 +187,14 @@ def fetch_kca_indices(exchange_rates_history):
             "ks11_usd": round(last_ks11_d / last_krw_d, 4) if last_krw_d > 0 else 0
         }
         
-        # 12-month historical values
-        h_gspc_mo = get_history(url_gspc_mo, fmt='%Y-%m', count=12)
-        h_ks11_mo = get_history(url_ks11_mo, fmt='%Y-%m', count=12)
-        h_krw_mo = get_history(url_krw_mo, fmt='%Y-%m', count=12)
+        # 5-year historical values (filtering to 2021+)
+        h_gspc_mo = get_history(url_gspc_mo, fmt='%Y-%m', count=60)
+        h_ks11_mo = get_history(url_ks11_mo, fmt='%Y-%m', count=60)
+        h_krw_mo = get_history(url_krw_mo, fmt='%Y-%m', count=60)
         
-        dates_mo = sorted(list(set(h_gspc_mo.keys()) | set(h_ks11_mo.keys()) | set(h_krw_mo.keys())))
+        all_dates_mo = sorted(list(set(h_gspc_mo.keys()) | set(h_ks11_mo.keys()) | set(h_krw_mo.keys())))
+        dates_mo = [d for d in all_dates_mo if d >= "2021-01"]
+        
         history = []
         
         lg = h_gspc_mo.get(dates_mo[0], 5000.0) if dates_mo and h_gspc_mo else 5000.0
