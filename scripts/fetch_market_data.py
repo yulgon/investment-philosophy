@@ -157,6 +157,8 @@ def fetch_kca_indices(exchange_rates_history):
     url_gspc_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1mo&range=5y"
     url_ks11_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^KS11?interval=1mo&range=5y"
     url_krw_mo = "https://query1.finance.yahoo.com/v8/finance/chart/KRW=X?interval=1mo&range=5y"
+    url_tnx_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^TNX?interval=1mo&range=5y"
+    url_irx_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^IRX?interval=1mo&range=5y"
     
     krw_map_latest = {item["date"]: item["usd_krw"] for item in exchange_rates_history}
     
@@ -191,6 +193,8 @@ def fetch_kca_indices(exchange_rates_history):
         h_gspc_mo = get_history(url_gspc_mo, fmt='%Y-%m', count=60)
         h_ks11_mo = get_history(url_ks11_mo, fmt='%Y-%m', count=60)
         h_krw_mo = get_history(url_krw_mo, fmt='%Y-%m', count=60)
+        h_tnx_mo = get_history(url_tnx_mo, fmt='%Y-%m', count=60)
+        h_irx_mo = get_history(url_irx_mo, fmt='%Y-%m', count=60)
         
         all_dates_mo = sorted(list(set(h_gspc_mo.keys()) | set(h_ks11_mo.keys()) | set(h_krw_mo.keys())))
         dates_mo = [d for d in all_dates_mo if d >= "2021-01"]
@@ -200,18 +204,25 @@ def fetch_kca_indices(exchange_rates_history):
         lg = h_gspc_mo.get(dates_mo[0], 5000.0) if dates_mo and h_gspc_mo else 5000.0
         lk = h_ks11_mo.get(dates_mo[0], 2500.0) if dates_mo and h_ks11_mo else 2500.0
         lx = h_krw_mo.get(dates_mo[0], 1350.0) if dates_mo and h_krw_mo else 1350.0
+        ltnx = h_tnx_mo.get(dates_mo[0], 4.0) if dates_mo and h_tnx_mo else 4.0
+        lirx = h_irx_mo.get(dates_mo[0], 4.0) if dates_mo and h_irx_mo else 4.0
         
         for d in dates_mo:
             if d in h_gspc_mo: lg = h_gspc_mo[d]
             if d in h_ks11_mo: lk = h_ks11_mo[d]
             if d in h_krw_mo: lx = h_krw_mo[d]
+            if d in h_tnx_mo: ltnx = h_tnx_mo[d]
+            if d in h_irx_mo: lirx = h_irx_mo[d]
             
             history.append({
                 "date": d,
                 "gspc_usd": round(lg, 2),
                 "gspc_krw": round(lg * lx, 2),
                 "ks11_krw": round(lk, 2),
-                "ks11_usd": round(lk / lx, 4) if lx > 0 else 0
+                "ks11_usd": round(lk / lx, 4) if lx > 0 else 0,
+                "usd_krw": round(lx, 2),
+                "ten_year": round(ltnx, 2),
+                "two_year": round(lirx, 2)
             })
             
         return {

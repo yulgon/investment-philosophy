@@ -225,6 +225,22 @@
           </div>
         </div>
 
+        <!-- Long-Term USD/KRW History -->
+        <div class="card chart-card">
+          <h4>원/달러 환율 장기 추이 (월간)</h4>
+          <div class="chart-wrapper">
+            <LineChart v-if="longTermUsdKrwChartData" :data="longTermUsdKrwChartData" :options="lineOptions" />
+          </div>
+        </div>
+
+        <!-- Long-Term Yields History -->
+        <div class="card chart-card">
+          <h4>미 국채 금리 장기 추이 (월간)</h4>
+          <div class="chart-wrapper">
+            <LineChart v-if="longTermYieldsChartData" :data="longTermYieldsChartData" :options="lineOptionsWithLegend" />
+          </div>
+        </div>
+
       </div>
     </div>
     </div>
@@ -732,6 +748,46 @@ const ks11ChartData = computed(() => {
         pointRadius: 0,
         yAxisID: 'y',
         data: history.map(item => item.ks11_usd),
+        tension: 0.3
+      }
+    ]
+  }
+})
+
+const longTermUsdKrwChartData = computed(() => {
+  if (!marketData.value || !marketData.value.kca_indices.history) return null
+  const history = marketData.value.kca_indices.history
+  return {
+    labels: history.map(item => item.date),
+    datasets: [{
+      label: '원/달러 환율',
+      borderColor: '#06b6d4',
+      pointRadius: 0,
+      data: history.map(item => item.usd_krw),
+      fill: false,
+      tension: 0.3
+    }]
+  }
+})
+
+const longTermYieldsChartData = computed(() => {
+  if (!marketData.value || !marketData.value.kca_indices.history) return null
+  const history = marketData.value.kca_indices.history
+  return {
+    labels: history.map(item => item.date),
+    datasets: [
+      {
+        label: '10년물',
+        borderColor: '#3b82f6',
+        pointRadius: 0,
+        data: history.map(item => item.ten_year),
+        tension: 0.3
+      },
+      {
+        label: '2년물',
+        borderColor: '#ef4444',
+        pointRadius: 0,
+        data: history.map(item => item.two_year),
         tension: 0.3
       }
     ]
