@@ -152,11 +152,15 @@ def fetch_exchange_rates():
 
 def fetch_kca_indices(exchange_rates_history):
     url_gspc = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1d&range=1mo"
-    url_ks200 = "https://query1.finance.yahoo.com/v8/finance/chart/^KS200?interval=1d&range=1mo"
+    url_ks11 = "https://query1.finance.yahoo.com/v8/finance/chart/^KS11?interval=1d&range=1mo"
     
-    krw_map = {item["date"]: item["usd_krw"] for item in exchange_rates_history}
+    url_gspc_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1mo&range=1y"
+    url_ks11_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^KS11?interval=1mo&range=1y"
+    url_krw_mo = "https://query1.finance.yahoo.com/v8/finance/chart/KRW=X?interval=1mo&range=1y"
     
-    def get_history(url):
+    krw_map_latest = {item["date"]: item["usd_krw"] for item in exchange_rates_history}
+    
+    def get_history(url, fmt='%Y-%m-%d', count=30):
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read())
@@ -165,42 +169,49 @@ def fetch_kca_indices(exchange_rates_history):
             timestamps = result['timestamp']
             
             valid_data = [(ts, cp) for ts, cp in zip(timestamps, closes) if cp is not None]
-            return {datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d'): round(cp, 2) for ts, cp in valid_data[-30:]}
+            return {datetime.datetime.fromtimestamp(ts).strftime(fmt): round(cp, 2) for ts, cp in valid_data[-count:]}
 
     try:
-        h_gspc = get_history(url_gspc)
-        h_ks200 = get_history(url_ks200)
+        # Latest daily values
+        h_gspc_latest = get_history(url_gspc)
+        h_ks11_latest = get_history(url_ks11)
         
-        dates = sorted(list(set(h_gspc.keys()) | set(h_ks200.keys()) | set(krw_map.keys())))
+        last_gspc_d = list(h_gspc_latest.values())[-1] if h_gspc_latest else 5000.0
+        last_ks11_d = list(h_ks11_latest.values())[-1] if h_ks11_latest else 2500.0
+        last_krw_d = list(krw_map_latest.values())[-1] if krw_map_latest else 1350.0
+        
+        latest = {
+            "gspc_usd": round(last_gspc_d, 2),
+            "gspc_krw": round(last_gspc_d * last_krw_d, 2),
+            "ks11_krw": round(last_ks11_d, 2),
+            "ks11_usd": round(last_ks11_d / last_krw_d, 4) if last_krw_d > 0 else 0
+        }
+        
+        # 12-month historical values
+        h_gspc_mo = get_history(url_gspc_mo, fmt='%Y-%m', count=12)
+        h_ks11_mo = get_history(url_ks11_mo, fmt='%Y-%m', count=12)
+        h_krw_mo = get_history(url_krw_mo, fmt='%Y-%m', count=12)
+        
+        dates_mo = sorted(list(set(h_gspc_mo.keys()) | set(h_ks11_mo.keys()) | set(h_krw_mo.keys())))
         history = []
         
-        # Fallback values for filling gaps
-        last_gspc = h_gspc.get(dates[0], 5000.0) if h_gspc else 5000.0
-        last_ks200 = h_ks200.get(dates[0], 350.0) if h_ks200 else 350.0
-        last_krw = krw_map.get(dates[0], 1350.0) if krw_map else 1350.0
+        lg = h_gspc_mo.get(dates_mo[0], 5000.0) if dates_mo and h_gspc_mo else 5000.0
+        lk = h_ks11_mo.get(dates_mo[0], 2500.0) if dates_mo and h_ks11_mo else 2500.0
+        lx = h_krw_mo.get(dates_mo[0], 1350.0) if dates_mo and h_krw_mo else 1350.0
         
-        for d in dates:
-            if d in h_gspc: last_gspc = h_gspc[d]
-            if d in h_ks200: last_ks200 = h_ks200[d]
-            if d in krw_map: last_krw = krw_map[d]
-            
-            gspc_usd = last_gspc
-            gspc_krw = last_gspc * last_krw
-            ks200_krw = last_ks200
-            ks200_usd = last_ks200 / last_krw if last_krw > 0 else 0
+        for d in dates_mo:
+            if d in h_gspc_mo: lg = h_gspc_mo[d]
+            if d in h_ks11_mo: lk = h_ks11_mo[d]
+            if d in h_krw_mo: lx = h_krw_mo[d]
             
             history.append({
                 "date": d,
-                "gspc_usd": round(gspc_usd, 2),
-                "gspc_krw": round(gspc_krw, 2),
-                "ks200_krw": round(ks200_krw, 2),
-                "ks200_usd": round(ks200_usd, 4)
+                "gspc_usd": round(lg, 2),
+                "gspc_krw": round(lg * lx, 2),
+                "ks11_krw": round(lk, 2),
+                "ks11_usd": round(lk / lx, 4) if lx > 0 else 0
             })
             
-        latest = history[-1] if history else {
-            "gspc_usd": 0, "gspc_krw": 0, "ks200_krw": 0, "ks200_usd": 0
-        }
-        
         return {
             "latest": latest,
             "history": history

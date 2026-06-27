@@ -142,7 +142,7 @@
 
         <!-- KCA Indices Stats -->
         <div class="card kca-card">
-          <h4>핵심 인덱스 (S&P500 & KOSPI200)</h4>
+          <h4>핵심 인덱스 (S&P500 & KOSPI)</h4>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem;">
             <div class="kca-col">
               <div style="font-weight: 700; color: var(--vp-c-text-1); margin-bottom: 0.5rem; font-size: 0.95rem;">🇺🇸 S&P 500</div>
@@ -150,9 +150,9 @@
               <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">KRW 체감</span><span class="value" v-if="marketData">{{ Math.round(marketData.kca_indices.latest.gspc_krw).toLocaleString() }}</span></div>
             </div>
             <div class="kca-col">
-              <div style="font-weight: 700; color: var(--vp-c-text-1); margin-bottom: 0.5rem; font-size: 0.95rem;">🇰🇷 KOSPI 200</div>
-              <div class="stat"><span class="label">KRW 본질</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks200_krw.toLocaleString() }}</span></div>
-              <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">USD 글로벌</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks200_usd.toLocaleString(undefined, {minimumFractionDigits: 3}) }}</span></div>
+              <div style="font-weight: 700; color: var(--vp-c-text-1); margin-bottom: 0.5rem; font-size: 0.95rem;">🇰🇷 KOSPI</div>
+              <div class="stat"><span class="label">KRW 본질</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks11_krw.toLocaleString() }}</span></div>
+              <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">USD 글로벌</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks11_usd.toLocaleString(undefined, {minimumFractionDigits: 3}) }}</span></div>
             </div>
           </div>
         </div>
@@ -205,17 +205,17 @@
 
         <!-- S&P 500 KCA History -->
         <div class="card chart-card">
-          <h4>S&P 500 누적 등락률 (USD vs KRW)</h4>
+          <h4>S&P 500 최근 12개월 추이 (월간)</h4>
           <div class="chart-wrapper">
             <LineChart v-if="gspcChartData" :data="gspcChartData" :options="lineOptionsWithLegend" />
           </div>
         </div>
 
-        <!-- KOSPI 200 KCA History -->
+        <!-- KOSPI KCA History -->
         <div class="card chart-card">
-          <h4>KOSPI 200 누적 등락률 (KRW vs USD)</h4>
+          <h4>KOSPI 최근 12개월 추이 (월간)</h4>
           <div class="chart-wrapper">
-            <LineChart v-if="ks200ChartData" :data="ks200ChartData" :options="lineOptionsWithLegend" />
+            <LineChart v-if="ks11ChartData" :data="ks11ChartData" :options="lineOptionsWithLegend" />
           </div>
         </div>
 
@@ -606,7 +606,7 @@ const gspcChartData = computed(() => {
   if (!marketData.value || !marketData.value.kca_indices.history) return null
   const history = marketData.value.kca_indices.history
   return {
-    labels: history.map(item => item.date.substring(5)),
+    labels: history.map(item => item.date),
     datasets: [
       {
         label: 'S&P 500 (USD) %',
@@ -626,24 +626,24 @@ const gspcChartData = computed(() => {
   }
 })
 
-const ks200ChartData = computed(() => {
+const ks11ChartData = computed(() => {
   if (!marketData.value || !marketData.value.kca_indices.history) return null
   const history = marketData.value.kca_indices.history
   return {
-    labels: history.map(item => item.date.substring(5)),
+    labels: history.map(item => item.date),
     datasets: [
       {
-        label: 'KOSPI 200 (KRW) %',
+        label: 'KOSPI (KRW) %',
         borderColor: '#ef4444',
         pointRadius: 1,
-        data: normalize(history.map(item => item.ks200_krw)),
+        data: normalize(history.map(item => item.ks11_krw)),
         tension: 0.3
       },
       {
-        label: 'KOSPI 200 (USD 환산) %',
+        label: 'KOSPI (USD 환산) %',
         borderColor: '#ec4899',
         pointRadius: 1,
-        data: normalize(history.map(item => item.ks200_usd)),
+        data: normalize(history.map(item => item.ks11_usd)),
         tension: 0.3
       }
     ]
