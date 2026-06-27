@@ -374,11 +374,20 @@ onMounted(async () => {
   transition: all 0.55s cubic-bezier(0.16, 1, 0.3, 1);
   padding: 4rem 0;
   border-radius: 0;
-  background: var(--vp-c-bg);
-  box-shadow: 0 0 0 100vmax var(--vp-c-bg);
-  clip-path: inset(0 -100vmax);
   border: none;
   margin-bottom: 0;
+}
+
+.timeline-node::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background: var(--vp-c-bg);
+  z-index: -1;
   border-bottom: 1px solid var(--vp-c-gutter);
 }
 
@@ -389,6 +398,25 @@ onMounted(async () => {
   --vp-c-text-1: #fffff5;
   --vp-c-text-2: #ebebf599;
   color: var(--vp-c-text-1);
+}
+
+.timeline-node.theme-dark .type-tag.stock {
+  color: #818cf8;
+  background: rgba(99,102,241,0.25);
+  border-color: rgba(99,102,241,0.4);
+}
+.timeline-node.theme-dark .type-tag.etf {
+  color: #fbbf24;
+  background: rgba(251,191,36,0.25);
+  border-color: rgba(251,191,36,0.4);
+}
+.timeline-node.theme-dark .role-badge.core {
+  color: #60a5fa;
+  background: rgba(59,130,246,0.25);
+}
+.timeline-node.theme-dark .role-badge.satellite {
+  color: #c084fc;
+  background: rgba(168,85,247,0.25);
 }
 
 .timeline-node.theme-light {
