@@ -96,8 +96,10 @@
   * 존 보글의 철학을 공유하는 장기 패시브 인덱스 투자자들의 성지. "시세 보지 말고 일상을 살아라"를 서로 다독임.
 * **r/dividends ([reddit.com/r/dividends](https://www.reddit.com/r/dividends))**: 
   * SCHD 등 배당 성장 및 현금흐름 투자를 논의하는 포럼.
-* **r/investing / r/wallstreetbets**: 
-  * 글로벌 거시 경제 토론 및 과열된 단기 투기 심리(밈 주식 등)를 한 발짝 떨어져서 역발상 지표로 모니터링하는 채널.
+* **r/investing ([reddit.com/r/investing](https://www.reddit.com/r/investing))**: 
+  * 글로벌 거시 경제 뉴스, 기업 실적 분석, 자산군 전반에 대한 종합 토론 및 다양한 투자 관점 모니터링.
+* **r/wallstreetbets ([reddit.com/r/wallstreetbets](https://www.reddit.com/r/wallstreetbets))**: 
+  * 고위험·고수익 중심의 공격적인 개별 주식 성향. 단기 투기성 밈 주식(Meme Stocks) 트렌드를 한 발짝 떨어져서 역발상 지표로 모니터링하는 채널.
 
 ---
 
