@@ -55,9 +55,10 @@
         <div class="timeline-line"></div>
 
         <div
-          v-for="group in groupedByYear"
+          v-for="(group, idx) in groupedByYear"
           :key="group.year"
           class="timeline-node"
+          :class="idx % 2 === 0 ? 'theme-dark' : 'theme-light'"
         >
           <div class="node-year-badge">{{ group.year }}</div>
           <div class="node-cards-container">
@@ -352,6 +353,28 @@ onMounted(async () => {
   opacity: 0;
   transform: translateY(24px);
   transition: all 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-gutter);
+}
+
+.timeline-node.theme-dark {
+  --vp-c-bg: #1b1b1f;
+  --vp-c-bg-soft: #202127;
+  --vp-c-gutter: #38383a;
+  --vp-c-text-1: #fffff5;
+  --vp-c-text-2: #ebebf599;
+  color: var(--vp-c-text-1);
+}
+
+.timeline-node.theme-light {
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-soft: #f6f6f7;
+  --vp-c-gutter: #e2e2e3;
+  --vp-c-text-1: #3c3c43;
+  --vp-c-text-2: #3c3c43c7;
+  color: var(--vp-c-text-1);
 }
 .timeline-node.visible {
   opacity: 1;
