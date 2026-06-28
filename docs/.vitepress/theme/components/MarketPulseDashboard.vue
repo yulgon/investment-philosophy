@@ -220,7 +220,7 @@
         <div class="card chart-card">
           <h4>S&P 500 차트 (2021년~현재)</h4>
           <div class="chart-wrapper">
-            <LineChart v-if="gspcChartData" :data="gspcChartData" :options="gspcChartOptions" />
+            <LineChart v-if="gspcChartData" :data="gspcChartData" :options="lineOptionsWithLegend" />
           </div>
         </div>
 
@@ -228,7 +228,7 @@
         <div class="card chart-card">
           <h4>KOSPI 차트 (2021년~현재)</h4>
           <div class="chart-wrapper">
-            <LineChart v-if="ks11ChartData" :data="ks11ChartData" :options="ks11ChartOptions" />
+            <LineChart v-if="ks11ChartData" :data="ks11ChartData" :options="lineOptionsWithLegend" />
           </div>
         </div>
 
@@ -538,88 +538,6 @@ const lineOptionsWithLegend = {
   }
 }
 
-const kcaChartOptionsFallback = {
-  responsive: true,
-  maintainAspectRatio: false,
-  scales: {
-    y: { type: 'linear', position: 'left' },
-    y1: { type: 'linear', position: 'right' },
-    x: { grid: { display: false } }
-  },
-  plugins: { legend: { display: true, position: 'bottom' } }
-}
-
-const gspcChartOptions = computed(() => {
-  if (!marketData.value || !marketData.value.kca_indices.history) return kcaChartOptionsFallback
-  const history = marketData.value.kca_indices.history
-  if (!history.length) return kcaChartOptionsFallback
-  
-  const firstExchangeRate = history[0].gspc_krw / history[0].gspc_usd
-  
-  const effectiveMins = history.map(item => Math.min(item.gspc_usd, item.gspc_krw / firstExchangeRate))
-  const effectiveMaxs = history.map(item => Math.max(item.gspc_usd, item.gspc_krw / firstExchangeRate))
-  
-  const yMin = Math.min(...effectiveMins) * 0.95
-  const yMax = Math.max(...effectiveMaxs) * 1.05
-  
-  return {
-    responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-      y: {
-        type: 'linear', position: 'left',
-        min: yMin, max: yMax,
-        grid: { color: 'rgba(128, 128, 128, 0.1)' }
-      },
-      y1: {
-        type: 'linear', position: 'right',
-        min: yMin * firstExchangeRate, max: yMax * firstExchangeRate,
-        grid: { drawOnChartArea: false }
-      },
-      x: { grid: { display: false } }
-    },
-    plugins: { 
-      legend: { display: true, position: 'bottom' },
-      tooltip: { mode: 'index', intersect: false }
-    }
-  }
-})
-
-const ks11ChartOptions = computed(() => {
-  if (!marketData.value || !marketData.value.kca_indices.history) return kcaChartOptionsFallback
-  const history = marketData.value.kca_indices.history
-  if (!history.length) return kcaChartOptionsFallback
-  
-  const firstExchangeRate = history[0].ks11_krw / history[0].ks11_usd
-  
-  const effectiveMins = history.map(item => Math.min(item.ks11_usd, item.ks11_krw / firstExchangeRate))
-  const effectiveMaxs = history.map(item => Math.max(item.ks11_usd, item.ks11_krw / firstExchangeRate))
-  
-  const yMin = Math.min(...effectiveMins) * 0.95
-  const yMax = Math.max(...effectiveMaxs) * 1.05
-  
-  return {
-    responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-      y: {
-        type: 'linear', position: 'left',
-        min: yMin, max: yMax,
-        grid: { color: 'rgba(128, 128, 128, 0.1)' }
-      },
-      y1: {
-        type: 'linear', position: 'right',
-        min: yMin * firstExchangeRate, max: yMax * firstExchangeRate,
-        grid: { drawOnChartArea: false }
-      },
-      x: { grid: { display: false } }
-    },
-    plugins: { 
-      legend: { display: true, position: 'bottom' },
-      tooltip: { mode: 'index', intersect: false }
-    }
-  }
-})
 
 const fgChartData = computed(() => {
   if (!marketData.value || !marketData.value.fear_and_greed.history) return null
@@ -722,6 +640,8 @@ const dxyChartData = computed(() => {
 const gspcChartData = computed(() => {
   if (!marketData.value || !marketData.value.kca_indices.history) return null
   const history = marketData.value.kca_indices.history
+  if (!history.length) return null
+  const firstExchangeRate = history[0].gspc_krw / history[0].gspc_usd
   return {
     labels: history.map(item => item.date),
     datasets: [
@@ -729,7 +649,6 @@ const gspcChartData = computed(() => {
         label: 'S&P 500 (USD 본질)',
         borderColor: '#3b82f6',
         pointRadius: 0,
-        yAxisID: 'y',
         data: history.map(item => item.gspc_usd),
         tension: 0.3
       },
@@ -738,8 +657,7 @@ const gspcChartData = computed(() => {
         borderColor: '#3b82f6',
         borderDash: [5, 5],
         pointRadius: 0,
-        yAxisID: 'y1',
-        data: history.map(item => item.gspc_krw),
+        data: history.map(item => item.gspc_krw / firstExchangeRate),
         tension: 0.3
       }
     ]
@@ -749,6 +667,8 @@ const gspcChartData = computed(() => {
 const ks11ChartData = computed(() => {
   if (!marketData.value || !marketData.value.kca_indices.history) return null
   const history = marketData.value.kca_indices.history
+  if (!history.length) return null
+  const firstExchangeRate = history[0].ks11_krw / history[0].ks11_usd
   return {
     labels: history.map(item => item.date),
     datasets: [
@@ -756,7 +676,6 @@ const ks11ChartData = computed(() => {
         label: 'KOSPI (KRW 본질)',
         borderColor: '#ef4444',
         pointRadius: 0,
-        yAxisID: 'y1',
         data: history.map(item => item.ks11_krw),
         tension: 0.3
       },
@@ -765,8 +684,7 @@ const ks11ChartData = computed(() => {
         borderColor: '#ef4444',
         borderDash: [5, 5],
         pointRadius: 0,
-        yAxisID: 'y',
-        data: history.map(item => item.ks11_usd),
+        data: history.map(item => item.ks11_usd * firstExchangeRate),
         tension: 0.3
       }
     ]
