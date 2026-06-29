@@ -19,7 +19,21 @@ export default withMermaid(
       
       // [TODO] 구글 애널리틱스(GA4) 추적 코드를 발급받으면 아래 주석을 풀고 G-XXXXXXXXXX 를 변경해서 사용하세요.
       ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-Z7Y0N822TN' }],
-      ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-Z7Y0N822TN');"]
+      ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-Z7Y0N822TN');"],
+      
+      // 언어 자동 리다이렉트 스크립트 (Option A)
+      ['script', {}, `
+        (function() {
+          if (typeof window === 'undefined') return;
+          if (!localStorage.getItem('lang-redirect-done')) {
+            localStorage.setItem('lang-redirect-done', 'true');
+            var lang = navigator.language || navigator.userLanguage;
+            if (lang && !lang.toLowerCase().startsWith('ko') && !window.location.pathname.startsWith('/en/')) {
+              window.location.href = '/en' + (window.location.pathname === '/' ? '/' : window.location.pathname);
+            }
+          }
+        })();
+      `]
     ],
     themeConfig: {
       logo: '/logo.png',
