@@ -43,7 +43,7 @@ Assets that are growing well are left alone to fully enjoy the value of compound
 Based on this logic, I perfectly balance risk and excess return by comparing the entire asset to a cosmic system.
 
 ### 🪐 Core Planets: Continuous Gravitational Field
-* **Targets:** VOO, SPMO, SCHD (Stock Core) / TLT, EDV (Bond Core)
+* **Targets:** VOO, SPMO, SCHD(US stock) & KOSPI (KOR Stock) & Bond Core
 * **Role:** They balance the center of the orbit with massive and heavy mass (capital). Planets with different gravities—growth and defense—intertwine, holding out so the portfolio doesn't become a space orphan even when the market shakes.
 
 ### 🛰️ Peripheral Satellites: High-speed Probes Executing Slingshots
