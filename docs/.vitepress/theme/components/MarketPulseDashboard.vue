@@ -6,27 +6,27 @@
       <div class="banner-left">
         <span class="theme-icon">{{ error ? '⚠️' : (loading ? '🔄' : themeData.icon) }}</span>
         <div class="banner-text-group">
-          <span class="banner-title">원빌리언 순례길</span>
-          <span class="banner-status">{{ error ? '데이터를 불러오지 못했습니다.' : (loading ? '시장 데이터를 동기화 중입니다...' : themeData.msg) }}</span>
+          <span class="banner-title">{{ t.bannerTitle }}</span>
+          <span class="banner-status">{{ error ? t.loadError : (loading ? t.syncingData : themeData.msg) }}</span>
         </div>
       </div>
       <div class="banner-right">
-        {{ isExpanded ? '접기 ▲' : '지표 열기 ▼' }}
+        {{ isExpanded ? t.collapse : t.expand }}
       </div>
     </div>
 
     <!-- Expanded content -->
     <div v-show="isExpanded" class="dashboard-expanded-area">
-      <div v-if="loading" class="loading">시장 감정을 동기화하는 중...</div>
+      <div v-if="loading" class="loading">{{ t.syncingSentiment }}</div>
       <div v-else-if="error" class="error">{{ error }}</div>
       <div v-else class="market-dashboard" :class="stateClass">
         <div class="dashboard-header">
-          <p class="last-updated">최근 업데이트: {{ formattedDate }}</p>
+          <p class="last-updated">{{ t.lastUpdated }}{{ formattedDate }}</p>
           <div class="data-sources">
-            <span class="source-item"><strong>주가지수, 환율, VIX:</strong> Yahoo Finance</span>
-            <span class="source-item"><strong>공포와 탐욕:</strong> CNN Business</span>
-            <span class="source-item"><strong>국채 금리:</strong> U.S. Department of the Treasury</span>
-            <span class="source-item"><strong>기준금리:</strong> Federal Reserve (EFFR)</span>
+            <span class="source-item"><strong>{{ t.srcIndices }}</strong> Yahoo Finance</span>
+            <span class="source-item"><strong>{{ t.srcFG }}</strong> CNN Business</span>
+            <span class="source-item"><strong>{{ t.srcYields }}</strong> U.S. Department of the Treasury</span>
+            <span class="source-item"><strong>{{ t.srcFedRate }}</strong> Federal Reserve (EFFR)</span>
           </div>
         </div>
 
@@ -36,7 +36,7 @@
         <!-- Fear & Greed Premium Gauge -->
         <div class="card fg-card premium-card">
           <div class="fg-card-header">
-            <h4>공포와 탐욕 지수</h4>
+            <h4>{{ t.fgTitle }}</h4>
             <div class="fg-status-label" :style="{ color: fgColor, textShadow: `0 0 10px ${fgColor}80` }">
               {{ fgRatingString }}
             </div>
@@ -95,71 +95,71 @@
         <!-- FedWatch Tool (Removed) -->
         <!-- Macro / Yields Stats -->
         <div class="card macro-card">
-          <h4>미 국채 금리 및 기준금리</h4>
+          <h4>{{ t.yieldsTitle }}</h4>
           <div class="yield-stats">
             <div class="stat">
-              <span class="label">10년물</span>
+              <span class="label">{{ t.tenYear }}</span>
               <span class="value">{{ marketData.macro.ten_year }}%</span>
             </div>
             <div class="stat">
-              <span class="label">2년물</span>
+              <span class="label">{{ t.twoYear }}</span>
               <span class="value">{{ marketData.macro.two_year }}%</span>
             </div>
             <div class="stat">
-              <span class="label">기준금리</span>
+              <span class="label">{{ t.fedRate }}</span>
               <span class="value">{{ marketData.macro.fed_rate }}%</span>
             </div>
           </div>
           <div class="yield-spread" :class="marketData.macro.status">
-            장단기 금리차: {{ marketData.macro.spread }}% ({{ marketData.macro.status.toUpperCase() }})
+            {{ t.yieldSpread }}{{ marketData.macro.spread }}% ({{ marketData.macro.status.toUpperCase() }})
           </div>
         </div>
         
         <!-- VIX Stats -->
         <div class="card vix-stats-card">
-          <h4>VIX (변동성)</h4>
+          <h4>{{ t.vixTitle }}</h4>
           <div class="vix-current">
             <span class="vix-value" :style="{ color: vixColor }">{{ marketData.vix.latest }}</span>
           </div>
           <div class="vix-description">
-            <p v-if="marketData.vix.latest > 30">극심한 스트레스. 패닉셀 주의.</p>
-            <p v-else-if="marketData.vix.latest > 20">높은 변동성. 방어적 태세.</p>
-            <p v-else-if="marketData.vix.latest < 12">극단적 평온. 탐욕 경계.</p>
-            <p v-else>안정적인 변동성.</p>
+            <p v-if="marketData.vix.latest > 30">{{ t.vixStress }}</p>
+            <p v-else-if="marketData.vix.latest > 20">{{ t.vixHigh }}</p>
+            <p v-else-if="marketData.vix.latest < 12">{{ t.vixCalm }}</p>
+            <p v-else>{{ t.vixStable }}</p>
           </div>
         </div>
 
         <!-- Exchange Rates Stats -->
         <div class="card exchange-card">
-          <h4>환율 (USD/KRW & DXY)</h4>
+          <h4>{{ t.fxTitle }}</h4>
           <div class="yield-stats">
             <div class="stat">
-              <span class="label">원/달러 환율</span>
+              <span class="label">{{ t.usdKrw }}</span>
               <span class="value" v-if="marketData">{{ marketData.exchange.usd_krw.toLocaleString() }}</span>
             </div>
             <div class="stat">
-              <span class="label">달러 인덱스</span>
+              <span class="label">{{ t.dxy }}</span>
               <span class="value" v-if="marketData">{{ marketData.exchange.dxy }}</span>
             </div>
           </div>
           <div class="yield-spread" style="background: var(--vp-c-bg-mute); color: var(--vp-c-text-2);">
-            글로벌 유동성과 거시 경제의 풍향계
+            {{ t.fxDesc }}
           </div>
         </div>
 
         <!-- KCA Indices Stats -->
         <div class="card kca-card">
-          <h4>핵심 인덱스 (S&P500 & KOSPI)</h4>
+          <h4>{{ t.kcaTitle }}</h4>
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 0.5rem;">
             <div class="kca-col">
               <div style="font-weight: 700; color: var(--vp-c-text-1); margin-bottom: 0.5rem; font-size: 0.95rem;">🇺🇸 S&P 500</div>
-              <div class="stat"><span class="label">USD 본질</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.gspc_usd.toLocaleString() }}</span></div>
-              <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">KRW 체감</span><span class="value" v-if="marketData">{{ Math.round(marketData.kca_indices.latest.gspc_krw).toLocaleString() }}</span></div>
+              <div class="stat"><span class="label">{{ t.usdTrue }}</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.gspc_usd.toLocaleString() }}</span></div>
+              <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">{{ t.krwPerceived }}</span><span class="value" v-if="marketData">{{ Math.round(marketData.kca_indices.latest.gspc_krw).toLocaleString() }}</span></div>
             </div>
             <div class="kca-col">
               <div style="font-weight: 700; color: var(--vp-c-text-1); margin-bottom: 0.5rem; font-size: 0.95rem;">🇰🇷 KOSPI</div>
-              <div class="stat"><span class="label">KRW 본질</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks11_krw.toLocaleString() }}</span></div>
-              <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">USD 글로벌</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks11_usd.toLocaleString(undefined, {minimumFractionDigits: 3}) }}</span></div>
+              <div class="stat"><span class="label">{{ t.krwTrue }}</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks11_krw.toLocaleString() }}</span></div>
+              <div class="stat"><span class="label" style="color: var(--vp-c-brand-1);">{{ t.usdGlobal }}</span><span class="value" v-if="marketData">{{ marketData.kca_indices.latest.ks11_usd.toLocaleString(undefined, {minimumFractionDigits: 3}) }}</span></div>
             </div>
           </div>
         </div>
@@ -167,12 +167,12 @@
       </div>
 
       <!-- Bottom Row: 30-Day Tactical Charts -->
-      <h3 class="history-title">단기 펄스 (최근 30일 추이)</h3>
+      <h3 class="history-title">{{ t.shortTermTitle }}</h3>
       <div class="dashboard-grid history-row">
         
         <!-- F&G History -->
         <div class="card chart-card">
-          <h4>Fear & Greed 추이</h4>
+          <h4>{{ t.fgTrend }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="fgChartData" :data="fgChartData" :options="lineOptions" />
           </div>
@@ -180,7 +180,7 @@
 
         <!-- Yields History -->
         <div class="card chart-card">
-          <h4>국채 금리 및 기준금리 추이</h4>
+          <h4>{{ t.yieldsTrend }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="yieldsChartData" :data="yieldsChartData" :options="lineOptionsWithLegend" />
           </div>
@@ -188,7 +188,7 @@
 
         <!-- VIX History -->
         <div class="card chart-card">
-          <h4>VIX 변동성 추이</h4>
+          <h4>{{ t.vixTrend }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="vixChartData" :data="vixChartData" :options="lineOptions" />
           </div>
@@ -196,7 +196,7 @@
 
         <!-- USD/KRW History -->
         <div class="card chart-card">
-          <h4>원/달러 환율 추이</h4>
+          <h4>{{ t.fxTrend }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="usdKrwChartData" :data="usdKrwChartData" :options="lineOptions" />
           </div>
@@ -204,7 +204,7 @@
 
         <!-- DXY History -->
         <div class="card chart-card">
-          <h4>달러 인덱스(DXY) 추이</h4>
+          <h4>{{ t.dxyTrend }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="dxyChartData" :data="dxyChartData" :options="lineOptions" />
           </div>
@@ -213,12 +213,12 @@
       </div>
 
       <!-- Long-Term KCA History Charts -->
-      <h3 class="history-title" style="margin-top: 3rem;">장기 자산 궤적 (2021년~현재)</h3>
+      <h3 class="history-title" style="margin-top: 3rem;">{{ t.longTermTitle }}</h3>
       <div class="dashboard-grid history-row">
 
         <!-- S&P 500 KCA History -->
         <div class="card chart-card">
-          <h4>S&P 500 차트 (2021년~현재)</h4>
+          <h4>{{ t.sp500Chart }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="gspcChartData" :data="gspcChartData" :options="lineOptionsWithLegend" />
           </div>
@@ -226,7 +226,7 @@
 
         <!-- KOSPI KCA History -->
         <div class="card chart-card">
-          <h4>KOSPI 차트 (2021년~현재)</h4>
+          <h4>{{ t.kospiChart }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="ks11ChartData" :data="ks11ChartData" :options="lineOptionsWithLegend" />
           </div>
@@ -234,7 +234,7 @@
 
         <!-- Relative USD Performance History -->
         <div class="card chart-card">
-          <h4>S&P500 vs KOSPI 상대 비교 (USD 기준, 2021=100)</h4>
+          <h4>{{ t.relativeChart }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="relativeUsdChartData" :data="relativeUsdChartData" :options="lineOptionsWithLegend" />
           </div>
@@ -242,7 +242,7 @@
 
         <!-- Long-Term USD/KRW History -->
         <div class="card chart-card">
-          <h4>원/달러 환율 장기 추이 (월간)</h4>
+          <h4>{{ t.longTermFx }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="longTermUsdKrwChartData" :data="longTermUsdKrwChartData" :options="lineOptions" />
           </div>
@@ -250,7 +250,7 @@
 
         <!-- Long-Term Yields History -->
         <div class="card chart-card">
-          <h4>미 국채 금리 장기 추이 (월간)</h4>
+          <h4>{{ t.longTermYields }}</h4>
           <div class="chart-wrapper">
             <LineChart v-if="longTermYieldsChartData" :data="longTermYieldsChartData" :options="lineOptionsWithLegend" />
           </div>
@@ -263,6 +263,7 @@
 </template>
 
 <script setup>
+import { useData } from 'vitepress'
 import { ref, onMounted, computed, nextTick } from 'vue'
 import {
   Chart as ChartJS,
@@ -291,6 +292,56 @@ ChartJS.register(
 
 const marketData = ref(null)
 const loading = ref(true)
+
+const { lang } = useData()
+const t = computed(() => {
+  const isEn = lang.value === 'en-US'
+  return {
+    bannerTitle: isEn ? 'One Billion Pilgrimage' : '원빌리언 순례길',
+    loadError: isEn ? 'Failed to load data.' : '데이터를 불러오지 못했습니다.',
+    syncingData: isEn ? 'Syncing market data...' : '시장 데이터를 동기화 중입니다...',
+    collapse: isEn ? 'Collapse ▲' : '접기 ▲',
+    expand: isEn ? 'Expand ▼' : '지표 열기 ▼',
+    syncingSentiment: isEn ? 'Syncing market sentiment...' : '시장 감정을 동기화하는 중...',
+    lastUpdated: isEn ? 'Last Updated: ' : '최근 업데이트: ',
+    srcIndices: isEn ? 'Indices, FX, VIX:' : '주가지수, 환율, VIX:',
+    srcFG: isEn ? 'Fear & Greed:' : '공포와 탐욕:',
+    srcYields: isEn ? 'Treasury Yields:' : '국채 금리:',
+    srcFedRate: isEn ? 'Fed Funds Rate:' : '기준금리:',
+    fgTitle: isEn ? 'Fear & Greed Index' : '공포와 탐욕 지수',
+    yieldsTitle: isEn ? 'US Treasury Yields & Fed Rate' : '미 국채 금리 및 기준금리',
+    tenYear: isEn ? '10-Year' : '10년물',
+    twoYear: isEn ? '2-Year' : '2년물',
+    fedRate: isEn ? 'Fed Rate' : '기준금리',
+    yieldSpread: isEn ? 'Yield Spread: ' : '장단기 금리차: ',
+    vixTitle: isEn ? 'VIX (Volatility)' : 'VIX (변동성)',
+    vixStress: isEn ? 'Extreme stress. Beware of panic selling.' : '극심한 스트레스. 패닉셀 주의.',
+    vixHigh: isEn ? 'High volatility. Defensive stance.' : '높은 변동성. 방어적 태세.',
+    vixCalm: isEn ? 'Extreme calm. Beware of greed.' : '극단적 평온. 탐욕 경계.',
+    vixStable: isEn ? 'Stable volatility.' : '안정적인 변동성.',
+    fxTitle: isEn ? 'Exchange Rates (USD/KRW & DXY)' : '환율 (USD/KRW & DXY)',
+    usdKrw: isEn ? 'USD/KRW' : '원/달러 환율',
+    dxy: isEn ? 'Dollar Index' : '달러 인덱스',
+    fxDesc: isEn ? 'Barometer of global liquidity and macro economy' : '글로벌 유동성과 거시 경제의 풍향계',
+    kcaTitle: isEn ? 'Core Indices (S&P 500 & KOSPI)' : '핵심 인덱스 (S&P500 & KOSPI)',
+    usdTrue: isEn ? 'USD True Value' : 'USD 본질',
+    krwPerceived: isEn ? 'KRW Perceived' : 'KRW 체감',
+    krwTrue: isEn ? 'KRW True Value' : 'KRW 본질',
+    usdGlobal: isEn ? 'USD Global' : 'USD 글로벌',
+    shortTermTitle: isEn ? 'Short-Term Pulse (Last 30 Days)' : '단기 펄스 (최근 30일 추이)',
+    fgTrend: isEn ? 'Fear & Greed Trend' : 'Fear & Greed 추이',
+    yieldsTrend: isEn ? 'Treasury Yields Trend' : '국채 금리 및 기준금리 추이',
+    vixTrend: isEn ? 'VIX Trend' : 'VIX 변동성 추이',
+    fxTrend: isEn ? 'USD/KRW Trend' : '원/달러 환율 추이',
+    dxyTrend: isEn ? 'DXY Trend' : '달러 인덱스(DXY) 추이',
+    longTermTitle: isEn ? 'Long-Term Asset Trajectory (2021-Present)' : '장기 자산 궤적 (2021년~현재)',
+    sp500Chart: isEn ? 'S&P 500 Chart (2021-Present)' : 'S&P 500 차트 (2021년~현재)',
+    kospiChart: isEn ? 'KOSPI Chart (2021-Present)' : 'KOSPI 차트 (2021년~현재)',
+    relativeChart: isEn ? 'S&P 500 vs KOSPI (USD, 2021=100)' : 'S&P500 vs KOSPI 상대 비교 (USD 기준, 2021=100)',
+    longTermFx: isEn ? 'Long-Term USD/KRW (Monthly)' : '원/달러 환율 장기 추이 (월간)',
+    longTermYields: isEn ? 'Long-Term US Yields (Monthly)' : '미 국채 금리 장기 추이 (월간)'
+  }
+})
 const error = ref(null)
 const isExpanded = ref(false)
 const canvasRef = ref(null)
@@ -403,21 +454,22 @@ function startCanvasAnimation(canvas, state) {
 }
 
 const themeData = computed(() => {
-  if (!marketData.value) return { icon: '🔄', msg: '로딩 중...', cssClass: '' }
+  const isEn = lang.value === 'en-US'
+  if (!marketData.value) return { icon: '🔄', msg: isEn ? 'Loading...' : '로딩 중...', cssClass: '' }
   const state = marketData.value.organism_state
   switch (state) {
     case 'extreme_fear':
-      return { icon: '🧭', msg: '칠흑 같은 어둠입니다. 오직 나침반(철학)만 믿고 나아가세요.', cssClass: 'theme-compass' }
+      return { icon: '🧭', msg: isEn ? 'Pitch black. Trust only your compass (philosophy).' : '칠흑 같은 어둠입니다. 오직 나침반(철학)만 믿고 나아가세요.', cssClass: 'theme-compass' }
     case 'fear':
-      return { icon: '🕯️', msg: '비바람이 붑니다. 목표를 향한 불씨를 지켜내야 합니다.', cssClass: 'theme-candle' }
+      return { icon: '🕯️', msg: isEn ? 'Wind and rain. Protect the ember of your goal.' : '비바람이 붑니다. 목표를 향한 불씨를 지켜내야 합니다.', cssClass: 'theme-candle' }
     case 'neutral':
-      return { icon: '🛤️', msg: '감정이 배제된 평탄한 길입니다. 묵묵히 계획대로 걷고 있습니다.', cssClass: 'theme-march' }
+      return { icon: '🛤️', msg: isEn ? 'A smooth path devoid of emotion. Walking steadily as planned.' : '감정이 배제된 평탄한 길입니다. 묵묵히 계획대로 걷고 있습니다.', cssClass: 'theme-march' }
     case 'greed':
-      return { icon: '🚀', msg: '강한 순풍에 속도가 붙습니다. 자만과 과속을 경계하세요.', cssClass: 'theme-tailwind' }
+      return { icon: '🚀', msg: isEn ? 'Strong tailwind gaining speed. Beware of arrogance and speeding.' : '강한 순풍에 속도가 붙습니다. 자만과 과속을 경계하세요.', cssClass: 'theme-tailwind' }
     case 'extreme_greed':
-      return { icon: '🏜️', msg: '가장 위험한 황금빛 신기루입니다. 환희를 멀리하세요.', cssClass: 'theme-mirage' }
+      return { icon: '🏜️', msg: isEn ? 'The most dangerous golden mirage. Stay away from euphoria.' : '가장 위험한 황금빛 신기루입니다. 환희를 멀리하세요.', cssClass: 'theme-mirage' }
     default:
-      return { icon: '❓', msg: '상태를 알 수 없습니다.', cssClass: '' }
+      return { icon: '❓', msg: isEn ? 'Unknown state.' : '상태를 알 수 없습니다.', cssClass: '' }
   }
 })
 
