@@ -1,14 +1,33 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { books } from '../books/booksData'
+import { useData } from 'vitepress'
+import { books as booksKo } from '../books/booksData'
+import { books as booksEn } from '../books/booksDataEn'
 
-const categories = ['전체', ...new Set(books.map(b => b.category))]
-const selectedCategory = ref('전체')
+const { lang } = useData()
+const books = computed(() => lang.value === 'en-US' ? booksEn : booksKo)
+
+const t = computed(() => {
+  const isEn = lang.value === 'en-US'
+  return {
+    all: isEn ? 'All' : '전체',
+    commentPrefix: isEn ? '🙋‍♂️ Personal Note:' : '🙋‍♂️ 덧붙이는 말:'
+  }
+})
+
+const categories = computed(() => [t.value.all, ...new Set(books.value.map(b => b.category))])
+const selectedCategory = ref('')
+
+const currentCategory = computed(() => selectedCategory.value || t.value.all)
 
 const filteredBooks = computed(() => {
-  if (selectedCategory.value === '전체') return books
-  return books.filter(b => b.category === selectedCategory.value)
+  if (currentCategory.value === t.value.all) return books.value
+  return books.value.filter(b => b.category === currentCategory.value)
 })
+
+const setCategory = (cat: string) => {
+  selectedCategory.value = cat
+}
 </script>
 
 <template>
@@ -17,8 +36,8 @@ const filteredBooks = computed(() => {
       <button 
         v-for="category in categories" 
         :key="category"
-        :class="['filter-btn', { active: selectedCategory === category }]"
-        @click="selectedCategory = category"
+        :class="['filter-btn', { active: currentCategory === category }]"
+        @click="setCategory(category)"
       >
         {{ category }}
       </button>
@@ -38,7 +57,7 @@ const filteredBooks = computed(() => {
           </div>
           <p class="description">{{ book.description }}</p>
           <div v-if="book.myComment" class="my-comment">
-            <strong>🙋‍♂️ 덧붙이는 말:</strong> {{ book.myComment }}
+            <strong>{{ t.commentPrefix }}</strong> {{ book.myComment }}
           </div>
         </div>
       </div>

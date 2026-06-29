@@ -1,6 +1,86 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import { books, Book } from '../books/booksData'
+import { ref, computed, watch } from 'vue'
+import { useData } from 'vitepress'
+import { books as booksKo } from '../books/booksData'
+import { books as booksEn } from '../books/booksDataEn'
+import type { Book } from '../books/booksData'
+
+const { lang } = useData()
+const books = computed(() => lang.value === 'en-US' ? booksEn : booksKo)
+
+const t = computed(() => {
+  const isEn = lang.value === 'en-US'
+  return {
+    q1Title: isEn ? 'What is your investment experience?' : '주식 투자 경험이 어떻게 되시나요?',
+    q1O1: isEn ? '🌱 Just starting out (Beginner)' : '🌱 이제 막 시작하려는 입문자',
+    q1O2: isEn ? '🏃 1-3 years (Have experience but still shaky)' : '🏃 1~3년 차 (경험은 있지만 아직 흔들림)',
+    q1O3: isEn ? '⛰️ 3+ years (Refining own principles)' : '⛰️ 3년 이상 (자신만의 원칙을 다듬는 중)',
+    
+    q2Title: isEn ? 'What investment style (goal) are you most interested in?' : '현재 가장 관심 있는 투자 스타일(목표)은 무엇인가요?',
+    q2O1: isEn ? '🐢 Comfortable long-term diversified investing (Asset Allocation/ETF)' : '🐢 마음 편한 장기 분산 투자 (자산배분/ETF)',
+    q2O2: isEn ? '🌍 Reading the macro economy and big trends (Macro/FX)' : '🌍 거시 경제와 큰 흐름 읽기 (매크로/환율)',
+    q2O3: isEn ? '💸 Building a second paycheck (Dividends/Cash flow)' : '💸 제2의 월급 만들기 (배당/현금흐름)',
+    q2O4: isEn ? '🧘 Mental management and realizing the essence of investing (Mindset)' : '🧘 멘탈 관리와 투자의 본질 깨닫기 (마인드셋)',
+
+    q3Title: isEn ? 'What is your biggest concern right now?' : '지금 가장 고민되는 부분은 무엇인가요?',
+    q3O1: isEn ? '🤔 No criteria on what stocks or assets to buy.' : '🤔 어떤 종목이나 자산을 사야 할지 기준이 없다.',
+    q3O2: isEn ? '📉 Fearful when the market drops and cannot manage mentality.' : '📉 시장이 하락하면 두렵고 멘탈 관리가 안 된다.',
+    q3O3: isEn ? '📰 Cannot understand economic news like interest rates or FX.' : '📰 금리나 환율 같은 경제 기사를 읽어도 잘 모르겠다.',
+    q3O4: isEn ? '🏜️ Frustrated because there is no immediate cash income.' : '🏜️ 당장 손에 쥐어지는 현금 수익이 없어 답답하다.',
+
+    stepIndicator: isEn ? 'Step' : 'Step',
+    of: isEn ? 'of' : 'of',
+
+    resultTitle: isEn ? '🎉 Personalized Book Curation for You' : '🎉 방문자님을 위한 맞춤형 독서 큐레이션',
+    resultDesc: isEn ? 'Based on your experience and current concerns, we have carefully selected 3 books from the bookshelf.' : '답변해주신 투자 연차와 현재의 고민을 바탕으로 책장에서 3권을 엄선했습니다.',
+    resetBtn: isEn ? 'Get Recommended Again' : '다시 추천받기',
+
+    rankSuffix: isEn ? ' Recommendation' : '순위 추천',
+    reasonTitle: isEn ? '💡 Reason for Curation:' : '💡 큐레이션 이유:',
+    myCommentTitle: isEn ? '🙋‍♂️ Personal Note:' : '🙋‍♂️ 덧붙이는 말:',
+
+    reason1: isEn ? 'The best book that will perfectly scratch the itch you were most concerned about. ' : '가장 고민하셨던 부분을 완벽하게 긁어줄 수 있는 최고의 책입니다. ',
+    reason2: isEn ? 'A book that will explode in synergy when read together with the first book. ' : '첫 번째 책과 함께 읽으면 시너지가 폭발하는 책입니다. ',
+    reason3: isEn ? 'I would like to highly recommend this as the last one to broaden your investment horizon. ' : '투자 시야를 넓히기 위해 마지막으로 꼭 추천해 드리고 싶습니다. ',
+
+    reasonAppendIndex: isEn ? 'You can learn the most certain methodology to beat market returns.' : '시장 수익률을 이기는 가장 확실한 방법론을 배울 수 있습니다.',
+    reasonAppendMacro: isEn ? 'Develops the eye to read the flow of money behind complex economic news.' : '복잡한 경제 기사 이면의 돈의 흐름을 읽는 눈을 길러줍니다.',
+    reasonAppendDividend: isEn ? 'Will give you the thrilling experience of actual cash flowing into your account.' : '실제로 계좌에 현금이 꽂히는 짜릿한 경험을 만들어 줄 것입니다.',
+    reasonAppendMindset: isEn ? 'Instills a steel mentality and philosophy that will not waver even in a bear market.' : '하락장에서도 흔들리지 않는 강철 멘탈과 철학을 심어줍니다.'
+  }
+})
+
+const questions = computed(() => [
+  {
+    id: 'q1',
+    title: t.value.q1Title,
+    options: [
+      { value: 'beginner', label: t.value.q1O1 },
+      { value: 'mid', label: t.value.q1O2 },
+      { value: 'expert', label: t.value.q1O3 }
+    ]
+  },
+  {
+    id: 'q2',
+    title: t.value.q2Title,
+    options: [
+      { value: 'index', label: t.value.q2O1 },
+      { value: 'macro', label: t.value.q2O2 },
+      { value: 'dividend', label: t.value.q2O3 },
+      { value: 'mindset', label: t.value.q2O4 }
+    ]
+  },
+  {
+    id: 'q3',
+    title: t.value.q3Title,
+    options: [
+      { value: 'no_rule', label: t.value.q3O1 },
+      { value: 'mental', label: t.value.q3O2 },
+      { value: 'economy', label: t.value.q3O3 },
+      { value: 'cashflow', label: t.value.q3O4 }
+    ]
+  }
+])
 
 const step = ref(0)
 const answers = ref({
@@ -8,38 +88,6 @@ const answers = ref({
   q2: '',
   q3: ''
 })
-
-const questions = [
-  {
-    id: 'q1',
-    title: '주식 투자 경험이 어떻게 되시나요?',
-    options: [
-      { value: 'beginner', label: '🌱 이제 막 시작하려는 입문자' },
-      { value: 'mid', label: '🏃 1~3년 차 (경험은 있지만 아직 흔들림)' },
-      { value: 'expert', label: '⛰️ 3년 이상 (자신만의 원칙을 다듬는 중)' }
-    ]
-  },
-  {
-    id: 'q2',
-    title: '현재 가장 관심 있는 투자 스타일(목표)은 무엇인가요?',
-    options: [
-      { value: 'index', label: '🐢 마음 편한 장기 분산 투자 (자산배분/ETF)' },
-      { value: 'macro', label: '🌍 거시 경제와 큰 흐름 읽기 (매크로/환율)' },
-      { value: 'dividend', label: '💸 제2의 월급 만들기 (배당/현금흐름)' },
-      { value: 'mindset', label: '🧘 멘탈 관리와 투자의 본질 깨닫기 (마인드셋)' }
-    ]
-  },
-  {
-    id: 'q3',
-    title: '지금 가장 고민되는 부분은 무엇인가요?',
-    options: [
-      { value: 'no_rule', label: '🤔 어떤 종목이나 자산을 사야 할지 기준이 없다.' },
-      { value: 'mental', label: '📉 시장이 하락하면 두렵고 멘탈 관리가 안 된다.' },
-      { value: 'economy', label: '📰 금리나 환율 같은 경제 기사를 읽어도 잘 모르겠다.' },
-      { value: 'cashflow', label: '🏜️ 당장 손에 쥐어지는 현금 수익이 없어 답답하다.' }
-    ]
-  }
-]
 
 const selectOption = (value: string) => {
   if (step.value === 0) answers.value.q1 = value
@@ -49,7 +97,7 @@ const selectOption = (value: string) => {
   if (step.value < 2) {
     step.value++
   } else {
-    step.value = 3 // Show results
+    step.value = 3
     calculateRecommendations()
   }
 }
@@ -66,58 +114,58 @@ interface RecommendedBook extends Book {
 
 const recommendedBooks = ref<RecommendedBook[]>([])
 
+// Recalculate if lang changes while results are showing
+watch(lang, () => {
+  if (step.value === 3) {
+    calculateRecommendations()
+  }
+})
+
 const calculateRecommendations = () => {
-  let scoredBooks = books.map(b => ({ ...b, score: 0, reason: '' }))
+  let scoredBooks = books.value.map(b => ({ ...b, score: 0, reason: '' }))
   
   const { q1, q2, q3 } = answers.value
 
   scoredBooks.forEach(b => {
-    // 1. Base score by Q2 (Style)
-    if (q2 === 'index' && b.category.includes('인덱스 투자')) b.score += 10
-    if (q2 === 'macro' && b.category.includes('거시 경제')) b.score += 10
-    if (q2 === 'dividend' && b.category.includes('현금 흐름')) b.score += 10
-    if (q2 === 'mindset' && b.category.includes('투자 심리')) b.score += 10
-
-    // 2. Adjust by Q3 (Problem)
-    if (q3 === 'no_rule' && (b.tags.includes('자산배분') || b.tags.includes('ETF 투자') || b.tags.includes('가치 투자'))) b.score += 8
-    if (q3 === 'mental' && (b.tags.includes('투자 심리') || b.tags.includes('인간 행동학') || b.tags.includes('장기 투자'))) b.score += 8
-    if (q3 === 'economy' && (b.tags.includes('매크로 분석') || b.tags.includes('금리/채권 기초') || b.tags.includes('달러 / 외환'))) b.score += 8
-    if (q3 === 'cashflow' && (b.tags.includes('배당 성장') || b.tags.includes('자동 소득') || b.tags.includes('미국 배당주'))) b.score += 8
-
-    // 3. Adjust by Q1 (Experience level)
-    const isEasy = b.title.includes('처음') || b.title.includes('쉬운') || b.description.includes('초보') || b.description.includes('기초') || b.title.includes('마법의')
-    const isHard = b.title.includes('공식') || b.description.includes('데이터로 분석') || b.description.includes('매커니즘')
+    const isEn = lang.value === 'en-US'
+    const cat = b.category || ''
+    const ts = (b.tags || []).join(',')
     
+    // Check based on lang
+    if (q2 === 'index' && (cat.includes('인덱스') || cat.includes('Index'))) b.score += 10
+    if (q2 === 'macro' && (cat.includes('거시 경제') || cat.includes('Macro'))) b.score += 10
+    if (q2 === 'dividend' && (cat.includes('현금 흐름') || cat.includes('Dividend'))) b.score += 10
+    if (q2 === 'mindset' && (cat.includes('투자 심리') || cat.includes('Mindset'))) b.score += 10
+
+    if (q3 === 'no_rule' && (ts.includes('자산배분') || ts.includes('Asset Allocation') || ts.includes('ETF') || ts.includes('가치 투자') || ts.includes('Value'))) b.score += 8
+    if (q3 === 'mental' && (ts.includes('심리') || ts.includes('Psychology') || ts.includes('인간 행동학') || ts.includes('Behavioral') || ts.includes('장기 투자') || ts.includes('Long-term'))) b.score += 8
+    if (q3 === 'economy' && (ts.includes('매크로') || ts.includes('Macro') || ts.includes('금리') || ts.includes('Interest') || ts.includes('달러') || ts.includes('Dollar'))) b.score += 8
+    if (q3 === 'cashflow' && (ts.includes('배당 성장') || ts.includes('Dividend Growth') || ts.includes('자동 소득') || ts.includes('Passive Income') || ts.includes('미국 배당') || ts.includes('US Dividend'))) b.score += 8
+
+    const isEasy = b.title.includes('처음') || b.title.includes('쉬운') || b.description.includes('초보') || b.title.includes('마법의') || b.title.includes('Magic') || b.title.includes('Little') || b.description.includes('beginner')
+    const isHard = b.title.includes('공식') || b.description.includes('데이터') || b.description.includes('매커니즘') || b.title.includes('Formula') || b.description.includes('data')
+
     if (q1 === 'beginner' && isEasy) b.score += 5
     if (q1 === 'beginner' && isHard) b.score -= 3
     if (q1 === 'expert' && isHard) b.score += 5
     
-    // Add extra points for favorites
-    if (b.badge?.includes('Favorite')) b.score += 2
-    if (b.badge?.includes('Recommendation')) b.score += 1
+    if (b.badge?.includes('Favorite') || b.badge?.includes('인생 도서')) b.score += 2
+    if (b.badge?.includes('Recommendation') || b.badge?.includes('추천 도서')) b.score += 1
   })
 
-  // Sort by score
   scoredBooks.sort((a, b) => b.score - a.score)
-  
-  // Pick top 3
   const top3 = scoredBooks.slice(0, 3)
   
-  // Generate personalized reasons
   top3.forEach((b, index) => {
     let reason = ''
-    if (index === 0) {
-      reason = `가장 고민하셨던 부분을 완벽하게 긁어줄 수 있는 최고의 책입니다. `
-    } else if (index === 1) {
-      reason = `첫 번째 책과 함께 읽으면 시너지가 폭발하는 책입니다. `
-    } else {
-      reason = `투자 시야를 넓히기 위해 마지막으로 꼭 추천해 드리고 싶습니다. `
-    }
+    if (index === 0) reason = t.value.reason1
+    else if (index === 1) reason = t.value.reason2
+    else reason = t.value.reason3
     
-    if (q2 === 'index') reason += `시장 수익률을 이기는 가장 확실한 방법론을 배울 수 있습니다.`
-    else if (q2 === 'macro') reason += `복잡한 경제 기사 이면의 돈의 흐름을 읽는 눈을 길러줍니다.`
-    else if (q2 === 'dividend') reason += `실제로 계좌에 현금이 꽂히는 짜릿한 경험을 만들어 줄 것입니다.`
-    else if (q2 === 'mindset') reason += `하락장에서도 흔들리지 않는 강철 멘탈과 철학을 심어줍니다.`
+    if (q2 === 'index') reason += t.value.reasonAppendIndex
+    else if (q2 === 'macro') reason += t.value.reasonAppendMacro
+    else if (q2 === 'dividend') reason += t.value.reasonAppendDividend
+    else if (q2 === 'mindset') reason += t.value.reasonAppendMindset
     
     b.reason = reason
   })
@@ -132,7 +180,7 @@ const calculateRecommendations = () => {
       <div class="progress-bar">
         <div class="progress" :style="{ width: `${((step) / 3) * 100}%` }"></div>
       </div>
-      <p class="step-indicator">Step {{ step + 1 }} of 3</p>
+      <p class="step-indicator">{{ t.stepIndicator }} {{ step + 1 }} {{ t.of }} 3</p>
       
       <h2 class="question-title">{{ questions[step].title }}</h2>
       
@@ -150,14 +198,14 @@ const calculateRecommendations = () => {
 
     <div v-else class="results-section">
       <div class="results-header">
-        <h2>🎉 방문자님을 위한 맞춤형 독서 큐레이션</h2>
-        <p>답변해주신 투자 연차와 현재의 고민을 바탕으로 책장에서 3권을 엄선했습니다.</p>
-        <button class="reset-btn" @click="resetQuiz">다시 추천받기</button>
+        <h2>{{ t.resultTitle }}</h2>
+        <p>{{ t.resultDesc }}</p>
+        <button class="reset-btn" @click="resetQuiz">{{ t.resetBtn }}</button>
       </div>
 
       <div class="recommended-books">
         <div v-for="(book, index) in recommendedBooks" :key="book.id" class="result-card" :class="`rank-${index + 1}`">
-          <div class="rank-badge">{{ index + 1 }}순위 추천</div>
+          <div class="rank-badge">{{ index + 1 }}{{ t.rankSuffix }}</div>
           <div class="card-content">
             <div class="cover-area">
               <img :src="book.coverUrl" :alt="book.title" class="book-cover" />
@@ -168,14 +216,14 @@ const calculateRecommendations = () => {
               <p class="author">{{ book.author }}</p>
               
               <div class="reason-box">
-                <strong>💡 큐레이션 이유:</strong>
+                <strong>{{ t.reasonTitle }}</strong>
                 <p>{{ book.reason }}</p>
               </div>
               
               <p class="description">{{ book.description }}</p>
               
               <div v-if="book.myComment" class="my-comment">
-                <strong>🙋‍♂️ 덧붙이는 말:</strong> {{ book.myComment }}
+                <strong>{{ t.myCommentTitle }}</strong> {{ book.myComment }}
               </div>
             </div>
           </div>
