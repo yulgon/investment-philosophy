@@ -232,6 +232,14 @@
           </div>
         </div>
 
+        <!-- Relative USD Performance History -->
+        <div class="card chart-card">
+          <h4>S&P500 vs KOSPI 상대 비교 (USD 기준, 2021=100)</h4>
+          <div class="chart-wrapper">
+            <LineChart v-if="relativeUsdChartData" :data="relativeUsdChartData" :options="lineOptionsWithLegend" />
+          </div>
+        </div>
+
         <!-- Long-Term USD/KRW History -->
         <div class="card chart-card">
           <h4>원/달러 환율 장기 추이 (월간)</h4>
@@ -685,6 +693,35 @@ const ks11ChartData = computed(() => {
         borderDash: [5, 5],
         pointRadius: 0,
         data: history.map(item => item.ks11_usd * firstExchangeRate),
+        tension: 0.3
+      }
+    ]
+  }
+})
+
+const relativeUsdChartData = computed(() => {
+  if (!marketData.value || !marketData.value.kca_indices.history) return null
+  const history = marketData.value.kca_indices.history
+  if (!history.length) return null
+  
+  const firstGspcUsd = history[0].gspc_usd
+  const firstKs11Usd = history[0].ks11_usd
+  
+  return {
+    labels: history.map(item => item.date),
+    datasets: [
+      {
+        label: 'S&P 500 (USD)',
+        borderColor: '#3b82f6',
+        pointRadius: 0,
+        data: history.map(item => (item.gspc_usd / firstGspcUsd) * 100),
+        tension: 0.3
+      },
+      {
+        label: 'KOSPI (USD)',
+        borderColor: '#ef4444',
+        pointRadius: 0,
+        data: history.map(item => (item.ks11_usd / firstKs11Usd) * 100),
         tension: 0.3
       }
     ]
