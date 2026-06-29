@@ -14,7 +14,7 @@
     </div>
 
     <!-- 글 수 -->
-    <p class="stc-count">{{ filteredPosts.length }}개의 기록</p>
+    <p class="stc-count">{{ filteredPosts.length }}{{ t.recordsCount }}</p>
 
     <!-- 카드 그리드 -->
     <div class="stc-grid">
@@ -35,7 +35,7 @@
       </a>
 
       <div v-if="filteredPosts.length === 0" class="stc-empty">
-        <p>해당 태그의 기록이 없습니다.</p>
+        <p>{{ t.emptyMsg }}</p>
       </div>
     </div>
 
@@ -44,19 +44,36 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import { data as posts } from '../stay-the-course.data.js'
+import { useData } from 'vitepress'
+import { data as postsKo } from '../stay-the-course.data.js'
+import { data as postsEn } from '../en-stay-the-course.data.js'
+
+const { lang } = useData()
+const posts = computed(() => lang.value === 'en-US' ? postsEn : postsKo)
+
+const t = computed(() => {
+  const isEn = lang.value === 'en-US'
+  return {
+    recordsCount: isEn ? ' records' : '개의 기록',
+    emptyMsg: isEn ? 'No records found for this tag.' : '해당 태그의 기록이 없습니다.'
+  }
+})
 
 const selectedTag = ref(null)
 
 const allTags = computed(() => {
   const tags = new Set()
-  posts.forEach(post => post.tags.forEach(tag => tags.add(tag)))
+  posts.value.forEach(post => {
+    if (post.tags) {
+      post.tags.forEach(tag => tags.add(tag))
+    }
+  })
   return [...tags]
 })
 
 const filteredPosts = computed(() => {
-  if (!selectedTag.value) return posts
-  return posts.filter(post => post.tags.includes(selectedTag.value))
+  if (!selectedTag.value) return posts.value
+  return posts.value.filter(post => post.tags && post.tags.includes(selectedTag.value))
 })
 
 function toggleTag(tag) {
