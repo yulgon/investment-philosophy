@@ -3,7 +3,7 @@ title: Warren Buffett Donated Another Billion — And I Reflected on Myself
 date: 2024-11-20
 tags:
   - Donation
-  - "#People"
+  - People
 excerpt: In November 2024, I saw the news that grandpa Buffett donated another 1.1 billion dollars. At that moment, I was checking the return rate on my account.
 ---
 
