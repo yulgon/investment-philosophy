@@ -1,6 +1,8 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 import MarketPulseDashboard from './components/MarketPulseDashboard.vue'
+import EvolutionToc from './components/EvolutionToc.vue'
+import EvolutionTocEn from './components/EvolutionTocEn.vue'
 import Layout from './Layout.vue'
 
 export default {
@@ -8,6 +10,8 @@ export default {
   Layout,
   enhanceApp({ app }) {
     app.component('MarketPulseDashboard', MarketPulseDashboard)
+    app.component('EvolutionToc', EvolutionToc)
+    app.component('EvolutionTocEn', EvolutionTocEn)
     
     if (typeof window !== 'undefined') {
       window.addEventListener('market-state-updated', (event) => {

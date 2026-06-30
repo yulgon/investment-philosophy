@@ -43,7 +43,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useData } from 'vitepress'
 import { data as postsKo } from '../stay-the-course.data.js'
 import { data as postsEn } from '../en-stay-the-course.data.js'
@@ -60,6 +60,16 @@ const t = computed(() => {
 })
 
 const selectedTag = ref(null)
+
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    const params = new URLSearchParams(window.location.search)
+    const tag = params.get('tag')
+    if (tag) {
+      selectedTag.value = tag
+    }
+  }
+})
 
 const allTags = computed(() => {
   const tags = new Set()

@@ -1,10 +1,11 @@
 ---
 title: "A Great Invention Comparable to the Alphabet and the Wheel: How John Bogle Created the Index Fund"
-date: 2026-06-30
+date: 2026-06-29
 tags:
   - Index Fund
   - Philosophy
   - People
+  - Bogleheads
 excerpt: The untold story of the index fund, an invention Nobel laureate Paul Samuelson compared to the alphabet and the wheel. Why did John Bogle give up immense wealth to become the hero of ordinary investors?
 ---
 
