@@ -42,4 +42,4 @@ Thanks to this powerful academic backing, John Bogle's Vanguard funds achieved m
 
 However, the market, which seemed like a perfect 'rational computer', revealed a massive blind spot as it went through Black Monday in 1987 and the Dot-com bubble in 2000. People went crazy with greed and skyrocketed stock prices or panicked in fear and crashed the market, regardless of corporate value.
 
-Eventually, the temple of EMH, which claimed "the market is always rational and perfect," began to crack, and a new academic discipline studying irrational human psychology stormed into the investment world. The rebellion of psychology that brought down the Efficient Market Hypothesis will continue in our serialized story, **[Evolution of Investment Chapter 3](/en/stay-the-course/008-evo-ch3)**.
+Eventually, the temple of EMH, which claimed "the market is always rational and perfect," began to crack, and a new academic discipline studying irrational human psychology stormed into the investment world. The rebellion of psychology that brought down the Efficient Market Hypothesis will continue in our serialized story, **Evolution of Investment Chapter 3**.
