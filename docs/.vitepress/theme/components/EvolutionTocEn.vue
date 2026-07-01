@@ -2,14 +2,14 @@
   <div class="evo-toc-container">
     <h3>📚 [Evolution of Investment Series]</h3>
     <ul class="evo-toc-list">
+      <li>
+        <a href="/en/stay-the-course/005-evo-prologue">Prologue: The Ultimate Survival Formula</a>
+      </li>
+      <li>
+        <a href="/en/stay-the-course/006-evo-ch1">Chapter 1: The Great Awakening</a>
+      </li>
       <li class="active">
-        <a href="/en/stay-the-course/005-evo-prologue">Prologue: The Ultimate Survival Formula</a> <span class="current-badge">Current</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 1: The Great Awakening (Drafting ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 2: Birth of the Index Fund (Drafting ✍️)</span>
+        <a href="/en/stay-the-course/007-evo-ch2">Chapter 2: Birth of the Index Fund</a> <span class="current-badge">Current</span>
       </li>
       <li class="pending">
         <span>Chapter 3: Behavioral Finance (Drafting ✍️)</span>

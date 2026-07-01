@@ -2,14 +2,14 @@
   <div class="evo-toc-container">
     <h3>📚 [투자 진화론 연재 시리즈]</h3>
     <ul class="evo-toc-list">
+      <li>
+        <a href="/stay-the-course/005-evo-prologue">프롤로그: 11년 수익률 0%였던 투자자가 찾아낸 궁극의 생존 공식</a>
+      </li>
+      <li>
+        <a href="/stay-the-course/006-evo-ch1">1장: 위대한 깨달음 (투자는 과학이다)</a>
+      </li>
       <li class="active">
-        <a href="/stay-the-course/005-evo-prologue">프롤로그: 11년 수익률 0%였던 투자자가 찾아낸 궁극의 생존 공식</a> <span class="current-badge">현재 글</span>
-      </li>
-      <li class="pending">
-        <span>1장: 위대한 깨달음 (작성 중 ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>2장: 인덱스 펀드의 탄생 (작성 중 ✍️)</span>
+        <a href="/stay-the-course/007-evo-ch2">2장: 인덱스 펀드의 탄생 (나의 무지를 방어하다)</a> <span class="current-badge">현재 글</span>
       </li>
       <li class="pending">
         <span>3장: 행동재무학 (작성 중 ✍️)</span>
