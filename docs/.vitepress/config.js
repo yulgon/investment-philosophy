@@ -10,9 +10,6 @@ export default withMermaid(
     head: [
       ['meta', { name: 'robots', content: 'index, follow' }],
       ['meta', { property: 'og:type', content: 'website' }],
-      ['meta', { property: 'og:url', content: 'https://one-billion-donation.com/' }],
-      ['meta', { property: 'og:title', content: '원빌리언달러 도네이션' }],
-      ['meta', { property: 'og:description', content: '투자는 과정일 뿐, 목적지는 세상에 대한 기여입니다. 원빌리언달러 기부를 향한 자산 설계 아카이브.' }],
       ['meta', { name: 'naver-site-verification', content: 'e52fe99e70ff96372bd79bd9be9697ece2d96795' }],
       // [TODO] 애드센스 코드를 발급받으면 아래 주석을 풀고 client ID를 변경해서 사용하세요.
       // ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX', crossorigin: 'anonymous' }],
@@ -40,6 +37,40 @@ export default withMermaid(
       search: {
         provider: 'local'
       }
+    },
+    transformHead: ({ pageData }) => {
+      const head = [];
+
+      // 기본 제목 및 설명 설정 (페이지 고유 값이 없으면 전역 기본값 사용)
+      const title = pageData.frontmatter.title || pageData.title || '원빌리언달러 도네이션';
+      const description = pageData.frontmatter.description || pageData.description || '투자는 과정일 뿐, 목적지는 세상에 대한 기여입니다. 원빌리언달러 기부를 향한 자산 설계 아카이브.';
+
+      // URL 계산
+      let relativePath = pageData.relativePath;
+      if (relativePath.endsWith('index.md')) {
+        relativePath = relativePath.replace(/index\.md$/, '');
+      } else {
+        relativePath = relativePath.replace(/\.md$/, '.html');
+      }
+      const url = `https://one-billion-donation.com/${relativePath}`;
+
+      // 공유 이미지 (프론트매터에 지정된 이미지가 없으면 로고 사용)
+      const image = pageData.frontmatter.image?.src || pageData.frontmatter.image || '/logo.png';
+      const imageUrl = image.startsWith('http') ? image : `https://one-billion-donation.com${image.startsWith('/') ? image : '/' + image}`;
+
+      // Open Graph 태그 주입
+      head.push(['meta', { property: 'og:title', content: title }]);
+      head.push(['meta', { property: 'og:description', content: description }]);
+      head.push(['meta', { property: 'og:url', content: url }]);
+      head.push(['meta', { property: 'og:image', content: imageUrl }]);
+
+      // Twitter 카드 태그 주입
+      head.push(['meta', { name: 'twitter:card', content: 'summary_large_image' }]);
+      head.push(['meta', { name: 'twitter:title', content: title }]);
+      head.push(['meta', { name: 'twitter:description', content: description }]);
+      head.push(['meta', { name: 'twitter:image', content: imageUrl }]);
+
+      return head;
     },
     locales: {
       root: {
