@@ -30,6 +30,9 @@ There are thousands of ETFs listed on the US stock market. The clear filters I u
 
 ## 🗂️ Basic Recommended ETF Lineup for Core Portfolio
 
+> 💡 **Why did I choose these specific 3 ETFs (VOO, SCHD, SPMO) out of thousands?**
+> For the fierce thought process and academic proofs behind this selection, please be sure to read the series starting from **[👉 Evolution of Investment Prologue: The Ultimate Survival Formula](/en/stay-the-course/005-evo-prologue)**.
+
 | Asset Category | Representative ETF Ticker | Issuer | Expense Ratio | Core Features |
 | :--- | :---: | :---: | :---: | :--- |
 | **S&P 500 Index Tracking** | **VOO** | Vanguard | **0.03%** | The backbone of the portfolio, diversifying investments across 500 representative US companies. |
