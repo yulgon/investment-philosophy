@@ -484,7 +484,7 @@ const pulseSpeed = computed(() => {
 
 onMounted(async () => {
   try {
-    const response = await fetch('/data/market-state.json')
+    const response = await fetch('/data/market-state.json?t=' + new Date().getTime())
     if (!response.ok) throw new Error('Failed to fetch market data')
     const data = await response.json()
     marketData.value = data
