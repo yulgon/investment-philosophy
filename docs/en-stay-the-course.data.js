@@ -12,6 +12,13 @@ export default createContentLoader('en/stay-the-course/*.md', {
         date: frontmatter.date || '',
         tags: frontmatter.tags || []
       }))
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+      .sort((a, b) => {
+        const timeA = new Date(a.date).getTime()
+        const timeB = new Date(b.date).getTime()
+        if (timeB === timeA) {
+          return b.url.localeCompare(a.url)
+        }
+        return timeB - timeA
+      })
   }
 })

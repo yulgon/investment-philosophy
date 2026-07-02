@@ -12,6 +12,13 @@ export default createContentLoader('stay-the-course/*.md', {
         date: frontmatter.date || '',
         tags: frontmatter.tags || []
       }))
-      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .sort((a, b) => {
+        const timeA = new Date(a.date).getTime()
+        const timeB = new Date(b.date).getTime()
+        if (timeB === timeA) {
+          return b.url.localeCompare(a.url) // 같은 날짜일 경우 파일명 역순 (최신 번호가 먼저 오도록)
+        }
+        return timeB - timeA
+      })
   }
 })

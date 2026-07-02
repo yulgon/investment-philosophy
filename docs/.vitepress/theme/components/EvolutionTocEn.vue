@@ -1,39 +1,39 @@
+<script setup>
+import { useRoute } from 'vitepress'
+const route = useRoute()
+
+const chapters = [
+  { path: '/en/stay-the-course/005-evo-prologue', title: 'Prologue: The Ultimate Survival Formula' },
+  { path: '/en/stay-the-course/006-evo-ch1', title: 'Chapter 1: The Great Awakening' },
+  { path: '/en/stay-the-course/007-evo-ch2', title: 'Chapter 2: Birth of the Index Fund' },
+  { path: '/en/stay-the-course/008-evo-ch3', title: 'Chapter 3: Behavioral Finance' },
+  { path: '/en/stay-the-course/009-evo-ch4', title: 'Chapter 4: The 3-Factor Model' },
+]
+
+const pendingChapters = [
+  'Chapter 5: Birth of the ETF (Drafting ✍️)',
+  'Chapter 6: Discovery of Momentum (Drafting ✍️)',
+  'Chapter 7: Smart Beta (Drafting ✍️)',
+  'Chapter 8: Birth of SCHD (Drafting ✍️)',
+  'Chapter 9: Big Tech and SPMO (Drafting ✍️)',
+  'Chapter 10: The Ultimate Portfolio (Drafting ✍️)',
+]
+
+function isActive(path) {
+  return route.path.includes(path)
+}
+</script>
+
 <template>
   <div class="evo-toc-container">
     <h3>📚 [Evolution of Investment Series]</h3>
     <ul class="evo-toc-list">
-      <li>
-        <a href="/en/stay-the-course/005-evo-prologue">Prologue: The Ultimate Survival Formula</a>
+      <li v-for="ch in chapters" :key="ch.path" :class="{ active: isActive(ch.path) }">
+        <a :href="ch.path">{{ ch.title }}</a>
+        <span v-if="isActive(ch.path)" class="current-badge">Current</span>
       </li>
-      <li>
-        <a href="/en/stay-the-course/006-evo-ch1">Chapter 1: The Great Awakening</a>
-      </li>
-      <li class="active">
-        <a href="/en/stay-the-course/007-evo-ch2">Chapter 2: Birth of the Index Fund</a> <span class="current-badge">Current</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 3: Behavioral Finance (Drafting ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 4: The 3-Factor Model (Drafting ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 5: Birth of the ETF (Drafting ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 6: Discovery of Momentum (Drafting ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 7: Smart Beta (Drafting ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 8: Birth of SCHD (Drafting ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 9: Big Tech and SPMO (Drafting ✍️)</span>
-      </li>
-      <li class="pending">
-        <span>Chapter 10: The Ultimate Portfolio (Drafting ✍️)</span>
+      <li v-for="ch in pendingChapters" :key="ch" class="pending">
+        <span>{{ ch }}</span>
       </li>
     </ul>
     <div class="evo-toc-footer">
