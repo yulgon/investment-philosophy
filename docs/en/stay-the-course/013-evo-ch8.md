@@ -68,7 +68,7 @@ SCHD completely ignores the intuition of fund managers and extracts 100 champion
 ## 3. The Titanium Shield That Protects My Mentality (Alpha Core)
 
 ![SCHD Defense Comparison](/schd-defense-comparison.png)
-*(Data: Maximum drawdown based on historical backtesting of the Dow Jones U.S. Dividend 100 Index tracked by SCHD)*
+*(Data: Maximum drawdown based on historical backtesting of the Dow Jones U.S. Dividend 100 Index and actual performance post-2011 launch)*
 
 Check out the insane defensive power this 4-step audition showed through actual historical data (backtesting).
 - **Dot-com Bubble (2000~2002):** While NASDAQ melted down by -78% and S&P 500 by -50%, SCHD (Dividend 100) avoided the shell IT companies and executed a perfect cosmic defense, dropping only **-17.1%**. **(During this time, because dividends were not cut and only the stock price fell, the dividend yield spiked to around 3.8%, providing investors with tremendous psychological comfort and cash flow.)**
