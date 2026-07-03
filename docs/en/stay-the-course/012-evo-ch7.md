@@ -66,7 +66,17 @@ If the Dot-com Bubble was a 'light madness' of newborn internet companies, the f
 * **Blindly Embracing Insolvency to the End:** The market index had included traditional giant financial institutions that had grown their size over a long period at a massive weight. The problem was that the insides of these giant pillars were completely rotting away with toxic subprime mortgage debt.
 * Even if a company's books are rotting and it is driven to the brink of bankruptcy, the index fund continues to embrace the company within the index until it is completely delisted and its stock price hits '$0', plummeting together.
 
-The S&P 500 embraced the rotting giant financial institutions to the very end and plummeted down a hellish waterfall of a whopping **-56%**. Within a mere 10 years, investors had suffered the horrific crash of their entire net worth being halved twice.
+The S&P 500 embraced the rotting giant financial institutions to the very end.
+
+![2008 Financial Crisis Performance Comparison](/subprime-comparison.png)
+
+The despair shown by the data during this period was entirely different from the dot-com bubble.
+
+1. **S&P 500 (Market Index Fund):** The S&P 500, holding massive insolvent banks (like Lehman Brothers) simply because of their large sizes, once again experienced a horrific plunge of **-56.8%**.
+2. **Speculative NASDAQ:** The tech-heavy NASDAQ also plummeted by about **-54%** due to the overall market panic.
+3. **Value Investing (The Betrayal of Value Stocks):** Here comes the most shocking plot twist. What happened to the Value Funds (based on Russell 1000 Value) that had won the dot-com bubble and were revered as the ultimate shield? By the nature of value investing, the sectors with the lowest Price-to-Book (P/B) ratios were 'Financials/Banks'. As a result, value funds were holding the most insolvent banks right before their bankruptcy, and taking a direct hit from the subprime mortgage crisis, they recorded a **-57.0%** plunge, which was even worse than the broader market index. (Data Reference: *Russell 1000 Value Index Peak-to-Trough, 2007.10~2009.03*)
+
+The 'Value Investing' that was the perfect shield during the dot-com bubble became a rotten shield that shattered first in 2008. Within a mere 10 years, investors had suffered the horrific crash of their entire net worth being halved twice.
 
 ---
 
