@@ -60,13 +60,18 @@ The S&P 500 embraced the rotting giant financial institutions to the very end an
 
 ---
 
-## 3. The Birth of Bogleheads and the Need for a 'Shock Absorber' (Smart Beta)
+## 3. Survivors Forged by the Dot-com Bubble and Financial Crisis: The History and Limits of Bogleheads
 
-In fact, the iron-clad mentality of the **'Bogleheads'** community—"No matter what crash comes, hold the index fund and endure to the end"—is a philosophy written in blood, forged precisely by those who took the full blows of these two hells of the 2000s (the Dot-com Bubble and the Financial Crisis) and survived.
+In fact, the iron-clad philosophy of the **'Bogleheads'**—"No matter what crash comes, hold the index fund and endure to the end"—was not perfected by armchair scholars from the beginning.
 
-However, demanding an ordinary human who is not a robot to "endure getting halved twice" is psychopathic violence beyond cruelty. When the news screams every day that capitalism is doomed and you watch your retirement funds melt away, almost no human can maintain their reason. Countless investors eventually threw away their index funds in terror at the bottom and were permanently expelled from the market.
+Their roots began in March 1998 as a small group ('Vanguard Diehards') on the Morningstar forum. They were immediately subjected to the first living hell of the 2000 Dot-com Bubble's madness and crash, testing John Bogle's teachings in real combat.
+The survivors who endured the bubble's collapse wanted to escape the commercialism of the financial industry. Thus, **in February 2007, they finally launched the independent 'Bogleheads.org' website**, officially compiling their own philosophy.
 
-Atop this gruesome mountain of corpses, the surviving investors gained a bitter realization.
+And as if by a twist of fate, right after launching the site, the second hell—the 2008 Global Financial Crisis—arrived. Amidst the terror that capitalism was doomed, their accounts were halved once again. However, they gathered on their new website, shouting **"Stay the course!"** to encourage each other and hold onto their mentalities. Through this bloody, tight-knit encouragement and epic of survival, the Bogleheads community achieved explosive global growth.
+
+However, separate from the beautiful solidarity of the Boglehead community comforting each other and enduring... demanding an ordinary individual who is not a robot to "endure getting halved twice" is close to psychopathic violence beyond cruelty. When the news screams every day that banks are going bankrupt and you watch your retirement funds melt away, almost no human can maintain their reason. In reality, countless ordinary investors eventually threw away their index funds in terror at the bottom and were permanently expelled from the market.
+
+Atop this gruesome mountain of corpses, cold-headed investors gained another bitter realization.
 *"The index fund remains the great Core. But for us frail humans to endure the mental breakdown of those hellish crashes, we absolutely need a **sub-weapon (shock absorber)** to cushion the blow to our mentality by filtering out market madness (bubbles) and rotting insolvency!"*
 
 The answer that emerged to this was **'Smart Beta'**, created by Rob Arnott and others in the mid-2000s.
