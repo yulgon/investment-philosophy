@@ -49,12 +49,15 @@ People in the world often disparage SCHD as 'a retirement fund for old folks who
 
 SCHD is not a fund that blindly chases dividends. It is a **quant machine that uses the powerful filter of 'dividends' as a sieve to ruthlessly collect Fama-French's 'Value' factor and the money-raking 'Quality' factor**.
 
-### The Harsh 4-Stage Audition that Blocks Human Intervention
-SCHD completely ignores the intuition of fund managers and selects 100 champions based purely on numbers.
-1. **10 Consecutive Years of Dividend Payments:** It first grinds up all the shell companies from the Dot-com Bubble and the insolvent companies that cut dividends during the Financial Crisis. (Proof of extreme survivability)
-2. **Free Cash Flow to Total Debt Ratio (Quality):** It beheads companies that give fake dividends through debt parties. It only leaves companies with cash bursting from their pockets.
-3. **Return on Equity (ROE, Quality Factor):** This is the core indicator of the 'Quality Factor', showing companies that are incredibly good at making money.
-4. **Dividend Yield (Value Factor):** Finally, it sweeps up companies whose stock prices have become cheap relative to their book value, meaning the 'Value Factor' has manifested due to market fear causing bargain prices.
+### The Harsh 4-Step Audition That Blocks Human Intervention
+SCHD completely ignores the intuition of fund managers and extracts 100 champions solely based on numbers. Particularly, the **lessons from the two horrific crises (Dot-com Bubble and Financial Crisis)** discussed in Chapter 7 are perfectly and chillingly absorbed into these rules.
+
+* **[Pre-Filtering] Explicit Exclusion of REITs:** Real Estate Investment Trusts, which were another epicenter of the 2008 subprime mortgage crisis, are completely blocked from entering the fund from the start.
+
+1. **10 Consecutive Years of Dividend Payments:** This initially grinds away all the shell companies that only carried the ".com" name during the dot-com bubble, as well as the insolvent companies that cut dividends during the financial crisis. (Proof of extreme survivability)
+2. **Free Cash Flow to Total Debt (Quality):** This is the core filter that compensates for the blind spot of 'Value Investing' (financial/bank stocks) that collapsed during the 2008 financial crisis. Traditional banks like Lehman Brothers structurally use massive leverage (debt), making their debt ratios abnormally high. Through this metric, SCHD automatically filters out and executes these debt-ridden companies, even if their dividend yields or P/B ratios look high. It only leaves highly superior companies with cash bursting out of their pockets.
+3. **Return on Equity (ROE, Quality Factor):** The absolute indicator of the 'Quality Factor' for companies that make money incredibly well.
+4. **Dividend Yield (Value Factor):** Among the extremely few companies that pass the harsh survival audition of the above 3 steps, it finally sweeps up 100 companies whose stock prices have become cheap relative to their book value—that is, companies where the 'Value Factor' has emerged due to market fear at bargain prices.
 
 ---
 
