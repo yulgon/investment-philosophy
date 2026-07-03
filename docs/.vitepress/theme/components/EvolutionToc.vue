@@ -10,13 +10,13 @@ const chapters = [
   { path: '/stay-the-course/009-evo-ch4', title: '4장: 3요인 모델 (가치 팩터 증명)' },
   { path: '/stay-the-course/010-evo-ch5', title: '5장: ETF의 탄생 (바코드 혁명)' },
   { path: '/stay-the-course/011-evo-ch6', title: '6장: 모멘텀의 발견 (탐욕에 올라타다)' },
+  { path: '/stay-the-course/012-evo-ch7', title: '7장: 스마트 베타 (닷컴 버블)' },
+  { path: '/stay-the-course/013-evo-ch8', title: '8장: SCHD의 탄생 (현금흐름 방패)' },
+  { path: '/stay-the-course/014-evo-ch9', title: '9장: 빅테크와 SPMO (가장 날카로운 창)' },
 ]
 
 const pendingChapters = [
-  '7장: 스마트베타 (작성 중 ✍️)',
-  '8장: SCHD의 탄생 (작성 중 ✍️)',
-  '9장: 빅테크와 SPMO (작성 중 ✍️)',
-  '10장: 궁극의 포트폴리오 (작성 중 ✍️)',
+  '10장: 궁극의 삼위일체 포트폴리오 (작성 중 ✍️)',
 ]
 
 function isActive(path) {

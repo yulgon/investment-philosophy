@@ -10,12 +10,12 @@ const chapters = [
   { path: '/en/stay-the-course/009-evo-ch4', title: 'Chapter 4: The 3-Factor Model' },
   { path: '/en/stay-the-course/010-evo-ch5', title: 'Chapter 5: Birth of the ETF' },
   { path: '/en/stay-the-course/011-evo-ch6', title: 'Chapter 6: Discovery of Momentum' },
+  { path: '/en/stay-the-course/012-evo-ch7', title: 'Chapter 7: Smart Beta' },
+  { path: '/en/stay-the-course/013-evo-ch8', title: 'Chapter 8: Birth of SCHD' },
+  { path: '/en/stay-the-course/014-evo-ch9', title: 'Chapter 9: Big Tech and SPMO' },
 ]
 
 const pendingChapters = [
-  'Chapter 7: Smart Beta (Drafting ✍️)',
-  'Chapter 8: Birth of SCHD (Drafting ✍️)',
-  'Chapter 9: Big Tech and SPMO (Drafting ✍️)',
   'Chapter 10: The Ultimate Portfolio (Drafting ✍️)',
 ]
 
