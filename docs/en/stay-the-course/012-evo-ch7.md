@@ -43,7 +43,17 @@ Amidst this terrifying madness, the **'first structural flaw'** of the index fun
 
 Passive investors who were sleeping soundly, thinking, "I didn't buy individual stocks, I bought the whole market, so I'm safe!" didn't realize that the machine (index fund) was committing the horrific act of **intensively buying only the most bubbled stocks in the market with their own money**.
 
-Eventually, in March 2000, the party's music stopped, and the bubble burst. The NASDAQ plummeted a whopping -78%, and even the S&P 500, which was believed to be safe, had -50% evaporate, getting cut in half. The index fund we believed was a basecamp was actually a massive powder keg that had sucked up the bubble of greed to the very end.
+Eventually, in March 2000, the party's music stopped, and the bubble burst.
+
+![Dot-com Bubble Performance Comparison](/dotcom-comparison.png)
+
+Many people guess, "Didn't the index fund at least defend well against the dot-com bubble compared to speculative hedge funds?" However, the history shown by actual data was brutal.
+
+1. **Speculative NASDAQ (Hedge Funds/Growth Chasers):** The seemingly endlessly rising NASDAQ plummeted by a staggering **-78%**, permanently bankrupting countless hedge funds that bet on skyrocketing stocks.
+2. **S&P 500 (Market Index Fund):** Was the index fund safe? No. Because of the market-cap weighted method, the S&P 500, which had aggressively stuffed over 30% of its portfolio with bubbling IT companies at the peak, also evaporated by **-50%**. The index fund was not a safe haven; it was severely contaminated by the bubble itself.
+3. **Value Investing (Value Stocks):** On the other hand, what about value investors who were mocked and treated as dinosaurs (even Warren Buffett) for "only buying old stocks that can't grow" during the dot-com run-up? When the bubble collapsed, massive capital fleeing from illusionary IT stocks flocked to 'value stocks' with solid earnings and cash flows, miraculously producing **positive returns (+)** or perfectly defending against the decline.
+
+The index fund was never safe. It had to shed tears of blood, losing half its value as the price for uncritically collecting bubbled companies. The index fund we believed was a basecamp was actually a massive powder keg that had sucked up the bubble of greed to the very end.
 
 ---
 
