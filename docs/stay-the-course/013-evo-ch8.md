@@ -1,6 +1,6 @@
 ---
 prev:
-  text: '제7장. 닷컴 버블의 참사와 스마트 베타의 탄생'
+  text: '제7장. 로봇과 인간의 차이, 그리고 스마트 베타의 탄생'
   link: '/stay-the-course/012-evo-ch7'
 next:
   text: '제9장. 쏠림을 지배하는 가장 날카로운 창: SPMO'

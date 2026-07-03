@@ -72,18 +72,18 @@ Through history, following the shield (Value) that feeds and grows on human 'fea
 
 ---
 
-## Conclusion and Next Chapter Preview: The Collapse of the Basecamp Believed Invincible
+## Conclusion and Next Chapter Preview: Things That Threaten the Greatest Basecamp
 
 Now, my arsenal looked formidable.
 * The solid ground forming the foundation of everything, **Market Average (Index Fund)**
 * The titanium shield that picks up fear, **Value**
 * The sharp spear that pierces greed, **Momentum**
 
-The theory was perfect, and my belief that "If I hold a market index (S&P 500) tightly as the core, I will never go bankrupt!" was firm.
-However, while reviewing past charts, I faced the collapse of the most bizarre and massive bubble in human history that occurred in 2000, the **'Dot-com Bubble'**, and got goosebumps.
+The theory was perfect, and John Bogle's teaching that "If I hold a market index (S&P 500) tightly as the core, I will never go bankrupt!" was firm.
+However, while reviewing past charts, I faced the collapse of the most bizarre and massive bubble in human history that occurred in 2000, the **'Dot-com Bubble'**, followed by the **'2008 Global Financial Crisis'**, and got goosebumps.
 
-In this hellish crash, the market-cap-weighted index fund, which I thought was eternally invincible, exposed a terrible structural flaw and collapsed. The basecamp I trusted had betrayed me.
+In this hellish crash, the index fund itself ultimately survived and proved its upward trend, but the 'human mentality' holding it completely collapsed.
 
-What exactly was the hidden weakness of the S&P 500 that we believed in like a religion? The story of the **'Smart Beta'** revolution that emerged to overcome this amidst terrible history unfolds in the next chapter.
+Why did investors face ruin even while holding the S&P 500 they believed in like a religion? The difference between machines and humans, and the story of the **'Smart Beta'** revolution that emerged to protect our mentality amidst consecutive massive crashes, unfolds in the next chapter.
 
 <EvolutionTocEn />

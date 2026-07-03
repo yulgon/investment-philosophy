@@ -1,6 +1,6 @@
 ---
 prev:
-  text: 'Chapter 7. The Tragedy of the Dot-com Bubble and the Birth of Smart Beta'
+  text: 'Chapter 7. The Difference Between Robots and Humans, and the Birth of Smart Beta'
   link: '/en/stay-the-course/012-evo-ch7'
 next:
   text: 'Chapter 9. The Sharpest Spear that Dominates the Stampede: SPMO'
