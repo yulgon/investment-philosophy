@@ -49,9 +49,9 @@ After suffering the trauma of this horrific financial crisis, the index provider
 
 Based on this bitter lesson, the **'Dow Jones U.S. Dividend 100 Index' was finally announced in August 2011**, and the asset management company Charles Schwab surprisingly launched **SCHD (Schwab US Dividend Equity ETF)**, which tracks this perfect index, in October of the same year. In 2011, when I was just starting to invest, the ultimate defensive weapon I would stay with for the rest of my life was introduced to the world.
 
-People in the world often disparage SCHD as 'a retirement fund for old folks who want to buy soup with monthly dividends'. But I scoff at them. They only see the shell of SCHD, unable to see the terrifying gears hidden inside it.
+People in the world often disparage or misunderstand SCHD as 'a retirement fund for old folks who want to buy soup with monthly dividends' or 'a fund expecting future dividend growth'. However, I want to completely shatter this shallow stereotype. The very expectation that 'dividends will continue to grow in the future' is nothing but a foolish prediction of the future. What if the company stops growing tomorrow?
 
-Unlike the failed dividend funds of the past, this one is a **quant machine that uses the powerful filter of 'dividends' as a sieve to ruthlessly collect Fama-French's 'Value' factor and the money-raking 'Quality' factor**.
+Unlike the failed dividend funds of the past, the essence of SCHD is neither dividends nor dividend growth. Its true identity is a perfect **'Quality & Value ETF'**. The concept of 'dividends' is merely used as a lagging and objective 'proof indicator' to judge whether the company is truly robust. SCHD does not predict the future; it is a quant machine that ruthlessly collects Fama-French's 'Value' factor and the money-raking 'Quality' factor solely through proven numbers.
 
 ### The Harsh 4-Step Audition That Blocks Human Intervention
 SCHD completely ignores the intuition of fund managers and extracts 100 champions solely based on numbers. Particularly, the **lessons from the two horrific crises (Dot-com Bubble and Financial Crisis)** discussed in Chapter 7 are perfectly and chillingly absorbed into these rules.
@@ -80,16 +80,16 @@ When the market is peacefully trending upwards, the index fund (Basecamp) reliab
 
 ---
 
-## Conclusion and Next Chapter Preview: A Shield Alone Was Not Enough to Win
+## Conclusion and Preview of Next Chapter: A Shield Alone Cannot Win
 
-The index fund (Basecamp) and SCHD (Shield). A perfect defensive formation, like the standard of investing, was built. I thought I could finally sleep with both legs stretched out in actual investing.
+Index fund (Basecamp) and SCHD (Shield). A perfect defensive formation, akin to the textbook standard of investing, has been established. Armed with such perfect Quality and Value shield, one might think they could sleep soundly with both legs stretched out in real-world investing.
 
-However, moving past the 2010s and into the 2020s, the market drove me into another form of psychological hell. This time, it wasn't the hell of 'fear', but of extreme 'greed'. An **'Era of Winner-Takes-All'** began, where a tiny handful of Big Tech companies like Apple, Microsoft, and Nvidia dragged up the entire US stock market by the collar.
+However, history presented another form of psychological hell to investors. Passing through the 2010s into the 2020s, the market transformed not into a hell of 'fear', but of extreme 'greed'. An era of **'Winner-Takes-All'** began, where a very few Big Tech companies like Apple, Microsoft, and Nvidia grabbed the entire US stock market by the collar and dragged it upward.
 
-The perfect shield I trusted (SCHD) pushed me into terrible FOMO during this period. Because the shield was too heavy and strict, it couldn't keep up with the speed of the market, which was running crazily centered on Big Tech.
+During this period, the value investing (shield) that was believed to be perfect pushed investors into a terrible sense of alienation (FOMO). Because the shield was so heavy and strict, it completely failed to keep up with the speed of the Big Tech-driven market that was running wildly without dividends.
 
-The bitter humiliation that defense alone could not conquer this crazy real-world market. I finally decided to unseal the most dangerous but most powerful factor, **'The Spear of Greed (Momentum)'** by Mark Carhart, which we learned about in Chapter 6, in my actual portfolio.
+The bitter lesson that defense alone cannot control the greed of this crazy real-world market. Ultimately, perfect mental control becomes possible only by unsealing the most dangerous yet most powerful factor, Mark Carhart's **'Spear of Greed (Momentum)'**, which we learned about earlier in Chapter 6.
 
-The story of **SPMO**, the final Alpha engine I drew myself amidst the monopoly of Big Tech in the 2020s, continues in [Chapter 9. The Sharpest Spear that Dominates the Stampede: SPMO].
+The story of the final Alpha engine, **SPMO**, which will shatter the investor's sense of alienation amidst the monopoly of Big Tech in the 2020s, continues in [Chapter 9. The Sharpest Spear Controlling the Herd: SPMO].
 
 <EvolutionTocEn />
