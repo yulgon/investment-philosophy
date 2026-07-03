@@ -12,7 +12,7 @@ export default withMermaid(
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { name: 'naver-site-verification', content: 'e52fe99e70ff96372bd79bd9be9697ece2d96795' }],
       // [TODO] 애드센스 코드를 발급받으면 아래 주석을 풀고 client ID를 변경해서 사용하세요.
-      // ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX', crossorigin: 'anonymous' }],
+      ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6597757677689519', crossorigin: 'anonymous' }],
       
       // [TODO] 구글 애널리틱스(GA4) 추적 코드를 발급받으면 아래 주석을 풀고 G-XXXXXXXXXX 를 변경해서 사용하세요.
       ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-Z7Y0N822TN' }],
