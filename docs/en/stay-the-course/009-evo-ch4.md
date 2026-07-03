@@ -16,11 +16,11 @@ excerpt: "Discovering the secret to excess returns amidst public fear and panic 
 
 ![Proof of the Value Factor](/evo-ch4-cover.png)
 
-## VOO Alone Cannot Perfectly Protect Your Mentality
+## An Index Fund Alone Cannot Perfectly Protect Your Mentality
 
 Delving into the history of behavioral finance in Chapter 3, I realized an important fact: "The market is not perfect, and humans are infinitely frail in the face of public fear."
 
-John Bogle's VOO (Index Fund) is undoubtedly an excellent base camp, but it doesn't alleviate the psychological torment of your account halving when the entire market crashes wildly, like during Black Monday or the Financial Crisis. So I began to ask: *"Didn't smart scholars in the past research how to increase defense and generate excess returns by exploiting the irrational overselling when the public dumps stocks in terror?"*
+John Bogle's index fund is undoubtedly an excellent base camp, but it doesn't alleviate the psychological torment of your account halving when the entire market crashes wildly, like during Black Monday or the Financial Crisis. So I began to ask: *"Didn't smart scholars in the past research how to increase defense and generate excess returns by exploiting the irrational overselling when the public dumps stocks in terror?"*
 
 Surprisingly, the person who provided this answer was the very man who built the temple of the Efficient Market Hypothesis (EMH) claiming "the market is perfect": **Eugene Fama**.
 
@@ -47,12 +47,12 @@ Boldly revising his past claims, he published a paper in 1992 declaring that sto
 The three factors of stock returns they discovered are as follows:
 
 **① Market Factor**
-* This is the fundamental risk borne by the entire stock market, and the basic return earned in exchange. (This is the return we get through VOO.)
+* This is the fundamental risk borne by the entire stock market, and the basic return earned in exchange. (This is the basic return we get through an index fund.)
 * In fact, **this factor was already proven to be great in Chapter 2 through John Bogle's Index Fund and the Efficient Market Hypothesis (EMH).** It is that powerful first weapon which shows that simply owning the entire market, rather than making vain attempts to pick individual stocks, leads to long-term victory.
 
 **② Size Factor (SMB)**
 * **SMB (Small Minus Big)** represents the return of small-cap stocks minus the return of large-cap stocks. It means that small-cap stocks have higher long-term returns than large-cap stocks. 
-* As we saw in Chapter 3, during a crisis, the public, fearing bankruptcy, dumps 'small stocks' first at bargain prices. Fama mathematically proved that investors who bear this extreme fear and 'risk of ruin' are rewarded (premium) with higher returns. **This small yet heavy discovery became the important inspiration that later led me to launch a small boat of 'small, promising individual stocks (Satellite)' to quench the investment thirst that couldn't be fully satisfied by the massive base camp (VOO) or the heavy shield (SCHD).**
+* As we saw in Chapter 3, during a crisis, the public, fearing bankruptcy, dumps 'small stocks' first at bargain prices. Fama mathematically proved that investors who bear this extreme fear and 'risk of ruin' are rewarded (premium) with higher returns. **This small yet heavy discovery became the important inspiration that later led me to launch a small boat of 'small, promising individual stocks (Satellite)' to quench the investment thirst that couldn't be fully satisfied by the massive base camp (market index) or the heavy shield (SCHD).**
 
 **③ Value Factor (HML)**
 * **HML (High Minus Low)** represents the return of companies with high book-to-market ratios (Value stocks) minus the return of companies with low book-to-market ratios (Growth stocks). It mathematically proved that **'Value Stocks'**, which are traded irrationally cheap relative to their intrinsic value, significantly outperform already expensive 'Growth Stocks' over the long term.

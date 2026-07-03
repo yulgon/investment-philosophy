@@ -18,7 +18,7 @@ excerpt: The theory was perfect, but the public had no weapon. The great victory
 
 ## The Theory Was Perfect, But the Public Had No Weapon
 
-As we saw in the previous chapter, Harry Markowitz and William Sharpe had already presented the correct answer in the 1960s: *"Don't try to beat the market, own the entire market (Market Beta)."* They had mathematically proven half a century ago the truth that I only realized in 2022, after countless failures throughout the 2010s before finally finding VOO.
+As we saw in the previous chapter, Harry Markowitz and William Sharpe had already presented the correct answer in the 1960s: *"Don't try to beat the market, own the entire market (Market Beta)."* They had mathematically proven half a century ago the truth that I only realized in 2022, after countless failures throughout the 2010s before finally finding the market index fund.
 
 However, ordinary retail investors in the 1960s couldn't use this truth even if they knew it. Mentally, they understood "buy the whole of America," but in the reality of Wall Street, **the 'weapon' (financial product) that could encapsulate the 'entirety of America' simply did not exist.**
 
@@ -42,7 +42,13 @@ During this time, a great heretic appeared on Wall Street to save retail investo
 
 He despised the existing fund industry, which was stained with fund managers' bonus parties and fee gouging. "Stop emptying the customers' pockets to fatten the company!" In 1974, he founded the **'Vanguard Group'**, an asset management company with a unique structure where the fund subscribers (shareholders) became the owners of the company.
 
-And on August 31, 1976, he introduced to the world the greatest invention in human financial history and the first defensive weapon handed to retail investors: the **'First Index Investment Trust'**. This is the predecessor of the 'Vanguard 500 Index Fund', which would later become the VOO that I love so much.
+And on August 31, 1976, he introduced to the world the greatest invention in human financial history and the first defensive weapon handed to retail investors: the **'First Index Investment Trust'**. This is the predecessor of the 'Vanguard 500 Index Fund', which would later become the market index fund that I love so much.
+
+> 💡 **Note: Market Index Fund vs VTI vs S&P 500 (VOO, SPY)**
+> 
+> The fund that pursues the 'true entire market' as advocated by John Bogle is **VTI (Vanguard Total Stock Market ETF)**, which includes all ~4,000 companies (large/mid/small cap) listed on the US stock market.
+> However, the **S&P 500 index (Representative ETFs: VOO, SPY, IVV)**, which gathers only the top 500 large-cap companies, also accounts for over 80% of the total US market capitalization and practically represents the flow of the entire market.
+> Therefore, in modern investing, both indices are used interchangeably as synonyms for an excellent 'Market Index Fund'. Unless specified otherwise in this series, 'Index Fund' or 'Market Index' encompasses the concept of both the S&P 500 and the entire US market (VTI).
 
 ### The Principle of the Weapon That Changed the World
 John Bogle's idea was simple yet revolutionary.
@@ -65,7 +71,7 @@ Wall Street ridiculed this fund, calling it **'Bogle's Folly'**. However, the tr
 
 ## A Perfect Shield, Yet a Remaining Weakness
 
-Today, thanks to John Bogle, I was able to easily acquire the perfect basecamp called VOO and begin investing. The **[Efficient Market Hypothesis (EMH) 📖](/en/wiki/emh)**, which states "The market is perfectly rational, so just hold an index fund and sit still," became the faith of numerous Bogleheads for a long time.
+Today, thanks to John Bogle, I was able to easily acquire the perfect basecamp called the S&P 500 (Market Index) and begin investing. The **[Efficient Market Hypothesis (EMH) 📖](/en/wiki/emh)**, which states "The market is perfectly rational, so just hold an index fund and sit still," became the faith of numerous Bogleheads for a long time.
 
 However, the deeper I dug into history, the more I realized that this seemingly perfect weapon alone could not fully protect our mental state in real-world investing.
 

@@ -8,11 +8,11 @@ const chapters = [
   { path: '/stay-the-course/007-evo-ch2', title: '2장: 인덱스 펀드의 탄생 (나의 무지를 방어하다)' },
   { path: '/stay-the-course/008-evo-ch3', title: '3장: 행동재무학 (블랙 먼데이)' },
   { path: '/stay-the-course/009-evo-ch4', title: '4장: 3요인 모델 (가치 팩터 증명)' },
+  { path: '/stay-the-course/010-evo-ch5', title: '5장: ETF의 탄생 (바코드 혁명)' },
+  { path: '/stay-the-course/011-evo-ch6', title: '6장: 모멘텀의 발견 (탐욕에 올라타다)' },
 ]
 
 const pendingChapters = [
-  '5장: ETF의 탄생 (작성 중 ✍️)',
-  '6장: 모멘텀의 발견 (작성 중 ✍️)',
   '7장: 스마트베타 (작성 중 ✍️)',
   '8장: SCHD의 탄생 (작성 중 ✍️)',
   '9장: 빅테크와 SPMO (작성 중 ✍️)',

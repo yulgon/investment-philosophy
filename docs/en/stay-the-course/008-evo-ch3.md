@@ -36,7 +36,7 @@ Investing does not operate solely on textbook math. The most terrifying proof of
 
 However, right after the opening bell, someone started dumping stocks for no reason, and people in the market lost their minds and frantically mashed the sell button like zombies. As a result, an unprecedented massacre occurred where the Dow Jones index plummeted a whopping **-22.6% in a single day**. This is the famous **'Black Monday'**.
 
-If the market were a perfect computer, there would be no reason for the entire value of American companies to evaporate by 22% in just one day. The scholars' advice to "stay rationally still" offered no comfort to the crowds facing the terror of their accounts being halved. If I had been holding only VOO in that era, would my mentality have survived? My shield would likely have been thrown away in panic that day.
+If the market were a perfect computer, there would be no reason for the entire value of American companies to evaporate by 22% in just one day. The scholars' advice to "stay rationally still" offered no comfort to the crowds facing the terror of their accounts being halved. If I had been holding only an index fund in that era, would my mentality have survived? My shield would likely have been thrown away in panic that day.
 
 ---
 
@@ -59,7 +59,7 @@ Investors in history and I share the exact same weaknesses.
 When behavioral finance emerged, active managers cheered. *"See! The market is stupid, so if we time it right, we can beat index funds!"*
 
 But the real conclusion was the exact opposite. If the market goes crazy and no one knows the timing of a crash, there was no way managers could avoid that panic either.
-However, just stopping at being a simple Boglehead (blind faith in indices) is also dangerous. Holding only VOO during a crash (like Black Monday) or an extreme momentum market and enduring it by chanting "the market is always right" is immense torture for emotional humans.
+However, just stopping at being a simple Boglehead (blind faith in indices) is also dangerous. Holding only a market index during a crash (like Black Monday) or an extreme momentum market and enduring it by chanting "the market is always right" is immense torture for emotional humans.
 
 **At this point, I realized: We shouldn't force ourselves to suppress human irrationality (fear and greed). Instead, we desperately need a 'complementary weapon' that can reverse-engineer and exploit those irrational stampedes.**
 

@@ -13,3 +13,4 @@ token.json
 .agents/
 
 docs/public/data/*.json
+investment-shorts/

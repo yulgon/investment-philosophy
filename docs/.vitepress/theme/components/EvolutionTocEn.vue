@@ -8,11 +8,11 @@ const chapters = [
   { path: '/en/stay-the-course/007-evo-ch2', title: 'Chapter 2: Birth of the Index Fund' },
   { path: '/en/stay-the-course/008-evo-ch3', title: 'Chapter 3: Behavioral Finance' },
   { path: '/en/stay-the-course/009-evo-ch4', title: 'Chapter 4: The 3-Factor Model' },
+  { path: '/en/stay-the-course/010-evo-ch5', title: 'Chapter 5: Birth of the ETF' },
+  { path: '/en/stay-the-course/011-evo-ch6', title: 'Chapter 6: Discovery of Momentum' },
 ]
 
 const pendingChapters = [
-  'Chapter 5: Birth of the ETF (Drafting ✍️)',
-  'Chapter 6: Discovery of Momentum (Drafting ✍️)',
   'Chapter 7: Smart Beta (Drafting ✍️)',
   'Chapter 8: Birth of SCHD (Drafting ✍️)',
   'Chapter 9: Big Tech and SPMO (Drafting ✍️)',
