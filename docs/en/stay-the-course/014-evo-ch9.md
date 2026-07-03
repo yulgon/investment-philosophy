@@ -1,11 +1,22 @@
 ---
+title: "[Evolution of Investment Ch.9] The Sharpest Spear that Dominates the Stampede: SPMO"
+date: 2026-07-04
+tags: [EvolutionOfInvestment, InvestmentPhilosophy, AssetAllocation, SPMO, Momentum, BigTech]
 prev:
   text: 'Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD'
   link: '/en/stay-the-course/013-evo-ch8'
 next:
   text: 'Chapter 10. The Completion of the Ultimate Trinity Portfolio'
   link: '/en/stay-the-course/015-evo-ch10'
+excerpt: "The extreme stampede market of the 2020s that a shield alone couldn't beat. The emergence of SPMO, a sharp spear that explodes by riding the public's greed."
 ---
+
+<div class="stc-article-meta">
+  <a class="stc-back-link" href="/en/stay-the-course/">← Back to List</a>
+  <span class="stc-article-date">2026.07.04</span>
+  <span class="stc-card-tag">#EvolutionOfInvestment</span>
+  <span class="stc-card-tag">#SPMO</span>
+</div>
 
 # Chapter 9. The Sharpest Spear that Dominates the Stampede: SPMO
 
@@ -64,3 +75,5 @@ Now, there is only one final task left for me.
 **How must these three massive pillars be fused to operate as a perfect 'single portfolio' that is not swayed by shallow emotions?**
 
 Even if numerous finance books say it's wrong, this is the final conclusion I reached in practice by grinding my own money and mentality. The magnificent finale of internalizing the history of investing into my life will finally be revealed in the next **[Chapter 10. The Completion of the Ultimate Trinity Core Portfolio]**.
+
+<EvolutionTocEn />

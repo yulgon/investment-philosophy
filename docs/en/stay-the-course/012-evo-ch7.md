@@ -1,11 +1,22 @@
 ---
+title: "[Evolution of Investment Ch.7] The Difference Between Robots and Humans, and the Birth of Smart Beta"
+date: 2026-07-04
+tags: [EvolutionOfInvestment, InvestmentPhilosophy, AssetAllocation, SmartBeta, DotComBubble, FinancialCrisis]
 prev:
   text: 'Chapter 6. The Second Nature of Humanity: Discovery of Momentum'
   link: '/en/stay-the-course/011-evo-ch6'
 next:
   text: 'Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD'
   link: '/en/stay-the-course/013-evo-ch8'
+excerpt: "In the history of massive crashes, machines endured but humans collapsed. The emergence of Smart Beta, the ultimate complement to protect frail mentalities."
 ---
+
+<div class="stc-article-meta">
+  <a class="stc-back-link" href="/en/stay-the-course/">← Back to List</a>
+  <span class="stc-article-date">2026.07.04</span>
+  <span class="stc-card-tag">#EvolutionOfInvestment</span>
+  <span class="stc-card-tag">#SmartBeta</span>
+</div>
 
 # Chapter 7. The Difference Between Robots and Humans, and the Birth of Smart Beta
 
@@ -55,3 +66,5 @@ However, because I am a frail human, not a robot, I needed a 'safety net' to pre
 A Smart Beta that filters not just companies with large market caps, but **companies with sturdy Quality that won't shake in a crisis and Value that will constantly plug cash flow (dividends) into my account**.
 
 Integrating this human psychological defense mechanism with the technology of Smart Beta, **finally, in 2011, the most perfect defensive weapon in modern investment history was born**. The birth story of **SCHD**, the ultimate titanium shield that appeared right after I started investing to protect my mentality alongside the market index, continues in the next [Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD].
+
+<EvolutionTocEn />

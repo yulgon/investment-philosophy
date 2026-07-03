@@ -1,11 +1,22 @@
 ---
+title: "[Evolution of Investment Ch.8] The Shield that Feeds on Fear: The Birth of SCHD"
+date: 2026-07-04
+tags: [EvolutionOfInvestment, InvestmentPhilosophy, AssetAllocation, SCHD, ValueInvesting, Dividend]
 prev:
   text: 'Chapter 7. The Difference Between Robots and Humans, and the Birth of Smart Beta'
   link: '/en/stay-the-course/012-evo-ch7'
 next:
   text: 'Chapter 9. The Sharpest Spear that Dominates the Stampede: SPMO'
   link: '/en/stay-the-course/014-evo-ch9'
+excerpt: "A titanium shield to endure the trauma of the financial crisis. Beyond blind dividends, the quant machine SCHD collects 'Quality' and 'Value'."
 ---
+
+<div class="stc-article-meta">
+  <a class="stc-back-link" href="/en/stay-the-course/">← Back to List</a>
+  <span class="stc-article-date">2026.07.04</span>
+  <span class="stc-card-tag">#EvolutionOfInvestment</span>
+  <span class="stc-card-tag">#SCHD</span>
+</div>
 
 # Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD
 
@@ -66,3 +77,5 @@ The perfect shield I trusted (SCHD) pushed me into terrible FOMO during this per
 The bitter humiliation that defense alone could not conquer this crazy real-world market. I finally decided to unseal the most dangerous but most powerful factor, **'The Spear of Greed (Momentum)'** by Mark Carhart, which we learned about in Chapter 6, in my actual portfolio.
 
 The story of **SPMO**, the final Alpha engine I drew myself amidst the monopoly of Big Tech in the 2020s, continues in [Chapter 9. The Sharpest Spear that Dominates the Stampede: SPMO].
+
+<EvolutionTocEn />

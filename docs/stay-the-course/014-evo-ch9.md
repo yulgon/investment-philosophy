@@ -1,11 +1,22 @@
 ---
+title: "[투자 진화론 9장] 쏠림을 지배하는 가장 날카로운 창: SPMO"
+date: 2026-07-04
+tags: [투자진화론, 투자철학, 자산배분, SPMO, 모멘텀, 빅테크]
 prev:
   text: '제8장. 공포를 먹고 자라는 방패: SCHD의 탄생'
   link: '/stay-the-course/013-evo-ch8'
 next:
   text: '제10장. 궁극의 삼위일체(Trinity) 포트폴리오의 완성'
   link: '/stay-the-course/015-evo-ch10'
+excerpt: "방패만으로는 이길 수 없었던 2020년대의 극단적 쏠림장. 대중의 탐욕에 올라타 폭발하는 날카로운 창, SPMO의 등장."
 ---
+
+<div class="stc-article-meta">
+  <a class="stc-back-link" href="/stay-the-course/">← 목록으로</a>
+  <span class="stc-article-date">2026.07.04</span>
+  <span class="stc-card-tag">#투자진화론</span>
+  <span class="stc-card-tag">#SPMO</span>
+</div>
 
 # 제9장. 쏠림을 지배하는 가장 날카로운 창: SPMO
 
@@ -64,3 +75,5 @@ SPMO는 S&P 500 기업들의 12개월 수익률을 분석하여(단기 노이즈
 **이 거대한 세 개의 기둥을 어떻게 융합해야만, 얄팍한 감정에 휘둘리지 않는 완벽한 '하나의 포트폴리오'로 작동하게 만들 수 있을까요?**
 
 수많은 재무학 책들이 틀렸다고 말할지라도, 제가 제 돈과 멘탈을 갈아 넣어 실전에서 도달한 최종 결론. 투자의 역사를 제 삶에 체화시킨 웅장한 피날레가 다음 **[제10장. 궁극의 삼위일체(Trinity) Core 포트폴리오의 완성]**에서 마침내 공개됩니다.
+
+<EvolutionToc />

@@ -1,11 +1,22 @@
 ---
+title: "[투자 진화론 7장] 로봇과 인간의 차이, 그리고 스마트 베타의 탄생"
+date: 2026-07-04
+tags: [투자진화론, 투자철학, 자산배분, 스마트베타, 닷컴버블, 금융위기]
 prev:
   text: '제6장. 인류의 두 번째 본성: 모멘텀(Momentum)의 발견'
   link: '/stay-the-course/011-evo-ch6'
 next:
   text: '제8장. 공포를 먹고 자라는 방패: SCHD의 탄생'
   link: '/stay-the-course/013-evo-ch8'
+excerpt: "대폭락의 역사 속에서 기계는 버텼지만 인간은 무너졌다. 나약한 멘탈을 지켜줄 궁극의 보완재, 스마트 베타의 등장."
 ---
+
+<div class="stc-article-meta">
+  <a class="stc-back-link" href="/stay-the-course/">← 목록으로</a>
+  <span class="stc-article-date">2026.07.04</span>
+  <span class="stc-card-tag">#투자진화론</span>
+  <span class="stc-card-tag">#스마트베타</span>
+</div>
 
 # 제7장. 로봇과 인간의 차이, 그리고 스마트 베타의 탄생
 
@@ -55,3 +66,5 @@ next:
 단순히 시가총액이 큰 회사가 아니라, **위기에도 흔들리지 않는 튼튼한 우량성(Quality)을 갖추고 내 계좌에 끊임없이 현금흐름(배당)을 꽂아줄 수 있는 가치(Value)**를 필터링하는 스마트 베타. 
 
 이러한 인간의 심리적 방어 기제와 스마트 베타의 기술력이 모두 집약되어 **2011년, 마침내 현대 투자 역사상 가장 완벽한 방어 무기 하나가 탄생**합니다. 제가 본격적으로 투자를 시작한 직후 세상에 등장해, 시장 지수 곁에서 제 멘탈을 지켜주는 궁극의 티타늄 방패 **SCHD**의 탄생기가 다음 [제8장. 공포를 먹고 자라는 방패: SCHD의 탄생]에서 이어집니다.
+
+<EvolutionToc />
