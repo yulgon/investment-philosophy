@@ -3,7 +3,7 @@ title: "[Evolution of Investment Ch.8] The Shield that Feeds on Fear: The Birth 
 date: 2026-07-04
 tags: [EvolutionOfInvestment, InvestmentPhilosophy, AssetAllocation, SCHD, ValueInvesting, Dividend]
 prev:
-  text: 'Chapter 7. The Difference Between Robots and Humans, and the Birth of Smart Beta'
+  text: 'Chapter 7. The Madness of Human Psychology and the Birth of Smart Beta'
   link: '/en/stay-the-course/012-evo-ch7'
 next:
   text: 'Chapter 9. The Sharpest Spear that Dominates the Stampede: SPMO'

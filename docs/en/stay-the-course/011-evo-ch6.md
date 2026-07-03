@@ -2,6 +2,8 @@
 title: "[Evolution of Investment Ch.6] Riding on Greed: Discovery of Momentum"
 date: 2026-07-03
 tags: [EvolutionOfInvestment, InvestmentPhilosophy, AssetAllocation, Momentum, FOMO]
+next:
+  text: 'Chapter 7. The Madness of Human Psychology and the Birth of Smart Beta'
 excerpt: "Human greed becomes the fuel for trends. The discovery of Mark Carhart's momentum factor and securing the final spear (SPMO) for the portfolio."
 ---
 
