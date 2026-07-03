@@ -39,7 +39,7 @@ ax.set_xticks(x)
 ax.set_xticklabels(labels, fontsize=12, color='white')
 ax.grid(True, axis='y', linestyle='--', alpha=0.2)
 
-legend = ax.legend(fontsize=11, loc='lower left')
+legend = ax.legend(fontsize=11, loc='lower right')
 legend.get_frame().set_facecolor('#2d2d2d')
 legend.get_frame().set_edgecolor('none')
 for text in legend.get_texts():
