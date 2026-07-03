@@ -41,13 +41,17 @@ What was needed was a ruthless system that would filter out not just garbage com
 
 ---
 
-## 2. 2011, The Ultimate Quant Machine SCHD Enters the World
+## 2. 2011, Abandoning 'Blind Dividends' and the Birth of the Ultimate Quant Machine
 
-The lessons of the Dot-com Bubble (Smart Beta) and the trauma of the Financial Crisis (Quality and Cash Flow) fused together, and finally, in 2011, when I was just starting to invest, Charles Schwab introduced an ultimate defensive weapon that I would stay with for the rest of my life. It was **SCHD (Schwab US Dividend Equity ETF)**.
+Even before the 2008 financial crisis, dividend stock funds existed. However, most funds at that time were 'blind dividend indices' that uncritically swept up **"stocks with simply the highest dividend yield (%)"**. Falling into the illusion (Value Trap) where the dividend yield of bank stocks plummeting on the brink of bankruptcy looked abnormally high, they eventually suffered a painful failure, crashing even more miserably than the market index during the 2008 crisis.
+
+After suffering the trauma of this horrific financial crisis, the index provider (S&P Dow Jones) finally awakened. *"If we just blindly chase dividends, we all die. A Quality filter that verifies the true strength (debt, cash flow) behind the dividends is absolutely necessary!"*
+
+Based on this bitter lesson, the **'Dow Jones U.S. Dividend 100 Index' was finally announced in August 2011**, and the asset management company Charles Schwab surprisingly launched **SCHD (Schwab US Dividend Equity ETF)**, which tracks this perfect index, in October of the same year. In 2011, when I was just starting to invest, the ultimate defensive weapon I would stay with for the rest of my life was introduced to the world.
 
 People in the world often disparage SCHD as 'a retirement fund for old folks who want to buy soup with monthly dividends'. But I scoff at them. They only see the shell of SCHD, unable to see the terrifying gears hidden inside it.
 
-SCHD is not a fund that blindly chases dividends. It is a **quant machine that uses the powerful filter of 'dividends' as a sieve to ruthlessly collect Fama-French's 'Value' factor and the money-raking 'Quality' factor**.
+Unlike the failed dividend funds of the past, this one is a **quant machine that uses the powerful filter of 'dividends' as a sieve to ruthlessly collect Fama-French's 'Value' factor and the money-raking 'Quality' factor**.
 
 ### The Harsh 4-Step Audition That Blocks Human Intervention
 SCHD completely ignores the intuition of fund managers and extracts 100 champions solely based on numbers. Particularly, the **lessons from the two horrific crises (Dot-com Bubble and Financial Crisis)** discussed in Chapter 7 are perfectly and chillingly absorbed into these rules.
