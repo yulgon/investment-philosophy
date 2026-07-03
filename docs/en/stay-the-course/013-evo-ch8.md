@@ -61,9 +61,16 @@ SCHD completely ignores the intuition of fund managers and extracts 100 champion
 
 ---
 
-## 3. The Titanium Shield Protecting My Mentality (Alpha Core)
+## 3. The Titanium Shield That Protects My Mentality (Alpha Core)
 
-👉 **Conclusion:** SCHD is not a minor branch (Satellite) occupying a corner of my portfolio. This weapon is the **hardest and heaviest titanium shield (Alpha Core)** that reverse-engineers the gap of overselling (Value) created by the irrational fear of the public and prevents the collapse of my mentality through strong cash flows.
+![SCHD Defense Comparison](/schd-defense-comparison.png)
+*(Data: Maximum drawdown based on historical backtesting of the Dow Jones U.S. Dividend 100 Index tracked by SCHD)*
+
+Check out the insane defensive power this 4-step audition showed through actual historical data (backtesting).
+- **Dot-com Bubble (2000~2002):** While NASDAQ melted down by -78% and S&P 500 by -50%, SCHD (Dividend 100) avoided the shell IT companies and executed a perfect cosmic defense, dropping only **-17.1%**.
+- **2008 Financial Crisis:** When even value investing plummeted by -57% due to the bankruptcy of insolvent banks and the S&P 500 was smashed by -56.8%, SCHD, which automatically cut out rotting financial companies through the 'debt ratio' rule, avoided a fatal blow and defended at a relatively solid **-44.5%**.
+
+👉 **Conclusion:** SCHD is not a satellite branch taking up a corner of my portfolio. This weapon exploits the oversold gaps (Value) created by the public's irrational fear and prevents my mentality from collapsing through strong cash flows, making it the **hardest and heaviest titanium shield (Alpha Core)**.
 
 When the market is peacefully trending upwards, the index fund (Basecamp) reliably supports me, and when the economy collapses and screams erupt as if the world is ending, SCHD (Shield) protects me. All the lessons of history have been concentrated into this single ETF and placed in my hands.
 

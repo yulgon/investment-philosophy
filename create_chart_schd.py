@@ -1,0 +1,69 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Drawdown data
+# Dot-com (2000-2002)
+dotcom_nasdaq = -78.0
+dotcom_sp500 = -50.0
+dotcom_schd = -17.1
+
+# Financial Crisis (2007-2009)
+subprime_nasdaq = -54.0
+subprime_sp500 = -56.8
+subprime_schd = -44.5
+
+labels = ['Dot-com Bubble (2000-2002)', 'Financial Crisis (2007-2009)']
+nasdaq_mdd = [dotcom_nasdaq, subprime_nasdaq]
+sp500_mdd = [dotcom_sp500, subprime_sp500]
+schd_mdd = [dotcom_schd, subprime_schd]
+
+x = np.arange(len(labels))
+width = 0.25
+
+plt.style.use('dark_background')
+fig, ax = plt.subplots(figsize=(10, 6))
+fig.patch.set_facecolor('#1a1a1a')
+ax.set_facecolor('#1a1a1a')
+
+rects1 = ax.bar(x - width, nasdaq_mdd, width, label='NASDAQ', color='#ff4757')
+rects2 = ax.bar(x, sp500_mdd, width, label='S&P 500', color='#2ed573')
+rects3 = ax.bar(x + width, schd_mdd, width, label='Dividend 100 (SCHD)', color='#ffd32a')
+
+# Add text for labels, title and custom x-axis tick labels, etc.
+ax.set_ylabel('Maximum Drawdown (%)', fontsize=12, color='lightgray')
+ax.set_title('The Titanium Shield: SCHD vs S&P 500 vs NASDAQ\n(Backtested Crisis Defense)', fontsize=16, fontweight='bold', pad=20, color='white')
+ax.set_xticks(x)
+ax.set_xticklabels(labels, fontsize=12, color='white')
+ax.grid(True, axis='y', linestyle='--', alpha=0.2)
+
+legend = ax.legend(fontsize=11, loc='lower left')
+legend.get_frame().set_facecolor('#2d2d2d')
+legend.get_frame().set_edgecolor('none')
+for text in legend.get_texts():
+    text.set_color("white")
+
+def autolabel(rects):
+    for rect in rects:
+        height = rect.get_height()
+        ax.annotate(f'{height}%',
+                    xy=(rect.get_x() + rect.get_width() / 2, height),
+                    xytext=(0, -15),  # 15 points vertical offset
+                    textcoords="offset points",
+                    ha='center', va='bottom', color='white', fontweight='bold')
+
+autolabel(rects1)
+autolabel(rects2)
+autolabel(rects3)
+
+# Highlight arrows
+ax.annotate('Extreme Defense!', xy=(0 + width, -17.1), xytext=(0.4, -10),
+            arrowprops=dict(facecolor='#ffd32a', shrink=0.05, width=2, headwidth=8), 
+            fontsize=12, color='#ffd32a', fontweight='bold')
+
+ax.annotate('Survived Bank Collapse\n(Unlike Value Funds)', xy=(1 + width, -44.5), xytext=(1.4, -30),
+            arrowprops=dict(facecolor='#ffd32a', shrink=0.05, width=2, headwidth=8), 
+            fontsize=12, color='#ffd32a', fontweight='bold', ha='center')
+
+
+plt.tight_layout()
+plt.savefig('docs/public/schd-defense-comparison.png', dpi=300, bbox_inches='tight', facecolor=fig.get_facecolor())
