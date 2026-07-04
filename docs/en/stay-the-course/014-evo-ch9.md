@@ -55,30 +55,52 @@ Thanks to this ruthless algorithm, in the explosive overall upward market create
 
 ---
 
-## 2. Perfect Synergy: The Spear Fills the Blind Spot of the Shield
+## 2. SPMO's Momentum and Risk Management Techniques
 
-The real reason I placed SCHD and SPMO side by side next to the market index in my actual portfolio is that the two weapons create unbelievably perfect synergy.
+It's a mistake to think that SPMO is simply a dangerous casino that blindly buys skyrocketing stocks. SPMO has a mechanical system that massively rebalances its portfolio twice a year (March and September).
 
-* While SCHD defends against market collapse (fear) with rational standards (dividends, fundamentals),
-* SPMO willingly jumps into the center of the market bubble (greed) and completely devours the upward wave.
+This regular rebalancing is SPMO's core **risk management technique**. 
+Value investors often make the fatal error of engaging in involuntary long-term investing for years, saying "It will go up someday" even when the stock they bought gets cut in half. However, SPMO's algorithm is cold-hearted. Even if a stock was doing well previously, if its recent momentum breaks and enters a downtrend, SPMO ruthlessly throws that stock into the trash can from the portfolio during the next rebalancing. Conversely, it maximizes the weight of newly surging stocks to ride them.
 
-When one side is sluggish, the other side runs crazily—a perfect factor harmony of defense and attack. I turned humanity's greatest weaknesses, 'fear' and 'greed', into a mechanical system that actually grows my account.
+It removes the difficulty of 'Stop-loss' and the 'break-even psychology', which are humans' greatest weaknesses, replacing them with a machine, perfectly blocking the risk of hugging a dead stock while your account rots.
 
 ---
 
-## Conclusion and Next Chapter Preview: How to Bind Them into a Single System?
+## 3. Proof of the Chameleon: Portfolio Evolution from 2021 to 2026
 
-Over the past 9 chapters, I studied 60 years of financial history, went through 11 years of bitter failures from 2010, and experienced an awakening after the 2020s, finally acquiring all three great weapons to survive.
+The result of this mechanical rebalancing is the **'Chameleon-like' survivability** mentioned earlier. In fact, if you look at the changes in the Top 5 companies by year to see how SPMO shed its skin and switched to new market leaders amidst the extreme macroeconomic waves over the past few years, it's enough to give you goosebumps.
 
-1. **Market Index (Market Beta):** The eternal basecamp that covers my shallow market predictions (ignorance).
-2. **SCHD (Value Alpha):** The titanium shield that defends against public fear and collapse with cash flow.
-3. **SPMO (Momentum Alpha):** The sharp spear that explodes by mechanically riding on public greed and stampedes.
+| Year | Era Background (Market Theme) | SPMO Top 5 Holdings (Exchange) |
+|---|---|---|
+| **2021** | COVID Liquidity Party & Reopening | 1. Tesla (NASDAQ)<br>2. NVIDIA (NASDAQ)<br>3. JPMorgan Chase (NYSE)<br>4. Alphabet (NASDAQ)<br>5. Target (NYSE) |
+| **2022** | 40-Year High Inflation & Rate Hikes | 1. ExxonMobil (NYSE)<br>2. Chevron (NYSE)<br>3. UnitedHealth (NYSE)<br>4. Eli Lilly (NYSE)<br>5. Merck (NYSE) |
+| **2023** | ChatGPT & Dawn of the AI Revolution | 1. NVIDIA (NASDAQ)<br>2. Meta Platforms (NASDAQ)<br>3. Broadcom (NASDAQ)<br>4. Eli Lilly (NYSE)<br>5. Alphabet (NASDAQ) |
+| **2024** | Magnificent 7 (M7) Market Monopoly | 1. NVIDIA (NASDAQ)<br>2. Microsoft (NASDAQ)<br>3. Meta Platforms (NASDAQ)<br>4. Amazon (NASDAQ)<br>5. Eli Lilly (NYSE) |
+| **2025~2026** | AI Infra Prolongation & Healthcare Fusion | 1. NVIDIA (NASDAQ)<br>2. Broadcom (NASDAQ)<br>3. Apple (NASDAQ)<br>4. Eli Lilly (NYSE)<br>5. Micron (NASDAQ) |
 
-These weapons are the blood and sweat of Nobel laureates and a great legacy forged by decades of crashes, the Dot-com Bubble, and the Financial Crisis.
+*Note: The table above shows the core leading trend based on representative holdings around specific rebalancing points in each year.*
 
-Now, there is only one final task left for me.
-**How must these three massive pillars be fused to operate as a perfect 'single portfolio' that is not swayed by shallow emotions?**
+The truth this table proves is clear. In 2022, when NASDAQ tech stocks were crushed by interest rate hikes, QQQ investors had to endure tears of blood. But SPMO mercilessly dumped tech stocks and completely overhauled its portfolio with **energy and healthcare (all NYSE-listed)** that benefited from inflation, enjoying a bull market all by itself.
 
-Even if numerous finance books say it's wrong, this is the final conclusion I reached in practice by grinding my own money and mentality. The magnificent finale of internalizing the history of investing into my life will finally be revealed in the next **[Chapter 10. The Completion of the Ultimate Trinity Core Portfolio]**.
+And when the AI era arrived in 2023, it hopped right back onto NASDAQ's NVIDIA and Meta as if nothing happened, sucking in profits. At the same time, it shows the meticulousness of never letting go of Eli Lilly (NYSE), the pharmaceutical stock with the highest momentum.
+This is a true **survival chameleon system** that transcends exchanges and sectors, something a frog in the well like QQQ can never imitate.
+
+---
+
+## Conclusion & Next Chapter Preview: How to Bind Them into a Single System?
+
+Over the past 9 chapters, I have studied 60 years of financial history, experienced bitter failures from 2010 to 2011, and the awakening of the 2020s, ultimately obtaining all three great weapons for survival. 
+In particular, I have confirmed the **amazing factor synergy between SCHD (defense) and SPMO (offense)**, where when one struggles, the other runs wildly.
+
+1. **VOO (Market Beta):** The eternal basecamp covering my shallow market predictions (ignorance).
+2. **SCHD (Value Alpha):** The titanium shield defending against public fear and collapse with cash flows.
+3. **SPMO (Momentum Alpha):** The sharp spear exploding by mechanically riding public greed and stampedes.
+
+These weapons are the blood and sweat of Nobel laureates, and a great legacy forged by decades of crashes, the dot-com bubble, and the financial crisis.
+
+Now, only one final task remains for me.
+**How must I fuse these three massive pillars to make them operate as a perfect 'single portfolio' unswayed by shallow emotions?**
+
+Even if countless finance books say it's wrong, this is the final conclusion I reached in practice by grinding my money and mentality. The magnificent finale of embodying the history of investing into my life is finally revealed in the next **[Chapter 10. The Completion of the Ultimate Trinity Core Portfolio]**.
 
 <EvolutionTocEn />
