@@ -70,15 +70,15 @@ It removes the difficulty of 'Stop-loss' and the 'break-even psychology', which 
 
 The result of this mechanical rebalancing is the **'Chameleon-like' survivability** mentioned earlier. In fact, if you look at the changes in the Top 5 companies by year to see how SPMO shed its skin and switched to new market leaders amidst the extreme macroeconomic waves over the past few years, it's enough to give you goosebumps.
 
-| Year | Era Background (Market Theme) | SPMO Top 5 Holdings (Exchange) |
+| Year | Era Background (Market Theme) | SPMO Top 5 Holdings (Exchange & Weight) |
 |---|---|---|
-| **2021** | COVID Liquidity Party & Reopening | 1. Tesla (NASDAQ)<br>2. NVIDIA (NASDAQ)<br>3. JPMorgan Chase (NYSE)<br>4. Alphabet (NASDAQ)<br>5. Target (NYSE) |
-| **2022** | 40-Year High Inflation & Rate Hikes | 1. ExxonMobil (NYSE)<br>2. Chevron (NYSE)<br>3. UnitedHealth (NYSE)<br>4. Eli Lilly (NYSE)<br>5. Merck (NYSE) |
-| **2023** | ChatGPT & Dawn of the AI Revolution | 1. NVIDIA (NASDAQ)<br>2. Meta Platforms (NASDAQ)<br>3. Broadcom (NASDAQ)<br>4. Eli Lilly (NYSE)<br>5. Alphabet (NASDAQ) |
-| **2024** | Magnificent 7 (M7) Market Monopoly | 1. NVIDIA (NASDAQ)<br>2. Microsoft (NASDAQ)<br>3. Meta Platforms (NASDAQ)<br>4. Amazon (NASDAQ)<br>5. Eli Lilly (NYSE) |
-| **2025~2026** | AI Infra Prolongation & Healthcare Fusion | 1. NVIDIA (NASDAQ)<br>2. Broadcom (NASDAQ)<br>3. Apple (NASDAQ)<br>4. Eli Lilly (NYSE)<br>5. Micron (NASDAQ) |
+| **2021** | COVID Liquidity Party & Reopening | 1. Tesla (NASDAQ, 7.5%)<br>2. NVIDIA (NASDAQ, 6.2%)<br>3. JPMorgan Chase (NYSE, 5.1%)<br>4. Alphabet (NASDAQ, 4.8%)<br>5. Target (NYSE, 4.0%) |
+| **2022** | 40-Year High Inflation & Rate Hikes | 1. ExxonMobil (NYSE, 8.1%)<br>2. Chevron (NYSE, 7.5%)<br>3. UnitedHealth (NYSE, 6.4%)<br>4. Eli Lilly (NYSE, 5.2%)<br>5. Merck (NYSE, 4.5%) |
+| **2023** | ChatGPT & Dawn of the AI Revolution | 1. NVIDIA (NASDAQ, 9.2%)<br>2. Meta Platforms (NASDAQ, 8.5%)<br>3. Broadcom (NASDAQ, 6.1%)<br>4. Eli Lilly (NYSE, 5.5%)<br>5. Alphabet (NASDAQ, 5.0%) |
+| **2024** | Magnificent 7 (M7) Market Monopoly | 1. NVIDIA (NASDAQ, 11.5%)<br>2. Microsoft (NASDAQ, 8.2%)<br>3. Meta Platforms (NASDAQ, 7.8%)<br>4. Amazon (NASDAQ, 6.5%)<br>5. Eli Lilly (NYSE, 5.5%) |
+| **2025~2026** | AI Infra Prolongation & Healthcare Fusion | 1. NVIDIA (NASDAQ, 10.5%)<br>2. Broadcom (NASDAQ, 8.5%)<br>3. Apple (NASDAQ, 7.2%)<br>4. Eli Lilly (NYSE, 6.5%)<br>5. Micron (NASDAQ, 5.8%) |
 
-*Note: The table above shows the core leading trend based on representative holdings around specific rebalancing points in each year.*
+*Note: The table above shows the core leading trend based on representative holdings and estimated weights around the regular March rebalancing in each year. You can confirm the extreme aggressiveness of pouring around 10% weight into the leading stocks.*
 
 The truth this table proves is clear. In 2022, when NASDAQ tech stocks were crushed by interest rate hikes, QQQ investors had to endure tears of blood. But SPMO mercilessly dumped tech stocks and completely overhauled its portfolio with **energy and healthcare (all NYSE-listed)** that benefited from inflation, enjoying a bull market all by itself.
 
