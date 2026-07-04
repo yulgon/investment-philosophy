@@ -89,12 +89,14 @@ When the market is peacefully trending upwards, the index fund (Basecamp) reliab
 
 Index fund (Basecamp) and SCHD (Shield). A perfect defensive formation, akin to the textbook standard of investing, has been established. Armed with such perfect Quality and Value shield, one might think they could sleep soundly with both legs stretched out in real-world investing.
 
-However, history presented another form of psychological hell to investors. Passing through the 2010s into the 2020s, the market transformed not into a hell of 'fear', but of extreme 'greed'. An era of **'Winner-Takes-All'** began, where a very few Big Tech companies like Apple, Microsoft, and Nvidia grabbed the entire US stock market by the collar and dragged it upward.
+However, history presented another form of psychological hell to investors. Passing the 2022 bear market and entering **2023 and beyond**, the market transformed not into a hell of 'fear', but of extreme 'greed'. An era of **'Winner-Takes-All'** began, where a very few Big Tech companies, the so-called **Magnificent 7 (M7)**, grabbed the entire US stock market by the collar and dragged it upward riding the AI revolution. The value defense that felt so reassuring until 2022 turned into a shackle of terrible FOMO (Fear Of Missing Out) from this point on.
 
-During this period, the value investing (shield) that was believed to be perfect pushed investors into a terrible sense of alienation (FOMO). Because the shield was so heavy and strict, it completely failed to keep up with the speed of the Big Tech-driven market that was running wildly without dividends.
+During this period, the value investing (shield) that was believed to be perfect pushed countless investors into a maddening sense of alienation. Because the shield was so heavy and strict, it completely failed to keep up with the speed of the M7-driven market that was flying into space without paying dividends.
 
 The bitter lesson that defense alone cannot control the greed of this crazy real-world market. Ultimately, perfect mental control becomes possible only by unsealing the most dangerous yet most powerful factor, Mark Carhart's **'Spear of Greed (Momentum)'**, which we learned about earlier in Chapter 6.
 
-The story of the final Alpha engine, **SPMO**, which will shatter the investor's sense of alienation amidst the monopoly of Big Tech in the 2020s, continues in [Chapter 9. The Sharpest Spear Controlling the Herd: SPMO].
+This extreme herd market post-2023 was the crucial period when I myself realized the limits of the shield (SCHD), felt the desperate need for an attacker (spear), and actively **refined my own full-fledged 'Trinity' investment philosophy**.
+
+The story of the final Alpha engine, **SPMO**, which will shatter the investor's sense of alienation amidst the monopoly of the M7, continues in [Chapter 9. The Sharpest Spear Controlling the Herd: SPMO].
 
 <EvolutionTocEn />

@@ -8,7 +8,7 @@ prev:
 next:
   text: 'Chapter 10. The Completion of the Ultimate Trinity Portfolio'
   link: '/en/stay-the-course/015-evo-ch10'
-excerpt: "The extreme stampede market of the 2020s that a shield alone couldn't beat. The emergence of SPMO, a sharp spear that explodes by riding the public's greed."
+excerpt: "The extreme herd market post-2023 where a shield alone could not win. The emergence of SPMO, a sharp spear that rides public greed and explodes."
 ---
 
 <div class="stc-article-meta">
@@ -22,17 +22,17 @@ excerpt: "The extreme stampede market of the 2020s that a shield alone couldn't 
 
 ![Spear of Momentum](/evo-ch9-cover.png)
 
-## Introduction: The Blind Spot of the Shield, and the Bitter FOMO of the 2020s
+## Intro: The Blind Spot of the Shield, and the Bitter FOMO of the Post-2023 M7 Era
 
-Through history, I built a perfect defense system with the index fund and SCHD. However, as I entered the 2020s, the stock market I faced in practice completely destroyed my common sense.
+Through history, I built a perfect defense system with an index fund and SCHD. Until the bear market of 2022, this shield protected me perfectly. However, moving into **2023 and beyond**, the stock market I faced in real-world investing completely destroyed my common sense.
 
-Massive Big Tech companies known as the **'Magnificent 7 (M7)'**—such as Apple, Microsoft, Nvidia, and Meta—sucked up the world's wealth like a black hole, armed with AI and the cloud revolution. In the face of the extreme upward waves emitted by these few companies, the perfect shield **SCHD** that I cherished so much became a shackle that bound me.
+A very few giant Big Tech companies, the so-called **'Magnificent 7 (M7)'** like Apple, Microsoft, Nvidia, and Meta, sucked up global wealth like a black hole, armed with the AI and cloud revolution. Faced with the extreme wave of greed and upward surge emitted by this tiny handful of companies, the perfect shield **SCHD** that I cherished so much became a shackle suffocating me.
 
-* **The Blind Spot of Value Investing:** Big Tech companies like Amazon and Meta chose to reinvest astronomically in AI and data centers rather than distributing money as dividends. Even for Apple, which does pay dividends, its stock price rose so much that its 'dividend yield' became too low.
-* As a result, SCHD's strict 4-stage fundamental audition kicked out all the great Big Tech companies that dominated the 2020s from my portfolio.
+* **The Blind Spot of Value Investing:** Big Tech companies like Amazon and Meta chose to reinvest astronomically in AI and data centers rather than distributing money as dividends. Even for Apple, which does pay dividends, its stock price rose so much that its 'dividend yield' plummeted.
+* Consequently, SCHD's strict 4-step fundamental audition expelled all the great M7 Big Tech companies that dominated the post-2023 era from my portfolio.
 
-The market index flew into space riding on Nvidia, but my account hovered in place, creating terrible FOMO.
-*"No matter how sturdy the shield is, if you only defend in an era where enemies fly around with spears, your mentality will eventually dry up and die."* I had to bitterly admit this cruel reality through actual investing.
+While the market index flew into space riding Nvidia, my account hovered in place, creating a terrible sense of FOMO.
+*"No matter how strong your shield is, in an era where enemies are flying around with spears, if you only defend, your mentality will eventually wither and die."* I had to bitterly admit this cruel reality through actual investing. This was the crucial turning point when I abandoned my defense-only strategy, combined an attacker (spear), and **began to complete my own full-fledged 'Trinity' investment philosophy**.
 
 ---
 
