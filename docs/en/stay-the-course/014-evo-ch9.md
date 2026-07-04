@@ -70,14 +70,14 @@ It removes the difficulty of 'Stop-loss' and the 'break-even psychology', which 
 
 The result of this mechanical rebalancing is the **'Chameleon-like' survivability** mentioned earlier. In fact, if you look at the changes in the Top 5 companies by year to see how SPMO shed its skin and switched to new market leaders amidst the extreme macroeconomic waves over the past few years, it's enough to give you goosebumps.
 
-| Year | Era Background (Market Theme) | SPMO Top 5 Holdings (Exchange & Weight) |
-|---|---|---|
-| **2021** | COVID Liquidity Party & Reopening | 1. Tesla (NASDAQ, 7.5%)<br>2. NVIDIA (NASDAQ, 6.2%)<br>3. JPMorgan Chase (NYSE, 5.1%)<br>4. Alphabet (NASDAQ, 4.8%)<br>5. Target (NYSE, 4.0%) |
-| **2022** | 40-Year High Inflation & Rate Hikes | 1. ExxonMobil (NYSE, 8.1%)<br>2. Chevron (NYSE, 7.5%)<br>3. UnitedHealth (NYSE, 6.4%)<br>4. Eli Lilly (NYSE, 5.2%)<br>5. Merck (NYSE, 4.5%) |
-| **2023** | ChatGPT & Dawn of the AI Revolution | 1. NVIDIA (NASDAQ, 9.2%)<br>2. Meta Platforms (NASDAQ, 8.5%)<br>3. Broadcom (NASDAQ, 6.1%)<br>4. Eli Lilly (NYSE, 5.5%)<br>5. Alphabet (NASDAQ, 5.0%) |
-| **2024** | Magnificent 7 (M7) Market Monopoly | 1. NVIDIA (NASDAQ, 11.5%)<br>2. Microsoft (NASDAQ, 8.2%)<br>3. Meta Platforms (NASDAQ, 7.8%)<br>4. Amazon (NASDAQ, 6.5%)<br>5. Eli Lilly (NYSE, 5.5%) |
-| **2025** | Prolonged AI Infra & Platform Stabilization | 1. NVIDIA (NASDAQ, 10.5%)<br>2. Broadcom (NASDAQ, 8.5%)<br>3. Apple (NASDAQ, 7.2%)<br>4. Eli Lilly (NYSE, 6.5%)<br>5. Netflix (NASDAQ, 5.2%) |
-| **2026** | HBM Memory Supercycle & Hardware Explosion | 1. Micron (NASDAQ, 11.2%)<br>2. NVIDIA (NASDAQ, 9.8%)<br>3. Broadcom (NASDAQ, 7.5%)<br>4. Eli Lilly (NYSE, 6.0%)<br>5. Alphabet (NASDAQ, 5.5%) |
+| Year | Era Background (Market Theme) | SPMO Top 5 Holdings | Exchange | Weight |
+|---|---|---|---|---|
+| **2021** | COVID Liquidity Party & Reopening | 1. Tesla<br>2. NVIDIA<br>3. JPMorgan Chase<br>4. Alphabet<br>5. Target | NASDAQ<br>NASDAQ<br>NYSE<br>NASDAQ<br>NYSE | 7.5%<br>6.2%<br>5.1%<br>4.8%<br>4.0% |
+| **2022** | 40-Year High Inflation & Rate Hikes | 1. ExxonMobil<br>2. Chevron<br>3. UnitedHealth<br>4. Eli Lilly<br>5. Merck | NYSE<br>NYSE<br>NYSE<br>NYSE<br>NYSE | 8.1%<br>7.5%<br>6.4%<br>5.2%<br>4.5% |
+| **2023** | ChatGPT & Dawn of the AI Revolution | 1. NVIDIA<br>2. Meta Platforms<br>3. Broadcom<br>4. Eli Lilly<br>5. Alphabet | NASDAQ<br>NASDAQ<br>NASDAQ<br>NYSE<br>NASDAQ | 9.2%<br>8.5%<br>6.1%<br>5.5%<br>5.0% |
+| **2024** | Magnificent 7 (M7) Market Monopoly | 1. NVIDIA<br>2. Microsoft<br>3. Meta Platforms<br>4. Amazon<br>5. Eli Lilly | NASDAQ<br>NASDAQ<br>NASDAQ<br>NASDAQ<br>NYSE | 11.5%<br>8.2%<br>7.8%<br>6.5%<br>5.5% |
+| **2025** | Prolonged AI Infra & Platform Stabilization | 1. NVIDIA<br>2. Broadcom<br>3. Apple<br>4. Eli Lilly<br>5. Netflix | NASDAQ<br>NASDAQ<br>NASDAQ<br>NYSE<br>NASDAQ | 10.5%<br>8.5%<br>7.2%<br>6.5%<br>5.2% |
+| **2026** | HBM Memory Supercycle & Hardware Explosion | 1. Micron<br>2. NVIDIA<br>3. Broadcom<br>4. Eli Lilly<br>5. Alphabet | NASDAQ<br>NASDAQ<br>NASDAQ<br>NYSE<br>NASDAQ | 11.2%<br>9.8%<br>7.5%<br>6.0%<br>5.5% |
 
 *Note: The table above shows the core leading trend based on representative holdings and estimated weights around the regular March rebalancing in each year. You can confirm the extreme aggressiveness of pouring around 10% weight into the leading stocks.*
 
