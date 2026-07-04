@@ -13,11 +13,11 @@ const chapters = [
   { path: '/en/stay-the-course/012-evo-ch7', title: 'Chapter 7: Madness and Mentality (Smart Beta)' },
   { path: '/en/stay-the-course/013-evo-ch8', title: 'Chapter 8: Birth of SCHD' },
   { path: '/en/stay-the-course/014-evo-ch9', title: 'Chapter 9: Big Tech and SPMO' },
+  { path: '/en/stay-the-course/015-evo-ch10', title: 'Chapter 10: Evolution Continues' },
+  { path: '/en/stay-the-course/016-evo-epilogue', title: 'Epilogue: Investing is a System' },
 ]
 
-const pendingChapters = [
-  'Chapter 10: The Ultimate Portfolio (Drafting ✍️)',
-]
+const pendingChapters = []
 
 function isActive(path) {
   return route.path.includes(path)

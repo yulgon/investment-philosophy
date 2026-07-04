@@ -6,7 +6,7 @@ prev:
   text: 'Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD'
   link: '/en/stay-the-course/013-evo-ch8'
 next:
-  text: 'Chapter 10. The Completion of the Ultimate Trinity Portfolio'
+  text: 'Chapter 10. Evolution Continues'
   link: '/en/stay-the-course/015-evo-ch10'
 excerpt: "The extreme herd market post-2023 where a shield alone could not win. The emergence of SPMO, a sharp spear that rides public greed and explodes."
 ---
@@ -126,6 +126,6 @@ These weapons are the blood and sweat of Nobel laureates, and a great legacy for
 Now, only one final task remains for me.
 **How must I fuse these three massive pillars to make them operate as a perfect 'single portfolio' unswayed by shallow emotions?**
 
-Even if countless finance books say it's wrong, this is the final conclusion I reached in practice by grinding my money and mentality. The magnificent finale of embodying the history of investing into my life is finally revealed in the next **[Chapter 10. The Completion of the Ultimate Trinity Core Portfolio]**.
+Even if countless finance books say it's wrong, this is the final conclusion I reached in practice by grinding my money and mentality. The magnificent finale of embodying the history of investing into my life is finally revealed in the next **[Chapter 10. Evolution Continues: Building My 'Antifragile' Survival Portfolio]**.
 
 <EvolutionTocEn />
