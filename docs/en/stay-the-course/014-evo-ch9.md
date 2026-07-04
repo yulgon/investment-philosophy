@@ -55,14 +55,37 @@ Thanks to this ruthless algorithm, in the explosive overall upward market create
 
 ---
 
-## 2. SPMO's Momentum and Risk Management Techniques
+## 2. SPMO's Ruthless Yet Sophisticated Risk Management Techniques
 
-It's a mistake to think that SPMO is simply a dangerous casino that blindly buys skyrocketing stocks. SPMO has a mechanical system that massively rebalances its portfolio twice a year (March and September).
+It's a mistake to think that SPMO is simply a dangerous casino that blindly buys skyrocketing stocks. If you dissect the internal algorithm of the **S&P 500 Momentum Index** that this ETF tracks, you will discover a surprisingly sophisticated risk management system.
 
-This regular rebalancing is SPMO's core **risk management technique**. 
-Value investors often make the fatal error of engaging in involuntary long-term investing for years, saying "It will go up someday" even when the stock they bought gets cut in half. However, SPMO's algorithm is cold-hearted. Even if a stock was doing well previously, if its recent momentum breaks and enters a downtrend, SPMO ruthlessly throws that stock into the trash can from the portfolio during the next rebalancing. Conversely, it maximizes the weight of newly surging stocks to ride them.
+### ① 12-Month Filtering to Avoid 'Short-term Reversal'
+First, it selects the top 100 stocks (20%) out of the S&P 500 universe. Here, many people misunderstand and think, "It probably just buys the stocks that went up the most in the last year, right?" but in reality, it's different.
+**It uses the 'recent 12-month return', but excludes the most recent '1 month' from the calculation.** (i.e., it only looks at the return from 12 months ago to 1 month ago.)
+Why exclude the most recent month? Because stocks that suddenly spike due to short-term abnormal news often show a 'short-term reversal' (decline) right after. This is a mechanical safety net to avoid this noise.
 
-It removes the difficulty of 'Stop-loss' and the 'break-even psychology', which are humans' greatest weaknesses, replacing them with a machine, perfectly blocking the risk of hugging a dead stock while your account rots.
+### ② The Core is 'Risk-adjusted Momentum'
+This is the most important part. It doesn't just blindly select a stock because its return is 100%.
+* **Momentum Score = (Recent 12-Month Return) ÷ (Volatility)**
+Here, Volatility means the standard deviation of daily returns over the recent 252 trading days.
+
+For example:
+* Stock A: Return 120% / Volatility 60% = Score 2.0
+* Stock B: Return 90% / Volatility 20% = Score 4.5
+Looking only at returns, Stock A is 1st, but SPMO's algorithm **selects Stock B, which rose steadily with less risk**. Rather than messy stocks that repeatedly plunge and surge, it prefers stocks drawing a **"clean upward trend"**.
+(As an aside, this is fundamentally the exact same financial approach as the 'Sharpe Ratio'—which divides return by volatility—just without subtracting the risk-free rate.)
+
+### ③ Exquisite Weight Control via Market Cap and Capping
+Another common misconception is thinking, "It probably gives high weights in the order of momentum scores."
+SPMO's actual portfolio weight is based on **[Market Cap × Momentum Score]**. On top of this, a **Capping** rule is applied to prevent specific mega-cap companies from swallowing the index whole.
+By simple market cap calculation, NVIDIA should have been overwhelmingly 1st in 2026. However, NVIDIA hits the upper cap, while Micron maintains a crazy momentum score, breaking through the algorithm to ultimately take the maximum weight of over 11%.
+
+At this point, value investors will ask: *"Wait, Micron already went up 180%, and you're adding 11% more at the very top? Are you crazy?"*
+Exactly. This is the very philosophy of momentum investing.
+* **Value Investing:** "A stock that went up a lot is expensive."
+* **Momentum Investing:** "A stock that went up a lot has a high probability of continuing its upward trend." (Law of Inertia)
+
+This cold-hearted algorithm massively overhauls the portfolio twice a year (March, September). It's a perfect risk management technique where the machine removes the difficulty of 'stop-loss' and the 'break-even psychology'—humans' greatest weaknesses—and mercilessly throws dead stocks that have broken into a downtrend into the trash can.
 
 ---
 
