@@ -1,11 +1,15 @@
 ---
 title: "[Evolution of Investment Ch. 99] Epilogue: Investing is Not Predicting the Market, but a System to Manage Oneself"
-date: 2026-07-04
-tags: [EvolutionOfInvestment, InvestmentPhilosophy, Epilogue, Mindset]
+date: 2026-07-05
+tags:
+  - EvolutionOfInvestment
+  - InvestmentPhilosophy
+  - Epilogue
+  - Mindset
 prev:
-  text: 'Chapter 10. Evolution Continues'
-  link: '/en/stay-the-course/015-evo-ch10'
-excerpt: "Discarding the arrogance of trying to predict the market, and designing an unshakable survival system. An invitation to Part 2, 'Macroeconomic Survival'."
+  text: Chapter 10. Evolution Continues
+  link: /en/stay-the-course/015-evo-ch10
+excerpt: Discarding the arrogance of trying to predict the market, and designing an unshakable survival system. An invitation to Part 2, 'Macroeconomic Survival'.
 ---
 
 <div class="stc-article-meta">
