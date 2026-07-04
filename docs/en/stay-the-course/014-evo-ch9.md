@@ -73,12 +73,13 @@ For example:
 * Stock A: Return 120% / Volatility 60% = Score 2.0
 * Stock B: Return 90% / Volatility 20% = Score 4.5
 Looking only at returns, Stock A is 1st, but SPMO's algorithm **selects Stock B, which rose steadily with less risk**. Rather than messy stocks that repeatedly plunge and surge, it prefers stocks drawing a **"clean upward trend"**.
-(As an aside, this is fundamentally the exact same financial approach as the 'Sharpe Ratio'—which divides return by volatility—just without subtracting the risk-free rate.)
+This is **almost identical to the Sharpe Ratio concept that I emphasized so much in Chapter 1, which measures 'return per unit of risk'**. (It's just missing the risk-free rate in the numerator.) It's a solid financial approach that mechanically evaluates the 'quality' of returns, not just the 'size'.
 
 ### ③ Exquisite Weight Control via Market Cap and Capping
-Another common misconception is thinking, "It probably gives high weights in the order of momentum scores."
-SPMO's actual portfolio weight is based on **[Market Cap × Momentum Score]**. On top of this, a **Capping** rule is applied to prevent specific mega-cap companies from swallowing the index whole.
-By simple market cap calculation, NVIDIA should have been overwhelmingly 1st in 2026. However, NVIDIA hits the upper cap, while Micron maintains a crazy momentum score, breaking through the algorithm to ultimately take the maximum weight of over 11%.
+Another common misconception in the final weight calculation is thinking, "It probably gives high weights in the order of momentum scores." Weight is not just based on the momentum score ranking, but is based on **[Market Cap × Momentum Score]**. On top of this, a **Capping** rule is applied to prevent specific mega-cap companies from swallowing the index whole.
+
+Because of this complex formula, a very interesting result occurred in 2026. If we look simply at market cap or absolute return, NVIDIA should have been overwhelmingly 1st. So why did Micron rise to 1st place with the maximum weight (around 11%)?
+NVIDIA's market cap was so massive that it was already strongly restricted by the upper Capping limit. On the other hand, Micron, riding the HBM supercycle, showed an extremely 'stable and powerful upward trend (explosive return against low volatility)' and secured an enormous momentum score. As a result, it broke through the algorithm using its momentum score to overcome its market cap limitation, taking a larger weight than NVIDIA.
 
 At this point, value investors will ask: *"Wait, Micron already went up 180%, and you're adding 11% more at the very top? Are you crazy?"*
 Exactly. This is the very philosophy of momentum investing.
