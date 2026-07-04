@@ -65,7 +65,7 @@ Instead, when a massive Black Swan strikes and the market violently shakes,
 when my emotions wildly oscillate between greed and fear,
 I wanted to build a survival system that forcibly brings me back to 'cold principles'.
 
-This is the exact reason why this long journey is titled <Evolution of Investment>.
+This is the exact reason why this long journey is titled *Evolution of Investment*.
 Evolution is not just about making things more complex and knowing more.
 It's about clearly distinguishing between 'absolute principles that must be kept' no matter how the environment changes,
 and 'tactics that must be flexibly adapted' according to the changing environment.
@@ -111,7 +111,7 @@ Never be swayed by the shallow emotions created by the market and news,
 but if better evidence and logic emerge to prove me wrong, have the true courage to gladly shatter my old thoughts and accept new principles at any time.
 That is the true meaning of **'Stay the Course'** that I have come to realize.
 
-Perhaps the title of this writing is grandly named <Evolution of Investment>,
+Perhaps the title of this writing is grandly named *Evolution of Investment*,
 but what actually evolved during this past journey wasn't the investment method I chose, but **my very mindset toward the world and money itself**.
 
 After completing this journey, it's okay if readers don't remember my investment system.
@@ -123,7 +123,7 @@ Instead, at the moment you close the final page, I want you to ask yourself just
 The right answer to that question is nowhere in my writing.
 That answer can only be found by yourself through your own fierce life trajectory and experiences.
 And the very moment you begin to ponder to find that answer yourself,
-that is when **your own great <Evolution of Investment>** will truly begin.
+that is when **your own great *Evolution of Investment*** will truly begin.
 
 ---
 
@@ -160,7 +160,7 @@ Perhaps a much more painful and greater task remains than building the raft. It 
 We must now move beyond the excellent tools found in Part 1 and talk about the **'Operating System (OS)' and 'Mindset' that operate these tools without wavering**.
 Not a simple stock recommendation or a secret guaranteeing 100% returns, but the humble survival record of an engineer slowly increasing his 'probability of survival' in an unpredictable world.
 
-That true voyage will leave the empty chapters behind for a moment, and calmly continue in **Part 2 <Macroeconomic Survival>**.
+That true voyage will leave the empty chapters behind for a moment, and calmly continue in **Part 2 *Macroeconomic Survival***.
 
 May you find your own North Star of principles even in the pitch-black darkness.
 And I sincerely pray that you willingly 'Stay the Course' in the face of any rough waves.
