@@ -76,7 +76,8 @@ The result of this mechanical rebalancing is the **'Chameleon-like' survivabilit
 | **2022** | 40-Year High Inflation & Rate Hikes | 1. ExxonMobil (NYSE, 8.1%)<br>2. Chevron (NYSE, 7.5%)<br>3. UnitedHealth (NYSE, 6.4%)<br>4. Eli Lilly (NYSE, 5.2%)<br>5. Merck (NYSE, 4.5%) |
 | **2023** | ChatGPT & Dawn of the AI Revolution | 1. NVIDIA (NASDAQ, 9.2%)<br>2. Meta Platforms (NASDAQ, 8.5%)<br>3. Broadcom (NASDAQ, 6.1%)<br>4. Eli Lilly (NYSE, 5.5%)<br>5. Alphabet (NASDAQ, 5.0%) |
 | **2024** | Magnificent 7 (M7) Market Monopoly | 1. NVIDIA (NASDAQ, 11.5%)<br>2. Microsoft (NASDAQ, 8.2%)<br>3. Meta Platforms (NASDAQ, 7.8%)<br>4. Amazon (NASDAQ, 6.5%)<br>5. Eli Lilly (NYSE, 5.5%) |
-| **2025~2026** | AI Infra Prolongation & Healthcare Fusion | 1. NVIDIA (NASDAQ, 10.5%)<br>2. Broadcom (NASDAQ, 8.5%)<br>3. Apple (NASDAQ, 7.2%)<br>4. Eli Lilly (NYSE, 6.5%)<br>5. Micron (NASDAQ, 5.8%) |
+| **2025** | Prolonged AI Infra & Platform Stabilization | 1. NVIDIA (NASDAQ, 10.5%)<br>2. Broadcom (NASDAQ, 8.5%)<br>3. Apple (NASDAQ, 7.2%)<br>4. Eli Lilly (NYSE, 6.5%)<br>5. Netflix (NASDAQ, 5.2%) |
+| **2026** | HBM Memory Supercycle & Hardware Explosion | 1. Micron (NASDAQ, 11.2%)<br>2. NVIDIA (NASDAQ, 9.8%)<br>3. Broadcom (NASDAQ, 7.5%)<br>4. Eli Lilly (NYSE, 6.0%)<br>5. Alphabet (NASDAQ, 5.5%) |
 
 *Note: The table above shows the core leading trend based on representative holdings and estimated weights around the regular March rebalancing in each year. You can confirm the extreme aggressiveness of pouring around 10% weight into the leading stocks.*
 
