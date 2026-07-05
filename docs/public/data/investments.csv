@@ -106,12 +106,12 @@ yearStart,yearEnd,name,type,role,status
 2023,,KODEX TRF3070,etf,core,holding
 2023,,ACE 미국S&P500,etf,core,holding
 2025,,FIG,stock,satellite,holding
-2023,,VOO,etf,core,holding
+2022,,VOO,etf,core,holding
 2023,,PLTR,stock,satellite,holding
 2025,,NFLX,stock,satellite,holding
 2023,,ARCC,stock,satellite,holding
 2025,,BMNR,stock,satellite,holding
-2023,,SCHD,etf,core,holding
+2022,,SCHD,etf,core,holding
 2025,,CRCL,stock,satellite,holding
 2021,,삼성전자,stock,core,holding
 2023,,SOXX,etf,satelite,holding

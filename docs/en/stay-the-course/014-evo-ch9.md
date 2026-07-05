@@ -140,6 +140,6 @@ These weapons are the blood and sweat of Nobel laureates, and a great legacy for
 Now, only one final task remains for me.
 **How must I fuse these three massive pillars to make them operate as a perfect 'single portfolio' unswayed by shallow emotions?**
 
-Even if countless finance books say it's wrong, this is the final conclusion I reached in practice by grinding my money and mentality. The magnificent finale of embodying the history of investing into my life is finally revealed in the next **[Chapter 10. Evolution Continues: Building My 'Antifragile' Survival Portfolio]**.
+Even if countless finance books say it's wrong, this is the conclusion I reached in actual combat by grinding my money and mentality. The **'most perfect evolutionary form to date'** that embodies the history of investment into my life will finally be revealed in the next chapter: **[Chapter 10. Evolution Continues: Building My 'Antifragile' Survival Portfolio]**.
 
 <EvolutionTocEn />
