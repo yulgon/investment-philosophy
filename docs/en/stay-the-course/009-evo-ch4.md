@@ -52,7 +52,7 @@ The three factors of stock returns they discovered are as follows:
 
 **② Size Factor (SMB)**
 * **SMB (Small Minus Big)** represents the return of small-cap stocks minus the return of large-cap stocks. It means that small-cap stocks have higher long-term returns than large-cap stocks. 
-* As we saw in Chapter 3, during a crisis, the public, fearing bankruptcy, dumps 'small stocks' first at bargain prices. Fama mathematically proved that investors who bear this extreme fear and 'risk of ruin' are rewarded (premium) with higher returns. **This small yet heavy discovery became the important inspiration that later led me to launch a small boat of 'small, promising individual stocks (Satellite)' to quench the investment thirst that couldn't be fully satisfied by the massive base camp (market index) or the heavy shield (SCHD).**
+* As we saw in Chapter 3, during a crisis, the public, fearing bankruptcy, dumps 'small stocks' first at bargain prices. Fama mathematically proved that investors who bear this extreme fear and 'risk of ruin' are rewarded (premium) with higher returns. **This small yet heavy discovery became the important inspiration that later led me to launch a very small-weighted 'Future Mutation R&D Lab (Satellite)' to quench the thirst for evolution that couldn't be fully satisfied by the massive Core alone.**
 
 **③ Value Factor (HML)**
 * **HML (High Minus Low)** represents the return of companies with high book-to-market ratios (Value stocks) minus the return of companies with low book-to-market ratios (Growth stocks). It mathematically proved that **'Value Stocks'**, which are traded irrationally cheap relative to their intrinsic value, significantly outperform already expensive 'Growth Stocks' over the long term.
