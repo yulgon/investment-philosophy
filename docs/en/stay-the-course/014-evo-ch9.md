@@ -22,17 +22,29 @@ excerpt: "The extreme herd market post-2023 where a shield alone could not win. 
 
 ![Spear of Momentum](/evo-ch9-cover.png)
 
-## Intro: The Blind Spot of the Shield, and the Bitter FOMO of the Post-2023 M7 Era
+## Introduction: The Blind Spot of the Shield and the Evolution of Shareholder Returns
 
-Through history, I built a perfect defense system with an index fund and SCHD. Until the bear market of 2022, this shield protected me perfectly. However, moving into **2023 and beyond**, the stock market I faced in real-world investing completely destroyed my common sense.
+Through history, I built a perfect defense system: VOO (S&P 500 Index Fund) and SCHD (Value Shield). Until the bear market of 2022, this shield protected me flawlessly. However, as we entered **2023 and beyond**, the stock market I faced in reality completely shattered my common sense.
 
-A very few giant Big Tech companies, the so-called **'Magnificent 7 (M7)'** like Apple, Microsoft, Nvidia, and Meta, sucked up global wealth like a black hole, armed with the AI and cloud revolution. Faced with the extreme wave of greed and upward surge emitted by this tiny handful of companies, the perfect shield **SCHD** that I cherished so much became a shackle suffocating me.
+Giant Big Tech companies like Apple, Microsoft, Nvidia, and Meta—the so-called **'Magnificent 7 (M7)'**—sucked in the world's wealth like a black hole, armed with the AI and Cloud revolution. In the face of the extreme upward waves emitted by these few companies, my beloved perfect shield, **SCHD**, was thoroughly alienated and became shackles that bound me. Why did SCHD, the 'ultimate quant machine' I praised so highly in Chapter 8, suddenly collapse?
 
-* **The Blind Spot of Value Investing:** Big Tech companies like Amazon and Meta chose to reinvest astronomically in AI and data centers rather than distributing money as dividends. Even for Apple, which does pay dividends, its stock price rose so much that its 'dividend yield' plummeted.
-* Consequently, SCHD's strict 4-step fundamental audition expelled all the great M7 Big Tech companies that dominated the post-2023 era from my portfolio.
+The answer lay in the **'evolution of the shareholder return paradigm—a change in environment'**.
 
-While the market index flew into space riding Nvidia, my account hovered in place, creating a terrible sense of FOMO.
-*"No matter how strong your shield is, in an era where enemies are flying around with spears, if you only defend, your mentality will eventually wither and die."* I had to bitterly admit this cruel reality through actual investing. This was the crucial turning point when I abandoned my defense-only strategy, combined an attacker (spear), and **began to complete my own full-fledged 'Trinity' investment philosophy**.
+1. **Evolution from Dividends to Buybacks:** In past traditional industries, when a company reached maturity, it was natural to reduce investment and increase dividends. But modern Big Tech companies are different. Dividends create significant financial rigidity for a company because once raised, they are very hard to cut. On the other hand, 'Share Buybacks (and burning)' offer flexible decision-making while directly increasing EPS (Earnings Per Share) by reducing the number of outstanding shares. Big Techs chose to boost shareholder value through flexible and destructive share buybacks instead of rigid dividends.
+2. **The AI Revolution and the Swamp of Infinite CapEx:** To make matters worse, the AI revolution erupted. Even though the technology had matured, an era arrived where Big Techs had to pour astronomical Capital Expenditures (CapEx) into data centers and AI chipsets just to survive. As massive capital was sucked into reinvestment, the traditional 'dividend momentum' completely vanished.
+
+As a result, in this new environment where the trend of shareholder returns evolved from dividends to share buybacks, SCHD's logic of strictly filtering companies solely based on 'dividend metrics' revealed a severe structural limitation (blind spot). SCHD's audition completely kicked out the great M7 companies that dominated the post-2023 era from my portfolio. From the perspective of evolutionary theory, the environment had rapidly changed, but by stubbornly sticking to the past survival laws (dividends), it was on the verge of being eliminated.
+
+### Yet, Why I Do Not Abandon SCHD
+
+Then why do I continue to invest in SCHD without abandoning it, even though it stumbled in the changed environment?
+Because the environment of the investment ecosystem always **cycles**. Right now is a period of expansion dominated by endless growth and share buybacks, but what if a harsh winter of massive economic recession or severe inflation strikes again? In that era of fear, when growth breaks and buybacks halt, the **'deterministic cash flow (dividends)'** piling up steadily in my account becomes the ultimate shield preventing my mentality from collapsing.
+
+A shield does not exist to stab the enemy to death in a war (to generate high returns), but to block critical hits and increase survivability so that I am not kicked out of the market.
+
+However, holding only a shield (SCHD) was going to make me a pauper. While VOO (the market index) was flying into space riding Nvidia, my account, focused solely on defense, was hovering in place, forcing me to endure terrible FOMO (Fear Of Missing Out). *"No matter how sturdy the shield is, in an era where enemies are flying around with spears, if I only play defense, my mentality will eventually dry up and die."*
+
+I had to painfully acknowledge this cruel reality through actual investing. This period was the key turning point where, to complement my purely defensive strategy, I began to combine an extreme attacker (spear) that dominates momentum, **completing my own earnest 'Trinity' investment philosophy**.
 
 ---
 
