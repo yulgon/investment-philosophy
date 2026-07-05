@@ -155,10 +155,18 @@ The numerous empty chapters from 11 to 98 are the blank spaces left for the hars
 
 "When the market shakes, what brings me back to my principles?"
 My first answer to this profound question was the **'Antifragile Core (VOO, SCHD, SPMO)'** that I fiercely built up throughout Part 1.
-To prevent a frail human like me from being swept away by the massive waves of the market, the journey of Part 1 was the process of assembling a heavy raft to tie my ankles firmly.
+The journey of Part 1 was the process of piecing together a heavy raft to tie my ankles firmly, so that frail human like me wouldn't be swept away by the massive waves of the market.
 
-However, no matter how sturdy a raft you build, the voyage is by no means over.
-Perhaps a much more painful and greater task remains than building the raft. It is directly crossing the endless macroeconomic storm on that raft.
+**However, there is a painful limitation hidden within this raft: the trap of 'Look-ahead bias'.**
+The perfect rules of SCHD that we praised (10 years of dividend growth, debt ratios, etc.) are actually filters carved out retrospectively *after* witnessing the bankruptcy of bank stocks during the 2008 financial crisis (launched in 2011), asking "How could we have avoided the 2008 crash?" using past data. It will protect against past crises, but no one knows if this shield will work against completely new types of crises in the future.
+
+Let's compare this to the world of System Software. A **'Governor'** responsible for system optimization looks at a 'filter window' containing recent past states to determine its next action. This technique relies on the premise of **'Time Locality'**, assuming that *"the near future will flow similarly to the recent past."*
+But what happens if a sudden and extreme load (change) hits the system, breaking this time locality? The governor, constantly looking backward, fails to adapt to the change, resulting in massive performance degradation and power loss.
+
+Our factor cores (ETFs) are also massive 'governors' looking at past indicators. They work perfectly when the gentle waves within the market (time locality) are maintained. But what if extreme macroeconomic environmental changes strike from the outside—such as **'hyperinflation', 'the collapse of dollar hegemony', or 'ruinous interest rate hikes'**? Our raft might be smashed to pieces.
+
+No matter how sturdy a raft you've built, the voyage is never over.
+Perhaps a much more painful and greater task remains than building the raft. It is the task of getting on that raft and directly crossing the endless macroeconomic storm on that raft.
 
 * How will I control the 'frail emotions' gripping the raft (portfolio) in the face of the terror of crashes and the greed of FOMO?
 * To not lose my life to the market every day, how will I root a mechanical and regular 'automatic buying (DCA & KCA)' system in my daily routine?

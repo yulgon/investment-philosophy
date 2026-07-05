@@ -126,6 +126,19 @@ This is a true **survival chameleon system** that transcends exchanges and secto
 
 ---
 
+## 4. The Fatal Flaw of the Spear: Why the '3 Core' is Absolutely Necessary
+
+Although SPMO seems like a perfect chameleon, under the cold gaze of a professional investor, it has two fatal weaknesses (imperfections).
+
+First is the **'Momentum Crash'**. SPMO rebalances only twice a year (March, September). If a sudden market crash or an abrupt regime shift completely flips the market paradigm right after a rebalancing, this suddenly dumbed-down chameleon is forced to hold onto the already-broken past leading stocks and take a brutal beating for up to six months until the next rebalance. At inflection points where trends change sharply, it is a double-edged sword that can melt your account at a terrifying speed.
+
+Second is **'Portfolio Overlap'**. As of 2026, the top holdings of VOO (S&P 500) and the top holdings of SPMO (Big Tech) are almost identical. Outwardly, it looks like you are holding two different weapons, but in reality, you are just holding an 'S&P 500 with a freakishly high Big Tech weighting' while paying higher fees.
+
+**Paradoxically, it is exactly because of this fatal imperfection that my 'Antifragile 3 Core' system is complete.**
+When a momentum crash occurs, breaking the blade of SPMO and shaking even VOO, the last bastion that will absorb the shock with its entire body and protect my mentality is the heavy shield, **SCHD (Value/Dividend)**. The mutual complementarity where the blind spot of one weapon is perfectly covered by another—this is the real reason I combined these three pillars.
+
+---
+
 ## Conclusion & Next Chapter Preview: How to Bind Them into a Single System?
 
 Over the past 9 chapters, I have studied 60 years of financial history, experienced bitter failures from 2010 to 2011, and the awakening of the 2020s, ultimately obtaining all three great weapons for survival. 
