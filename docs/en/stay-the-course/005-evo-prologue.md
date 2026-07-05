@@ -63,7 +63,7 @@ By digging into the past 60 years of struggle, the three weapons I have equipped
 2. **SCHD**, the titanium shield designed to exploit the masses' **'Fear (Overselling)'** and extract solid cash flow.
 3. **SPMO**, the spear of attack that mechanically rides the masses' **'Greed (FOMO)'** to explode returns.
 
-This series is the fierce survival record of an ordinary individual investor who rolled and broke in the market since 2010, obtained by unearthing 60 years of investment history. Let's explore how financial science perfected this **'Trinity Core'** weapon system to defend against human nature.
+This series is the fierce survival record of an ordinary individual investor who rolled and broke in the market since 2010, obtained by unearthing 60 years of investment history. Let's explore how financial science perfected this **'Factor Core'** weapon system to defend against human nature.
 
 Why we cannot remain traditional Bogleheads and must take one step further to 'evolve'.
 From here, the magnificent evolution of investment series begins.

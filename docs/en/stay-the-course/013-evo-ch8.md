@@ -95,7 +95,7 @@ During this period, the value investing (shield) that was believed to be perfect
 
 The bitter lesson that defense alone cannot control the greed of this crazy real-world market. Ultimately, perfect mental control becomes possible only by unsealing the most dangerous yet most powerful factor, Mark Carhart's **'Spear of Greed (Momentum)'**, which we learned about earlier in Chapter 6.
 
-This extreme herd market post-2023 was the crucial period when I myself realized the limits of the shield (SCHD), felt the desperate need for an attacker (spear), and actively **refined my own full-fledged 'Trinity' investment philosophy**.
+This extreme herd market post-2023 was the crucial period when I myself realized the limits of the shield (SCHD), felt the desperate need for an attacker (spear), and actively **refined my own full-fledged 'Factor Core' investment philosophy**.
 
 The story of the final Alpha engine, **SPMO**, which will shatter the investor's sense of alienation amidst the monopoly of the M7, continues in [Chapter 9. The Sharpest Spear Controlling the Herd: SPMO].
 

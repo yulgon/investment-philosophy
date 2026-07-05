@@ -46,7 +46,7 @@ However, holding only a shield (SCHD) was going to make me a pauper. While VOO (
 
 I had to painfully acknowledge this cruel reality through actual investing. However, I didn't simply intend to chase blind returns out of FOMO. What I truly needed was a **chameleon-like weapon capable of adapting more swiftly than anyone else to unpredictably changing industry trends and new market environments.**
 
-This period was the key turning point where, to complement my purely defensive strategy, I began to combine an attacker (spear) that adapts most astutely to the evolving environment, **completing my own earnest 'Trinity' investment philosophy**.
+This period was the key turning point where, to complement my purely defensive strategy, I began to combine an attacker (spear) that adapts most astutely to the evolving environment, **completing my own earnest 'Factor Core' investment philosophy**.
 
 ---
 
