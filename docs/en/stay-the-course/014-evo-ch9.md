@@ -44,7 +44,9 @@ A shield does not exist to stab the enemy to death in a war (to generate high re
 
 However, holding only a shield (SCHD) was going to make me a pauper. While VOO (the market index) was flying into space riding Nvidia, my account, focused solely on defense, was hovering in place, forcing me to endure terrible FOMO (Fear Of Missing Out). *"No matter how sturdy the shield is, in an era where enemies are flying around with spears, if I only play defense, my mentality will eventually dry up and die."*
 
-I had to painfully acknowledge this cruel reality through actual investing. This period was the key turning point where, to complement my purely defensive strategy, I began to combine an extreme attacker (spear) that dominates momentum, **completing my own earnest 'Trinity' investment philosophy**.
+I had to painfully acknowledge this cruel reality through actual investing. However, I didn't simply intend to chase blind returns out of FOMO. What I truly needed was a **chameleon-like weapon capable of adapting more swiftly than anyone else to unpredictably changing industry trends and new market environments.**
+
+This period was the key turning point where, to complement my purely defensive strategy, I began to combine an attacker (spear) that adapts most astutely to the evolving environment, **completing my own earnest 'Trinity' investment philosophy**.
 
 ---
 
