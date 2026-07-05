@@ -68,9 +68,9 @@ The rocket engine fuel that launches momentum is none other than **human's stick
 Carhart's research perfectly filled the void in my investment philosophy.
 *"When the market loses its reason and runs madly, do not hide behind the shield (Value) trying to teach the market a lesson. Temporarily put down the stubbornness regarding fundamentals, mechanically climb onto the back of that running horse of madness, and suck the sweet nectar until the end!"*
 
-This great realization later became the unshakable backbone allowing me to forge the **final puzzle of my portfolio and the sharpest spear of attack**. (How this momentum factor actually materialized into a tangible weapon in my account will be covered in great detail later in **Chapter 9**.)
+This great realization later became the unshakable backbone allowing me to forge the **final puzzle of my portfolio and the sharpest spear of attack**. The true terror of the Momentum factor lies not simply in its high returns, but in its complete lack of 'loyalty' or 'stubbornness' toward any specific industry or stock. When the environment changes, it ruthlessly abandons the tech stocks it praised yesterday and switches to energy or healthcare—making it a **'fierce survival chameleon'**. (How this momentum factor actually materialized into **[a chameleon-like weapon that adapts most astutely (SPMO)](/en/stay-the-course/014-evo-ch9)** in my account will be covered in great detail later in **Chapter 9**.)
 
-Through history, following the shield (Value) that feeds and grows on human 'fear', I had finally acquired the spear (Momentum) that flies riding on human 'greed'.
+Through history, following the heavy shield (Value) that feeds and grows on human 'fear', I had finally acquired the spear (Momentum) that adapts most astutely to environmental changes and flies riding on human 'greed'.
 
 ---
 
