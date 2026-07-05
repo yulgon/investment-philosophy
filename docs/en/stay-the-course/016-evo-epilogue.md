@@ -97,23 +97,26 @@ However, there is just one seed I hope remains in your heart after you lazily cl
 
 ## 3. A Purpose-Driven Life and 'Stay the Course'
 
-Someone once asked me, "Why do you invest like that?"
-I once received a massive shock, as if hit by a hammer, reading a great investor's phrase: **'One Billion Dollar Donation'**.
-It wasn't a secular goal of 'making a fortune of a billion dollars'.
-It made me painfully realize that while there are people returning unimaginable wealth to society, I was waking up every morning rejoicing or despairing over last night's US stock market gains, keeping my perspective pitifully narrow.
+Someone once asked me, "Why do you invest so fiercely?"
+In the past, driven solely by the desire to add another digit to my account, I used to wake up every morning rejoicing or despairing over last night's US stock market gains.
 
-Since that day, I started thinking about the true 'purpose' of investing rather than just 'money' stamped as numbers.
-And I deeply engraved another great phrase by John Bogle as the compass of my investment life.
+Then, I received a massive shock, as if hit by a hammer, reading a great investor's phrase: **'One Billion Dollar Donation'**.
+While someone was dreaming of a massive give-back that could change the world at the end of their investment journey, I was so buried in numbers that I had completely forgotten the true purpose of *why* I was trying to make money.
+
+Of course, not all of us need to become great figures who donate a billion dollars.
+A warm and modest financial cushion to protect our loved ones, the ability to buy a secure home, or simply the 'independent freedom' to choose the life we want without being swayed by money—these everyday goals are already more than great enough as an investment purpose.
+What truly mattered was not the 'money' stamped as numbers itself, but asking myself what the true 'Purpose' of my investment was that would support me.
+
+And along with that, I deeply engraved another great phrase by John Bogle as the compass of my investment life.
 
 **"Stay the Course."**
 
-Now, I understand this phrase completely differently than before.
-It by no means translates to 'the world won't change, so be stubborn'.
-It definitely doesn't arrogantly mean 'the principles and portfolio I set will be forever right'.
+This great phrase by John Bogle is widely known to mean "Never sell even if the market shakes, and stubbornly stick to your portfolio."
+However, I embraced this phrase in a slightly different way, uniquely my own.
+It does not arrogantly mean to forever stick to my shallow stubbornness or blind faith, but to maintain the grand course heading toward my 'Purpose'.
 
-Never be swayed by the shallow emotions created by the market and news,
-but if better evidence and logic emerge to prove me wrong, have the true courage to gladly shatter my old thoughts and accept new principles at any time.
-That is the true meaning of **'Stay the Course'** that I have come to realize.
+As long as I do not lose that grand course, I will never be swayed by the shallow emotions created by the market and news. Yet, if better logic emerges to prove me wrong, I will have the true courage to willingly shatter my old raft and transfer to a stronger ship.
+That is the newly defined **'Stay the Course'** as an evolving investor.
 
 Perhaps the title of this writing is grandly named *Evolution of Investment*,
 but what actually evolved during this past journey wasn't the investment method I chose, but **my very mindset toward the world and money itself**.
