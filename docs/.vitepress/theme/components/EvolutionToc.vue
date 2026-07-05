@@ -13,7 +13,7 @@ const chapters = [
   { path: '/stay-the-course/012-evo-ch7', title: '7장: 광기의 함정과 멘탈 (스마트 베타)' },
   { path: '/stay-the-course/013-evo-ch8', title: '8장: SCHD의 탄생 (현금흐름 방패)' },
   { path: '/stay-the-course/014-evo-ch9', title: '9장: 빅테크와 SPMO (가장 날카로운 창)' },
-  { path: '/stay-the-course/015-evo-ch10', title: '10장: 진화는 계속된다 (나만의 안티프래질 포트폴리오)' },
+  { path: '/stay-the-course/015-evo-ch10', title: '10장: 진화는 계속된다 (나만의 3-Core 생존 포트폴리오)' },
   { path: '/stay-the-course/016-evo-epilogue', title: '99장: 에필로그 (투자는 예측이 아니라 나를 다스리는 시스템이다)' }
 ]
 

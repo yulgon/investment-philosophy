@@ -134,7 +134,7 @@ First is the **'Momentum Crash'**. SPMO rebalances only twice a year (March, Sep
 
 Second is **'Portfolio Overlap'**. As of 2026, the top holdings of VOO (S&P 500) and the top holdings of SPMO (Big Tech) are almost identical. Outwardly, it looks like you are holding two different weapons, but in reality, you are just holding an 'S&P 500 with a freakishly high Big Tech weighting' while paying higher fees.
 
-**Paradoxically, it is exactly because of this fatal imperfection that my 'Antifragile 3 Core' system is complete.**
+**Paradoxically, it is exactly because of this fatal imperfection that my '3-Core' system is complete.**
 When a momentum crash occurs, breaking the blade of SPMO and shaking even VOO, the last bastion that will absorb the shock with its entire body and protect my mentality is the heavy shield, **SCHD (Value/Dividend)**. The mutual complementarity where the blind spot of one weapon is perfectly covered by another—this is the real reason I combined these three pillars.
 
 ---
@@ -153,6 +153,6 @@ These weapons are the blood and sweat of Nobel laureates, and a great legacy for
 Now, only one final task remains for me.
 **How must I fuse these three massive pillars to make them operate as a perfect 'single portfolio' unswayed by shallow emotions?**
 
-Even if countless finance books say it's wrong, this is the conclusion I reached in actual combat by grinding my money and mentality. The **'most perfect evolutionary form to date'** that embodies the history of investment into my life will finally be revealed in the next chapter: **[Chapter 10. Evolution Continues: Building My 'Antifragile' Survival Portfolio]**.
+Even if countless finance books say it's wrong, this is the conclusion I reached in actual combat by grinding my money and mentality. The **'most perfect evolutionary form to date'** that embodies the history of investment into my life will finally be revealed in the next chapter: **[Chapter 10. Evolution Continues: Building My 3-Core Survival Portfolio]**.
 
 <EvolutionTocEn />

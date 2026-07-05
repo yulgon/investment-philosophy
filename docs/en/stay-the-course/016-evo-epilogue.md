@@ -154,7 +154,7 @@ The numerous empty chapters from 11 to 98 are the blank spaces left for the hars
 ## 5. The End of Part 1, and the 'Macroeconomic Survival' Across the Storm
 
 "When the market shakes, what brings me back to my principles?"
-My first answer to this profound question was the **'Antifragile Core (VOO, SCHD, SPMO)'** that I fiercely built up throughout Part 1.
+My first answer to this profound question was the **'Evolutionary Core (VOO, SCHD, SPMO)'** that I fiercely built up throughout Part 1.
 The journey of Part 1 was the process of piecing together a heavy raft to tie my ankles firmly, so that frail human like me wouldn't be swept away by the massive waves of the market.
 
 **However, there is a painful limitation hidden within this raft: the trap of 'Look-ahead bias'.**
