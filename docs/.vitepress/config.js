@@ -126,7 +126,8 @@ export default withMermaid(
               {
                 text: '전략 실천과 기록',
                 items: [
-                  { text: '📜 나의 투자 여정과 기록 (History)', link: '/strategy/history' }
+                  { text: '📜 나의 투자 여정과 기록 (History)', link: '/strategy/history' },
+                  { text: '🔥 Rule of 60 바벨 전략 (2Q26)', link: '/strategy/rule-of-60-barbell' }
                 ]
               }
             ],
