@@ -334,10 +334,10 @@ const t = computed(() => {
     vixTrend: isEn ? 'VIX Trend' : 'VIX 변동성 추이',
     fxTrend: isEn ? 'USD/KRW Trend' : '원/달러 환율 추이',
     dxyTrend: isEn ? 'DXY Trend' : '달러 인덱스(DXY) 추이',
-    longTermTitle: isEn ? 'Long-Term Asset Trajectory (2021-Present)' : '장기 자산 궤적 (2021년~현재)',
-    sp500Chart: isEn ? 'S&P 500 Chart (2021-Present)' : 'S&P 500 차트 (2021년~현재)',
-    kospiChart: isEn ? 'KOSPI Chart (2021-Present)' : 'KOSPI 차트 (2021년~현재)',
-    relativeChart: isEn ? 'S&P 500 vs KOSPI (USD, 2021=100)' : 'S&P500 vs KOSPI 상대 비교 (USD 기준, 2021=100)',
+    longTermTitle: isEn ? 'Long-Term Asset Trajectory (Last 1200 Trading Days)' : '장기 자산 궤적 (최근 1200 거래일 기준)',
+    sp500Chart: isEn ? 'S&P 500 Chart' : 'S&P 500 차트',
+    kospiChart: isEn ? 'KOSPI Chart' : 'KOSPI 차트',
+    relativeChart: isEn ? 'S&P 500 vs KOSPI (USD, Relative)' : 'S&P500 vs KOSPI 상대 비교 (USD 기준)',
     longTermFx: isEn ? 'Long-Term USD/KRW (Monthly)' : '원/달러 환율 장기 추이 (월간)',
     longTermYields: isEn ? 'Long-Term US Yields (Monthly)' : '미 국채 금리 장기 추이 (월간)'
   }
