@@ -173,9 +173,12 @@ def fetch_exchange_rates():
         return {"usd_krw": 1350.0, "dxy": 105.0, "history": []}
 
 def fetch_kca_indices(exchange_rates_history, all_treasury_history):
-    import pandas as pd
     url_gspc = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1d&range=1mo"
     url_ks11 = "https://query1.finance.yahoo.com/v8/finance/chart/^KS11?interval=1d&range=1mo"
+    
+    url_gspc_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?interval=1mo&range=5y"
+    url_ks11_mo = "https://query1.finance.yahoo.com/v8/finance/chart/^KS11?interval=1mo&range=5y"
+    url_krw_mo = "https://query1.finance.yahoo.com/v8/finance/chart/KRW=X?interval=1mo&range=5y"
     
     krw_map_latest = {item["date"]: item["usd_krw"] for item in exchange_rates_history}
     
@@ -190,27 +193,6 @@ def fetch_kca_indices(exchange_rates_history, all_treasury_history):
             gmtoffset = result['meta'].get('gmtoffset', 0)
             valid_data = [(ts + gmtoffset, cp) for ts, cp in zip(timestamps, closes) if cp is not None]
             return {datetime.datetime.utcfromtimestamp(ts).strftime(fmt): round(cp, 2) for ts, cp in valid_data[-count:]}
-
-    def fetch_daily_10y_df(ticker):
-        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?interval=1d&range=10y"
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        try:
-            with urllib.request.urlopen(req) as response:
-                data = json.loads(response.read())
-                result = data['chart']['result'][0]
-                closes = result['indicators']['quote'][0]['close']
-                timestamps = result['timestamp']
-                
-                df = pd.DataFrame({'timestamp': timestamps, 'close': closes})
-                # Convert timestamps safely (accounting for local timezone if needed, here just utc to string is fine)
-                df['date'] = pd.to_datetime(df['timestamp'], unit='s', utc=True).dt.strftime('%Y-%m-%d')
-                df = df.dropna(subset=['close'])
-                df = df.set_index('date')
-                df['1200ma'] = df['close'].rolling(window=1200).mean()
-                return df
-        except Exception as e:
-            print(f"Error fetching 10y data for {ticker}: {e}")
-            return pd.DataFrame()
 
     try:
         # Latest daily values
@@ -228,66 +210,47 @@ def fetch_kca_indices(exchange_rates_history, all_treasury_history):
             "ks11_usd": round(last_ks11_d / last_krw_d, 4) if last_krw_d > 0 else 0
         }
         
-        # 10-year daily values to compute 1200MA, downsampled to monthly
-        gspc_df = fetch_daily_10y_df('^GSPC')
-        ks11_df = fetch_daily_10y_df('^KS11')
-        krw_df = fetch_daily_10y_df('KRW=X')
+        # 5-year historical values (rolling 60 months)
+        h_gspc_mo = get_history(url_gspc_mo, fmt='%Y-%m', count=60)
+        h_ks11_mo = get_history(url_ks11_mo, fmt='%Y-%m', count=60)
+        h_krw_mo = get_history(url_krw_mo, fmt='%Y-%m', count=60)
+        
+        # Monthly Treasury yields from our full daily history
+        h_tnx_mo = {}
+        h_irx_mo = {}
+        for d in sorted(all_treasury_history.keys()):
+            month = d[:7]
+            h_tnx_mo[month] = all_treasury_history[d]["ten_year"]
+            h_irx_mo[month] = all_treasury_history[d]["two_year"]
+        
+        # Take all dates from the 5y monthly fetch (approx 60 dates)
+        dates_mo = sorted(list(set(h_gspc_mo.keys()) | set(h_ks11_mo.keys()) | set(h_krw_mo.keys())))
         
         history = []
-        if not gspc_df.empty and not ks11_df.empty and not krw_df.empty:
-            df = pd.DataFrame({
-                'gspc_usd': gspc_df['close'],
-                'gspc_1200ma_usd': gspc_df['1200ma'],
-                'ks11_krw': ks11_df['close'],
-                'ks11_1200ma_krw': ks11_df['1200ma'],
-                'usd_krw': krw_df['close']
+        
+        lg = h_gspc_mo.get(dates_mo[0], 5000.0) if dates_mo and h_gspc_mo else 5000.0
+        lk = h_ks11_mo.get(dates_mo[0], 2500.0) if dates_mo and h_ks11_mo else 2500.0
+        lx = h_krw_mo.get(dates_mo[0], 1350.0) if dates_mo and h_krw_mo else 1350.0
+        ltnx = h_tnx_mo.get(dates_mo[0], 4.0) if dates_mo and h_tnx_mo else 4.0
+        lirx = h_irx_mo.get(dates_mo[0], 4.0) if dates_mo and h_irx_mo else 4.0
+        
+        for d in dates_mo:
+            if d in h_gspc_mo: lg = h_gspc_mo[d]
+            if d in h_ks11_mo: lk = h_ks11_mo[d]
+            if d in h_krw_mo: lx = h_krw_mo[d]
+            if d in h_tnx_mo: ltnx = h_tnx_mo[d]
+            if d in h_irx_mo: lirx = h_irx_mo[d]
+            
+            history.append({
+                "date": d,
+                "gspc_usd": round(lg, 2),
+                "gspc_krw": round(lg * lx, 2),
+                "ks11_krw": round(lk, 2),
+                "ks11_usd": round(lk / lx, 4) if lx > 0 else 0,
+                "usd_krw": round(lx, 2),
+                "ten_year": round(ltnx, 2),
+                "two_year": round(lirx, 2)
             })
-            
-            # Forward fill missing dates
-            df = df.ffill()
-            
-            # Drop rows where 1200MA is NaN (this will leave about ~5.2 years of data from the last 10 years)
-            df = df.dropna(subset=['gspc_1200ma_usd', 'ks11_1200ma_krw'])
-            
-            # Resample to monthly (last day of month)
-            df.index = pd.to_datetime(df.index)
-            df_monthly = df.resample('ME').last()
-            
-            # Monthly Treasury yields from our full daily history
-            h_tnx_mo = {}
-            h_irx_mo = {}
-            for d in sorted(all_treasury_history.keys()):
-                month = d[:7] # YYYY-MM
-                h_tnx_mo[month] = all_treasury_history[d]["ten_year"]
-                h_irx_mo[month] = all_treasury_history[d]["two_year"]
-            
-            # Build history list
-            for idx, row in df_monthly.iterrows():
-                d_str = idx.strftime('%Y-%m') # YYYY-MM
-                
-                ltnx = h_tnx_mo.get(d_str, 4.0)
-                lirx = h_irx_mo.get(d_str, 4.0)
-                
-                g_usd = row['gspc_usd']
-                g_1200ma = row['gspc_1200ma_usd']
-                k_krw = row['ks11_krw']
-                k_1200ma = row['ks11_1200ma_krw']
-                u_krw = row['usd_krw']
-                
-                history.append({
-                    "date": d_str,
-                    "gspc_usd": round(g_usd, 2),
-                    "gspc_1200ma_usd": round(g_1200ma, 2),
-                    "gspc_krw": round(g_usd * u_krw, 2),
-                    "gspc_1200ma_krw": round(g_1200ma * u_krw, 2),
-                    "ks11_krw": round(k_krw, 2),
-                    "ks11_1200ma_krw": round(k_1200ma, 2),
-                    "ks11_usd": round(k_krw / u_krw, 4) if u_krw > 0 else 0,
-                    "ks11_1200ma_usd": round(k_1200ma / u_krw, 4) if u_krw > 0 else 0,
-                    "usd_krw": round(u_krw, 2),
-                    "ten_year": round(ltnx, 2),
-                    "two_year": round(lirx, 2)
-                })
             
         return {
             "latest": latest,
