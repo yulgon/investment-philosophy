@@ -52,26 +52,15 @@ This is the original model designed based on US tax benefits (401k, HSA, IRA, et
 ### Figure 2. Korean Localized Investing Priority
 This is a flowchart perfectly localizing the original philosophy (emergency fund -> paying off high-interest debt -> maximizing tax benefits -> student loans -> mortgage vs general investing) to the Korean situation (3 major tax-advantaged accounts, student loans, mortgages).
 
-```mermaid
-graph TD
-    A["Surplus Funds Arise"] --> B{" Are monthly living expenses <br> (credit cards/utilities, etc.) secured? "}
-    B -- No --> C["Safely deposit in <br>CMA/MMF/parking account"]
-    B -- Yes --> D{" Is there high-interest <br> debt over 5% per year? "}
-    D -- Yes --> E["Pay off high-interest debt first<br>Guaranteed return"]
-    E --> F
-    D -- No --> F{" Have you filled the <br> Pension Savings/IRP tax deduction limit? "}
-    F -- No --> G["Pay into pension accounts first<br>up to 9 million KRW/year limit"]
-    G --> H
-    F -- Yes --> H{" Have you filled the <br> ISA account annual limit? "}
-    H -- No --> I["Pay into ISA account<br>to maximize tax savings"]
-    I --> K
-    H -- Yes --> K{" Do you have your own <br> student loans remaining? "}
-    K -- Yes --> L["Pay off remaining student loans first<br>(Psychological stability)"]
-    L --> M
-    K -- No --> M["General taxable account<br>Direct investing and additional asset allocation"]
-    M -.-> N{" What about early repayment of <br> low-interest debt (mortgages, etc.)? "}
-    N -- Not Recommended --> O["Hedge inflation and<br>enjoy investment compounding effects"]
-```
+<ol class="priority-flow" aria-label="Korean localized investing priority">
+  <li><strong>Secure this month’s living expenses</strong><span>If they are short, deposit cash in a CMA, MMF, or parking account first.</span></li>
+  <li><strong>Repay debt above 5% interest</strong><span>If there is none, continue to the next step.</span></li>
+  <li><strong>Fill the Pension Savings and IRP tax-deduction limit</strong><span>Contribute up to the annual KRW 9 million limit first.</span></li>
+  <li><strong>Fill the annual ISA limit</strong><span>Use tax deferral and other available tax benefits.</span></li>
+  <li><strong>Repay your own student loans</strong><span>Complete financial and psychological independence.</span></li>
+  <li><strong>Invest through a taxable account</strong><span>Use direct investing and additional asset allocation.</span></li>
+  <li><strong>Evaluate low-interest, long-term debt separately</strong><span>Compare early repayment with inflation hedging and the opportunity cost of long-term compounding.</span></li>
+</ol>
 
 #### Core Strategies by Priority
 1. **Monthly living expenses account (CMA/MMF/Parking Account)**: First, secure essential living expenses such as credit card bills, apartment maintenance fees, utility bills, communication bills, and food expenses to be paid this month as cash in a CMA/MMF/parking account. This is the minimum safety net to prevent situations where funds are tied up in investments, blocking the cash flow essential for daily life.

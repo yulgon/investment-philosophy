@@ -1,8 +1,15 @@
 <template>
   <div class="market-dashboard-wrapper">
     <!-- Pilgrimage Banner -->
-    <div class="market-banner-btn" :class="error ? 'theme-error' : themeData.cssClass" @click="isExpanded = !isExpanded">
-      <canvas v-show="!loading && !error" ref="canvasRef" class="banner-canvas"></canvas>
+    <button
+      type="button"
+      class="market-banner-btn"
+      :class="error ? 'theme-error' : themeData.cssClass"
+      :aria-expanded="isExpanded"
+      aria-controls="market-dashboard-details"
+      @click="isExpanded = !isExpanded"
+    >
+      <canvas v-show="!loading && !error" ref="canvasRef" class="banner-canvas" aria-hidden="true"></canvas>
       <div class="banner-left">
         <span class="theme-icon">{{ error ? '⚠️' : (loading ? '🔄' : themeData.icon) }}</span>
         <div class="banner-text-group">
@@ -13,20 +20,21 @@
       <div class="banner-right">
         {{ isExpanded ? t.collapse : t.expand }}
       </div>
-    </div>
+    </button>
 
     <!-- Expanded content -->
-    <div v-show="isExpanded" class="dashboard-expanded-area">
-      <div v-if="loading" class="loading">{{ t.syncingSentiment }}</div>
-      <div v-else-if="error" class="error">{{ error }}</div>
+    <div v-if="isExpanded" id="market-dashboard-details" class="dashboard-expanded-area">
+      <div v-if="loading" class="loading" role="status" aria-live="polite">{{ t.syncingSentiment }}</div>
+      <div v-else-if="error" class="error" role="alert">{{ error }}</div>
       <div v-else class="market-dashboard" :class="stateClass">
         <div class="dashboard-header">
           <p class="last-updated">{{ t.lastUpdated }}{{ formattedDate }}</p>
           <div class="data-sources">
-            <span class="source-item"><strong>{{ t.srcIndices }}</strong> Yahoo Finance</span>
-            <span class="source-item"><strong>{{ t.srcFG }}</strong> CNN Business</span>
-            <span class="source-item"><strong>{{ t.srcYields }}</strong> U.S. Department of the Treasury</span>
-            <span class="source-item"><strong>{{ t.srcFedRate }}</strong> Federal Reserve (EFFR)</span>
+            <a class="source-item" href="https://finance.yahoo.com/" target="_blank" rel="noopener noreferrer"><strong>{{ t.srcIndices }}</strong> Yahoo Finance</a>
+            <a class="source-item" href="https://www.cnn.com/markets/fear-and-greed" target="_blank" rel="noopener noreferrer"><strong>{{ t.srcFG }}</strong> CNN Business</a>
+            <a class="source-item" href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates" target="_blank" rel="noopener noreferrer"><strong>{{ t.srcYields }}</strong> U.S. Treasury</a>
+            <a class="source-item" href="https://www.newyorkfed.org/markets/reference-rates/effr" target="_blank" rel="noopener noreferrer"><strong>{{ t.srcFedRate }}</strong> Federal Reserve (EFFR)</a>
+            <a class="source-item source-policy" :href="methodologyLink">{{ t.methodology }}</a>
           </div>
         </div>
 
@@ -43,7 +51,7 @@
           </div>
           
           <div class="premium-gauge-container">
-            <svg viewBox="0 0 200 110" class="premium-gauge-svg">
+            <svg viewBox="0 0 200 110" class="premium-gauge-svg" role="img" :aria-label="`${t.fgTitle}: ${marketData.fear_and_greed.score}, ${fgRatingString}`">
               <defs>
                 <filter id="glow-active" x="-20%" y="-20%" width="140%" height="140%">
                   <feGaussianBlur stdDeviation="3" result="blur" />
@@ -62,11 +70,11 @@
               </defs>
 
               <!-- 5 Gauge Segments -->
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 0 ? '#db2828' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 0 ? 14 : 8" stroke-dasharray="60 500" stroke-linecap="round" :filter="activeIndex === 0 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(180 100 100)" />
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 1 ? '#f2711c' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 1 ? 14 : 8" stroke-dasharray="45 500" stroke-linecap="round" :filter="activeIndex === 1 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(225 100 100)" />
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 2 ? '#fbbd08' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 2 ? 14 : 8" stroke-dasharray="24 500" stroke-linecap="round" :filter="activeIndex === 2 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(259.2 100 100)" />
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 3 ? '#b5cc18' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 3 ? 14 : 8" stroke-dasharray="45 500" stroke-linecap="round" :filter="activeIndex === 3 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(279 100 100)" />
-              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeIndex === 4 ? '#21ba45' : 'rgba(128,128,128,0.2)'" :stroke-width="activeIndex === 4 ? 14 : 8" stroke-dasharray="65 500" stroke-linecap="round" :filter="activeIndex === 4 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(313.2 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeSegmentIndex === 0 ? '#db2828' : 'rgba(128,128,128,0.2)'" :stroke-width="activeSegmentIndex === 0 ? 14 : 8" stroke-dasharray="60 500" stroke-linecap="round" :filter="activeSegmentIndex === 0 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(180 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeSegmentIndex === 1 ? '#f2711c' : 'rgba(128,128,128,0.2)'" :stroke-width="activeSegmentIndex === 1 ? 14 : 8" stroke-dasharray="45 500" stroke-linecap="round" :filter="activeSegmentIndex === 1 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(225 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeSegmentIndex === 2 ? '#fbbd08' : 'rgba(128,128,128,0.2)'" :stroke-width="activeSegmentIndex === 2 ? 14 : 8" stroke-dasharray="24 500" stroke-linecap="round" :filter="activeSegmentIndex === 2 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(259.2 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeSegmentIndex === 3 ? '#b5cc18' : 'rgba(128,128,128,0.2)'" :stroke-width="activeSegmentIndex === 3 ? 14 : 8" stroke-dasharray="45 500" stroke-linecap="round" :filter="activeSegmentIndex === 3 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(279 100 100)" />
+              <circle cx="100" cy="100" r="80" fill="none" :stroke="activeSegmentIndex === 4 ? '#21ba45' : 'rgba(128,128,128,0.2)'" :stroke-width="activeSegmentIndex === 4 ? 14 : 8" stroke-dasharray="65 500" stroke-linecap="round" :filter="activeSegmentIndex === 4 ? 'url(#glow-active)' : ''" class="gauge-arc" transform="rotate(313.2 100 100)" />
 
               <!-- Tick marks and text placed perfectly inside the arc -->
               <text x="25" y="103" class="gauge-tick" text-anchor="middle">0</text>
@@ -264,7 +272,7 @@
 
 <script setup>
 import { useData } from 'vitepress'
-import { ref, onMounted, computed, nextTick } from 'vue'
+import { ref, onMounted, onUnmounted, computed, nextTick } from 'vue'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -308,6 +316,7 @@ const t = computed(() => {
     srcFG: isEn ? 'Fear & Greed:' : '공포와 탐욕:',
     srcYields: isEn ? 'Treasury Yields:' : '국채 금리:',
     srcFedRate: isEn ? 'Fed Funds Rate:' : '기준금리:',
+    methodology: isEn ? 'Sources & methodology →' : '출처·산정 방식 →',
     fgTitle: isEn ? 'Fear & Greed Index' : '공포와 탐욕 지수',
     yieldsTitle: isEn ? 'US Treasury Yields & Fed Rate' : '미 국채 금리 및 기준금리',
     tenYear: isEn ? '10-Year' : '10년물',
@@ -345,10 +354,12 @@ const t = computed(() => {
 const error = ref(null)
 const isExpanded = ref(false)
 const canvasRef = ref(null)
+const methodologyLink = computed(() => lang.value === 'en-US' ? '/en/methodology' : '/methodology')
 let animFrameId = null
 
 function startCanvasAnimation(canvas, state) {
   if (!canvas) return
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
   const ctx = canvas.getContext('2d')
   canvas.width = canvas.offsetWidth
   canvas.height = canvas.offsetHeight
@@ -484,7 +495,7 @@ const pulseSpeed = computed(() => {
 
 onMounted(async () => {
   try {
-    const response = await fetch('/data/market-state.json?t=' + new Date().getTime())
+    const response = await fetch('/data/market-state.json', { cache: 'no-cache' })
     if (!response.ok) throw new Error('Failed to fetch market data')
     const data = await response.json()
     marketData.value = data
@@ -500,15 +511,21 @@ onMounted(async () => {
     startCanvasAnimation(canvasRef.value, data.organism_state)
   } catch (err) {
     console.error(err)
-    error.value = '데이터를 불러오지 못했습니다.'
+    error.value = lang.value === 'en-US'
+      ? 'Failed to load market data.'
+      : '데이터를 불러오지 못했습니다.'
     loading.value = false
   }
+})
+
+onUnmounted(() => {
+  if (animFrameId) cancelAnimationFrame(animFrameId)
 })
 
 const formattedDate = computed(() => {
   if (!marketData.value) return ''
   const date = new Date(marketData.value.updated_at)
-  return date.toLocaleString('ko-KR')
+  return date.toLocaleString(lang.value === 'en-US' ? 'en-US' : 'ko-KR')
 })
 
 const stateClass = computed(() => {
@@ -878,6 +895,16 @@ const longTermYieldsChartData = computed(() => {
   border-radius: 6px;
   font-size: 0.75rem;
   color: var(--vp-c-text-2);
+  text-decoration: none;
+}
+
+.source-item:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.source-policy {
+  font-weight: 700;
 }
 
 .source-item strong {
@@ -1109,6 +1136,10 @@ const longTermYieldsChartData = computed(() => {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
+.market-banner-btn:focus-visible {
+  outline: 3px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
 .banner-left {
   display: flex;
   align-items: center;
@@ -1235,5 +1266,15 @@ const longTermYieldsChartData = computed(() => {
   100% { transform: scale(2) translateY(-10px); opacity: 0.9; }
 }
 
-</style>
+@media (prefers-reduced-motion: reduce) {
+  .market-banner-btn,
+  .gauge-arc {
+    transition: none;
+  }
 
+  .market-banner-btn:hover {
+    transform: none;
+  }
+}
+
+</style>

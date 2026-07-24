@@ -262,18 +262,155 @@ html {
   box-shadow: 0 0 12px rgba(245, 197, 24, 0.4);
 }
 
-/* 무단 복사 방지: 드래그 및 텍스트 선택 금지 */
-body {
+.home-trust__links a {
+  font-weight: 600;
+}
+
+.article-policy-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 0.82rem;
+}
+
+.article-policy-links a {
+  font-weight: 600;
+}
+
+.home-trust {
+  margin-top: 2rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+.home-trust__eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--vp-c-brand-1);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.home-trust h2 {
+  margin: 0 0 0.8rem;
+  border: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.home-trust p:not(.home-trust__eyebrow) {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  line-height: 1.75;
+}
+
+.home-trust__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1rem;
+}
+
+/* Keyboard users can always see where focus is. */
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* 불펌 방지 정책: 본문 선택을 막되 필요한 상호작용 영역은 예외로 둡니다. */
+.VPContent {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
-/* 코드 블록 등 예외가 필요한 영역은 선택 허용 */
-div[class*="language-"] pre,
-code {
+
+.VPContent :where(a, button, input, textarea, select, code, pre, table, th, td),
+.VPContent :where(a, button, input, textarea, select, code, pre, table, th, td) * {
   -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
   user-select: text;
+}
+
+/* Gold remains legible on both light and dark backgrounds. */
+.VPNavBarMenuLink[href="/stay-the-course/"],
+.VPNavBarMenuLink[href="/stay-the-course"],
+.stc-back-link {
+  color: #715800 !important;
+}
+
+.dark .VPNavBarMenuLink[href="/stay-the-course/"],
+.dark .VPNavBarMenuLink[href="/stay-the-course"],
+.dark .stc-back-link {
+  color: #f5c518 !important;
+}
+
+@media (max-width: 640px) {
+  .home-trust {
+    padding: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Accessible replacement for the one large client-rendered flowchart. */
+.priority-flow {
+  display: grid;
+  gap: 0;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: priority-step;
+}
+
+.priority-flow li {
+  position: relative;
+  display: grid;
+  gap: 0.2rem;
+  margin: 0 0 0 1.2rem;
+  padding: 0.9rem 1rem 0.9rem 2.9rem;
+  border-left: 2px solid var(--vp-c-brand-soft);
+  counter-increment: priority-step;
+}
+
+.priority-flow li::before {
+  content: counter(priority-step);
+  position: absolute;
+  top: 0.85rem;
+  left: -1.05rem;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
+  font-weight: 800;
+}
+
+.priority-flow li:last-child {
+  border-left-color: transparent;
+}
+
+.priority-flow strong {
+  color: var(--vp-c-text-1);
+}
+
+.priority-flow span {
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  line-height: 1.55;
 }

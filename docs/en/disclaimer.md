@@ -8,7 +8,7 @@ Before using this website, **One Billion Dollar Donation** (hereinafter referred
 
 ## 1. Not Financial Advice
 
-All articles, data, charts, investment philosophies, and strategies provided on this Site are written **solely for informational purposes to share the author's personal experiences and records**. 
+All articles, data, charts, investment philosophies, and strategies on this Site are a record created to **share the author’s knowledge, information, and personal experience with neighbors and the wider community**.
 Nothing on this Site constitutes **professional financial advice, investment solicitation, stock recommendations, or legal/financial advice for wealth management.**
 
 ## 2. Past Performance

@@ -1,6 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
-import MarketPulseDashboard from './components/MarketPulseDashboard.vue'
 import EvolutionToc from './components/EvolutionToc.vue'
 import EvolutionTocEn from './components/EvolutionTocEn.vue'
 import Layout from './Layout.vue'
@@ -9,7 +8,6 @@ export default {
   extends: DefaultTheme,
   Layout,
   enhanceApp({ app }) {
-    app.component('MarketPulseDashboard', MarketPulseDashboard)
     app.component('EvolutionToc', EvolutionToc)
     app.component('EvolutionTocEn', EvolutionTocEn)
     
@@ -31,25 +29,30 @@ export default {
         }
       })
 
-      // 2. 우클릭 방지 (Context Menu Block)
-      window.addEventListener('contextmenu', (e) => {
-        e.preventDefault();
-      });
+      // 운영 정책: 콘텐츠의 무단 복제에 최소한의 마찰을 둡니다.
+      window.addEventListener('contextmenu', (event) => {
+        if (event.target.closest('input, textarea, select')) return
+        event.preventDefault()
+      })
 
-      // 1. 복사 시 출처 자동 삽입 (Copy Event Listener)
-      window.addEventListener('copy', (e) => {
-        const selection = window.getSelection();
-        if (!selection || selection.toString().trim() === '') return;
-        
-        e.preventDefault();
-        const originalText = selection.toString();
-        const sourceUrl = window.location.href;
-        const modifiedText = `${originalText}\n\n[출처] 원빌리언달러 도네이션\n링크: ${sourceUrl}\n※ 본 사이트의 모든 콘텐츠는 저작권법의 보호를 받으며 무단 전재, 복사, 배포를 엄격히 금지합니다.`;
-        
-        if (e.clipboardData) {
-          e.clipboardData.setData('text/plain', modifiedText);
-        }
-      });
+      // 선택이 허용된 일부 영역을 복사할 때 원문 주소를 함께 기록합니다.
+      window.addEventListener('copy', (event) => {
+        const selection = window.getSelection()
+        if (!selection || selection.toString().trim() === '') return
+
+        const selectedNode = selection.anchorNode?.parentElement
+        if (!selectedNode?.closest('.VPContent')) return
+
+        event.preventDefault()
+        const originalText = selection.toString()
+        const sourceUrl = window.location.href
+        const isEnglish = document.documentElement.lang?.startsWith('en')
+        const attribution = isEnglish
+          ? `[Source] One Billion Dollar Donation\nLink: ${sourceUrl}\nUnauthorized reproduction and distribution are prohibited.`
+          : `[출처] 원빌리언달러 도네이션\n링크: ${sourceUrl}\n무단 전재, 복사 및 배포를 금지합니다.`
+
+        event.clipboardData?.setData('text/plain', `${originalText}\n\n${attribution}`)
+      })
     }
   }
 }

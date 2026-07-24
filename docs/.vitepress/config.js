@@ -1,37 +1,70 @@
 import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid'
+import { existsSync } from 'node:fs'
+import { resolve } from 'node:path'
 
-export default withMermaid(
-  defineConfig({
+const SITE_URL = 'https://one-billion-donation.com'
+
+const outputPath = (relativePath) => {
+  if (relativePath.endsWith('index.md')) {
+    return `/${relativePath.replace(/index\.md$/, '')}`
+  }
+  return `/${relativePath.replace(/\.md$/, '.html')}`
+}
+
+const absoluteUrl = (relativePath) => `${SITE_URL}${outputPath(relativePath)}`
+
+export default defineConfig({
     base: '/',
     sitemap: {
-      hostname: 'https://one-billion-donation.com'
+      hostname: SITE_URL
     },
     head: [
       ['meta', { name: 'robots', content: 'index, follow' }],
-      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { name: 'theme-color', content: '#0f766e' }],
       ['meta', { name: 'naver-site-verification', content: 'e52fe99e70ff96372bd79bd9be9697ece2d96795' }],
-      // [TODO] 애드센스 코드를 발급받으면 아래 주석을 풀고 client ID를 변경해서 사용하세요.
-      ['script', { async: '', src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6597757677689519', crossorigin: 'anonymous' }],
-      
-      // [TODO] 구글 애널리틱스(GA4) 추적 코드를 발급받으면 아래 주석을 풀고 G-XXXXXXXXXX 를 변경해서 사용하세요.
-      ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-Z7Y0N822TN' }],
-      ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-Z7Y0N822TN');"],
-      
-      // 언어 자동 리다이렉트 스크립트 (Option A)
+      // 분석·광고 스크립트는 핵심 콘텐츠가 표시된 뒤 유휴 시간에 불러옵니다.
       ['script', {}, `
         (function() {
           if (typeof window === 'undefined') return;
-          if (!localStorage.getItem('lang-redirect-done')) {
-            localStorage.setItem('lang-redirect-done', 'true');
-            var lang = navigator.language || navigator.userLanguage;
-            if (lang && !lang.toLowerCase().startsWith('ko') && !window.location.pathname.startsWith('/en/')) {
-              window.location.href = '/en' + (window.location.pathname === '/' ? '/' : window.location.pathname);
-            }
+          var loaded = false;
+          function loadThirdParty() {
+            if (loaded) return;
+            loaded = true;
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function(){ window.dataLayer.push(arguments); };
+            window.gtag('js', new Date());
+            window.gtag('config', 'G-Z7Y0N822TN');
+
+            var analytics = document.createElement('script');
+            analytics.async = true;
+            analytics.src = 'https://www.googletagmanager.com/gtag/js?id=G-Z7Y0N822TN';
+            document.head.appendChild(analytics);
+
+            var ads = document.createElement('script');
+            ads.async = true;
+            ads.crossOrigin = 'anonymous';
+            ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6597757677689519';
+            document.head.appendChild(ads);
+          }
+          if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(loadThirdParty, { timeout: 3500 });
+          } else {
+            window.setTimeout(loadThirdParty, 2500);
           }
         })();
       `]
     ],
+    markdown: {
+      config(md) {
+        const defaultImageRenderer = md.renderer.rules.image
+          || ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
+        md.renderer.rules.image = (tokens, idx, options, env, self) => {
+          tokens[idx].attrSet('loading', 'lazy')
+          tokens[idx].attrSet('decoding', 'async')
+          return defaultImageRenderer(tokens, idx, options, env, self)
+        }
+      }
+    },
     themeConfig: {
       logo: '/logo.png',
       search: {
@@ -45,20 +78,33 @@ export default withMermaid(
       const title = pageData.frontmatter.title || pageData.title || '원빌리언달러 도네이션';
       const description = pageData.frontmatter.description || pageData.description || '투자는 과정일 뿐, 목적지는 세상에 대한 기여입니다. 원빌리언달러 기부를 향한 자산 설계 아카이브.';
 
-      // URL 계산
-      let relativePath = pageData.relativePath;
-      if (relativePath.endsWith('index.md')) {
-        relativePath = relativePath.replace(/index\.md$/, '');
-      } else {
-        relativePath = relativePath.replace(/\.md$/, '.html');
-      }
-      const url = `https://one-billion-donation.com/${relativePath}`;
+      const relativePath = pageData.relativePath;
+      const url = absoluteUrl(relativePath);
+      const isEnglish = relativePath.startsWith('en/');
+      const alternateRelativePath = isEnglish
+        ? relativePath.slice(3)
+        : `en/${relativePath}`;
+      const alternateExists = existsSync(resolve(process.cwd(), 'docs', alternateRelativePath));
 
       // 공유 이미지 (프론트매터에 지정된 이미지가 없으면 로고 사용)
       const image = pageData.frontmatter.image?.src || pageData.frontmatter.image || '/logo.png';
-      const imageUrl = image.startsWith('http') ? image : `https://one-billion-donation.com${image.startsWith('/') ? image : '/' + image}`;
+      const imageUrl = image.startsWith('http') ? image : `${SITE_URL}${image.startsWith('/') ? image : '/' + image}`;
+
+      head.push(['link', { rel: 'canonical', href: url }]);
+      head.push(['link', { rel: 'alternate', hreflang: isEnglish ? 'en-US' : 'ko-KR', href: url }]);
+      if (alternateExists) {
+        head.push(['link', {
+          rel: 'alternate',
+          hreflang: isEnglish ? 'ko-KR' : 'en-US',
+          href: absoluteUrl(alternateRelativePath)
+        }]);
+      }
+      const koreanHome = `${SITE_URL}/`;
+      head.push(['link', { rel: 'alternate', hreflang: 'x-default', href: koreanHome }]);
 
       // Open Graph 태그 주입
+      head.push(['meta', { property: 'og:locale', content: isEnglish ? 'en_US' : 'ko_KR' }]);
+      head.push(['meta', { property: 'og:type', content: pageData.frontmatter.layout === 'home' ? 'website' : 'article' }]);
       head.push(['meta', { property: 'og:title', content: title }]);
       head.push(['meta', { property: 'og:description', content: description }]);
       head.push(['meta', { property: 'og:url', content: url }]);
@@ -69,6 +115,34 @@ export default withMermaid(
       head.push(['meta', { name: 'twitter:title', content: title }]);
       head.push(['meta', { name: 'twitter:description', content: description }]);
       head.push(['meta', { name: 'twitter:image', content: imageUrl }]);
+
+      const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': pageData.frontmatter.layout === 'home' ? 'WebSite' : 'BlogPosting',
+        name: title,
+        headline: title,
+        description,
+        url,
+        inLanguage: isEnglish ? 'en-US' : 'ko-KR',
+        image: imageUrl,
+        author: {
+          '@type': 'Person',
+          name: isEnglish ? 'One Billion Dollar Donation site operator' : '원빌리언달러 도네이션 운영자',
+          url: `${SITE_URL}${isEnglish ? '/en/methodology.html' : '/methodology.html'}`
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: isEnglish ? 'One Billion Dollar Donation' : '원빌리언달러 도네이션',
+          url: SITE_URL,
+          logo: {
+            '@type': 'ImageObject',
+            url: `${SITE_URL}/logo.png`
+          }
+        },
+        ...(pageData.frontmatter.date ? { datePublished: pageData.frontmatter.date } : {}),
+        ...(pageData.frontmatter.reviewed ? { dateModified: pageData.frontmatter.reviewed } : {})
+      };
+      head.push(['script', { type: 'application/ld+json' }, JSON.stringify(structuredData).replace(/</g, '\\u003c')]);
 
       return head;
     },
@@ -141,7 +215,7 @@ export default withMermaid(
             ]
           },
           footer: {
-            message: '#18년차직장인 #KCA #자동매매투자자 #여유시간은두딸과함께 — stay the course 🌿 &nbsp;·&nbsp; <a href="/privacy">개인정보처리방침</a> &nbsp;·&nbsp; <a href="/disclaimer">면책 조항</a>',
+            message: '#18년차직장인 #KCA #자동매매투자자 #여유시간은두딸과함께 — stay the course 🌿 &nbsp;·&nbsp; <a href="/methodology">출처·산정 방식</a> &nbsp;·&nbsp; <a href="/privacy">개인정보처리방침</a> &nbsp;·&nbsp; <a href="/disclaimer">면책 조항</a>',
             copyright: 'Copyright © 2026-present · 본 사이트의 모든 내용은 개인 기록이며 투자 권유가 아닙니다.'
           }
         }
@@ -213,11 +287,10 @@ export default withMermaid(
             ]
           },
           footer: {
-            message: '#18YearsCorporate #KCA #AutoTrading #FamilyTime — stay the course 🌿 &nbsp;·&nbsp; <a href="/en/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/en/disclaimer">Disclaimer</a>',
+            message: '#18YearsCorporate #KCA #AutoTrading #FamilyTime — stay the course 🌿 &nbsp;·&nbsp; <a href="/en/methodology">Sources & Methodology</a> &nbsp;·&nbsp; <a href="/en/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/en/disclaimer">Disclaimer</a>',
             copyright: 'Copyright © 2026-present · This site is a personal record, not investment advice.'
           }
         }
       }
     }
   })
-)

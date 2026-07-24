@@ -7,7 +7,7 @@ hero:
   tagline: "Investing is just a process, the destination is our contribution to the world and our neighbors."
   image:
     src: /logo.png
-    alt: Investment Philosophy Logo
+    alt: One Billion Dollar Donation logo featuring a seedling and the Earth
   actions:
     - theme: brand
       text: Investment Philosophy
@@ -45,3 +45,14 @@ features:
     Now, I ultimately dream of a life that shares a positive influence with the world and my neighbors. I invite you to explore my investment philosophy, strategies, and the traces of my fierce contemplations as I silently walk toward this beautiful goal.
   </p>
 </div>
+
+<section class="home-trust" aria-labelledby="home-trust-title">
+  <p class="home-trust__eyebrow">Transparent personal investment record</p>
+  <h2 id="home-trust-title">Verifiable evidence, independent decisions</h2>
+  <p>An individual investor with 18 years of corporate experience documents what he studies and practices, sharing the knowledge, information, and experience gained along the way with neighbors and the wider community. Market data includes its source and update time, while personal views are distinguished from verifiable information whenever practical.</p>
+  <div class="home-trust__links">
+    <a href="/en/methodology">View sources & methodology</a>
+    <a href="/en/disclaimer">Investment disclaimer</a>
+    <a href="/en/contact">Request a correction</a>
+  </div>
+</section>

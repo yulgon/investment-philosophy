@@ -7,7 +7,7 @@ hero:
   tagline: "투자는 과정일 뿐, 목적지는 세상과 이웃에 대한 기여입니다."
   image:
     src: /logo.png
-    alt: Investment Philosophy Logo
+    alt: 새싹과 지구를 형상화한 원빌리언달러 도네이션 로고
   actions:
     - theme: brand
       text: 투자 철학
@@ -45,3 +45,14 @@ features:
     저는 이제 궁극적으로 세상과 이웃에게 선한 영향력을 나누는 삶을 꿈꿉니다. 이 아름다운 목표를 향해 묵묵히 걸어가는 저의 투자 철학과 전략, 그리고 치열한 고민의 흔적들에 여러분을 초대합니다.
   </p>
 </div>
+
+<section class="home-trust" aria-labelledby="home-trust-title">
+  <p class="home-trust__eyebrow">투명한 개인 투자 기록</p>
+  <h2 id="home-trust-title">근거는 확인 가능하게, 판단은 독자의 몫으로</h2>
+  <p>18년차 직장인 개인 투자자가 직접 공부하고 실천한 과정을 기록하며, 그 안에서 얻은 지식과 정보, 경험을 이웃과 나눕니다. 시장 데이터는 출처와 갱신 시각을 밝히고 개인의 생각과 객관적인 정보를 가능한 한 구분합니다.</p>
+  <div class="home-trust__links">
+    <a href="/methodology">출처·산정 방식 보기</a>
+    <a href="/disclaimer">투자 위험 고지</a>
+    <a href="/contact">오류 정정 요청</a>
+  </div>
+</section>
