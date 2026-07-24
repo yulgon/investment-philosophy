@@ -19,7 +19,7 @@ Frequent trading and constant judgments cause fees, taxes, and emotional errors,
 ### 2. Prevention of Permanent Capital Loss (No Leverage)
 A single bankruptcy forever destroys the engine of compound interest. Based on the bitter lesson of experiencing the volatility decay of leveraged products in the past, I strictly limit the use of excessive leverage and set 'survival' as the top priority, ensuring I am not forced into liquidation even in a bear market. Those who survive eventually get everything.
 
-### 3. Never Leave the Market (Stay in the Market)
+### 3. Do Not Exit Based on Market Timing (Stay in the Market)
 Even in the face of a market crash or macroeconomic crisis, continue mechanical dollar-cost averaging. Inflation, interest rate hikes, and geopolitical crises are not reasons for short-term selling; simply maintain the system silently. The moment you leave the market out of fear, the gears of compounding stop. Staying until the end is the victory.
 
 ---
@@ -39,7 +39,7 @@ During market hours, never look at the order book or trading screen. The flashin
 
 ---
 
-## 📋 The Ultimate Decision-Making Checklist
+## 📋 Decision-Making Checklist
 
 When the market fluctuates irrationally, or when my emotions try to break the rules of the system, these are strict questions I ask myself after putting down the mouse. If I cannot answer "YES" to all of the questions below, I do not press any trading buttons.
 

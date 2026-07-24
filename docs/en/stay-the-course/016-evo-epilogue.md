@@ -158,12 +158,12 @@ My first answer to this profound question was the **'Evolutionary Core (VOO, SCH
 The journey of Part 1 was the process of piecing together a heavy raft to tie my ankles firmly, so that frail human like me wouldn't be swept away by the massive waves of the market.
 
 **However, there is a painful limitation hidden within this raft: the trap of 'Look-ahead bias'.**
-The perfect rules of SCHD that we praised (10 years of dividend growth, debt ratios, etc.) are actually filters carved out retrospectively *after* witnessing the bankruptcy of bank stocks during the 2008 financial crisis (launched in 2011), asking "How could we have avoided the 2008 crash?" using past data. It will protect against past crises, but no one knows if this shield will work against completely new types of crises in the future.
+SCHD's index rules—such as dividend continuity and financial metrics—were designed using historical data. Even if they reduced exposure to weaknesses seen in a past crisis, no one knows whether the same rules will prevent losses in a new kind of crisis.
 
 Let's compare this to the world of System Software. A **'Governor'** responsible for system optimization looks at a 'filter window' containing recent past states to determine its next action. This technique relies on the premise of **'Time Locality'**, assuming that *"the near future will flow similarly to the recent past."*
 But what happens if a sudden and extreme load (change) hits the system, breaking this time locality? The governor, constantly looking backward, fails to adapt to the change, resulting in massive performance degradation and power loss.
 
-Our factor cores (ETFs) are also massive 'governors' looking at past indicators. They work perfectly when the gentle waves within the market (time locality) are maintained. But what if extreme macroeconomic environmental changes strike from the outside—such as **'hyperinflation', 'the collapse of dollar hegemony', or 'ruinous interest rate hikes'**? Our raft might be smashed to pieces.
+Factor ETFs also use indicators and rules defined from historical data. They may provide the intended exposure while past relationships persist, but shocks such as **hyperinflation, a change in the monetary regime, or abrupt rate increases** can make them behave differently from what investors expect.
 
 No matter how sturdy a raft you've built, the voyage is never over.
 Perhaps a much more painful and greater task remains than building the raft. It is the task of getting on that raft and directly crossing the endless macroeconomic storm on that raft.

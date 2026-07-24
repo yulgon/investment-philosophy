@@ -34,7 +34,7 @@ Fortunately, two genius scholars arrived at this haphazard gambling den armed wi
 
 In 1952, Harry Markowitz, who was only a 25-year-old graduate student, published a legendary paper titled *"Portfolio Selection"*. He criticized human arrogance in trying to predict which stocks would rise tomorrow and introduced the concept of **'Risk (Volatility)'** mathematically into the investment world for the very first time.
 
-### The Mathematical Proof of "Don't Put All Your Eggs in One Basket"
+### Explaining "Don't Put All Your Eggs in One Basket" with Mathematics
 
 * **Core Logic:** Imagine Company A, which sells umbrellas when it rains, and Company B, which sells sunglasses when it's sunny. If we try to predict tomorrow's weather (the future), it becomes a gamble. But what if we own 50% of both Company A and Company B? Whether it rains or shines, we get a steady return every day.
 * **The Portfolio Effect:** The moment you abandon prediction and mix assets with low correlation, the overall return remains intact, but the 'risk (volatility)'—the violent up-and-down swinging of your account—miraculously disappears.

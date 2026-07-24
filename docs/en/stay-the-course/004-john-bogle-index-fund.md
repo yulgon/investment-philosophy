@@ -102,7 +102,7 @@ In 1993, the American asset management firm State Street listed Bogle's 'index f
 
 ---
 
-## You Can Buy Berkshire Hathaway, But You Can Never Buy Vanguard
+## You Can Buy Berkshire Hathaway; Vanguard Is Owned by Its Funds
 
 We can search for Warren Buffett's 'Berkshire Hathaway' on our trading apps and buy its shares anytime. But no matter how much money you have, you cannot buy shares of 'Vanguard', founded by Jack Bogle. Why? Because it was never listed on the market in the first place.
 

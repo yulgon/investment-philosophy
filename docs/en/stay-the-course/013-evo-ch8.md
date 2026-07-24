@@ -45,7 +45,7 @@ What was needed was a ruthless system that would filter out not just garbage com
 
 ---
 
-## 2. 2011, Abandoning 'Blind Dividends' and the Birth of the Ultimate Quant Machine
+## 2. 2011: Moving Beyond 'Blind Dividends' with a Rules-Based Index
 
 Even before the 2008 financial crisis, dividend stock funds existed. However, most funds at that time were 'blind dividend indices' that uncritically swept up **"stocks with simply the highest dividend yield (%)"**. Falling into the illusion (Value Trap) where the dividend yield of bank stocks plummeting on the brink of bankruptcy looked abnormally high, they eventually suffered a painful failure, crashing even more miserably than the market index during the 2008 crisis.
 

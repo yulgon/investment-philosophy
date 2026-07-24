@@ -2,7 +2,7 @@
 title: "[Chapter 3] Humans are Not Rational: Black Monday and Behavioral Finance"
 date: 2026-07-02
 tags: [Evolution of Investment, Philosophy, Behavioral Finance]
-excerpt: "The Efficient Market Hypothesis claimed the market is a perfect computer. But the Black Monday crash of 1987 proved that the market is a herd of monkeys driven by greed and fear."
+excerpt: "Placing a strong interpretation of market efficiency beside the 1987 Black Monday crash to consider how information and investor psychology shape prices."
 ---
 
 <div class="stc-article-meta">

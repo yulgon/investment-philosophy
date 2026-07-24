@@ -20,7 +20,7 @@ excerpt: How diversification theory became a low-cost index fund that individual
 > [!NOTE] Source and interpretive scope
 > Comparisons between active funds and benchmarks are checked against S&P Dow Jones Indices' [SPIVA overview and methodology](https://www.spglobal.com/spdji/en/research-insights/spiva/about-spiva/). Results vary by country, asset class, and period, and some active funds outperform. This is my narrative of index-fund history, not a recommendation that every investor use the same product.
 
-## The Theory Was Perfect, But the Public Had No Weapon
+## The Theory Was Refined, But the Public Had No Practical Tool
 
 As discussed in the previous chapter, the work of Harry Markowitz and William Sharpe provided a theoretical foundation for diversification and market risk. That research also informed my decision to adopt market index funds in 2022 after years of trial and error.
 
@@ -73,7 +73,7 @@ Wall Street ridiculed the fund as **'Bogle's Folly.'** Later scorecards have sho
 
 ---
 
-## A Perfect Shield, Yet a Remaining Weakness
+## Broad Diversification, Yet a Remaining Weakness
 
 Today, thanks to John Bogle, I was able to easily acquire the perfect basecamp called the S&P 500 (Market Index) and begin investing. The **[Efficient Market Hypothesis (EMH) 📖](/en/wiki/emh)**, which states "The market is perfectly rational, so just hold an index fund and sit still," became the faith of numerous Bogleheads for a long time.
 

@@ -24,7 +24,7 @@ The destination I aim to reach at the end of this epic time is clear. It is a ma
 
 ---
 
-## 🏛️ Why Does Mindset Dominate Everything?
+## 🏛️ Why Does Mindset Shape Execution?
 
 Through this site, I will share the 'Core & Satellite Solar System Portfolio' I practice, the 'KCA Strategy'—a Korean Won-based cost-averaging method—and the automated system I designed to reduce emotional intervention.
 

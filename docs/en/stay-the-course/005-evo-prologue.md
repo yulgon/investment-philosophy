@@ -1,5 +1,5 @@
 ---
-title: "[Prologue] The Ultimate Survival Formula Discovered by a Clueless Investor After 11 Years of 0% Returns"
+title: "[Prologue] Rebuilding My Survival Principles After 11 Years of 0% Returns"
 date: 2026-06-30
 tags: [Evolution of Investment, Bogleheads, Philosophy]
 excerpt: "The evolution of investment for survival beyond simple index investing. From the arrogant failures of 2010 to the Big Tech madness of the 2020s, why we need weapons."
@@ -12,7 +12,7 @@ excerpt: "The evolution of investment for survival beyond simple index investing
   <span class="stc-card-tag">#Philosophy</span>
 </div>
 
-# [Prologue] The Ultimate Survival Formula Discovered by a Clueless Investor After 11 Years of 0% Returns
+# [Prologue] Rebuilding My Survival Principles After 11 Years of 0% Returns
 
 ![Evolution of Investment: Weapons to Defend Against Human Nature](/evo-cover.png)
 

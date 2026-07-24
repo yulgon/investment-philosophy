@@ -1,5 +1,5 @@
 ---
-title: "[Evolution of Investment Ch.9] The Sharpest Spear that Dominates the Stampede: SPMO"
+title: "[Evolution of Investment Ch.9] A Momentum Strategy for Market Concentration: SPMO"
 date: 2026-07-04
 tags: [EvolutionOfInvestment, InvestmentPhilosophy, AssetAllocation, SPMO, Momentum, BigTech]
 prev:
@@ -8,7 +8,7 @@ prev:
 next:
   text: 'Chapter 10. Evolution Continues'
   link: '/en/stay-the-course/015-evo-ch10'
-excerpt: "The extreme herd market post-2023 where a shield alone could not win. The emergence of SPMO, a sharp spear that rides public greed and explodes."
+excerpt: "Reconsidering the limits of a defensive strategy in the concentrated post-2023 market and examining SPMO's rules-based approach to momentum."
 ---
 
 <div class="stc-article-meta">
@@ -18,7 +18,7 @@ excerpt: "The extreme herd market post-2023 where a shield alone could not win. 
   <span class="stc-card-tag">#SPMO</span>
 </div>
 
-# Chapter 9. The Sharpest Spear that Dominates the Stampede: SPMO
+# Chapter 9. A Momentum Strategy for Market Concentration: SPMO
 
 ![Spear of Momentum](/evo-ch9-cover.png)
 
@@ -26,7 +26,7 @@ excerpt: "The extreme herd market post-2023 where a shield alone could not win. 
 
 I built a relatively defensive core around VOO (an S&P 500 index fund) and SCHD. During the 2022 decline, that structure helped keep volatility within a range I could tolerate. From **2023 onward**, however, the market also made the opportunity cost of that approach clear.
 
-Giant Big Tech companies like Apple, Microsoft, Nvidia, and Meta—the so-called **'Magnificent 7 (M7)'**—sucked in the world's wealth like a black hole, armed with the AI and Cloud revolution. In the face of the extreme upward waves emitted by these few companies, my beloved perfect shield, **SCHD**, was thoroughly alienated and became shackles that bound me. Why did SCHD, the 'ultimate quant machine' I praised so highly in Chapter 8, suddenly collapse?
+As gains became concentrated in Apple, Microsoft, Nvidia, Meta, and other members of the **Magnificent 7 (M7)**, strategies with lower exposure to them fell further behind. **SCHD**, which I had expected to play a defensive role, also lagged during this period, making its opportunity cost visible. Why did the strategy I valued in Chapter 8 struggle in this environment?
 
 The answer lay in the **'evolution of the shareholder return paradigm—a change in environment'**.
 
@@ -38,7 +38,7 @@ As a result, in this new environment where the trend of shareholder returns evol
 ### Yet, Why I Do Not Abandon SCHD
 
 Then why do I continue to invest in SCHD without abandoning it, even though it stumbled in the changed environment?
-Because the environment of the investment ecosystem always **cycles**. Right now is a period of expansion dominated by endless growth and share buybacks, but what if a harsh winter of massive economic recession or severe inflation strikes again? In that era of fear, when growth breaks and buybacks halt, the **'deterministic cash flow (dividends)'** piling up steadily in my account becomes the ultimate shield preventing my mentality from collapsing.
+Market environments **can cycle**, and the relative performance of growth, value, and dividend stocks changes over time. I concluded that dividend cash flow might help me follow my rules through another recession or inflation shock. Dividends can still be cut, however, and they do not guarantee protection from losses.
 
 A shield does not exist to stab the enemy to death in a war (to generate high returns), but to block critical hits and increase survivability so that I am not kicked out of the market.
 
@@ -59,13 +59,13 @@ SPMO's investment philosophy is the exact opposite of value investing (SCHD); it
 
 ### SPMO's Unrivaled Weapon Overcoming NASDAQ (QQQ): The Chameleon Strategy
 
-If the goal was simply to ride the Big Tech bull market, I could have chosen the most famous NASDAQ 100 (QQQ). However, after thorough analysis, I chose **SPMO**, not NASDAQ, as the spear of my portfolio. QQQ carries structural flaws from an index investing perspective, and SPMO is an irreplaceable weapon that perfectly overcomes them.
+If my only goal had been exposure to a Big Tech rally, the Nasdaq-100 (QQQ) was another option. I chose **SPMO** because selecting momentum stocks from the S&P 500 suited my purpose better than an exchange-listing rule. That does not make SPMO consistently superior to QQQ; the two indexes simply follow different construction rules.
 
 1. **Transcending Foolish Exchange Bias:** QQQ is not 'the top 100 best US companies', but merely the top 100 non-financial companies listed on the 'NASDAQ exchange'. Because of this administrative shackle, the momentum of great companies listed on the New York Stock Exchange (NYSE) like Visa, Johnson & Johnson, and Warren Buffett's Berkshire Hathaway is entirely excluded. On the other hand, SPMO, which uses the entire S&P 500 as its base, ignores the stupid partition of exchanges and snatches the true leading stocks where the money flocks, looking solely at the 'upward trend'.
 2. **Only Riding the True Runners (Winner-Takes-All):** The core of the M7 concentration post-2023 was not that money flocked to the 'entire NASDAQ tech sector', but that **money was sucked specifically into 7 exceptional companies enjoying the AI boom**. While NASDAQ unconditionally includes tech stocks whose growth has stopped and are moving sideways, SPMO does not make the mistake of buying the entire NASDAQ in bulk. It mechanically filters only the extreme upward momentum of the M7, sharpening the tip of the portfolio's spear to the extreme.
 3. **The 'Chameleon' Survivability Avoiding Bubble Bursts:** QQQ is completely trapped in being Tech-Heavy. If the tech bubble bursts and value stocks or energy stocks lead the market like in the dot-com era, QQQ is shackled to drown with the collapsing tech stocks. But SPMO is a **'Chameleon'**. Right now, it's packed with IT because tech stocks are rising, but if market leadership shifts to energy or healthcare, SPMO ruthlessly dumps tech stocks and jumps onto the backs of the new winners. This structural smartness of parasitizing only on the surviving winners to avoid bubble bursts is the ultimate reason I chose SPMO over QQQ.
 
-Thanks to this ruthless algorithm, in the explosive overall upward market created by the sticky human greed (FOMO) and the AI craze, SPMO heavily incorporated Big Tech stocks and sucked up massive profits like a black hole. When value investors grit their teeth saying, "That's a bubble over there!", SPMO instead used the trend of that bubble (the law of inertia) as rocket fuel to vertically boost my account's return rate, becoming a perfect **Spear of attack**.
+During a period when AI-related large-cap stocks kept rising, SPMO held many of them at substantial weights and benefited from the trend. The same rules can magnify losses when trends reverse abruptly. In my portfolio, I use that characteristic as a more aggressive tool with a different role from the defensive allocation.
 
 ---
 
@@ -93,7 +93,7 @@ This is **almost identical to the Sharpe Ratio concept that I emphasized so much
 Another common misconception in the final weight calculation is thinking, "It probably gives high weights in the order of momentum scores." Weight is not just based on the momentum score ranking, but is based on **[Market Cap × Momentum Score]**. On top of this, a **Capping** rule is applied to prevent specific mega-cap companies from swallowing the index whole.
 
 Because of this complex formula, a very interesting result occurred in 2026. If we look simply at market cap or absolute return, NVIDIA should have been overwhelmingly 1st. So why did Micron rise to 1st place with the maximum weight (around 11%)?
-NVIDIA's market cap was so massive that it was already strongly restricted by the upper Capping limit. On the other hand, Micron, riding the HBM supercycle, showed an extremely 'stable and powerful upward trend (explosive return against low volatility)' and secured an enormous momentum score. As a result, it broke through the algorithm using its momentum score to overcome its market cap limitation, taking a larger weight than NVIDIA.
+NVIDIA was affected by both its market capitalization and the index cap. At the time, Micron appears to have received a higher momentum score because its past return was high relative to measured volatility. Index weights depend on the formula and rebalance date, so this example should not be read as a current holding snapshot.
 
 At this point, value investors will ask: *"Wait, Micron already went up 180%, and you're adding 11% more at the very top? Are you crazy?"*
 Exactly. This is the very philosophy of momentum investing.
@@ -104,7 +104,7 @@ The index reconstructs its portfolio twice a year (March and September). Rule-ba
 
 ---
 
-## 3. Proof of the Chameleon: Portfolio Evolution from 2021 to 2026
+## 3. A Chameleon-like Shift: Portfolio Changes from 2021 to 2026
 
 The result of this mechanical rebalancing is the **'Chameleon-like' survivability** mentioned earlier. In fact, if you look at the changes in the Top 5 companies by year to see how SPMO shed its skin and switched to new market leaders amidst the extreme macroeconomic waves over the past few years, it's enough to give you goosebumps.
 
@@ -126,16 +126,16 @@ This is a true **survival chameleon system** that transcends exchanges and secto
 
 ---
 
-## 4. The Fatal Flaw of the Spear: Why the '3 Core' is Absolutely Necessary
+## 4. The Spear's Weaknesses: Why I Combine Three Cores
 
-Although SPMO seems like a perfect chameleon, under the cold gaze of a professional investor, it has two fatal weaknesses (imperfections).
+SPMO can change as market leadership changes, but it has two important weaknesses.
 
 First is the **'Momentum Crash'**. SPMO rebalances only twice a year (March, September). If a sudden market crash or an abrupt regime shift completely flips the market paradigm right after a rebalancing, this suddenly dumbed-down chameleon is forced to hold onto the already-broken past leading stocks and take a brutal beating for up to six months until the next rebalance. At inflection points where trends change sharply, it is a double-edged sword that can melt your account at a terrifying speed.
 
 Second is **'Portfolio Overlap'**. As of 2026, the top holdings of VOO (S&P 500) and the top holdings of SPMO (Big Tech) are almost identical. Outwardly, it looks like you are holding two different weapons, but in reality, you are just holding an 'S&P 500 with a freakishly high Big Tech weighting' while paying higher fees.
 
 **Paradoxically, it is exactly because of this fatal imperfection that my '3-Core' system is complete.**
-When a momentum crash occurs, breaking the blade of SPMO and shaking even VOO, the last bastion that will absorb the shock with its entire body and protect my mentality is the heavy shield, **SCHD (Value/Dividend)**. The mutual complementarity where the blind spot of one weapon is perfectly covered by another—this is the real reason I combined these three pillars.
+When a momentum crash shakes both SPMO and VOO, I hope **SCHD (Value/Dividend)** may behave differently. All three can still decline together, and the combination does not prevent losses. Diversifying across different index rules is the reason I combined these three pillars.
 
 ---
 
@@ -146,13 +146,13 @@ In particular, I have confirmed the **amazing factor synergy between SCHD (defen
 
 1. **VOO (Market Beta):** The eternal basecamp covering my shallow market predictions (ignorance).
 2. **SCHD (Value Alpha):** The titanium shield defending against public fear and collapse with cash flows.
-3. **SPMO (Momentum Alpha):** The sharp spear exploding by mechanically riding public greed and stampedes.
+3. **SPMO (Momentum):** A more aggressive tool that follows recent strength through index rules.
 
 These weapons are the blood and sweat of Nobel laureates, and a great legacy forged by decades of crashes, the dot-com bubble, and the financial crisis.
 
 Now, only one final task remains for me.
-**How must I fuse these three massive pillars to make them operate as a perfect 'single portfolio' unswayed by shallow emotions?**
+**How can I combine these three pillars into one portfolio while reducing emotional decisions?**
 
-Even if countless finance books say it's wrong, this is the conclusion I reached in actual combat by grinding my money and mentality. The **'most perfect evolutionary form to date'** that embodies the history of investment into my life will finally be revealed in the next chapter: **[Chapter 10. Evolution Continues: Building My 3-Core Survival Portfolio]**.
+In **[Chapter 10. Evolution Continues: Building My 3-Core Survival Portfolio]**, I present the combination I currently use, based on this research and my own experience. It is a case study tailored to my risk tolerance, not a universal answer.
 
 <EvolutionTocEn />

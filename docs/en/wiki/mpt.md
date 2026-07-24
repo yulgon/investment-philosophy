@@ -3,7 +3,7 @@ title: "Modern Portfolio Theory (MPT)"
 outline: deep
 ---
 
-# [Theory] Modern Portfolio Theory (MPT) Complete Guide: Don't Put All Your Eggs in One Basket
+# [Theory] Understanding Modern Portfolio Theory (MPT): Diversification and Risk
 
 ## 1. What is Modern Portfolio Theory (MPT)?
 

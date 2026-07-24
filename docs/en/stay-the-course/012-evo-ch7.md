@@ -8,7 +8,7 @@ prev:
 next:
   text: 'Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD'
   link: '/en/stay-the-course/013-evo-ch8'
-excerpt: "The consecutive hells of the Dot-com Bubble and Financial Crisis. Before the blindness of the machine, human mentality was shattered. The emergence of Smart Beta, the ultimate complement to survive."
+excerpt: "The Dot-com Bubble and Financial Crisis exposed both mechanical and emotional limits. This chapter follows the emergence of Smart Beta as one possible complement."
 ---
 
 <div class="stc-article-meta">
@@ -24,7 +24,7 @@ excerpt: "The consecutive hells of the Dot-com Bubble and Financial Crisis. Befo
 
 ## Introduction: The Bloody 2000s and the Questions Cast upon the Invincible Basecamp
 
-The index fund created by John Bogle is the greatest invention in modern finance. Those who blindly trusted the philosophy, "Don't try to beat the market; own the entire market," and silently endured (the Bogleheads) ultimately became the final victors.
+The index fund popularized by John Bogle marked an important shift toward low-cost diversification. “Rather than trying to beat the market, own the market” became a central long-term principle in the Bogleheads community.
 
 However, let us review history very coldly.
 Right in the middle of those hellish massive crashes of the 2000s, how many index investors actually succeeded in 'holding on' and surviving?
@@ -94,17 +94,17 @@ In fact, the iron-clad philosophy of the **'Bogleheads'**—"No matter what cras
 However, separate from the beautiful solidarity of the Boglehead community comforting each other... demanding an ordinary individual who is not a robot to **"blindly 'Stay the Course' holding only the market index and endure getting halved twice"** is close to psychopathic violence beyond cruelty. When the news screams every day that banks are going bankrupt and you watch your retirement funds melt away, almost no human can maintain their reason. In reality, countless ordinary investors eventually threw away their index funds in terror at the bottom and were permanently expelled from the market. I needed something that would redefine this harsh slogan into **[maintaining my own Course that I can mentally endure to the very end](/en/stay-the-course/016-evo-epilogue)**.
 
 Atop this gruesome mountain of corpses, cold-headed investors gained another bitter realization.
-*"The index fund remains the great Core. But for us frail humans to endure the mental breakdown of those hellish crashes, we absolutely need a **sub-weapon (shock absorber)** to cushion the blow to our mentality by filtering out market madness (bubbles) and rotting insolvency!"*
+*"Index funds remain an important core. To help me follow the plan through severe declines, however, assets with different index rules may serve as a useful complement."* This is a behavioral design choice, not a claim that losses will be prevented.
 
 The answer that emerged to this was **'Smart Beta'**, created by Rob Arnott and others in the mid-2000s.
 These are revolutionary funds that completely ignore 'stock prices (market cap)' tainted with human madness, and solely determine weights based on real numbers recorded in accounting books—namely, **fundamentals like revenue, book value, earnings, and dividends**.
 
-Smart Beta is not an enemy trying to replace the index.
-When stock prices become abnormally more expensive than their value, it mechanically reduces the weight to **avoid the 'Dot-com Bubble'**, and it completely filters out empty companies that cannot make money to **avoid the rotting pillars of the 'Financial Crisis'**. It is the ultimate sub-weapon to protect our frail psychology.
+Smart Beta is not a single replacement for a broad market index; it is a way to target selected rules such as value or profitability.
+Such rules may reduce exposure to some expensive or financially weak companies, but they cannot be expected to avoid a new crisis or outperform the market.
 
 ---
 
-## Conclusion and Next Chapter Preview: The Ultimate Shield to Protect Your Mentality
+## Conclusion and Next Chapter Preview: A Complement for Staying Invested
 
 An investor's most terrifying enemy is not a market crash, but 'their own mentality' that gets sick of the crash and leaves the market voluntarily.
 

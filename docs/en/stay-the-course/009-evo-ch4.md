@@ -1,8 +1,8 @@
 ---
-title: "[Chapter 4] Exploiting Fear: The Proof of the Value Factor"
+title: "[Chapter 4] Exploiting Fear: The Discovery of the Value Factor"
 date: 2026-07-02
 tags: [Evolution of Investment, Philosophy, Asset Allocation]
-excerpt: "Discovering the secret to excess returns amidst public fear and panic selling. Eugene Fama's own proof of the 3-Factor Model and the birth of Smart Beta."
+excerpt: "Examining the value premium observed amid public fear and panic selling, and the emergence of the Fama-French 3-Factor Model and Smart Beta."
 ---
 
 <div class="stc-article-meta">
@@ -12,11 +12,11 @@ excerpt: "Discovering the secret to excess returns amidst public fear and panic 
   <span class="stc-card-tag">#Asset Allocation</span>
 </div>
 
-# [Chapter 4] Exploiting Fear: The Proof of the Value Factor
+# [Chapter 4] Exploiting Fear: The Discovery of the Value Factor
 
 ![Proof of the Value Factor](/evo-ch4-cover.png)
 
-## An Index Fund Alone Cannot Perfectly Protect Your Mentality
+## An Index Fund Alone Cannot Manage Every Emotional Strain
 
 Delving into the history of behavioral finance in Chapter 3, I realized an important fact: "The market is not perfect, and humans are infinitely frail in the face of public fear."
 
@@ -58,9 +58,9 @@ The three factors of stock returns they discovered are as follows:
 * **HML (High Minus Low)** is the return of high book-to-market stocks minus the return of low book-to-market stocks. A value premium appeared in the research sample, but superior performance is not assured across every market or period.
 
 ### The Essence of Value Investing is 'Exploiting Human Psychology'
-Fama and French's discovery isn't just boring math analyzing accounting ledgers. Its essence perfectly meshes with the behavioral finance we learned earlier.
+Fama and French's research goes beyond sorting accounting figures. It invites two broad interpretations: compensation for risk and the effects of investor behavior.
 
-When bad news hits, humans lose their reason and dump even the stocks of excellent companies below their fair value (Fear). Fama and French used historical data to nail down the fact that **only those who pick up these 'value stocks', which became irrationally cheap thanks to public fear, will protect their mentality and earn massive excess returns (Alpha) when the market eventually regains its reason.**
+When bad news hits, investors may mark down even sound companies below estimates of fair value. Whether the value premium reflects behavioral mispricing or compensation for financial risk remains debated. **Historical samples have shown return differences for groups of value stocks, but they do not guarantee excess returns for an individual stock or a future period.**
 
 The old adage "Buy low, sell high" had finally become science.
 
@@ -71,11 +71,11 @@ The old adage "Buy low, sell high" had finally become science.
 The emergence of this 3-Factor Model caused a massive paradigm shift in the investment industry.
 In the past, people worshipped fund managers who beat the market, saying, "That person is a genius at picking stocks." But looking through Fama's lens, the truth was underwhelming.
 
-The manager wasn't a genius; **they naturally beat the market simply because they packed their portfolio with 'cheap stocks (Value)' and 'small stocks (Size)', riding the power of factors.**
+Some of a manager's performance could be explained not only by security selection but also by **the portfolio's exposure to value and size factors.** Factor exposure does not, however, explain every active result.
 
 Studying this history, I slapped my knee. *"Wait, then there's no reason to pay expensive fees to join an active fund? Can't we just run a computer algorithm (Quant) to mechanically filter out and buy only the stocks with high 'Value Factors' among S&P 500 companies?"*
 
-This great awakening is the beginning of today's **'Factor Investing'**, which beats the market using only algorithms, excluding human emotional (fear) intervention. And it becomes the fundamental backbone of SCHD, the sturdy shield of my portfolio later on.
+Research like this helped establish today's **factor investing**, which uses rules to target selected characteristics. For me, it later became a starting point for understanding the index rules behind SCHD.
 
 ---
 

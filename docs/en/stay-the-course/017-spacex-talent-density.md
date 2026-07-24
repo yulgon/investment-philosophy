@@ -125,13 +125,13 @@ Under accounting standards, the fees the Launch division 'charges' the Starlink 
 
 Ultimately, the operating loss of the Space Launch division is not a true deficit. It is merely the **'sacrifice of hidden margins'**—radically lowering launch costs to generate the overwhelming surplus ($4.4 billion) of the Telecom division (Starlink). Because they possess their own uniquely cheap rocket ecosystem, Starlink was able to create an unprecedented, massive Cash Cow.
 
-Building on this 'hidden margin,' SpaceX's true weapons are the massive twin pillars they are preparing: **Starlink** and **Starship**. When analyzing the future value these two projects will create, the $1.7 trillion figure actually starts to feel conservative.
+From this perspective, **Starlink** and **Starship** are central variables in a SpaceX valuation. Their outcomes depend heavily on commercialization speed, capital requirements, and regulation, so $1.7 trillion should be treated as a scenario built on assumptions rather than a settled value.
 
-### 📡 Starlink: The $740 Billion 'Space Internet SaaS' Dominating the 6G Standard
-Starlink is not simply a charity project shooting spotty internet to remote areas. The core of **6G**, the biggest topic in the telecom industry today, is the **'Non-Terrestrial Network (NTN)'**. Starlink is the most powerful infrastructure leader in establishing 6G standards (3GPP), integrating satellites in space as cellular base stations, overcoming the limitations of terrestrial towers.
+### 📡 Starlink: An Opportunity in 6G and Non-Terrestrial Networks
+Starlink is expanding beyond remote internet access into **non-terrestrial networks (NTN)** and direct-to-cell service. Satellites may play a larger role in 6G, but standards adoption and market share will depend on carrier partnerships, spectrum regulation, and competing networks.
 
 Elon Musk has estimated the Total Addressable Market (TAM) for Starlink, including the 'Direct-to-Cell' market, at approximately $740 billion. Even conservative Wall Street analysts assess that the B2B (aviation, maritime, defense) and cloud infrastructure (integration with Azure, Google Cloud, etc.) markets alone represent a solid annual demand of over $130 billion.
-Starlink, which accounts for over 60% of SpaceX's current revenue, is evolving beyond a one-off launch cost model into a perfect **'hyper-massive Telecom SaaS (Software as a Service) monopoly network'**, collecting cash from people and global enterprises worldwide every single month.
+Starlink's subscription revenue gives SpaceX a recurring-revenue stream distinct from one-off launch services. The comparison with software subscriptions is useful only up to a point: satellite replacement, ground stations, terminals, and spectrum make this a capital-intensive telecom business, and a monopoly is not assured.
 
 ### 🚀 Starship: The Macro-economic Disruptor Tearing Transport Costs Down to 1/50th
 So, what is the future value of 'Starship', the true core of the $1.7 trillion valuation and the game changer that will shake the macro-economy?

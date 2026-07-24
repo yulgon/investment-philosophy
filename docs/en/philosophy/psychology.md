@@ -20,7 +20,7 @@ What we must ride on is not the wave, but the majestic flow of the mantle moving
 
 ---
 
-## 🧭 The Ultimate Response is 'Pre-designed Systematic Do-Nothing'
+## 🧭 My Chosen Response: 'Pre-designed Systematic Inaction'
 
 Investment masters often advise, "Do not emotionally 'React' to the market, but rationally 'Respond'." Hearing this, people try to take active actions like rebalancing their portfolio or increasing cash proportions when a market crash comes.
 

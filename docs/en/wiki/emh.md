@@ -3,7 +3,7 @@ title: "Efficient Market Hypothesis (EMH)"
 outline: deep
 ---
 
-# [Theory] Efficient Market Hypothesis (EMH) Complete Guide: Why No One Can Beat the Market
+# [Theory] Understanding the Efficient Market Hypothesis (EMH): Market Efficiency and the Debate over Excess Returns
 
 ## 1. What is the Efficient Market Hypothesis (EMH)?
 
@@ -11,9 +11,8 @@ Anyone investing has probably thought this at least once: *"If I stay up all nig
 
 The theory that handed down the coldest and most brutal death sentence to this sweet illusion is the **Efficient Market Hypothesis (EMH)**, published by Eugene Fama in 1970.
 
-The core argument of the Efficient Market Hypothesis is very simple and powerful.
-**"The current stock price already perfectly reflects 'all information in the world' about that company at the speed of light."**
-Therefore, there are no excessively cheap or excessively expensive stocks in the market, and prices always maintain a 'perfectly appropriate state'. Consequently, it draws the shocking conclusion that it is mathematically impossible for any genius fund manager or chart analyst to consistently beat the 'market average return (S&P 500)' over the long term.
+The central claim of the Efficient Market Hypothesis is that **available information is incorporated into prices quickly enough that repeatedly earning risk-adjusted excess returns from that information is difficult.**
+This does not mean prices are always correct or that no investor can outperform in any period. Findings depend on the form of efficiency being tested, trading costs, the information set, and the method used to adjust for risk.
 
 ## 2. Three Forms of the Efficient Market Hypothesis
 
