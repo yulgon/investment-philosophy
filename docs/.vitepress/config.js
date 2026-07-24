@@ -22,7 +22,33 @@ export default defineConfig({
       ['meta', { name: 'robots', content: 'index, follow' }],
       ['meta', { name: 'theme-color', content: '#0f766e' }],
       ['meta', { name: 'naver-site-verification', content: 'e52fe99e70ff96372bd79bd9be9697ece2d96795' }],
-      // AdSense 소유권 확인용 메타 태그입니다. 광고·분석 스크립트는
+      // 방문자 규모와 콘텐츠 이용 흐름을 확인하기 위한 Google Analytics입니다.
+      // 핵심 콘텐츠가 표시된 뒤 유휴 시간에 불러와 초기 렌더링 영향을 줄입니다.
+      ['script', {}, `
+        (function() {
+          if (typeof window === 'undefined') return;
+          var loaded = false;
+          function loadAnalytics() {
+            if (loaded) return;
+            loaded = true;
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function(){ window.dataLayer.push(arguments); };
+            window.gtag('js', new Date());
+            window.gtag('config', 'G-Z7Y0N822TN');
+
+            var analytics = document.createElement('script');
+            analytics.async = true;
+            analytics.src = 'https://www.googletagmanager.com/gtag/js?id=G-Z7Y0N822TN';
+            document.head.appendChild(analytics);
+          }
+          if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(loadAnalytics, { timeout: 3500 });
+          } else {
+            window.setTimeout(loadAnalytics, 2500);
+          }
+        })();
+      `],
+      // AdSense 소유권 확인용 메타 태그입니다. 광고 실행 스크립트는
       // 개인정보 고지와 동의 관리가 준비된 뒤 별도로 활성화합니다.
       ['meta', { name: 'google-adsense-account', content: 'ca-pub-6597757677689519' }]
     ],

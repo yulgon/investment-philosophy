@@ -1,7 +1,7 @@
 ---
 title: Author & Editorial Policy
 description: The operator's experience, scope, review workflow, conflicts of interest, and advertising principles
-reviewed: 2026-07-24
+reviewed: 2026-07-25
 ---
 
 # Author & Editorial Policy
@@ -33,7 +33,7 @@ Software and AI tools may assist with language editing, a translation draft, or 
 - I may currently hold, or may previously have held, an ETF or stock discussed on the site. Readers should independently review the evidence and risks.
 - Any future sponsorship, paid article, or affiliate link will be labeled on the relevant content.
 - Advertising, if introduced, will not give an advertiser control over topics, conclusions, security evaluations, or corrections.
-- The current site code contains no advertising or visitor-analytics script. The [Privacy Policy](/en/privacy) will be updated before that changes.
+- The site uses Google Analytics to understand aggregate traffic and content usage. No AdSense advertising runtime or ad placement is currently active. Before serving ads, the [Privacy Policy](/en/privacy) and any required consent process will be reviewed again.
 
 ## Errors and disagreement
 
