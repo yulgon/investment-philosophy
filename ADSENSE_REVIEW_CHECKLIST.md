@@ -31,8 +31,8 @@
 
 ## 3. 검색 노출과 크롤링
 
-- [ ] `https://one-billion-donation.com/robots.txt`가 열리고 전체 크롤링을 허용한다.
-- [ ] `https://one-billion-donation.com/sitemap.xml`이 열리고 새 페이지가 포함되어 있다.
+- [x] `https://one-billion-donation.com/robots.txt`가 열리고 전체 크롤링을 허용한다.
+- [x] `https://one-billion-donation.com/sitemap.xml`이 열리고 새 페이지가 포함되어 있다.
 - [ ] Google Search Console에 사이트맵을 다시 제출한다.
 - [ ] 홈, 소개, 방법론과 대표 콘텐츠에 URL 검사를 실행하고 색인을 요청한다.
 - [ ] `noindex`, 로그인 벽, 지역 차단, 과도한 리디렉션으로 Google 크롤러를 막지 않는다.
@@ -44,10 +44,10 @@
 - [ ] AdSense의 **사이트** 화면에 `one-billion-donation.com`을 추가한다.
 - [ ] AdSense가 제시하는 방법 중 하나로 소유권을 확인한다: AdSense 코드, `ads.txt`, 또는 메타 태그.
 - [ ] 코드나 메타 태그를 선택했다면 AdSense 화면에서 받은 값을 그대로 사용한다. 예시·임의 ID를 넣지 않는다.
-- [ ] 공개 URL에서 선택한 확인 파일 또는 태그가 실제로 제공되는지 확인한다.
+- [ ] 공개 URL에서 `google-adsense-account` 메타 태그와 `ads.txt`가 실제로 제공되는지 확인한다.
 - [ ] AdSense의 사이트 상태가 소유권 확인 실패나 크롤러 접근 불가가 아닌지 확인한다.
 
-현재 저장소에는 `ads.txt`가 있지만 AdSense 광고 스크립트와 확인용 메타 태그는 없습니다. `ads.txt` 방식으로 소유권이 확인된다면 불필요한 스크립트를 미리 추가할 필요는 없습니다.
+현재 저장소에는 `ads.txt`와 `google-adsense-account` 확인용 메타 태그가 있습니다. 광고·Google Analytics 런타임 스크립트는 개인정보 고지와 동의 관리가 준비될 때까지 로드하지 않습니다.
 
 ## 5. 개인정보와 광고 운영 준비
 
