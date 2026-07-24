@@ -1,6 +1,7 @@
 ---
 title: "[Evolution of Investment Ch.8] The Shield that Feeds on Fear: The Birth of SCHD"
 date: 2026-07-04
+reviewed: 2026-07-24
 tags: [EvolutionOfInvestment, InvestmentPhilosophy, AssetAllocation, SCHD, ValueInvesting, Dividend]
 prev:
   text: 'Chapter 7. The Madness of Human Psychology and the Birth of Smart Beta'
@@ -8,7 +9,7 @@ prev:
 next:
   text: 'Chapter 9. The Sharpest Spear that Dominates the Stampede: SPMO'
   link: '/en/stay-the-course/014-evo-ch9'
-excerpt: "A titanium shield to endure the trauma of the financial crisis. Beyond blind dividends, the quant machine SCHD collects 'Quality' and 'Value'."
+excerpt: "A review of the dividend index rules tracked by SCHD, its live record, and the difference between backtests and actual performance."
 ---
 
 <div class="stc-article-meta">
@@ -21,6 +22,9 @@ excerpt: "A titanium shield to endure the trauma of the financial crisis. Beyond
 # Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD
 
 ![Birth of SCHD](/evo-ch8-cover.png)
+
+> [!NOTE] Primary sources and backtest limits
+> Index rules are checked against [S&P Dow Jones Indices' Dow Jones U.S. Dividend 100 page](https://www.spglobal.com/spdji/en/indices/dividends-factors/dow-jones-us-dividend-100-index/) and methodology; ETF information and risks are checked against the [official Schwab SCHD page](https://www.schwabassetmanagement.com/products/schd). Figures before SCHD's launch are hypothetical backtests, not live investment results. Dividend stocks can lag the market and dividends can be reduced.
 
 ## Introduction: The Trauma of 2008, A Weapon Needed to Survive
 
@@ -71,12 +75,12 @@ SCHD completely ignores the intuition of fund managers and extracts 100 champion
 *(Data: Maximum drawdown based on historical backtesting of the Dow Jones U.S. Dividend 100 Index and actual performance post-2011 launch)*
 
 Check out the insane defensive power this 4-step audition showed through actual historical data (backtesting).
-- **Dot-com Bubble (2000~2002):** While NASDAQ melted down by -78% and S&P 500 by -50%, SCHD (Dividend 100) avoided the shell IT companies and executed a perfect cosmic defense, dropping only **-17.1%**. **(During this time, because dividends were not cut and only the stock price fell, the dividend yield spiked to around 3.8%, providing investors with tremendous psychological comfort and cash flow.)**
+- **Dot-com Bubble (2000–2002):** SCHD launched in 2011, so figures for this period are not live ETF returns; they come from applying the index rules to earlier data. In that material the simulated drawdown was smaller than those of the NASDAQ and S&P 500, but it does not guarantee live or future downside protection.
 - **2008 Financial Crisis:** When even value investing plummeted by -57% due to the bankruptcy of insolvent banks and the S&P 500 was smashed by -56.8%, SCHD, which automatically cut out rotting financial companies through the 'debt ratio' rule, avoided a fatal blow and defended at a relatively solid **-44.5%**. **(Even in this period of terror, the dividend yield surged to 5.4%, and the massive cash flow deposited amidst the falling daggers prevented mental collapse.)**
 
-Beyond backtesting, this philosophy was perfectly proven in real-world combat during the two massive crises SCHD faced after its launch.
+SCHD's behavior in two post-launch declines can be examined separately from the backtest. Two episodes, however, are not enough to conclude that the same defense will recur in every crisis.
 - **2020 COVID-19 Pandemic:** Even amidst the extreme fear of factories halting worldwide and stock prices plummeting vertically, SCHD's champions, who had proven their survival for over 10 years, unwaveringly delivered cash (dividends), holding the investors' mentality together so they wouldn't leave the market.
-  *(Note: Looking at the chart, you can see a strange phenomenon where NASDAQ (-30%) actually dropped less than value stocks or the S&P 500 (-33.9%) during the COVID crash. This was due to the unique circumstance where the offline economy was shut down by the pandemic, making the technological prowess of NASDAQ's Big Tech companies (like remote work and online shopping) emerge as the only means of survival and a 'safe haven' asset. This perfectly proves why the 'Spear of Greed' (SPMO), which will be discussed in the next chapter, must be included in the portfolio alongside the shield.)*
+  *(Note: The NASDAQ's smaller drawdown than value stocks or the S&P 500 during the COVID crash was related to the unusual environment of remote work and online consumption. The episode led me to examine growth and momentum exposure alongside value; it does not prove that a particular ETF must be held.)*
 - **2022 Inflation and Rate Hikes:** When growth stocks and NASDAQ screamed with a -33% crash, the true power of the 'Quality' factor exploded. When interest rates rise, heavily indebted companies break first. However, SCHD companies, which inherently have low debt ratios and overflowing free cash flows in their pockets right now, were not hit by high interest rates. During this time, SCHD showed miraculous defensive power, essentially protecting the principal while the market was bleeding.
 
 👉 **Conclusion:** SCHD is not a satellite branch taking up a corner of my portfolio. This weapon exploits the oversold gaps (Value) created by the public's irrational fear and prevents my mentality from collapsing through strong cash flows, making it the **hardest and heaviest titanium shield (Alpha Core)**.

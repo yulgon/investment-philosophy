@@ -32,7 +32,7 @@ In the 1980s, headaches began to emerge in academia that irked Fama. "If the mar
 
 To solve this mystery, Eugene Fama, along with his colleague **Kenneth French**, dug through a massive 30 years of US stock market data from 1963 to 1990. They sorted thousands of stocks based on 'size (market capitalization)' and 'value (book-to-market ratio)' and ran backtests to track the returns of each group.
 
-The results were crystal clear. The differences in returns, which could not be explained by simply following the overall market, were mathematically proven to over 90% accuracy when the two filters of 'size' and 'value' were applied to the portfolios.
+In the study, adding size and value factors explained more of the historical return variation that the market factor alone did not capture. Explanatory power varies by sample and period and is not a forecast or guarantee of future returns.
 
 Here, Fama's genius contrarian thinking shines. He mathematically embraced the **public's fear and human irrationality during 'Black Monday' that we witnessed in Chapter 3**.
 
@@ -52,10 +52,10 @@ The three factors of stock returns they discovered are as follows:
 
 **② Size Factor (SMB)**
 * **SMB (Small Minus Big)** represents the return of small-cap stocks minus the return of large-cap stocks. It means that small-cap stocks have higher long-term returns than large-cap stocks. 
-* As we saw in Chapter 3, during a crisis, the public, fearing bankruptcy, dumps 'small stocks' first at bargain prices. Fama mathematically proved that investors who bear this extreme fear and 'risk of ruin' are rewarded (premium) with higher returns. **This small yet heavy discovery became the important inspiration that later led me to launch a very small-weighted 'Future Mutation R&D Lab (Satellite)' to quench the thirst for evolution that couldn't be fully satisfied by the massive Core alone.**
+* As discussed in Chapter 3, liquidity and failure risks of small companies may be perceived more sharply during crises. One interpretation treats the size premium as compensation for such risk, but its cause and persistence remain debated. **The finding later inspired me to separate a very small 'Future Mutation R&D Lab' satellite allocation.**
 
 **③ Value Factor (HML)**
-* **HML (High Minus Low)** represents the return of companies with high book-to-market ratios (Value stocks) minus the return of companies with low book-to-market ratios (Growth stocks). It mathematically proved that **'Value Stocks'**, which are traded irrationally cheap relative to their intrinsic value, significantly outperform already expensive 'Growth Stocks' over the long term.
+* **HML (High Minus Low)** is the return of high book-to-market stocks minus the return of low book-to-market stocks. A value premium appeared in the research sample, but superior performance is not assured across every market or period.
 
 ### The Essence of Value Investing is 'Exploiting Human Psychology'
 Fama and French's discovery isn't just boring math analyzing accounting ledgers. Its essence perfectly meshes with the behavioral finance we learned earlier.

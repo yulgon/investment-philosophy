@@ -1,6 +1,7 @@
 ---
 title: Sources & Methodology
 description: Learn how One Billion Dollar Donation selects sources, processes market data, reviews content, and handles corrections.
+reviewed: 2026-07-24
 ---
 
 # Sources & Methodology

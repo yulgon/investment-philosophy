@@ -18,7 +18,7 @@ excerpt: "The Efficient Market Hypothesis claimed the market is a perfect comput
 
 ## The Past Religion of the Efficient Market Hypothesis (EMH)
 
-In the late 1960s, a brilliant young scholar from the University of Chicago, **Eugene Fama**, who would later win the Nobel Prize in Economics, was studying stock market price movements and discovered something astonishing. He mathematically proved that no matter how smart an expert is, it is completely impossible to predict the future by analyzing past price patterns—a phenomenon known as the 'Random Walk'.
+In the late 1960s, University of Chicago scholar **Eugene Fama**, later a Nobel laureate in economics, studied how information is reflected in stock prices. The efficient-market hypothesis and random-walk literature offered evidence that earning persistent excess returns from past prices alone is difficult; they did not prove that every form of predictability is impossible.
 
 Taking this one step further, he built a massive theoretical temple called the **'[Efficient Market Hypothesis (EMH) 📖](/en/wiki/emh)'**.
 
@@ -73,7 +73,7 @@ This is the oversold phenomenon where people, too terrified by bad news, dump st
 In fact, long before academia researched this, there were people who built legendary wealth by exploiting this irrational fear in practice. **They are Warren Buffett and Charlie Munger.**
 Ignoring the scholars who claimed the market was perfect, they never wavered even amidst the bloody crash of Black Monday in 1987. Instead, they scooped up excellent companies (like Coca-Cola) dumped by the terrified public at bargain prices, proving the greatness of **Value** investing with their actual performance.
 
-However, their approach seemed like an art form possible only for a few born geniuses with intuition and insight. But surprisingly, in 1992, the very scholar who created the Efficient Market Hypothesis (Eugene Fama) himself stepped forward and mathematically proved this 'value investing' perfectly, which Buffett and Munger had been doing by intuition.
+However, their approach seemed like an art form available only to a few investors with unusual intuition and insight. In 1992, Eugene Fama and Kenneth French documented systematic historical return differences between value and growth stocks and proposed a factor model to explain them. This was not a mathematical guarantee of future value-investing returns, but an effort to explain an observed historical premium.
 
 The story of the great academic counterattack, which forms the backbone of the second weapon that will later become the shield of my portfolio (SCHD), continues in the next chapter, **[Chapter 4. Exploiting Fear: The Proof of the Value Factor](/en/stay-the-course/009-evo-ch4)**.
 

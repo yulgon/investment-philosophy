@@ -166,7 +166,8 @@ export default defineConfig({
             { text: '투자 철학', link: '/philosophy/intro' },
             { text: '투자 전략', link: '/strategy/' },
             { text: '독서 노트', link: '/books/' },
-            { text: 'Stay the Course', link: '/stay-the-course/' }
+            { text: 'Stay the Course', link: '/stay-the-course/' },
+            { text: '운영자·편집 원칙', link: '/about' }
           ],
           sidebar: {
             '/philosophy/': [
@@ -182,7 +183,8 @@ export default defineConfig({
                       { text: '투자 계획 수립', link: '/philosophy/investment-planning' }
                     ]
                   },
-                  { text: '투자 심리와 마인드셋', link: '/philosophy/psychology' }
+                  { text: '투자 심리와 마인드셋', link: '/philosophy/psychology' },
+                  { text: '투자 이론 지도', link: '/wiki/' }
                 ]
               }
             ],
@@ -212,11 +214,23 @@ export default defineConfig({
                   { text: '도서 목록 전체', link: '/books/' }
                 ]
               }
+            ],
+            '/wiki/': [
+              {
+                text: '투자 이론 지도',
+                items: [
+                  { text: '이론 비교와 읽는 순서', link: '/wiki/' },
+                  { text: '현대 포트폴리오 이론', link: '/wiki/mpt' },
+                  { text: 'CAPM', link: '/wiki/capm' },
+                  { text: '효율적 시장 가설', link: '/wiki/emh' },
+                  { text: '블랙스완과 바벨', link: '/wiki/black-swan' }
+                ]
+              }
             ]
           },
           footer: {
-            message: '#18년차직장인 #KCA #자동매매투자자 #여유시간은두딸과함께 — stay the course 🌿 &nbsp;·&nbsp; <a href="/methodology">출처·산정 방식</a> &nbsp;·&nbsp; <a href="/privacy">개인정보처리방침</a> &nbsp;·&nbsp; <a href="/disclaimer">면책 조항</a>',
-            copyright: 'Copyright © 2026-present · 본 사이트의 모든 내용은 개인 기록이며 투자 권유가 아닙니다.'
+            message: '#18년차직장인 #KCA #자동매매투자자 #여유시간은두딸과함께 — stay the course 🌿 &nbsp;·&nbsp; <a href="/about">운영자·편집 원칙</a> &nbsp;·&nbsp; <a href="/methodology">출처·산정 방식</a> &nbsp;·&nbsp; <a href="/privacy">개인정보</a> &nbsp;·&nbsp; <a href="/disclaimer">면책</a> &nbsp;·&nbsp; <a href="/copyright">저작권</a>',
+            copyright: 'Copyright © 2026-present · 개인 투자 기록이며 투자 권유가 아닙니다.'
           }
         }
       },
@@ -239,7 +253,8 @@ export default defineConfig({
             { text: 'Philosophy', link: '/en/philosophy/intro' },
             { text: 'Strategy', link: '/en/strategy/' },
             { text: 'Books', link: '/en/books/' },
-            { text: 'Stay the Course', link: '/en/stay-the-course/' }
+            { text: 'Stay the Course', link: '/en/stay-the-course/' },
+            { text: 'Author & Editorial Policy', link: '/en/about' }
           ],
           sidebar: {
             '/en/philosophy/': [
@@ -255,7 +270,8 @@ export default defineConfig({
                       { text: 'Investment Planning', link: '/en/philosophy/investment-planning' }
                     ]
                   },
-                  { text: 'Psychology & Mindset', link: '/en/philosophy/psychology' }
+                  { text: 'Psychology & Mindset', link: '/en/philosophy/psychology' },
+                  { text: 'Investment Theory Map', link: '/en/wiki/' }
                 ]
               }
             ],
@@ -273,7 +289,8 @@ export default defineConfig({
               {
                 text: 'Practice & Records',
                 items: [
-                  { text: '📜 My Journey (History)', link: '/en/strategy/history' }
+                  { text: '📜 My Journey (History)', link: '/en/strategy/history' },
+                  { text: '🔥 Rule of 60 Screen (2Q26)', link: '/en/strategy/rule-of-60-barbell' }
                 ]
               }
             ],
@@ -284,11 +301,23 @@ export default defineConfig({
                   { text: 'All Books', link: '/en/books/' }
                 ]
               }
+            ],
+            '/en/wiki/': [
+              {
+                text: 'Investment Theory Map',
+                items: [
+                  { text: 'Compare the Frameworks', link: '/en/wiki/' },
+                  { text: 'Modern Portfolio Theory', link: '/en/wiki/mpt' },
+                  { text: 'CAPM', link: '/en/wiki/capm' },
+                  { text: 'Efficient Market Hypothesis', link: '/en/wiki/emh' },
+                  { text: 'Black Swans & Barbell', link: '/en/wiki/black-swan' }
+                ]
+              }
             ]
           },
           footer: {
-            message: '#18YearsCorporate #KCA #AutoTrading #FamilyTime — stay the course 🌿 &nbsp;·&nbsp; <a href="/en/methodology">Sources & Methodology</a> &nbsp;·&nbsp; <a href="/en/privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="/en/disclaimer">Disclaimer</a>',
-            copyright: 'Copyright © 2026-present · This site is a personal record, not investment advice.'
+            message: '#18YearsCorporate #KCA #AutoTrading #FamilyTime — stay the course 🌿 &nbsp;·&nbsp; <a href="/en/about">Author & Editorial Policy</a> &nbsp;·&nbsp; <a href="/en/methodology">Sources</a> &nbsp;·&nbsp; <a href="/en/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/en/disclaimer">Disclaimer</a> &nbsp;·&nbsp; <a href="/en/copyright">Copyright</a>',
+            copyright: 'Copyright © 2026-present · A personal investment record, not investment advice.'
           }
         }
       }

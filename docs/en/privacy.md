@@ -1,26 +1,23 @@
 # Privacy Policy
 
-**Last Updated: June 2026**
+**Last Updated: July 24, 2026**
 
 ---
 
 ## 1. Overview
 
-This website, **One Billion Dollar Donation** (hereinafter referred to as the "Site"), is a non-commercial personal site that shares personal investment philosophy and asset design archives. This policy explains our policy regarding the collection, use, and provision of visitors' personal information.
+**One Billion Dollar Donation** (the "Site") is an individually operated site publishing a personal investment record. This policy describes information that may be processed under the Site's current code and operating practices.
 
 ---
 
 ## 2. Information Collection and Cookie Policy
 
-The Site does not directly collect or require personally identifiable information (such as name, email, phone number, etc.) from its visitors. (No membership registration feature)
+The Site has no registration, comments, checkout, or contact form and does not directly ask visitors to enter a name or phone number.
 
-However, for site operation and personalized advertising, **third-party providers such as Google** may use technologies like cookies and web beacons to collect users' browser information anonymously.
+**The current site code does not contain Google AdSense, Google Analytics, or another visitor-analytics script.** The Site does not itself set advertising or analytics cookies, although the hosting provider and external destinations may process technical information under their own policies.
 
-### Google AdSense and Advertising Cookies
-The Site may display Google AdSense advertisements.
-- Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this Site or other websites on the internet.
-- Google may use advertising cookies (such as DoubleClick DART cookies) to serve personalized ads (interest-based ads) to users and partners.
-- Users may opt out of personalized advertising by visiting the [Google Ads Settings](https://myadcenter.google.com/) page. Alternatively, users can opt out of a third-party vendor's use of cookies by visiting [AboutAds.info](http://www.aboutads.info/choices/).
+### Future advertising
+Before introducing Google AdSense or another advertising service, this policy will be updated to describe the cookies, data, and consent mechanism actually used, with visitor choices where required. If advertising is activated, Google and other third parties may use cookies or similar technologies; personalized advertising can be managed through [Google My Ad Center](https://myadcenter.google.com/).
 
 ---
 
@@ -31,21 +28,25 @@ GitHub's servers may systematically collect access logs (IP address, browser typ
 
 - GitHub Privacy Policy: [https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 
+## 4. Email inquiries
+
+If you send an email directly to the address on the [contact page](/en/contact), the sending address, display name, message, and attachments are processed by the email service. They are used to review and answer the inquiry and are not published. You may request deletion by writing to the same address.
+
 ---
 
-## 4. External Links
+## 5. External Links
 
 The Site may contain links to other external websites to provide useful information. These external sites have their own independent privacy policies separate from the Site, and the Site is not responsible for the privacy practices or content of these external sites.
 
 ---
 
-## 5. Changes to the Policy
+## 6. Changes to the Policy
 
 This Privacy Policy is subject to change in accordance with relevant laws, guidelines, or changes in the operation of the Site. If the policy is changed, the 'Last Updated' date at the top of this page will be updated.
 
 ---
 
-## 6. Contact
+## 7. Contact
 
 For inquiries regarding the Privacy Policy or site usage, please contact us at the email below.
 - **Email**: one.billion.dollar.donation@gmail.com

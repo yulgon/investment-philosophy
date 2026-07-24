@@ -4,17 +4,17 @@ layout: home
 hero:
   name: "One Billion Dollar Donation"
   text: "원빌리언달러 도네이션"
-  tagline: "투자는 과정일 뿐, 목적지는 세상과 이웃에 대한 기여입니다."
+  tagline: "개인 투자자가 직접 검증하고 실행한 전략·데이터·실패 기록을 이웃과 나눕니다."
   image:
     src: /logo.png
     alt: 새싹과 지구를 형상화한 원빌리언달러 도네이션 로고
   actions:
     - theme: brand
-      text: 투자 철학
-      link: /philosophy/intro
+      text: 처음부터 읽기
+      link: /stay-the-course/005-evo-prologue
     - theme: alt
-      text: 투자 전략
-      link: /strategy/
+      text: KCA 전략
+      link: /strategy/kca
     - theme: alt
       text: 독서 노트
       link: /books/
@@ -24,15 +24,38 @@ hero:
 
 features:
   - icon: 🎯
-    title: 명확한 핵심 원칙
-    details: 단기적인 시장의 변동성에 흔들리지 않도록 나만의 매수/매도 규칙을 세웁니다.
+    title: 실패에서 출발한 기록
+    details: 11년 수익률 0%의 시행착오부터 현재의 원칙까지, 무엇을 왜 바꿨는지 시간순으로 공개합니다.
   - icon: ⚖️
-    title: 철저한 자산 배분
-    details: 상관관계가 낮은 자산들에 분산 투자하여 리스크를 낮추고 장기 생존율을 높입니다.
+    title: 직접 만든 실행 규칙
+    details: 원화 정액 매수 KCA, 자동 투자, 매수 리밸런싱을 실제 운용 방식과 한계까지 설명합니다.
   - icon: 🧠
-    title: 강인한 투자 심리
-    details: 시장의 공포와 탐욕을 통제하고, 이성적이고 일관된 판단을 유지하는 마인드셋을 기릅니다.
+    title: 재현 가능한 데이터
+    details: Rule of 60 등 정기 분석은 기준일·산식·데이터 출처를 밝혀 독자가 다시 확인할 수 있게 합니다.
 ---
+<section class="home-original" aria-labelledby="home-original-title">
+  <p class="home-original__eyebrow">처음 방문하셨다면</p>
+  <h2 id="home-original-title">이 사이트에서만 볼 수 있는 세 가지 기록</h2>
+  <p class="home-original__intro">일반적인 투자 이론을 요약하는 데 그치지 않고, 한 개인 투자자의 실패·설계·운영 결과를 연결해 기록합니다.</p>
+  <div class="home-original__grid">
+    <a class="home-original__card" href="/stay-the-course/005-evo-prologue">
+      <strong>투자 진화론</strong>
+      <span>11년 수익률 0%에서 출발해 인덱스·팩터·코어-위성으로 바뀐 판단 과정을 읽습니다.</span>
+      <em>연재 처음부터 읽기 →</em>
+    </a>
+    <a class="home-original__card" href="/strategy/kca">
+      <strong>KCA 원화 적립 규칙</strong>
+      <span>환율을 예측하지 않고 원화 기준 매수액을 고정하는 개인 실행법과 한계를 확인합니다.</span>
+      <em>산식과 적용법 보기 →</em>
+    </a>
+    <a class="home-original__card" href="/strategy/rule-of-60-barbell">
+      <strong>Rule of 60 데이터 기록</strong>
+      <span>매출 성장률과 영업이익률을 함께 보는 분기별 기업 필터의 기준일과 결과를 살펴봅니다.</span>
+      <em>최신 분석 보기 →</em>
+    </a>
+  </div>
+</section>
+
 <div class="custom-home-section" style="margin-top: 2rem; padding: 2.5rem; border-radius: 12px; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
   <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1.2rem; color: var(--vp-c-brand-1);">함께 걷고 싶은 길에 초대하며</h2>
   <p style="line-height: 1.8; color: var(--vp-c-text-2); font-size: 1.05rem;">
@@ -49,8 +72,9 @@ features:
 <section class="home-trust" aria-labelledby="home-trust-title">
   <p class="home-trust__eyebrow">투명한 개인 투자 기록</p>
   <h2 id="home-trust-title">근거는 확인 가능하게, 판단은 독자의 몫으로</h2>
-  <p>18년차 직장인 개인 투자자가 직접 공부하고 실천한 과정을 기록하며, 그 안에서 얻은 지식과 정보, 경험을 이웃과 나눕니다. 시장 데이터는 출처와 갱신 시각을 밝히고 개인의 생각과 객관적인 정보를 가능한 한 구분합니다.</p>
+  <p>18년차 직장인 개인 투자자가 직접 공부하고 실천한 과정을 기록하며, 그 안에서 얻은 지식과 정보, 경험을 이웃과 나눕니다. 대표 분석부터 출처·기준일·산정 방식을 보강하고 있으며, 개인의 판단과 확인 가능한 사실을 구분해 표시합니다.</p>
   <div class="home-trust__links">
+    <a href="/about">운영자·편집 원칙</a>
     <a href="/methodology">출처·산정 방식 보기</a>
     <a href="/disclaimer">투자 위험 고지</a>
     <a href="/contact">오류 정정 요청</a>

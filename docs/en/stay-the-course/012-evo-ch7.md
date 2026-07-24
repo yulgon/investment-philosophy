@@ -51,7 +51,7 @@ Many people guess, "Didn't the index fund at least defend well against the dot-c
 
 1. **Speculative NASDAQ (Hedge Funds/Growth Chasers):** The seemingly endlessly rising NASDAQ plummeted by a staggering **-78%**, permanently bankrupting countless hedge funds that bet on skyrocketing stocks.
 2. **S&P 500 (Market Index Fund):** Was the index fund safe? No. Because of the market-cap weighted method, the S&P 500, which had aggressively stuffed over 30% of its portfolio with bubbling IT companies at the peak, also evaporated by **-50%**. The index fund was not a safe haven; it was severely contaminated by the bubble itself.
-3. **Value Investing (Value Stocks):** On the other hand, what about value investors who were mocked and treated as dinosaurs (even Warren Buffett) for "only buying old stocks that can't grow" during the dot-com run-up? When the bubble collapsed, massive capital fleeing from illusionary IT stocks flocked to 'value stocks' with solid earnings and cash flows, miraculously producing **positive returns (+)** or perfectly defending against the decline.
+3. **Value Investing (Value Stocks):** During the dot-com collapse, some value indices holding companies with earnings and cash flow fell less than highly valued technology stocks. Value stocks did not avoid losses altogether, however, and the result changes with the index and measurement period.
 
 The index fund was never safe. It had to shed tears of blood, losing half its value as the price for uncritically collecting bubbled companies. The index fund we believed was a basecamp was actually a massive powder keg that had sucked up the bubble of greed to the very end.
 
@@ -110,6 +110,6 @@ An investor's most terrifying enemy is not a market crash, but 'their own mental
 
 Smart Beta technology does not simply look for large companies, but searches for **Quality that remains unshakeable in any crisis, and Value that can plug warm cash flow (dividends) into my account every month while I shiver looking at my halved account**.
 
-Integrating all the bloody tears of the 2000s and reflections on human psychology, **finally, in 2011, the most perfect defensive weapon in modern investment history was born**. The birth story of **SCHD**, the ultimate titanium shield that prevents my mental breakdown atop the solid ground of the market index, explodes in the next [Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD].
+Building on those experiences and reflections on investor psychology, the next chapter examines the index rules and risk-return characteristics of **SCHD, launched in 2011**, and why I assigned it a defensive role in my portfolio: [Chapter 8. The Shield that Feeds on Fear: The Birth of SCHD].
 
 <EvolutionTocEn />

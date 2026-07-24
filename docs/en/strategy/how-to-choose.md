@@ -1,8 +1,15 @@
+---
+reviewed: 2026-07-24
+---
+
 # 🔍 4. ETF Selection & Tools Guide (Selection & Tools)
 
-> "Even with a great investment strategy and automated system, if the vessel (asset) holding it is poor, it ultimately becomes nothing but a sandcastle."
+> "Even a well-designed strategy depends on the quality and suitability of the assets used to implement it."
 
-I am sharing my 4 major criteria for selecting top-tier ETFs and stocks that reliably guarantee long-term upward trends and compound growth, along with a list of analysis sites/apps I use daily to efficiently research and backtest them.
+I am sharing the four criteria I use to compare long-term ETF and stock candidates, together with my research and backtesting tools. These criteria do not prevent losses or guarantee returns; they are a personal checklist for making and recording decisions consistently.
+
+> [!NOTE] Verification order and limits
+> I verify an ETF's index, fee, and risks on the provider's own page rather than a search summary: [VOO — Vanguard](https://investor.vanguard.com/investment-products/etfs/profile/voo), [SCHD — Schwab](https://www.schwabassetmanagement.com/products/schd), and [SPMO — Invesco](https://www.invesco.com/us/financial-products/etfs/product-detail?ticker=SPMO). AUM, fees, and holdings change; the figures below are not permanent selection thresholds or guarantees of future performance.
 
 ---
 

@@ -14,7 +14,7 @@ The stock market is like a vast, unpredictable ocean. However, if you understand
     Beneath the waves exists the phenomenon of massive ocean waters rushing in and draining out due to the moon's gravity. This signifies the **macroeconomic cycle** of inflation and deflation, the Fed's interest rate hikes and cuts, bubbles, and recessions. During high tide, all assets rise, and during low tide, the bottom is exposed and causes fear, but this is not the end; it is merely an endlessly repeating, natural providence of the universe.
 *   **Massive Movement of the Mantle (Mega Trends and Evolution)**
     However, the true force that overwhelms even all these waves and tides is the **majestic flow of the Mantle**, shifting massive continental plates deep at the ocean floor. 
-    From the personal computers of the 1980s, the internet revolution of the 1990s (dot-com bubble), the smartphone revolution of 2010, the cloud in 2015, and to the AI revolution from 2023 onwards. The mantle shatters the old and creates new social changes and innovations. No matter how fiercely interest rate hikes (low tide) strike, they can never stop this massive upward trend of the mantle, which is humanity's productivity enhancement and evolution. 
+    From personal computers and the internet to smartphones, cloud computing, and AI, technological change has influenced long-term productivity. Innovation does not translate directly into returns for the entire market or a particular company, however, and rates and business cycles can produce long adjustments and losses.
     
 What we must ride on is not the wave, but the majestic flow of the mantle moving at the very bottom.
 
@@ -34,14 +34,14 @@ However, in my philosophy, **the ultimate response is, paradoxically, 'Systemati
 
 ---
 
-## ⚔️ The Absolute Weapons Held by Individuals on the Geniuses' Battlefield
+## ⚔️ How an Individual Investor's Constraints Differ
 
 On Wall Street in the U.S., the world's best mathematicians, PhDs in physics, and supercomputer algorithms are waging a blood-red war every single second. We cannot beat them with knowledge or information power.
 
-However, we possess **two absolute advantageous weapons that Wall Street geniuses can never have.**
+Individual investors can make use of **two conditions that differ from those of institutions**.
 
-1.  **Time**: Institutional investors are shackled by having to prove their returns to clients every quarter. When the low tide comes, they are pushed by clients' redemption demands and forced to sell off stocks at bargain prices. On the other hand, since we have our main jobs, we do not need to prove short-term report cards. We have the 'freedom of time' to leisurely wait out a 100-year movement of the mantle.
-2.  **Inexhaustible Cash Flow (Monthly Income)**: Even if the market collapses, we earn a stable monthly salary (KRW) through our main jobs every month. This solid KRW mining ability becomes an infinite accumulating power to mechanically scoop up stocks every month when assets are scattered on the bottom.
+1.  **Time**: Without client redemptions or quarterly performance reporting, an individual can set a horizon around personal goals. The date the money is needed and the tolerable loss still come first.
+2.  **Employment Income (Monthly Cash Flow)**: If employment and income continue, new money can be contributed regularly. Because a recession can reduce income at the same time markets fall, an emergency reserve should remain separate.
 
 Utilizing these two weapons to average out even the daily fluctuations is the most powerful attack method for retail investors to beat Wall Street.
 

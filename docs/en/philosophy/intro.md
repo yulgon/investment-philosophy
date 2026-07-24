@@ -26,11 +26,11 @@ The destination I aim to reach at the end of this epic time is clear. It is a ma
 
 ## 🏛️ Why Does Mindset Dominate Everything?
 
-Through this site, I will reveal all the secrets of the unique 'Core & Satellite Solar System Portfolio' I have built, the 'KCA Strategy'—a Korean Won cost averaging method—and the 'Automated System' that perfectly controls them.
+Through this site, I will share the 'Core & Satellite Solar System Portfolio' I practice, the 'KCA Strategy'—a Korean Won-based cost-averaging method—and the automated system I designed to reduce emotional intervention.
 
-But be warned in advance: no matter how sophisticated and perfect an investment formula you get your hands on, in the end, **the one most likely to lead your investment to failure is yourself**.
+However sophisticated an investment formula may be, emotions and behavioral biases during execution can still undermine long-term results.
 
-When the market is bleeding and the media shouts of economic collapse, if you succumb to fear and press the sell button or stop your automatic transfers, any excellent strategy instantly becomes a piece of trash. Ninety percent of investment success or failure depends not on intelligence or mathematical formulas, but on **a strong spirit (mindset) that endures the noise and emotions of the market**.
+When markets fall sharply and the media warns of economic collapse, selling out of fear or stopping an automatic plan can break the assumptions behind a long-term strategy. The effect cannot be reduced to a precise percentage, but in my experience, **the mindset required to endure market noise and emotions** has mattered more to consistent execution than intelligence or elaborate formulas.
 
 How I came to build a mechanical system that completely excludes emotions through numerous experiments of failure and wandering, and what powerful psychological defense mechanisms allowed me to endure during market crashes... I will now begin to tell all those stories.
 

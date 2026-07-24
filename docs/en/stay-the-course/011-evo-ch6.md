@@ -37,7 +37,7 @@ My failure was not in riding the 'trend' itself. The problem was **'emotionally 
 
 ## 1. Mark Carhart Decodes the Market's 'Inertia'
 
-The history that perfectly proved this mad sprint, which could not possibly be explained by rationality, had already been written in 1997. It was by Eugene Fama's student, **Mark Carhart**.
+An influential academic framework for describing this kind of price persistence appeared in 1997: the four-factor model developed by Eugene Fama's student, **Mark Carhart**.
 
 Realizing that his mentor's Fama-French 3-factor (Market, Size, Value) model alone could not explain all the returns of fund managers, he dug through massive data and discovered a **'4th Factor'**.
 

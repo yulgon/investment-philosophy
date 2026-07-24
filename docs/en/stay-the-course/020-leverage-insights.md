@@ -1,17 +1,18 @@
 ---
 title: "The Essence of Leveraged Investing: The Mirror of Mechanical Quants and a Practical Answer for Individuals"
 date: 2026-07-18
+reviewed: 2026-07-24
 tags:
   - InvestmentPhilosophy
   - Leverage
   - TQQQ
   - AssetAllocation
   - SingleStockLeverage
-excerpt: Starting from the recent controversy surrounding the risks of single-stock leveraged ETFs for Samsung Electronics and SK Hynix, we dissect the quantitative nature of leveraged products and derive a practical answer for individual investors through 8 backtested strategies.
+excerpt: Using Samsung Electronics and SK Hynix single-stock leveraged products as a case study, this article examines daily resets and volatility drag through eight simulations.
 ---
 
 <div class="stc-article-meta">
-  <a class="stc-back-link" href="/stay-the-course/">← Back to list</a>
+  <a class="stc-back-link" href="/en/stay-the-course/">← Back to list</a>
   <span class="stc-article-date">2026.07.18</span>
   <span class="stc-card-tag">#InvestmentPhilosophy</span>
   <span class="stc-card-tag">#Leverage</span>
@@ -23,6 +24,9 @@ excerpt: Starting from the recent controversy surrounding the risks of single-st
 
 ![A massive mechanical contraption representing the duality of leverage and quantitative investing](/leverage_gears.jpg)
 
+> [!CAUTION] Primary sources and simulation limits
+> Product structure and Korean investor warnings are checked against the [Financial Services Commission's official notice](https://www.fsc.go.kr/no010101/86973). The risk that cumulative results can diverge from a stated daily multiple over longer holding periods is cross-checked with the [U.S. SEC's investor statement](https://www.sec.gov/newsroom/speeches-statements/schock-statement-single-stock-levered-or-inverse-etfs-071122). The eight results below are simulations using specific data, periods, and tax assumptions—not repeatable future performance. A leveraged product can lose the entire principal.
+
 > *"Recently, with the rise of single-stock leveraged ETFs, many people have been warning about the dangers of leverage. But is that really the case? Today, we will dig deep into the nature of leverage."*
 
 ---
@@ -31,7 +35,7 @@ excerpt: Starting from the recent controversy surrounding the risks of single-st
 
 Recently, intense fear and warnings have emerged among investors regarding the newly listed single-stock leveraged ETFs for Samsung Electronics and SK Hynix in the Korean stock market. Contrary to expectations of making big profits by riding the semiconductor cycle, investors experienced their accounts rapidly melting away when they encountered a "sideways market," where stock prices fluctuated up and down without a clear direction.
 
-Even the financial authorities judged that these leveraged products maximize market volatility, leading them to temporarily halt new listings and significantly raise the minimum deposit requirement for individual investors to 30 million KRW as a regulatory measure.
+Korean financial authorities classify single-stock leveraged products as high risk and apply safeguards such as advanced education, a minimum deposit, and clearer product labeling. Because later overheating measures and implementation dates can change, readers should verify the latest official notice.
 
 In fact, any investor who endured a massive secular bear market like in 2022 would have felt bone-chilling fear at this bizarre phenomenon where an account gets eaten away just by a sideways-moving stock price. This phenomenon, known as **'Volatility Drag' (or negative compounding)**, is a mathematical destiny inherent not only to single-stock leverage but to all leveraged ETFs like TQQQ. So, is leverage inherently evil, or is the problem that we approach it like a magic lamp without properly understanding its mathematical backbone?
 
@@ -124,18 +128,18 @@ We conducted a thought experiment where we unlocked the shackles of this forced 
 *   **The Catastrophe of Symmetrical Upside Tracking (⑤):** This is the result of perfectly mimicking a 3x compound by maintaining a massive exposure size without stop-loss selling in a bear market, and unconditionally pouring in '2x the rising amount' with hard cash proportionally to that massive size in a bull market. Because the size never shrinks, the compounding goes out of control, swelling the size of your account to 191 trillion KRW after 1,200 days. Since even a 1% rise in this size requires pouring in trillions of won, it ultimately became a fictional strategy that is only maintainable by pouring in a national budget-level virtual fund of **169 trillion KRW**. (Final ROI only +13.1%)
 *   **The Catastrophe of Symmetrical Downside Defense (⑥):** Leaving it alone when it goes up, and defending the 'previous day's exposure' perfectly by filling in exactly the amount shaved off yesterday with hard cash when it goes down. Since all drops are blocked, the asset hits an all-time high every day, rocketing up to 59.1 billion KRW. However, since you have to fill in hundreds of millions or billions of won every time this massive size faces a bear market (-1%, -3%), a crazy maintenance cost of **44.6 billion KRW** gets sucked in.
 
-In the end, it is a perfect mathematical proof that if you artificially try to create an 'asymmetrical' structure favorable to you by rejecting either side of the absolute rule of leveraged investing—**"Sell on downside (reduce exposure), buy on upside (increase exposure)"**—the magic of compounding will go horribly out of control, demanding astronomical amounts of cash that an individual can never handle.
+Under this simulation's price path and rules, continuously offsetting one side of **"reduce exposure after declines, increase exposure after gains"** with outside cash caused the required funding to grow rapidly. It is an example of why an asymmetrical defense needs a cash-capacity test, not a general proof for every market path.
 
 ## 5. The Emergence and Limits of Practical Alternatives (La-O-Er Infinite Buy Method and VR)
 
-Through the previous simulations, we mathematically proved two brutal truths of leveraged investing.
+The preceding simulations highlighted two risks that leveraged investors need to examine.
 1. **Accepting Volatility Drag:** If you follow the rules and sell when it falls and chase-buy when it rises, your account melts away exponentially in a volatile market.
 2. **Cash Black Hole (Asymmetrical Defense):** If you try to avoid this by breaking the rules and defending drops with hard cash, compounding goes out of control, and you can only survive by pouring in tens of billions or hundreds of trillions of won in virtual funds.
 
 To overcome this 'cash black hole' problem, practical variant strategies emerged among individual investors in Korea that attempt to control cash by forcibly limiting the period and number of purchases. The most representative of these is the investment method by Korean investor **'La-O-Er'**.
 
 ### The Core Logic and Shining Practical Value of the La-O-Er Method
-1. **Infinite Buy Method (무한매수법):** This is a method of dividing one's total capital into 40 parts, limiting the period and number of purchases (approx. 40 trading days), and mechanically buying every day. When the total account return reaches +10%, all held shares are sold off to take short-term profits, and a new cycle begins.
+1. **Infinite Buy Method:** This Korean retail-investor method divides total capital into 40 parts, limits the period and number of purchases to roughly 40 trading days, and buys mechanically each day. When the total account return reaches +10%, the position is sold and a new cycle begins.
 2. **Value Rebalancing (VR):** Borrowing the 'Value Averaging' theory described later, but to prevent fees from frequent daily trading, a gap (Band, e.g., 80%~120%) is set above and below a target baseline. If it breaks through the bottom, you pour in cash to buy; if it breaks through the top, you sell stocks to cut it down to the target figure.
 
 In that it controlled shallow human fear and greed, and made the contrarian approach of 'selling high and buying low' mechanically actionable in a real account, this method holds immense practical value in the Korean leveraged investing ecosystem.
@@ -173,9 +177,9 @@ To prove the magic of VA's 'Volatility Harvesting', instead of the traditional l
 | **② VA (Allow Selling)** | 10M KRW | **Approx. -90.68M KRW** | **Approx. -80.68M KRW (Net Recovery)** | Approx. 128.70M KRW | **+209.38M KRW** | **Infinite (Principal Recovered)** |
 | **③ VA (No Sell)** | 10M KRW | **Approx. 66.01M KRW** | **Approx. 76.01M KRW** | **Approx. 429.09M KRW** | **+353.08M KRW** | **+464.5%** |
 
-### Result Interpretation: The Magic of Controllable Cash Flow and Zero-Tax Compounding
-*   **The Shocking Cash Generation Power of VA Allow Selling (②):** Far from pouring hard cash into the market over 5 years, by consistently selling off excess profits, we actually **withdrew (recovered) 80 million KRW from the market** to use. The drawback of needing a massive Cash Pool to defend against drops was perfectly offset by the rule of 'taking profits when rising.'
-*   **The Overwhelming Capital Efficiency and Tax Savings of VA No Sell (③):** This is a pure 'positive compound snowball' that perfectly solves the 'taxes and fees' problem, which was the biggest drawback of the La-O-Er method mentioned earlier. Thanks to enduring the urge to take profits (sell), the compounding was fully rolled without paying a single cent in taxes, exploding the final asset to **429 million KRW**. With much less money (**76.01 million KRW**) concentratedly injected only during market crashes compared to the blindly daily accumulated DCA (128 million KRW invested), the same massive profit was achieved.
+### Result Interpretation: Cash Flow and Tax Timing in This Simulation
+*   **VA Allow Selling (②):** In this simulation, selling amounts above the target produced about **80 million KRW of net withdrawals**. A real account would differ because of taxes, fees, slippage, and the timing of each sale.
+*   **VA No Sell (③):** With no sales during the test period, taxes and transaction costs associated with selling were deferred, and the ending value was about **429 million KRW**. It reached a similar ending value to DCA with less total capital contributed (**76.01 million KRW**), but the result depends on this price path and target rule and is not assured in another period.
 
 ## 7. The Practical Strategy for Individual Investors Overcoming Leverage Limits
 
@@ -201,10 +205,10 @@ This formula might look complex, but its meaning is very simple. It means that *
 
 However, if you do **installment investing (DCA)** by injecting a constant amount (salary) every month, magic happens. It's the principle that when apples are 10,000 won you buy only 1, but when they crash to 1,000 won you sweep up 10 of them. In mathematics, mechanically buying a much larger quantity in a cheap zone like this is called the **'Harmonic Mean'**.
 
-The greatest mathematical characteristic of the Harmonic Mean is that **"the more the price fluctuates (the greater the volatility), my average purchase price drops drastically, much lower than the market's average price."** Through this, we can clearly prove why salary investing is bound to beat lump-sum investing.
+Fixed contributions buy more units when prices are low and fewer when prices are high. That alone does not prove that installment investing must beat lump-sum investing. A sustained rising market may favor investing earlier, while leveraged products can magnify losses through volatility drag and deep drawdowns.
 
 * **A person who invested a lump sum (Lump Sum):** If the stock price violently fluctuates and barely returns to its initial price, the return rate becomes negative due to the leverage penalty.
-* **A person who bought in slices with a monthly salary (Installment):** Even if the stock price just returns to its initial price, because they swept up massive quantities at rock-bottom prices (Harmonic Mean) at the bottom, they will **generate a positive (+) return with a high probability**.
+* **A person who bought in slices with a monthly salary (Installment):** Continuing to buy through a decline can lower the average purchase price. The final result still depends on the price path, costs, and whether contributions continue.
 
 In other words, while the leveraged ETF itself **'eats away at profits'** due to volatility, our salary investing utilizes that exact same volatility to **'massively slash my purchase price'**, thereby structurally and excellently offsetting the drawback. It is a mathematical harmony where the vicious trajectory inside the leverage is covered up by the opposite force of my salary's 'massive buying at the bottom'.
 
@@ -216,9 +220,9 @@ Furthermore, when a market crash (economic crisis) occurs, there is a high risk 
 
 In conclusion, I have tested various leveraged ETF trading methods directly in my account by carving out a portion of my assets (satellite portfolio). The clear lesson I gained from that result is **'if you simply buy and leave a leveraged ETF without trading, the account melts away.'**
 
-Simple installment (DCA) investing that does not predict the market is the most basic and powerful weapon to absorb this volatility. If you are willing to be a little more diligent here and want to maximize the compounding effect without paying a single penny in taxes and trading fees, the **'VA No-Sell (Value Averaging No-Sell)'** strategy explained earlier will be a practical recommendation that perfectly overcomes the limits of leverage.
+Installment investing (DCA) is one way to spread entry points without forecasting the market. The **VA No-Sell** approach described above may be an alternative for an investor able to supply additional cash and tolerate deep losses, but it does not remove leverage risk, taxes, or costs.
 
-Also, if you are terrified of the extreme crashes of 3x leverage and worry about your cash running out, turning your eyes to **2x leverage** is a realistic compromise to protect your peace of mind. For long-term investing by individual investors, it is recommended to use 2x as the Standard, and approach 3x carefully only when your cash flow and mentality are perfectly controlled.
+A 2x product can still magnify losses and volatility substantially and should not be treated as a default for long-term investors. Before choosing any multiple, review the prospectus, daily-reset structure, historical drawdowns, the possibility of interrupted cash flow, and whether the position is limited to a tolerable size.
 
 Even in the fear of a collapsing market, trust that your salary will mechanically sweep up shares at a cheap price. Choosing a volatility you can handle, maintaining your trajectory with meticulous salary investing, and moving forward without wavering.
 This is the core of **'Stay the course'** for individual investors to survive and grab wealth in a complex and brutal market.

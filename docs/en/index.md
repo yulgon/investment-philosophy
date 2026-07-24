@@ -4,17 +4,17 @@ layout: home
 hero:
   name: "One Billion Dollar Donation"
   text: "One Billion Dollar Donation"
-  tagline: "Investing is just a process, the destination is our contribution to the world and our neighbors."
+  tagline: "An individual investor shares tested strategies, data, and lessons from failure with neighbors and the wider community."
   image:
     src: /logo.png
     alt: One Billion Dollar Donation logo featuring a seedling and the Earth
   actions:
     - theme: brand
-      text: Investment Philosophy
-      link: /en/philosophy/intro
+      text: Start Here
+      link: /en/stay-the-course/005-evo-prologue
     - theme: alt
-      text: Investment Strategy
-      link: /en/strategy/
+      text: KCA Strategy
+      link: /en/strategy/kca
     - theme: alt
       text: Book Notes
       link: /en/books/
@@ -24,15 +24,38 @@ hero:
 
 features:
   - icon: 🎯
-    title: Clear Core Principles
-    details: Establish personal buying and selling rules so as not to be swayed by short-term market volatility.
+    title: A Record Built from Failure
+    details: Follow what changed—and why—from eleven years with a 0% return to the principles used today.
   - icon: ⚖️
-    title: Thorough Asset Allocation
-    details: Diversify investments in assets with low correlation to reduce risk and increase long-term survival rates.
+    title: Original Execution Rules
+    details: Explore KRW-based KCA, automated contributions, and buy rebalancing with practical use and limitations.
   - icon: 🧠
-    title: Resilient Investment Psychology
-    details: Control market fear and greed, and cultivate a mindset that maintains rational and consistent judgment.
+    title: Reproducible Data
+    details: Recurring analyses such as Rule of 60 disclose the as-of date, formula, and data source for independent review.
 ---
+<section class="home-original" aria-labelledby="home-original-title">
+  <p class="home-original__eyebrow">New here?</p>
+  <h2 id="home-original-title">Three records unique to this site</h2>
+  <p class="home-original__intro">The site connects investment theory to one individual investor’s failures, design decisions, and operating results.</p>
+  <div class="home-original__grid">
+    <a class="home-original__card" href="/en/stay-the-course/005-evo-prologue">
+      <strong>Investment Evolution</strong>
+      <span>Trace the decisions that led from an eleven-year 0% return to index, factor, and core-satellite investing.</span>
+      <em>Read from the beginning →</em>
+    </a>
+    <a class="home-original__card" href="/en/strategy/kca">
+      <strong>KCA in Korean Won</strong>
+      <span>See the formula, application, and limits of fixing contribution amounts in KRW without forecasting exchange rates.</span>
+      <em>View the method →</em>
+    </a>
+    <a class="home-original__card" href="/en/strategy/rule-of-60-barbell">
+      <strong>Rule of 60 Data Record</strong>
+      <span>Review an as-of-dated company screen that combines revenue growth and operating margin.</span>
+      <em>View the latest analysis →</em>
+    </a>
+  </div>
+</section>
+
 <div class="custom-home-section" style="margin-top: 2rem; padding: 2.5rem; border-radius: 12px; background: var(--vp-c-bg-soft); border: 1px solid var(--vp-c-gutter); box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
   <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1.2rem; color: var(--vp-c-brand-1);">Inviting You to Walk This Path Together</h2>
   <p style="line-height: 1.8; color: var(--vp-c-text-2); font-size: 1.05rem;">
@@ -49,8 +72,9 @@ features:
 <section class="home-trust" aria-labelledby="home-trust-title">
   <p class="home-trust__eyebrow">Transparent personal investment record</p>
   <h2 id="home-trust-title">Verifiable evidence, independent decisions</h2>
-  <p>An individual investor with 18 years of corporate experience documents what he studies and practices, sharing the knowledge, information, and experience gained along the way with neighbors and the wider community. Market data includes its source and update time, while personal views are distinguished from verifiable information whenever practical.</p>
+  <p>An individual investor with 18 years of corporate experience documents what he studies and practices, sharing the resulting knowledge, information, and experience with neighbors and the wider community. Sources, as-of dates, and methods are being added to the principal analyses, with personal judgment distinguished from verifiable facts.</p>
   <div class="home-trust__links">
+    <a href="/en/about">Author & editorial policy</a>
     <a href="/en/methodology">View sources & methodology</a>
     <a href="/en/disclaimer">Investment disclaimer</a>
     <a href="/en/contact">Request a correction</a>

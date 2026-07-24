@@ -1,8 +1,15 @@
+---
+reviewed: 2026-07-24
+---
+
 # ⚖️ 3. Asset Allocation & Operation Strategy (Core & Satellite)
 
 The '60:40 Portfolio' or the 'Bogleheads 3-Fund Portfolio', often considered textbooks of asset allocation theory, are excellent starting points. However, to reflect the market's inherent inertia (momentum) and the value of narratives, I use a modified version of the traditional approach: the **'Core Planets & Peripheral Satellites (Core & Satellite)' strategy**.
 
-This strategy is combined with the principles of the universe and the slingshot effect, aiming to build an independent solar system that expands infinitely without collapsing on its own.
+The strategy uses the universe and slingshot effect as metaphors for managing a diversified core together with a limited satellite allocation.
+
+> [!NOTE] Design status and limits
+> This article is my core-satellite operating record, informed by the [Bogleheads principles of diversification and simplicity](https://www.bogleheads.org/wiki/Getting_started). The weights shown are not universally optimal, and satellite assets can create larger losses and tracking error. Buy rebalancing only changes weights meaningfully when new cash is large enough; a substantial drift may not be corrected without sales.
 
 ---
 
@@ -40,14 +47,14 @@ Assets that are growing well are left alone to fully enjoy the value of compound
 
 ## 🌌 3. Core Planets & Peripheral Satellites (Core & Satellite) Strategy
 
-Based on this logic, I perfectly balance risk and excess return by comparing the entire asset to a cosmic system.
+Based on this logic, I compare the portfolio to a cosmic system and design a structure that manages risk while exploring the possibility of excess returns.
 
 ### 🪐 Core Planets: Continuous Gravitational Field
 * **Targets:** VOO, SPMO, SCHD(US stock) & KOSPI (KOR Stock) & Bond Core
 * **Role:** They balance the center of the orbit with massive and heavy mass (capital). Planets with different gravities—growth and defense—intertwine, holding out so the portfolio doesn't become a space orphan even when the market shakes.
 
 ### 🛰️ Peripheral Satellites: High-speed Probes Executing Slingshots
-* **Targets:** Individual stocks and themes with definitively expected growth based on strong momentum or narratives.
+* **Targets:** Individual stocks and themes whose growth potential I assess using momentum, operating results, and industry change. Because outcomes can differ from expectations, I keep them at a limited weight.
 * **Long-term Holding Principle:** Individual stocks are also fundamentally placed in a long-term holding orbit to scale up the assets. By entering the gravitational pull of a specific trend (a passing celestial body), alpha returns (acceleration) are achieved in a short period.
 
 ### ☄️ The 'Growth Cycle' Where Acceleration Increases Mass, and Criteria for Selling

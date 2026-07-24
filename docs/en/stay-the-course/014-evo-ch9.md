@@ -24,7 +24,7 @@ excerpt: "The extreme herd market post-2023 where a shield alone could not win. 
 
 ## Introduction: The Blind Spot of the Shield and the Evolution of Shareholder Returns
 
-Through history, I built a perfect defense system: VOO (S&P 500 Index Fund) and SCHD (Value Shield). Until the bear market of 2022, this shield protected me flawlessly. However, as we entered **2023 and beyond**, the stock market I faced in reality completely shattered my common sense.
+I built a relatively defensive core around VOO (an S&P 500 index fund) and SCHD. During the 2022 decline, that structure helped keep volatility within a range I could tolerate. From **2023 onward**, however, the market also made the opportunity cost of that approach clear.
 
 Giant Big Tech companies like Apple, Microsoft, Nvidia, and Meta—the so-called **'Magnificent 7 (M7)'**—sucked in the world's wealth like a black hole, armed with the AI and Cloud revolution. In the face of the extreme upward waves emitted by these few companies, my beloved perfect shield, **SCHD**, was thoroughly alienated and became shackles that bound me. Why did SCHD, the 'ultimate quant machine' I praised so highly in Chapter 8, suddenly collapse?
 
@@ -100,7 +100,7 @@ Exactly. This is the very philosophy of momentum investing.
 * **Value Investing:** "A stock that went up a lot is expensive."
 * **Momentum Investing:** "A stock that went up a lot has a high probability of continuing its upward trend." (Law of Inertia)
 
-This cold-hearted algorithm massively overhauls the portfolio twice a year (March, September). It's a perfect risk management technique where the machine removes the difficulty of 'stop-loss' and the 'break-even psychology'—humans' greatest weaknesses—and mercilessly throws dead stocks that have broken into a downtrend into the trash can.
+The index reconstructs its portfolio twice a year (March and September). Rule-based replacement may reduce attachment driven by break-even psychology, but it can also create turnover, taxes, and losses when trends reverse; it is not complete risk management.
 
 ---
 

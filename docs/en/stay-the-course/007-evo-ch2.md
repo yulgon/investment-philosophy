@@ -1,8 +1,9 @@
 ---
 title: "[Chapter 2] The Heretic of Wall Street: The First Weapon to Defend My Ignorance, the Index Fund"
 date: 2026-07-01
+reviewed: 2026-07-24
 tags: [Evolution of Investment, Philosophy, Index Fund]
-excerpt: The theory was perfect, but the public had no weapon. The great victory of John Bogle, who forged the first survival weapon against a greedy Wall Street.
+excerpt: How diversification theory became a low-cost index fund that individuals could buy, and the role John Bogle played.
 ---
 
 <div class="stc-article-meta">
@@ -16,9 +17,12 @@ excerpt: The theory was perfect, but the public had no weapon. The great victory
 
 ![Birth of the Index Fund](/evo-ch2-cover.png)
 
+> [!NOTE] Source and interpretive scope
+> Comparisons between active funds and benchmarks are checked against S&P Dow Jones Indices' [SPIVA overview and methodology](https://www.spglobal.com/spdji/en/research-insights/spiva/about-spiva/). Results vary by country, asset class, and period, and some active funds outperform. This is my narrative of index-fund history, not a recommendation that every investor use the same product.
+
 ## The Theory Was Perfect, But the Public Had No Weapon
 
-As we saw in the previous chapter, Harry Markowitz and William Sharpe had already presented the correct answer in the 1960s: *"Don't try to beat the market, own the entire market (Market Beta)."* They had mathematically proven half a century ago the truth that I only realized in 2022, after countless failures throughout the 2010s before finally finding the market index fund.
+As discussed in the previous chapter, the work of Harry Markowitz and William Sharpe provided a theoretical foundation for diversification and market risk. That research also informed my decision to adopt market index funds in 2022 after years of trial and error.
 
 However, ordinary retail investors in the 1960s couldn't use this truth even if they knew it. Mentally, they understood "buy the whole of America," but in the reality of Wall Street, **the 'weapon' (financial product) that could encapsulate the 'entirety of America' simply did not exist.**
 
@@ -65,7 +69,7 @@ However, the initial launch of this great shield was humiliating. The greedy fun
 * *"What idiot in the world would entrust their money to just get the 'Average' instead of being number 1?"*
 * *"To give up the human will to beat the market, this is an Un-American and communist idea!"*
 
-Wall Street ridiculed this fund, calling it **'Bogle's Folly'**. However, the truth revealed by statistics decades later was cruel. It was mathematically proven that over 90% of genius fund managers in fancy suits could never beat the return of this seemingly stupid 'folly' (index fund) after deducting fees.
+Wall Street ridiculed the fund as **'Bogle's Folly.'** Later scorecards have shown that many active funds underperformed their benchmarks after fees over long periods. The percentage varies by market, time window, and treatment of survivorship bias, so no single figure is a universal law.
 
 ---
 

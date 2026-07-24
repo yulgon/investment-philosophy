@@ -39,14 +39,14 @@ const t = computed(() => {
     reasonTitle: isEn ? '💡 Reason for Curation:' : '💡 큐레이션 이유:',
     myCommentTitle: isEn ? '🙋‍♂️ Personal Note:' : '🙋‍♂️ 덧붙이는 말:',
 
-    reason1: isEn ? 'The best book that will perfectly scratch the itch you were most concerned about. ' : '가장 고민하셨던 부분을 완벽하게 긁어줄 수 있는 최고의 책입니다. ',
-    reason2: isEn ? 'A book that will explode in synergy when read together with the first book. ' : '첫 번째 책과 함께 읽으면 시너지가 폭발하는 책입니다. ',
-    reason3: isEn ? 'I would like to highly recommend this as the last one to broaden your investment horizon. ' : '투자 시야를 넓히기 위해 마지막으로 꼭 추천해 드리고 싶습니다. ',
+    reason1: isEn ? 'This book most closely matches the concern you selected. ' : '선택하신 고민과 가장 가까운 주제를 다루는 책입니다. ',
+    reason2: isEn ? 'This book offers a complementary perspective to the first selection. ' : '첫 번째 책과 함께 읽으면 다른 관점에서 주제를 보완할 수 있습니다. ',
+    reason3: isEn ? 'This final selection can help broaden the range of ideas you compare. ' : '마지막 책은 비교할 관점의 범위를 넓히는 데 도움이 될 수 있습니다. ',
 
-    reasonAppendIndex: isEn ? 'You can learn the most certain methodology to beat market returns.' : '시장 수익률을 이기는 가장 확실한 방법론을 배울 수 있습니다.',
+    reasonAppendIndex: isEn ? 'It explains the rationale, costs, and limits of index-based investing.' : '인덱스 투자의 근거와 비용, 한계를 함께 살펴볼 수 있습니다.',
     reasonAppendMacro: isEn ? 'Develops the eye to read the flow of money behind complex economic news.' : '복잡한 경제 기사 이면의 돈의 흐름을 읽는 눈을 길러줍니다.',
-    reasonAppendDividend: isEn ? 'Will give you the thrilling experience of actual cash flowing into your account.' : '실제로 계좌에 현금이 꽂히는 짜릿한 경험을 만들어 줄 것입니다.',
-    reasonAppendMindset: isEn ? 'Instills a steel mentality and philosophy that will not waver even in a bear market.' : '하락장에서도 흔들리지 않는 강철 멘탈과 철학을 심어줍니다.'
+    reasonAppendDividend: isEn ? 'It examines dividend cash flow together with the tradeoffs involved.' : '배당 현금흐름과 그에 따르는 선택의 대가를 함께 살펴봅니다.',
+    reasonAppendMindset: isEn ? 'It offers practical ideas for recognizing behavioral bias during a downturn.' : '하락장에서 행동 편향을 알아차리는 데 쓸 수 있는 관점을 제공합니다.'
   }
 })
 

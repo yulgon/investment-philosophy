@@ -1,3 +1,7 @@
+---
+reviewed: 2026-07-24
+---
+
 # 🤖 3. Auto-Investment Strategy
 
 > "The investor's chief problem—and even his worst enemy—is likely to be himself."  
@@ -8,7 +12,10 @@
 
 Auto-investment is the **top-priority investment strategy** that lies at the core of my entire investment system. No matter how sophisticated your theoretical knowledge is and how carefully you select high-quality assets, the psychological fear and greed you feel while watching real-time stock price fluctuations the moment you press the buy button, and the time spent trying to time your purchases, will inevitably shake the sustainability of your investments.
 
-Only when you **completely zero out the time spent on investments and psychological stress** through automation can you avoid being driven out of the market and enjoy the power of compound interest.
+Automation cannot eliminate investment time or stress, but it can reduce repetitive decisions and make it easier to follow a long-term plan through volatile periods.
+
+> [!NOTE] Evidence, assumptions, and checks
+> The basic rationale for fixed automatic contributions follows the U.S. SEC's [DCA explanation](https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging) and [automatic saving and investing guide](https://www.investor.gov/sites/investorgov/files/media/automatic-investing-infographic.pdf). Brokerage features, fees, and eligible securities below can change; verify current terms before use. Automation does not prevent losses, and account and order settings still require periodic checks.
 
 ---
 
@@ -32,7 +39,7 @@ This is an automated system that combines asset waiting efficiency—where funds
 ### Step 3: Set and Forget Psychological Firewall
 * Block all real-time price alerts and market noise push notifications from investment apps.
 * Since the system automatically accumulates at low prices and suppresses at high prices every night, strictly restrict the act of checking your account balance to the quarterly portfolio rebalancing schedule.
-* By refraining from checking prices or attempting to predict the market entirely, you **fundamentally eliminate the emotional stress caused by stock price fluctuations** and can focus on your main job and daily life.
+* Reducing price checks and attempts to predict the market may **lower the emotional stress caused by stock-price fluctuations** and make it easier to focus on work and daily life.
 
 ---
 
@@ -42,18 +49,18 @@ This guide is based on practical back-data derived from over 10 years of experie
 
 ### 1. Fundamental Philosophy of Automation Design
 * **Acknowledging Unpredictability**: No matter how excellent the complex algorithms of Quant Investment or advanced technical analysis indicators are, it is fundamentally impossible to predict even a single minute of the market's future.
-* **The Robustness of Simplicity**: The most important insight gained while running a mechanical Cost Averaging strategy in the extremely volatile cryptocurrency market is the fact that **'simple, mechanical periodic accumulation always yields superior results over sophisticated timing predictions.'**
+* **The Robustness of Simplicity**: My main lesson from using mechanical cost averaging in the volatile cryptocurrency market was that **a simple periodic plan reduced the burden of repeated timing decisions and some behavioral mistakes**. This does not mean it guarantees higher returns across every asset or period.
 * **Reliability of Standard Brokerage Features**: Therefore, this guide stipulates the primary use of the **'Overseas Stock/ETF Stock Accumulation' and 'Fractional Auto-Buy' services** provided by institutional brokerages, instead of unreliable and unstable external private automated trading APIs or personal scripts.
 
 ### 2. Building a 'Flawless Pipeline' Requiring Zero Touches
-As explained earlier in the KCA strategy, the key to controlling exchange rate volatility is **'KRW Fixed-Amount Buying.'** To achieve this, the **'Fractional Buying'** feature is essential, rather than buying in 1-share units. Combining this feature with bank auto-transfers completes a flawless pipeline.
+As explained earlier in the KCA strategy, **KRW fixed-amount buying** is a way to reduce repeated exchange-rate decisions. Fractional buying is useful when investing small amounts frequently, and connecting it to bank transfers can create a contribution pipeline with less manual intervention.
 
 1. **Auto Transfer (Bank ➡️ Brokerage)**: Set up the bank app so that when your salary comes in on the 25th of every month, 2 million KRW of investment funds is automatically transferred to your brokerage account (e.g., CMA) on the morning of the 26th.
 2. **Auto Buy (KRW Fixed-Amount Fractional)**: Set up the brokerage app to 'fractionally buy 10,000 KRW every business day' for core ETFs like VOO.
 3. **Result**: From one payday to the next, the brokerage system automatically executes currency exchange and purchases at night without you ever having to open the order book to check the dollar exchange rate.
 
 > ⚠️ **Set & Forget Mindset Warning**  
-> If you set up this entire pipeline but still open the brokerage app every morning to check overnight returns, the meaning of auto-investment is cut in half. Trust the system. To protect your daily peace of mind, you must make it a rule to only open and check your account balance during quarterly rebalancing.
+> Checking returns every morning can undermine the goal of reducing repetitive decisions. I use a quarterly review as the default while still monitoring failed orders, insufficient cash, and notices of product changes.
 
 ### 3. My Practical Brokerage Portfolio Setup
 
@@ -80,4 +87,4 @@ I entrust all overseas direct stock investments to Toss Securities, while **stri
 > "If you don't find a way to make money while you sleep, you will work until you die."  
 > — *Warren Buffett*
 
-Auto-investment is a practical weapon for building the 'structure that makes money work while you sleep' emphasized by Warren Buffett. Build a system that mechanically completely blocks the intervention of fickle and weak human psychology, sublimating the daily short-term fluctuations into the compound interest of time.
+Auto-investment can help build a structure that continues operating without daily orders. Its role is to reduce—not eliminate—emotional intervention and help the investor follow a predetermined plan through short-term fluctuations.

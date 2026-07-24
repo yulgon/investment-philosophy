@@ -2,9 +2,9 @@
 
 > **"If philosophy is the compass, strategy is the engine."**
 
-The key to successful long-term investing is consistent rules and the exclusion of emotions. If the 'Philosophy' part previously set up the massive destination of a one-billion-dollar donation and the compass of an unwavering mindset, now is the time to attach a **'powerful and unbreakable engine (Strategy)'** that will take us there without exhaustion.
+My long-term strategy focuses on repeatable rules and fewer unnecessary emotional decisions. Philosophy defines the destination and decision criteria; strategy defines what happens, and in what order, after income reaches the account.
 
-This investment engine, which must run for 100 years, shouldn't have a complex structure. Attempts to predict temporary market fluctuations (market timing) or macroeconomic variables cause the engine to overload and break down. Therefore, my strategy is strictly simple, mechanical, and above all, aimed at 'complete automation' so as not to disturb my peaceful daily life.
+To remain usable for decades, the process must be simple enough for me to understand and audit. Automation does not remove market risk; I use it to reduce repetitive orders and impulsive intervention.
 
 My investment process is designed and executed based on the following **4 Core Pillars**. In particular, going beyond a simple Dollar Cost Averaging (DCA), an independent KCA system optimized for the KRW cash flow of Korean office workers forms the center of these 4 pillars.
 
@@ -20,7 +20,7 @@ My investment process is designed and executed based on the following **4 Core P
       <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🪐</div>
       <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">1. KCA Accumulation Strategy</h3>
       <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
-        By formulating a fixed-amount KRW purchase (KRW Cost Averaging), the inverse correlation between stock prices and exchange rates is reflected in the portfolio. It prevents buying at high prices during high exchange rates and maximizes accumulation during low exchange rates.
+        I contribute the same KRW amount without making a new exchange-rate forecast for every purchase. The rule does not remove currency risk; it reduces repeated decisions.
       </p>
     </div>
     <div style="margin-top: 1.5rem;">
@@ -36,7 +36,7 @@ My investment process is designed and executed based on the following **4 Core P
       <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🤖</div>
       <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">2. Automated Investment Strategy</h3>
       <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
-        It excludes the weak human will swayed by real-time market fluctuations, and sets up a 'self-running' fully automated system by combining scheduled transfers, fractional automated investing, and automatic currency exchange systems.
+        Scheduled transfers and fractional auto-purchases reduce manual orders. The process also includes periodic checks for feature changes and failed or unintended orders.
       </p>
     </div>
     <div style="margin-top: 1.5rem;">
@@ -68,7 +68,7 @@ My investment process is designed and executed based on the following **4 Core P
       <div style="font-size: 2.2rem; margin-bottom: 0.8rem;">🔍</div>
       <h3 style="margin-top: 0; font-size: 1.25rem; font-weight: 600; color: var(--vp-c-brand-1);">4. ETF Selection & Tools Guide</h3>
       <p style="font-size: 0.95rem; line-height: 1.6; color: var(--vp-c-text-2); margin-top: 0.5rem;">
-        Shares core criteria for directly comparing and selecting blue-chip stocks and ETFs that will survive in the long term, such as market capitalization, fees, and asset manager size, along with a guide to professional mobile apps and analysis websites used for research.
+        A personal checklist for reviewing AUM, liquidity, fees, index methodology, and prospectuses, together with the research tools I use.
       </p>
     </div>
     <div style="margin-top: 1.5rem;">
@@ -143,8 +143,8 @@ My investment strategies work organically with each other to help achieve the fi
 
 The moment the fuel (KRW) called salary is injected, these 4 pillars and the execution workflow start to mesh and run on their own, just like the delicate gears of a Swiss watch.
 
-Whether the dollar exchange rate skyrockets or the Nasdaq index plunges overnight, the system silently executes market price buying according to the optimal algorithm every business day. While you are having dinner with your family, focusing on your main job, and falling into a deep sleep, the snowball of compound interest grows without stopping.
+On scheduled business days, the system places a predetermined order without requiring a new judgment about the exchange rate or market level. The account value can still fall, and an automated order can fail or execute differently from the plan.
 
-Through this process, you maximize your daily peace and the productivity of your main job, complete a structure that safely enters the **long-term compound interest section (Snowballing)** without being swept away by short-term market noise.
+The purpose is not to guarantee a return. It is to make a predetermined plan easier to repeat while preserving time for work and daily life.
 
-Starting from this page, the detailed strategy documents that follow will completely separate you from the market's greed and fear, serving as the most reliable shield to protect your daily peace. Now, check out the specific and systematic execution methods one by one.
+The detailed pages below document each rule's formula, implementation, change risk, and limitations.

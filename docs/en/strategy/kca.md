@@ -1,6 +1,10 @@
+---
+reviewed: 2026-07-24
+---
+
 # 🪐 1. KCA Investment Strategy (KRW Cost Averaging)
 
-The key to successful long-term investing is abandoning the arrogance of trying to predict the market (Time to Market), overcoming volatility, and surviving in the market forever. To achieve this, I practice the **KCA (KRW Cost Averaging)** strategy, an innovative variation of the traditional **DCA (Dollar Cost Averaging)** strategy tailored to the reality of Korean Won investors.
+KCA is my name for a personal contribution rule that implements traditional **Dollar Cost Averaging (DCA)** in Korean Won. Its purpose is to repeat the same KRW contribution rather than forecast markets or exchange rates.
 
 <script setup>
 import { defineAsyncComponent } from 'vue'
@@ -12,6 +16,9 @@ const KcaChart = defineAsyncComponent(() =>
   import('../../components/KcaChart.vue')
 )
 </script>
+
+> [!NOTE] Source, formula, and limits
+> The basic definition of DCA follows the U.S. SEC's [Investor.gov explanation](https://www.investor.gov/introduction-investing/investing-basics/glossary/dollar-cost-averaging). KCA's `N = M_KRW ÷ (P_USD × E)` is purchase arithmetic, not an expected-return model. It does not remove currency risk, transaction costs, taxes, or price declines, and it has not been independently validated as an academic strategy.
 
 ---
 
@@ -61,8 +68,9 @@ Combining this realization with overseas investment DCA is exactly this strategy
   </p>
 </div>
 
-> 💡 **The Perfection of Pre-designed Non-action (Wu Wei)**  
-> As long as this perfect inverse correlation formula operates systematically, we no longer need to stare at exchange rate windows or order books and punch calculators. We can leave the defense against the ebb and flow of exchange rates to the KCA formula, and focus solely on our daily lives and main jobs.
+> 💡 **Pre-designed Non-action (Wu Wei)**
+>
+> This formula is an execution rule for keeping purchases fixed in KRW without forecasting prices or exchange rates. Stocks and exchange rates do not always move in opposite directions, and the method does not remove currency risk; its purpose is to reduce the need to make a fresh exchange-rate judgment with every purchase.
 
 ### Automatic Exchange Rate Adjustment Mechanism of KCA
 
@@ -90,7 +98,7 @@ When reaching the ultra-long-term investment phase of over 10 years, systematic 
 * **Overcoming 2: Buy Rebalancing through Increasing Purchase Amounts**:
   In line with income increases or portfolio growth trends, **the base accumulation purchase amount itself is gradually adjusted upwards**. At the same time, by executing **Buy Rebalancing**, which intensively injects a larger portion of KRW purchase funds into assets whose proportions have significantly dropped, you can maintain the unique proportion adjustment effect of systematic investing as much as possible even as the portfolio size grows.
 * **Conclusion**:
-  Ultimately, the KCA strategy is the best tool that **perfectly controls the severe noise of short-term rapid fluctuations and exchange rate volatility experienced in the early and middle stages of asset accumulation**, supporting investors so they don't get exhausted or shaken out of the market, allowing them to safely reach the long-term compound interest phase (Snowballing) of over 10 years.
+  KCA is **a personal execution rule intended to reduce repeated price and exchange-rate decisions during the early and middle stages of accumulation**. It neither removes volatility and losses nor guarantees long-term performance, but it has helped me continue a predetermined contribution plan.
 
 ---
 
@@ -105,9 +113,9 @@ Historically, when a crisis (financial crisis, pandemic, geopolitical crisis, et
 Attempts to execute trades by predicting market timing and exchange rate outlooks mostly end in failure. KCA fundamentally blocks these human biases.
 * You mechanically accumulate a fixed KRW amount daily/monthly without worrying whether the exchange rate is 1,200 KRW or 1,400 KRW.
 * Automatically, the average unit price convergence effect of exchange rate fluctuations (Currency Averaging) occurs, naturally achieving exchange rate defense in the long term without hedging costs.
-* As a result, you can enjoy a **high degree of psychological stability, completely liberated from market stress**.
+* As a result, some investors may find the routine psychologically easier to maintain, although it does not eliminate market stress.
 
-> ⏭️ **To the Next Step**: Then, how can you manually calculate and make fixed KRW purchases every morning when exchange rates and stock prices change daily? It's nearly impossible with human hands and will alone. Therefore, to complete the KCA strategy, an **'Automatic Investment Strategy'** must be supported. Check out the specific setup method on the next page.
+> ⏭️ **Next step**: Fixed-KRW purchases can be placed manually, but frequent calculations and orders become inconvenient. The next page explains the **automation settings** and checks I use to reduce that repetitive work.
 
 ---
 

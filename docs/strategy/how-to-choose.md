@@ -1,8 +1,15 @@
+---
+reviewed: 2026-07-24
+---
+
 # 🔍 4. ETF 선정 및 도구 가이드 (Selection & Tools)
 
-> "좋은 투자 전략과 자동화 시스템을 갖추었더라도, 담아내는 그릇(자산) 자체가 나쁘다면 결국 모래성에 불과합니다."
+> "잘 설계된 전략도 그 전략을 구현하는 자산의 품질과 적합성에 영향을 받습니다."
 
-장기적인 우상향과 복리의 성장을 확실하게 보장해 줄 초우량 ETF 및 주식을 선별하는 저만의 4대 기준과 이를 효율적으로 리서치하고 백테스트하기 위해 매일 활용하는 분석 사이트/앱 목록을 공개합니다.
+장기 투자 후보 ETF와 주식을 비교할 때 제가 사용하는 네 가지 기준과 리서치·백테스트 도구를 공개합니다. 이 기준은 손실을 막거나 수익을 보장하는 선별법이 아니라, 판단 과정을 일관되게 기록하기 위한 개인 체크리스트입니다.
+
+> [!NOTE] 확인 순서와 한계
+> ETF의 지수·보수·위험은 블로그나 검색 요약이 아니라 운용사 원문에서 확인합니다: [VOO — Vanguard](https://investor.vanguard.com/investment-products/etfs/profile/voo), [SCHD — Schwab](https://www.schwabassetmanagement.com/products/schd), [SPMO — Invesco](https://www.invesco.com/us/financial-products/etfs/product-detail?ticker=SPMO). AUM·보수·보유 종목은 변하며, 아래 숫자는 영구적인 선정 기준이나 미래 성과의 보증이 아닙니다.
 
 ---
 

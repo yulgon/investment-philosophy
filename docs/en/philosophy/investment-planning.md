@@ -1,8 +1,15 @@
+---
+reviewed: 2026-07-24
+---
+
 # 📋 Investment Planning
 
 The first step in investing is not recklessly choosing which stocks to buy. John Bogle and the Bogleheads community consider it the most important principle to formulate your own unshakable **Investment Policy Statement (IPS)** in writing before starting to invest in earnest.
 
 The following is the '5-Step Guide to Investment Planning' recommended by the Bogleheads community, reconstructed to fit the situation of Korean investors.
+
+> [!NOTE] Source, assumptions, and limits
+> The U.S. framework is based on [Bogleheads Prioritizing investments](https://www.bogleheads.org/wiki/Prioritizing_investments). The sequence below is my Korean adaptation and can change with interest rates, income, tax law, and withdrawal restrictions. Confirm tax-credit limits and rates in current Korean National Tax Service guidance.
 
 ---
 
@@ -25,7 +32,7 @@ Before launching a ship, you must clearly decide on the destination and the dura
 ## 3. Asset Allocation
 
 > [!IMPORTANT]
-> **"Asset allocation determines more than 90% of a portfolio's long-term returns."**
+> **Asset allocation is one of the main factors shaping a portfolio’s risk level and variation in returns.**
 
 What is overwhelmingly more important than individual stocks (Samsung Electronics or Apple) or market timing is determining the 'ratio of stocks to bonds/cash'.
 
@@ -50,7 +57,7 @@ This is the original model designed based on US tax benefits (401k, HSA, IRA, et
 ![Prioritizing Investments](/Prioritizing_Investments-3.jpg)
 
 ### Figure 2. Korean Localized Investing Priority
-This is a flowchart perfectly localizing the original philosophy (emergency fund -> paying off high-interest debt -> maximizing tax benefits -> student loans -> mortgage vs general investing) to the Korean situation (3 major tax-advantaged accounts, student loans, mortgages).
+This is my adaptation of the original sequence—emergency funds, high-interest debt, tax benefits, student loans, and the mortgage-versus-investing decision—to Korean accounts and debt conditions. The order can change with an individual’s interest rates, income, taxes, and purpose for the money.
 
 <ol class="priority-flow" aria-label="Korean localized investing priority">
   <li><strong>Secure this month’s living expenses</strong><span>If they are short, deposit cash in a CMA, MMF, or parking account first.</span></li>
@@ -64,11 +71,11 @@ This is a flowchart perfectly localizing the original philosophy (emergency fund
 
 #### Core Strategies by Priority
 1. **Monthly living expenses account (CMA/MMF/Parking Account)**: First, secure essential living expenses such as credit card bills, apartment maintenance fees, utility bills, communication bills, and food expenses to be paid this month as cash in a CMA/MMF/parking account. This is the minimum safety net to prevent situations where funds are tied up in investments, blocking the cash flow essential for daily life.
-2. **Paying off high-interest debt**: If you have a loan with an interest rate of over 5% per year, the most certain guaranteed return is paying off the loan.
-3. **Pension Savings Fund and IRP (for tax deduction)**: The year-end tax deduction benefit (up to 9 million KRW per year) is the most certain and massive bonus given by the state. If it's retirement funds, fill the limit as the top priority.
+2. **Paying off high-interest debt**: Repaying debt above 5% reduces that interest expense. Early-repayment fees and the need for an emergency fund should also be considered.
+3. **Pension Savings Fund and IRP (for tax deduction)**: Pension-account tax credits can be useful for eligible investors. Limits and rates depend on current rules and personal income, so the latest official guidance should be checked.
 4. **ISA (Individual Savings Account)**: An essential tax-saving account that can maximize tax deferral and separate taxation benefits for mid-to-short-term purpose funds and investing in overseas ETFs listed domestically.
 5. **(Own) Student Loan Repayment**: This is the Korean alternative to the Bogleheads Original's 529 Plan (children's education savings). Respect independence by having children resolve their own education funds, and instead, if you have remaining student loans, pay them off to complete psychological/financial independence.
-6. **General Taxable Account (Direct Investing) and Low-Interest Debt (Mortgage) Philosophy**: Invest all remaining funds in a general account after filling all tax-advantaged accounts. At this time, **not paying off low-interest long-term debt like a mortgage early** is the mathematical standard of Bogleheads. This is because the expected return on long-term investment is higher than the loan interest, and as time passes, **inflation melts away the real value of the debt**. Instead of paying off debt, stay in the market and enjoy compound interest.
+6. **General Taxable Accounts and Low-Interest Debt (Mortgages)**: After using tax-advantaged accounts, remaining funds can go toward either a taxable investment account or low-interest long-term debt. Because investment returns are uncertain, compare the loan rate, early-repayment fees, investment horizon, and ability to bear risk.
 
 ---
 
