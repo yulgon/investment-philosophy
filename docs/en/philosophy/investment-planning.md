@@ -59,15 +59,26 @@ This is the original model designed based on US tax benefits (401k, HSA, IRA, et
 ### Figure 2. Korean Localized Investing Priority
 This is my adaptation of the original sequence—emergency funds, high-interest debt, tax benefits, student loans, and the mortgage-versus-investing decision—to Korean accounts and debt conditions. The order can change with an individual’s interest rates, income, taxes, and purpose for the money.
 
-<ol class="priority-flow" aria-label="Korean localized investing priority">
-  <li><strong>Secure this month’s living expenses</strong><span>If they are short, deposit cash in a CMA, MMF, or parking account first.</span></li>
-  <li><strong>Repay debt above 5% interest</strong><span>If there is none, continue to the next step.</span></li>
-  <li><strong>Fill the Pension Savings and IRP tax-deduction limit</strong><span>Contribute up to the annual KRW 9 million limit first.</span></li>
-  <li><strong>Fill the annual ISA limit</strong><span>Use tax deferral and other available tax benefits.</span></li>
-  <li><strong>Repay your own student loans</strong><span>Complete financial and psychological independence.</span></li>
-  <li><strong>Invest through a taxable account</strong><span>Use direct investing and additional asset allocation.</span></li>
-  <li><strong>Evaluate low-interest, long-term debt separately</strong><span>Compare early repayment with inflation hedging and the opportunity cost of long-term compounding.</span></li>
-</ol>
+<section class="priority-map" aria-label="Korean localized investing priority: core path and lowest-priority decision">
+  <p class="priority-map-label">Core path</p>
+  <ol class="priority-path">
+    <li><strong>Secure this month’s living expenses</strong><span>If they are short, deposit cash in a CMA, MMF, or parking account first.</span></li>
+    <li class="priority-decision">
+      <strong>Do you have debt above 5% interest?</strong>
+      <span>If so, repay it before moving on to the next step.</span>
+      <div class="priority-outcomes" aria-label="High-interest debt decision"><b>Yes · repay, then continue</b><b>No · next step</b></div>
+    </li>
+    <li><strong>Fill the Pension Savings and IRP tax-deduction limit</strong><span>Contribute up to the annual KRW 9 million limit first.</span></li>
+    <li><strong>Fill the annual ISA limit</strong><span>Use tax deferral and other available tax benefits.</span></li>
+    <li class="priority-decision">
+      <strong>Do you have an outstanding student loan?</strong>
+      <span>If so, repay it before moving on to the next step.</span>
+      <div class="priority-outcomes" aria-label="Student-loan decision"><b>Yes · repay, then continue</b><b>No · next step</b></div>
+    </li>
+    <li><strong>Invest through a taxable account</strong><span>Use direct investing and additional asset allocation.</span></li>
+    <li class="priority-exception"><strong>Extra payments on low-interest, fixed long-term debt <em>· lowest priority</em></strong><span>Continue making scheduled payments. Decide on extra principal payments by comparing the after-tax loan rate with the return on a safe asset of comparable duration, alongside liquidity, variable-rate risk, and peace of mind.</span></li>
+  </ol>
+</section>
 
 #### Core Strategies by Priority
 1. **Monthly living expenses account (CMA/MMF/Parking Account)**: First, secure essential living expenses such as credit card bills, apartment maintenance fees, utility bills, communication bills, and food expenses to be paid this month as cash in a CMA/MMF/parking account. This is the minimum safety net to prevent situations where funds are tied up in investments, blocking the cash flow essential for daily life.
@@ -75,7 +86,8 @@ This is my adaptation of the original sequence—emergency funds, high-interest 
 3. **Pension Savings Fund and IRP (for tax deduction)**: Pension-account tax credits can be useful for eligible investors. Limits and rates depend on current rules and personal income, so the latest official guidance should be checked.
 4. **ISA (Individual Savings Account)**: An essential tax-saving account that can maximize tax deferral and separate taxation benefits for mid-to-short-term purpose funds and investing in overseas ETFs listed domestically.
 5. **(Own) Student Loan Repayment**: This is the Korean alternative to the Bogleheads Original's 529 Plan (children's education savings). Respect independence by having children resolve their own education funds, and instead, if you have remaining student loans, pay them off to complete psychological/financial independence.
-6. **General Taxable Accounts and Low-Interest Debt (Mortgages)**: After using tax-advantaged accounts, remaining funds can go toward either a taxable investment account or low-interest long-term debt. Because investment returns are uncertain, compare the loan rate, early-repayment fees, investment horizon, and ability to bear risk.
+6. **General Taxable Accounts**: After using tax-advantaged accounts, invest remaining funds in a taxable account in line with your asset-allocation policy.
+7. **Extra payments on low-interest, fixed long-term debt (mortgages)**: Continue scheduled payments, but place extra principal payments last. Since an extra payment earns a guaranteed return equal to the after-tax loan rate, compare it with the return on a safe asset of comparable duration. Also consider liquidity, variable-rate risk, early-repayment fees, and peace of mind.
 
 ---
 

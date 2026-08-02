@@ -436,51 +436,133 @@ html {
   }
 }
 
-/* Accessible replacement for the one large client-rendered flowchart. */
-.priority-flow {
-  display: grid;
-  gap: 0;
+/* Korean investing priority: a calm core path with compact decision points. */
+.priority-map {
   margin: 1.5rem 0;
+}
+
+.priority-map-label {
+  margin: 0 0 0.7rem;
+  color: var(--vp-c-brand-1);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.priority-path {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: priority-step;
 }
 
-.priority-flow li {
+.priority-path li {
   position: relative;
   display: grid;
-  gap: 0.2rem;
-  margin: 0 0 0 1.2rem;
-  padding: 0.9rem 1rem 0.9rem 2.9rem;
-  border-left: 2px solid var(--vp-c-brand-soft);
+  gap: 0.22rem;
+  margin: 0 0 0 1.45rem;
+  padding: 0.85rem 1rem 0.9rem 1.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
   counter-increment: priority-step;
 }
 
-.priority-flow li::before {
+.priority-path li::before {
   content: counter(priority-step);
   position: absolute;
-  top: 0.85rem;
-  left: -1.05rem;
+  top: 50%;
+  left: -1.45rem;
+  z-index: 1;
   display: grid;
   place-items: center;
-  width: 2rem;
-  height: 2rem;
+  width: 2.15rem;
+  height: 2.15rem;
+  border: 3px solid var(--vp-c-bg);
   border-radius: 999px;
   background: var(--vp-c-brand-1);
   color: var(--vp-c-bg);
+  font-size: 0.82rem;
+  font-weight: 800;
+  transform: translateY(-50%);
+}
+
+.priority-path li:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  bottom: -1.22rem;
+  left: -0.37rem;
+  color: var(--vp-c-brand-1);
+  font-size: 1rem;
   font-weight: 800;
 }
 
-.priority-flow li:last-child {
-  border-left-color: transparent;
-}
-
-.priority-flow strong {
+.priority-path strong,
+.priority-exception strong {
   color: var(--vp-c-text-1);
 }
 
-.priority-flow span {
+.priority-path span,
+.priority-exception span {
   color: var(--vp-c-text-2);
   font-size: 0.9rem;
   line-height: 1.55;
+}
+
+.priority-decision {
+  border-color: var(--vp-c-brand-1) !important;
+  background: var(--vp-c-brand-soft) !important;
+}
+
+.priority-outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+
+.priority-outcomes b {
+  padding: 0.18rem 0.5rem;
+  border-radius: 999px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-brand-1);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.priority-exception {
+  border-color: var(--vp-c-text-3) !important;
+  background: color-mix(in srgb, var(--vp-c-bg-soft) 78%, var(--vp-c-default-soft) 22%) !important;
+}
+
+.priority-exception::before {
+  background: var(--vp-c-text-3) !important;
+}
+
+.priority-exception em {
+  color: var(--vp-c-text-2);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .priority-path li {
+    margin-left: 1.2rem;
+    padding-left: 1.1rem;
+  }
+
+  .priority-path li::before {
+    left: -1.2rem;
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+
+  .priority-path li:not(:last-child)::after {
+    left: -0.27rem;
+  }
+
 }

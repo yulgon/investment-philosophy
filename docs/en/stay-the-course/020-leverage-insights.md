@@ -171,11 +171,11 @@ To prove the magic of VA's 'Volatility Harvesting', instead of the traditional l
 
 ### [Table] Summary of Simulation Results (Based on 1,200 Trading Days)
 
-| Investment Strategy | Starting Amount | Added Amount | Total Invested Amount | Final Amount | Profit | Return on Investment (ROI) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **① DCA (100K KRW/day accumulated)** | 10M KRW | Approx. 118.70M KRW | Approx. 128.70M KRW | Approx. 448.00M KRW | **+319.30M KRW** | **+248.1%** |
-| **② VA (Allow Selling)** | 10M KRW | **Approx. -90.68M KRW** | **Approx. -80.68M KRW (Net Recovery)** | Approx. 128.70M KRW | **+209.38M KRW** | **Infinite (Principal Recovered)** |
-| **③ VA (No Sell)** | 10M KRW | **Approx. 66.01M KRW** | **Approx. 76.01M KRW** | **Approx. 429.09M KRW** | **+353.08M KRW** | **+464.5%** |
+| Investment Strategy                  | Starting Amount | Added Amount            | Total Invested Amount                  | Final Amount            | Profit           | Return on Investment (ROI)         |
+| :----------------------------------- | :-------------- | :---------------------- | :------------------------------------- | :---------------------- | :--------------- | :--------------------------------- |
+| **① DCA (100K KRW/day accumulated)** | 10M KRW         | Approx. 118.70M KRW     | Approx. 128.70M KRW                    | Approx. 448.00M KRW     | **+319.30M KRW** | **+248.1%**                        |
+| **② VA (with Selling)**              | 10M KRW         | **Approx. -90.68M KRW** | **Approx. -80.68M KRW (Net Recovery)** | Approx. 128.70M KRW     | **+209.38M KRW** | **Infinite (Principal Recovered)** |
+| **③ VA (No Sell)**                   | 10M KRW         | **Approx. 66.01M KRW**  | **Approx. 76.01M KRW**                 | **Approx. 429.09M KRW** | **+353.08M KRW** | **+464.5%**                        |
 
 ### Result Interpretation: Cash Flow and Tax Timing in This Simulation
 *   **VA Allow Selling (②):** In this simulation, selling amounts above the target produced about **80 million KRW of net withdrawals**. A real account would differ because of taxes, fees, slippage, and the timing of each sale.
@@ -220,14 +220,14 @@ Furthermore, when a market crash (economic crisis) occurs, there is a high risk 
 
 In conclusion, I have tested various leveraged ETF trading methods directly in my account by carving out a portion of my assets (satellite portfolio). The clear lesson I gained from that result is **'if you simply buy and leave a leveraged ETF without trading, the account melts away.'**
 
-Installment investing (DCA) is one way to spread entry points without forecasting the market. The **VA No-Sell** approach described above may be an alternative for an investor able to supply additional cash and tolerate deep losses, but it does not remove leverage risk, taxes, or costs.
+Installment investing (DCA) is one way to spread entry points without forecasting the market. The **VA with selling** approach described above may be an alternative for an investor able to supply additional cash and tolerate deep losses, but it does not remove leverage risk, taxes, or costs.
 
 A 2x product can still magnify losses and volatility substantially and should not be treated as a default for long-term investors. Before choosing any multiple, review the prospectus, daily-reset structure, historical drawdowns, the possibility of interrupted cash flow, and whether the position is limited to a tolerable size.
 
 Even in the fear of a collapsing market, trust that your salary will mechanically sweep up shares at a cheap price. Choosing a volatility you can handle, maintaining your trajectory with meticulous salary investing, and moving forward without wavering.
 This is the core of **'Stay the course'** for individual investors to survive and grab wealth in a complex and brutal market.
 
-> **💡 Practical VA (Value Averaging) Guide for Beginner Office Workers**
+> **💡 Practical VA (Value Averaging) No-Sell Guide for Beginner Office Workers**
 > If you have a fixed surplus salary to invest every month, try setting a 'Target account amount to increase every month' according to your situation.
 > *   **For Beginners:** Grow the account size by 400,000 KRW every month (approx. 20,000 KRW/day)
 > *   **For Intermediate:** Grow the account size by 1M KRW every month (approx. 50,000 KRW/day)
