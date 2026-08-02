@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 import EvolutionToc from './components/EvolutionToc.vue'
 import EvolutionTocEn from './components/EvolutionTocEn.vue'
+import MacroSurvivalToc from './components/MacroSurvivalToc.vue'
 import Layout from './Layout.vue'
 
 export default {
@@ -10,6 +11,7 @@ export default {
   enhanceApp({ app }) {
     app.component('EvolutionToc', EvolutionToc)
     app.component('EvolutionTocEn', EvolutionTocEn)
+    app.component('MacroSurvivalToc', MacroSurvivalToc)
     
     if (typeof window !== 'undefined') {
       window.addEventListener('market-state-updated', (event) => {
