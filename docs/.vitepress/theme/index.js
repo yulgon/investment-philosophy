@@ -3,6 +3,7 @@ import './custom.css'
 import EvolutionToc from './components/EvolutionToc.vue'
 import EvolutionTocEn from './components/EvolutionTocEn.vue'
 import MacroSurvivalToc from './components/MacroSurvivalToc.vue'
+import MacroSurvivalTocEn from './components/MacroSurvivalTocEn.vue'
 import Layout from './Layout.vue'
 
 export default {
@@ -12,6 +13,7 @@ export default {
     app.component('EvolutionToc', EvolutionToc)
     app.component('EvolutionTocEn', EvolutionTocEn)
     app.component('MacroSurvivalToc', MacroSurvivalToc)
+    app.component('MacroSurvivalTocEn', MacroSurvivalTocEn)
     
     if (typeof window !== 'undefined') {
       window.addEventListener('market-state-updated', (event) => {

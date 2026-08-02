@@ -9,6 +9,9 @@ tags:
 prev:
   text: Chapter 10. Evolution Continues
   link: /en/stay-the-course/015-evo-ch10
+next:
+  text: Macroeconomic Survival Prologue (The Asset I Trusted Most Made Me the Most Anxious)
+  link: /en/stay-the-course/021-macro-survival-prologue
 excerpt: Discarding the arrogance of trying to predict the market, and designing an unshakable survival system. An invitation to Part 2, 'Macroeconomic Survival'.
 ---
 
@@ -175,7 +178,7 @@ Perhaps a much more painful and greater task remains than building the raft. It 
 We must now move beyond the excellent tools found in Part 1 and talk about the **'Operating System (OS)' and 'Mindset' that operate these tools without wavering**.
 Not a simple stock recommendation or a secret guaranteeing 100% returns, but the humble survival record of an engineer slowly increasing his 'probability of survival' in an unpredictable world.
 
-That true voyage will leave the empty chapters behind for a moment, and calmly continue in **Part 2 *Macroeconomic Survival***.
+That true voyage will leave the empty chapters behind for a moment, and calmly continue in **[Part 2, *Macroeconomic Survival*](/en/stay-the-course/021-macro-survival-prologue)**.
 
 May you find your own North Star of principles even in the pitch-black darkness.
 And I sincerely pray that you willingly 'Stay the Course' in the face of any rough waves.
