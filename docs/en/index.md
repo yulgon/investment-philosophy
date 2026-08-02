@@ -43,10 +43,10 @@ features:
       <span>Trace the decisions that led from an eleven-year 0% return to index, factor, and core-satellite investing.</span>
       <em>Read from the beginning →</em>
     </a>
-    <a class="home-original__card" href="/en/strategy/kca">
-      <strong>KCA in Korean Won</strong>
-      <span>See the formula, application, and limits of fixing contribution amounts in KRW without forecasting exchange rates.</span>
-      <em>View the method →</em>
+    <a class="home-original__card" href="/en/stay-the-course/021-macro-survival-prologue">
+      <strong>Macroeconomic Survival Prologue</strong>
+      <span>Read why the bonds I trusted most became my greatest source of anxiety, beginning with the rate and inflation shock of 2022.</span>
+      <em>Read the prologue →</em>
     </a>
     <a class="home-original__card" href="/en/strategy/rule-of-60-barbell">
       <strong>Rule of 60 Data Record</strong>

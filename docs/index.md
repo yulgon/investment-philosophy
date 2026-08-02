@@ -43,10 +43,10 @@ features:
       <span>11년 수익률 0%에서 출발해 인덱스·팩터·코어-위성으로 바뀐 판단 과정을 읽습니다.</span>
       <em>연재 처음부터 읽기 →</em>
     </a>
-    <a class="home-original__card" href="/strategy/kca">
-      <strong>KCA 원화 적립 규칙</strong>
-      <span>환율을 예측하지 않고 원화 기준 매수액을 고정하는 개인 실행법과 한계를 확인합니다.</span>
-      <em>산식과 적용법 보기 →</em>
+    <a class="home-original__card" href="/stay-the-course/021-macro-survival-prologue">
+      <strong>거시경제 생존기 프롤로그</strong>
+      <span>가장 안전하다고 믿었던 채권이 왜 가장 큰 불안을 주었는지, 2022년부터 이어진 금리·인플레이션 생존기를 읽습니다.</span>
+      <em>프롤로그 읽기 →</em>
     </a>
     <a class="home-original__card" href="/strategy/rule-of-60-barbell">
       <strong>Rule of 60 데이터 기록</strong>
