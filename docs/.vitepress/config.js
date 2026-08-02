@@ -27,6 +27,9 @@ export default defineConfig({
       ['script', {}, `
         (function() {
           if (typeof window === 'undefined') return;
+          var analyticsHosts = ['one-billion-donation.com', 'www.one-billion-donation.com'];
+          if (analyticsHosts.indexOf(window.location.hostname) === -1) return;
+
           var loaded = false;
           function loadAnalytics() {
             if (loaded) return;
