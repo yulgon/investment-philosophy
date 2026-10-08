@@ -10,7 +10,7 @@ prev:
   text: Chapter 10. Evolution Continues
   link: /en/stay-the-course/015-evo-ch10
 next:
-  text: Macroeconomic Survival Prologue (The Asset I Trusted Most Made Me the Most Anxious)
+  text: Macroeconomic Survival Prologue (The Asset I Trusted Most Was the One I Understood Least)
   link: /en/stay-the-course/021-macro-survival-prologue
 excerpt: Discarding the arrogance of trying to predict the market, and designing an unshakable survival system. An invitation to Part 2, 'Macroeconomic Survival'.
 ---

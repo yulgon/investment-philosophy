@@ -4,16 +4,13 @@ import { useRoute } from 'vitepress'
 const route = useRoute()
 
 const chapters = [
-  { path: '/en/stay-the-course/021-macro-survival-prologue', title: 'Prologue: The Asset I Trusted Most Made Me the Most Anxious' },
-  { path: '/en/stay-the-course/022-macro-survival-ch1', title: "Chapter 1: I Bet on Korea's Slow Growth, but the Market Refused My Timeline" }
-]
-
-const pendingChapters = [
-  'Chapter 2: Rediscovering Shelter (Surviving a Rate Surge)',
-  'Chapter 3: Preparing for the Pivot (The Leverage of Duration)',
-  'Chapter 4: The Chaos of 2023 (Inflation and the Poison of Greed)',
-  'Chapter 5: The Endgame of Macro (Across Rates and Currencies)',
-  'Chapter 6: Beyond Failure (A Paycheck for My Future Self)'
+  { path: '/en/stay-the-course/021-macro-survival-prologue', title: 'Prologue: The Asset I Trusted Most Was the One I Understood Least' },
+  { path: '/en/stay-the-course/022-macro-survival-ch1', title: 'Chapter 1: I Expected Slower Growth in Korea, but the Market Moved on a Different Clock' },
+  { path: '/en/stay-the-course/023-macro-survival-ch2', title: 'Chapter 2: Only After Retreating to Cash Did I Learn the Value of Waiting' },
+  { path: '/en/stay-the-course/024-macro-survival-ch3', title: 'Chapter 3: I Extended Duration While Waiting for the Peak in Rates' },
+  { path: '/en/stay-the-course/025-macro-survival-ch4', title: 'Chapter 4: Preparing for Inflation Added More Risk' },
+  { path: '/en/stay-the-course/026-macro-survival-ch5', title: 'Chapter 5: I Tried to Forecast Rates and Currencies Together' },
+  { path: '/en/stay-the-course/027-macro-survival-epilogue', title: 'Epilogue: Asking Again What My Investing Is For' }
 ]
 
 function isActive(path) {
@@ -28,9 +25,6 @@ function isActive(path) {
       <li v-for="chapter in chapters" :key="chapter.path" :class="{ active: isActive(chapter.path) }">
         <a :href="chapter.path">{{ chapter.title }}</a>
         <span v-if="isActive(chapter.path)" class="current-badge">Current</span>
-      </li>
-      <li v-for="chapter in pendingChapters" :key="chapter" class="pending">
-        <span>{{ chapter }} · Coming soon</span>
       </li>
     </ul>
     <div class="macro-toc-footer">

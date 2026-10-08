@@ -10,7 +10,7 @@ prev:
   text: 제10장. 진화는 계속된다 (나만의 3-Core 생존 포트폴리오)
   link: /stay-the-course/015-evo-ch10
 next:
-  text: 거시경제 생존기 프롤로그 (가장 안전하다고 믿었던 자산이 나를 가장 불안하게 만들었다)
+  text: 거시경제 생존기 프롤로그 (가장 안전하다고 믿었던 자산을 가장 모르고 있었다)
   link: /stay-the-course/021-macro-survival-prologue
 excerpt: 시장을 예측하려던 오만함을 버리고, 흔들리지 않는 생존 시스템을 설계하다. 2부 '거시경제 생존기'로의 초대.
 ---

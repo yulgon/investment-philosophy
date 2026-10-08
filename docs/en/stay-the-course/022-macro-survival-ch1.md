@@ -1,5 +1,5 @@
 ---
-title: "[Macroeconomic Survival Ch. 1] I Bet on Korea's Slow Growth, but the Market Refused to Follow My Timeline"
+title: "[Macroeconomic Survival Ch. 1] I Expected Slower Growth in Korea, but the Market Moved on a Different Clock"
 date: 2026-08-02
 tags:
   - MacroeconomicSurvival
@@ -8,9 +8,12 @@ tags:
   - InterestRates
   - Duration
 prev:
-  text: Prologue. The Asset I Trusted Most Made Me the Most Anxious
+  text: Prologue. The Asset I Trusted Most Was the One I Understood Least
   link: /en/stay-the-course/021-macro-survival-prologue
-excerpt: "I believed Korea would enter a low-growth era and cut rates before the United States. But identifying the destination and surviving the path to it turned out to be entirely different problems."
+next:
+  text: Chapter 2. Only After Retreating to Cash Did I Learn the Value of Waiting
+  link: /en/stay-the-course/023-macro-survival-ch2
+excerpt: "I expected Korea to enter a low-growth era and cut rates before the United States. Between that economic view and the timing of bond prices were inflation, exchange rates, and a much longer wait than I had allowed for."
 ---
 
 <div class="stc-article-meta">
@@ -20,11 +23,11 @@ excerpt: "I believed Korea would enter a low-growth era and cut rates before the
   <span class="stc-card-tag">#Duration</span>
 </div>
 
-# [Macroeconomic Survival Ch. 1] I Bet on Korea's Slow Growth, but the Market Refused to Follow My Timeline
+# [Macroeconomic Survival Ch. 1] I Expected Slower Growth in Korea, but the Market Moved on a Different Clock
 
-![The 2022 storm in which stocks and bonds fell together](/macro-survival-ch1-cover.png)
+![An investor looking over a rain-darkened Seoul and considering Korea's slower-growth future](/macro-survival-ch1-cover.png)
 
-## I Invested in a Darker Future for Korea
+## A Choice Built on Slower Growth in Korea
 
 Korea's future growth rate will be lower than that of the United States.
 
@@ -38,7 +41,7 @@ My thesis fit neatly into a single line:
 
 I did not buy Korean government bonds because I was optimistic about Korea's future. I did the opposite: I tried to turn my pessimism about its long-run growth into a capital gain from bonds.
 
-The logic felt persuasive. Persuasive logic has a way of making an investor bold.
+The logic was simple and clear. That made it harder for me to notice the conditions I had left out.
 
 ---
 
@@ -114,7 +117,7 @@ I had focused on the destination. I had not calculated the path, the cost, or th
 
 ---
 
-## I Abandoned the Shield and Bought Time
+## I First Moved Somewhere I Could Afford to Wait
 
 The lesson of 2022 was not simply that bonds are unsafe.
 
@@ -122,7 +125,7 @@ Bonds offer different kinds of safety. **Credit safety** asks whether the US or 
 
 A long-term government bond can be highly secure in credit terms and still experience enormous price swings because of its duration. What I actually needed was low credit risk *and* stability for money that might fund living expenses in the nearer future. I had mistaken one kind of safety for both.
 
-With rates still rising, it was not time to fight back with even more duration. I first needed to buy time to survive.
+With rates still rising, it was not time to add even more duration. I first needed a place where the next decision did not have to be rushed.
 
 I turned away from long-duration bonds and began studying SGOV, Korean CD-rate ETFs, and cash management accounts. I traded the promise of spectacular capital gains for short maturities and interest income that adjusted upward more quickly.
 

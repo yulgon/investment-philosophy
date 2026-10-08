@@ -4,16 +4,13 @@ import { useRoute } from 'vitepress'
 const route = useRoute()
 
 const chapters = [
-  { path: '/stay-the-course/021-macro-survival-prologue', title: '프롤로그: 가장 안전하다고 믿었던 자산이 나를 가장 불안하게 만들었다' },
-  { path: '/stay-the-course/022-macro-survival-ch1', title: '1장: 한국의 저성장에 베팅했지만, 시장은 내 순서대로 움직이지 않았다' }
-]
-
-const pendingChapters = [
-  '2장: 피난처의 재발견 (이자율 폭등 시대의 생존법)',
-  '3장: 피벗을 향한 반격 (듀레이션의 지렛대)',
-  '4장: 혼돈의 2023년 (채권의 천적과 탐욕의 독배)',
-  '5장: 매크로의 종착지 (환율과 금리를 넘나들다)',
-  '6장: 실패를 넘어 성공으로 (미래의 나에게 보내는 월급)'
+  { path: '/stay-the-course/021-macro-survival-prologue', title: '프롤로그: 가장 안전하다고 믿었던 자산을 가장 모르고 있었다' },
+  { path: '/stay-the-course/022-macro-survival-ch1', title: '1장: 한국의 저성장을 예상했지만, 시장의 시간은 달랐다' },
+  { path: '/stay-the-course/023-macro-survival-ch2', title: '2장: 현금으로 물러나서야 기다림의 가치를 알았다' },
+  { path: '/stay-the-course/024-macro-survival-ch3', title: '3장: 금리의 정점을 기다리며 듀레이션을 늘렸다' },
+  { path: '/stay-the-course/025-macro-survival-ch4', title: '4장: 인플레이션을 대비하며 더 큰 위험을 더했다' },
+  { path: '/stay-the-course/026-macro-survival-ch5', title: '5장: 금리와 환율을 함께 예측하려 했다' },
+  { path: '/stay-the-course/027-macro-survival-epilogue', title: '에필로그: 손실 앞에서 다시 투자의 목적을 묻다' }
 ]
 
 function isActive(path) {
@@ -28,9 +25,6 @@ function isActive(path) {
       <li v-for="chapter in chapters" :key="chapter.path" :class="{ active: isActive(chapter.path) }">
         <a :href="chapter.path">{{ chapter.title }}</a>
         <span v-if="isActive(chapter.path)" class="current-badge">현재 글</span>
-      </li>
-      <li v-for="chapter in pendingChapters" :key="chapter" class="pending">
-        <span>{{ chapter }} · 연재 예정</span>
       </li>
     </ul>
     <div class="macro-toc-footer">

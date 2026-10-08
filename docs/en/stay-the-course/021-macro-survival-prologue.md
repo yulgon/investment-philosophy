@@ -1,5 +1,5 @@
 ---
-title: "[Macroeconomic Survival Prologue] The Asset I Trusted Most Made Me the Most Anxious"
+title: "[Macroeconomic Survival Prologue] The Asset I Trusted Most Was the One I Understood Least"
 date: 2026-08-02
 tags:
   - MacroeconomicSurvival
@@ -10,7 +10,7 @@ prev:
   text: Evolution of Investment Epilogue (Investing Is a System for Managing Oneself)
   link: /en/stay-the-course/016-evo-epilogue
 next:
-  text: Chapter 1. I Bet on Korea's Slow Growth, but the Market Refused to Follow My Timeline
+  text: Chapter 1. I Expected Slower Growth in Korea, but the Market Moved on a Different Clock
   link: /en/stay-the-course/022-macro-survival-ch1
 excerpt: "I could accept falling stocks. But when the bonds that were supposed to protect me fell too, I realized I had been calling an asset safe without understanding what its safety actually meant."
 ---
@@ -22,11 +22,11 @@ excerpt: "I could accept falling stocks. But when the bonds that were supposed t
   <span class="stc-card-tag">#BondInvesting</span>
 </div>
 
-# [Macroeconomic Survival Prologue] The Asset I Trusted Most Made Me the Most Anxious
+# [Macroeconomic Survival Prologue] The Asset I Trusted Most Was the One I Understood Least
 
-![An investor's voyage in search of an anchor amid a storm](/macro-survival-prologue-cover.png)
+![An investor reflecting on the role of bonds while passing through an uncertain market](/macro-survival-prologue-cover.png)
 
-## My Bond Account Hurt More Than My Stock Account
+## Why Bond Losses Were Harder for Me to Accept
 
 In 2022, every look at my account showed the same thing: stocks and bonds were falling together.
 
@@ -34,7 +34,7 @@ The decline in stocks was painful, but understandable. I had bought them knowing
 
 Bonds were supposed to protect me at moments like this.
 
-I believed that when stocks stumbled, bonds would reach out a hand and buy me time until the market recovered. But when the storm arrived, the roof of my supposed shelter began to cave in first.
+I believed bonds would offset part of a stock-market decline and buy me time to wait for a recovery. In 2022, however, that relationship did not appear as I had expected.
 
 There was something more painful than the loss itself.
 
@@ -72,13 +72,13 @@ These were not consecutive stages. They were two journeys running through the sa
 
 *Evolution of Investment* looks at those years through **equity ETFs and human psychology**. *Macroeconomic Survival* revisits them through **bonds, interest rates, inflation, and exchange rates**.
 
-On one side, I was searching for tools to govern myself. On the other, I was trying to understand economic forces I could not control.
+On one side, I was searching for rules that would keep my emotions from governing my decisions. On the other, I was trying to understand economic forces I could not control.
 
 The second journey led me into an even more dangerous illusion.
 
 ---
 
-## The Desire to Understand Became the Desire to Predict
+## The Wish to Understand Slowly Tilted Toward Prediction
 
 At first, I simply wanted to know why my bonds were falling.
 
@@ -86,21 +86,21 @@ Then studying created an appetite. I read every line of Federal Reserve statemen
 
 If I could identify the next rate cut, I thought I could capture the rebound in long-duration bonds. If I could read not only US interest rates but also the dollar and the yen, perhaps I could do more than recover my losses. Perhaps I could turn the macroeconomic cycle itself into profit.
 
-A bond portfolio that had begun as a source of dependable cash flow slowly became my largest directional bet.
+A bond portfolio that had begun as a source of dependable cash flow slowly became a portfolio heavily dependent on the direction of interest rates.
 
 That transformation is why I am writing this record.
 
-The problem was not that bonds were inherently dangerous. The problem was that I failed to notice the moment a humble desire to understand the market became the arrogant belief that I could predict it.
+The problem was not that bonds were inherently dangerous. I failed to notice when studying the market had turned into confidence that I could predict it.
 
 ---
 
-## You Can Get the Destination Right and Still Fail to Survive the Voyage
+## Getting the Direction Right Was Not Enough
 
 *Macroeconomic Survival* is not the success story of someone who correctly forecast rates and currencies.
 
 The view that Korean growth would slow may eventually prove right. Central banks will also cut rates at some point. But investing is not a game in which identifying the final destination is enough. How much further rates might rise, how far bond prices might fall, and whether I could endure the journey were entirely different questions.
 
-I did not learn how to predict when the storm would arrive.
+I did not learn how to identify the next turn in advance.
 
 **I learned that a portfolio needs a structure capable of surviving even when its forecast is wrong—or merely far too early.**
 
@@ -110,6 +110,6 @@ Let us return to 2022.
 
 I believed Korea's future growth rate would fall below that of the United States. To profit from that pessimistic view, I bought a 30-year Korean government bond ETF. The logic was persuasive.
 
-The market, however, refused to move in the order I had imagined.
+The market was moving on a different clock from mine.
 
 <MacroSurvivalTocEn />
