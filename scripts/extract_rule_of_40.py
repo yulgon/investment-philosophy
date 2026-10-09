@@ -19,12 +19,10 @@ def get_sp500_tickers():
 
 def get_kospi_100_tickers():
     try:
-        tickers = []
-        for page in [1, 2]: # Top 100 KOSPI by Market Cap
-            url = f'https://finance.naver.com/sise/sise_market_sum.naver?sosok=0&page={page}'
-            res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
-            matches = re.findall(r'/item/main.naver\?code=(\d{6})', res.text)
-            tickers.extend(matches)
+        url = 'https://m.stock.naver.com/api/stocks/marketValue/KOSPI?page=1&pageSize=100'
+        res = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
+        res.raise_for_status()
+        tickers = [stock['itemCode'] for stock in res.json().get('stocks', [])]
             
         # Deduplicate while preserving order
         seen = set()
@@ -40,7 +38,7 @@ def get_kospi_100_tickers():
         if "278470.KS" not in unique_tickers:
             unique_tickers.append("278470.KS")
             
-        return unique_tickers[:105] # return top 100 + some padding
+        return unique_tickers
     except Exception as e:
         print(f"Failed to fetch KOSPI 100 tickers: {e}")
         return []
@@ -100,7 +98,7 @@ def main():
     us_results.sort(key=lambda x: x['Rule of 40 Score'], reverse=True)
     kr_results.sort(key=lambda x: x['Rule of 40 Score'], reverse=True)
     
-    output_path = '/Users/yg/Documents/antigravity/investment-philosophy/knowledge-base/rule-of-40-large-caps-2026.md'
+    output_path = '/Users/yg/Documents/antigravity/investment-philosophy/knowledge-base/rule-of-40-large-caps-2026-10-09.md'
     import datetime
     today = datetime.datetime.today().strftime('%Y-%m-%d')
     with open(output_path, 'w', encoding='utf-8') as f:

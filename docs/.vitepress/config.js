@@ -204,6 +204,7 @@ export default defineConfig({
                 text: '전략 실천과 기록',
                 items: [
                   { text: '📜 나의 투자 여정과 기록 (History)', link: '/strategy/history' },
+                  { text: '🔥 Rule of 60 바벨 전략 (3Q26)', link: '/strategy/rule-of-60-barbell-26q3' },
                   { text: '🔥 Rule of 60 바벨 전략 (2Q26)', link: '/strategy/rule-of-60-barbell' }
                 ]
               }
@@ -291,6 +292,7 @@ export default defineConfig({
                 text: 'Practice & Records',
                 items: [
                   { text: '📜 My Journey (History)', link: '/en/strategy/history' },
+                  { text: '🔥 Rule of 60 Screen (3Q26)', link: '/en/strategy/rule-of-60-barbell-26q3' },
                   { text: '🔥 Rule of 60 Screen (2Q26)', link: '/en/strategy/rule-of-60-barbell' }
                 ]
               }
